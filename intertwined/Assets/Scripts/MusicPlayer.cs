@@ -4,25 +4,33 @@ using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour
 {
-    public AudioSource ASAx1;
-    public AudioClip Ax1;
-    public AudioSource ASAx2;
-    public AudioClip Ax2;
-    public AudioSource ASAx3;
-    public AudioClip Ax3;
+    public GameObject AnxietyManager;
+    
+    public AudioSource ASL1;
+    public AudioSource ASL2;
+    public AudioSource ASL3;
+
+    public AudioClip Level1;
+    public AudioClip Level2;
+    public AudioClip Level3;
     // Start is called before the first frame update
     void Start()
     {
-        ASAx1 = gameObject.AddComponent<AudioSource>();
-        ASAx2 = gameObject.AddComponent<AudioSource>();
-        ASAx3 = gameObject.AddComponent<AudioSource>();
+        ASL1 = gameObject.AddComponent<AudioSource>();
+        ASL2 = gameObject.AddComponent<AudioSource>();
+        ASL3 = gameObject.AddComponent<AudioSource>();
         
-        ASAx1.PlayOneShot(Ax1);
+        ASL1.PlayOneShot(Level1);
+        ASL1.volume = 1;
+        ASL2.PlayOneShot(Level2);
+        ASL2.volume = 0;
+        ASL3.PlayOneShot(Level3);
+        ASL3.volume = 0;
         
-        ASAx2.PlayOneShot(Ax2);
-        ASAx2.volume = 0;
-        ASAx3.PlayOneShot(Ax3);
-        ASAx2.volume = 0;
+        ASL1.loop = true;
+        ASL2.loop = true;
+        ASL3.loop = true;
+        
     }
 
     // Update is called once per frame
