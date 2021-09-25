@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DrawTether : MonoBehaviour
 {
+    public AnxietyBar AnxietyBar;
+    
     private LineRenderer lr;
     private float counter;
     private float dist;
@@ -34,7 +36,7 @@ public class DrawTether : MonoBehaviour
         Vector3 pointAlongLine = x * Vector3.Normalize(pointB-pointA) + pointA;
         lr.SetPosition(0, pointA);
         lr.SetPosition(1, pointAlongLine);
-
+        Debug.Log(dist);
         if (dist >= 3.5)
         {
             tooFar = true;
@@ -43,6 +45,7 @@ public class DrawTether : MonoBehaviour
         {
             tooFar = false;
         }
+        AnxietyBar.UpdatePlayerStatus(tooFar);
 
     }
 }
