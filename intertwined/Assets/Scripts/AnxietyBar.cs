@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class AnxietyBar : MonoBehaviour
 {
     public GameObject anxietyIndicator;
+    public GameObject GameOverText;
     
     private Text AnxietyIndicatorText;
 
@@ -18,6 +19,7 @@ public class AnxietyBar : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        GameOverText.SetActive(false);
         anxietyIndicator = GameObject.Find("AnxietyIndicator");
         AnxietyIndicatorText = anxietyIndicator.GetComponent<Text>();
 
@@ -44,5 +46,15 @@ public class AnxietyBar : MonoBehaviour
     {
         anxiety++;
         AnxietyCountText.text = "Anxiety: " + anxiety + "/25";
+        if (anxiety >= 25)
+        {
+            EndGame();
+        }
+    }
+
+    public void EndGame()
+    {
+        GameOverText.SetActive(true);
+        Time.timeScale = 0;
     }
 }
