@@ -16,6 +16,9 @@ public class DrawTether : MonoBehaviour
     public Transform p2;
 
     public float drawSpeed = 6f;
+
+    private int anxiousTicks = 0;
+    private static int maxFrames = 250;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,10 +43,17 @@ public class DrawTether : MonoBehaviour
         if (dist >= 3.5)
         {
             tooFar = true;
+            anxiousTicks++;
+            if (anxiousTicks >= maxFrames)
+            {
+                anxiousTicks = 0;
+                AnxietyBar.IncrementAnxiety();
+            }
         }
         else
         {
             tooFar = false;
+            anxiousTicks = 0;
         }
         AnxietyBar.UpdatePlayerStatus(tooFar);
 

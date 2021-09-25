@@ -795,6 +795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anxietyIndicator: {fileID: 300948957}
+  anxietyCount: {fileID: 0}
 --- !u!4 &1790188059
 Transform:
   m_ObjectHideFlags: 0
@@ -879,7 +880,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Anxiety: 0/100'
+  m_Text: 'Anxiety: 0/25'
 --- !u!222 &1998472545
 CanvasRenderer:
   m_ObjectHideFlags: 0
