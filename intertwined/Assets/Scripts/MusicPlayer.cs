@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour
 {
-    public GameObject AnxietyManager;
-    
     public AudioSource ASL1;
     public AudioSource ASL2;
     public AudioSource ASL3;
@@ -13,6 +11,7 @@ public class MusicPlayer : MonoBehaviour
     public AudioClip Level1;
     public AudioClip Level2;
     public AudioClip Level3;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +29,7 @@ public class MusicPlayer : MonoBehaviour
         ASL1.loop = true;
         ASL2.loop = true;
         ASL3.loop = true;
-        
+
     }
 
     // Update is called once per frame
