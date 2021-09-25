@@ -19,8 +19,7 @@ public class DrawTether : MonoBehaviour
     {
         lr = GetComponent<LineRenderer>();
         lr.SetPosition(0, p1.position);
-        lr.SetWidth(.15f, .15f);
-        
+
         dist = Vector3.Distance(p1.position, p2.position);
     }
 
