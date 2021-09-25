@@ -8,6 +8,8 @@ public class DrawTether : MonoBehaviour
     private float counter;
     private float dist;
     
+    public bool tooFar = false;
+    
     public Transform p1;
     public Transform p2;
 
@@ -19,24 +21,29 @@ public class DrawTether : MonoBehaviour
         lr.SetPosition(0, p1.position);
         lr.SetWidth(.15f, .15f);
         
-        
         dist = Vector3.Distance(p1.position, p2.position);
-        //dist = Vector3.Distance(p1.position, p2.position);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if (counter <dist){
-            counter += .1f/drawSpeed;
-            //float x = Mathf.Lerp(0, dist, counter);
-            Vector3 pointA = p1.position;
-            Vector3 pointB = p2.position;
-            float x = Mathf.Lerp(0, Vector3.Distance(pointA, pointB), counter);
-            Vector3 pointAlongLine = x * Vector3.Normalize(pointB-pointA) + pointA;
-            lr.SetPosition(0, pointA);
-            lr.SetPosition(1, pointAlongLine);
-            
-            //}
+        counter += .1f/drawSpeed;
+        Vector3 pointA = p1.position;
+        Vector3 pointB = p2.position;
+        dist = Vector3.Distance(pointA, pointB);
+        float x = Mathf.Lerp(0, dist, counter);
+        Vector3 pointAlongLine = x * Vector3.Normalize(pointB-pointA) + pointA;
+        lr.SetPosition(0, pointA);
+        lr.SetPosition(1, pointAlongLine);
+
+        if (dist >= 3.5)
+        {
+            tooFar = true;
+        }
+        else
+        {
+            tooFar = false;
+        }
+
     }
 }
