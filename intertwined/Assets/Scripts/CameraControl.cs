@@ -7,8 +7,8 @@ public class CameraControl : MonoBehaviour
     public Transform p1;
     public Transform p2;
 
-    public float zoom = 0.1f;
-    public float zoomStartDist = 10;
+    public float zoom = 0.165f;
+    public float zoomStartDist = 6;
     public float _followTimeDelta = 0.8f;
     public float smoothness = 0.5f;
     

@@ -221,8 +221,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   p1: {fileID: 1316352959}
   p2: {fileID: 1657174237}
-  zoom: 0.1
-  zoomStartDist: 10
+  zoom: 0.165
+  zoomStartDist: 6
   _followTimeDelta: 0.8
   smoothness: 0.5
 --- !u!1001 &417117759
