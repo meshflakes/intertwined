@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="375234c1-0e09-4b62-84ca-c3d819f15b05" name="Changes" comment="" />
+    <list default="true" id="375234c1-0e09-4b62-84ca-c3d819f15b05" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Music/1 Piano.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Music/1 Piano.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Music/2 Melody.wav" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Music/2 Melody.wav" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
