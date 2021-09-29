@@ -14,7 +14,7 @@ public class EndGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x < 10 & transform.position.z < -4)
+        if (transform.position.x < 10 & transform.position.z < -5)
         {
             SceneManager.LoadScene("FirstLevel");
         }
