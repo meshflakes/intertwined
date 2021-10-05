@@ -2,7 +2,7 @@
     "name": "Game",
     "maps": [
         {
-            "name": "Boy",
+            "name": "Game",
             "id": "f62a4b92-ef5e-4175-8f4c-c9075429d32c",
             "actions": [
                 {
@@ -25,6 +25,30 @@
                     "name": "BoyInteract",
                     "type": "Button",
                     "id": "980e881e-182c-404c-8cbf-3d09fdb48fef",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "DogMove",
+                    "type": "Value",
+                    "id": "d857713f-2573-4fc3-aba7-8f366ccd60db",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "DogJump",
+                    "type": "Button",
+                    "id": "35504759-2117-4160-b411-8f66dcc36052",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "DogInteract",
+                    "type": "Button",
+                    "id": "65db62d5-051b-4001-8905-77be3f28f159",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -63,42 +87,21 @@
                     "action": "BoyInteract",
                     "isComposite": false,
                     "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Dog",
-            "id": "930ef945-bdb0-4d9c-9e6f-0a134c303eec",
-            "actions": [
-                {
-                    "name": "DogMove",
-                    "type": "Value",
-                    "id": "d3baa58f-895e-4d24-aa58-bc3db955c10f",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": ""
                 },
-                {
-                    "name": "DogJump",
-                    "type": "Button",
-                    "id": "4b58e494-049e-463d-992c-7821495354c6",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "DogInteract",
-                    "type": "Button",
-                    "id": "4bcf06b7-1b12-4d16-b303-cfd704009abb",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                }
-            ],
-            "bindings": [
                 {
                     "name": "",
-                    "id": "4dc84ad0-0a36-4d3e-bdcb-ec2b504aa1d0",
+                    "id": "4583893b-934e-4d71-a1eb-1616fe02aac0",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "DogMove",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "de5a159d-920b-4c99-81e4-0257f1da3e6c",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
@@ -109,7 +112,7 @@
                 },
                 {
                     "name": "",
-                    "id": "8fd5588a-6923-4ec1-8a01-93a85dff4cb6",
+                    "id": "ca9853cd-ca56-4ae7-88f0-c4d9f9990d5a",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
@@ -117,105 +120,6 @@
                     "action": "DogInteract",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "WASD",
-                    "id": "54bec1b4-4230-4484-ad8d-da4eb89c0d01",
-                    "path": "2DVector(mode=1)",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "DogMove",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "up",
-                    "id": "e877f4e9-9072-490d-980b-d2472ab3367e",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardMouse",
-                    "action": "DogMove",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "a0b4c356-8d28-452d-b165-9348c6deb8a4",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardMouse",
-                    "action": "DogMove",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "03d6592d-548a-435b-8166-923d9a9ddaf8",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardMouse",
-                    "action": "DogMove",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "fcf64119-4f0e-48c9-ae34-91c76e896416",
-                    "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardMouse",
-                    "action": "DogMove",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "up",
-                    "id": "d2b34e0a-3cc7-4624-a84a-12eb0ccee8b2",
-                    "path": "<Keyboard>/upArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardMouse",
-                    "action": "DogMove",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "down",
-                    "id": "7c717df8-b5e4-4479-8841-e82987be16b0",
-                    "path": "<Keyboard>/downArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardMouse",
-                    "action": "DogMove",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "left",
-                    "id": "259d6c7c-2e1f-4476-a742-cf720416ca80",
-                    "path": "<Keyboard>/leftArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardMouse",
-                    "action": "DogMove",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "right",
-                    "id": "92f74cdf-41da-4bfe-b429-d3cf75df9b9b",
-                    "path": "<Keyboard>/rightArrow",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "KeyboardMouse",
-                    "action": "DogMove",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 }
             ]
         }

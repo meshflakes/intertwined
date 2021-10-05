@@ -1,51 +1,50 @@
-﻿using UnityEngine;
+﻿using InputSystem;
+using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 
 namespace DefaultNamespace
 {
-    [RequireComponent(typeof(CharacterController))]
     [RequireComponent(typeof(PlayerInput))]
     
     public class TwoPlayerController : MonoBehaviour
     {
-	    //Player Objects
+	    // player Objects
 	    [SerializeField]
 	    private GameObject player1;
 	    [SerializeField]
 	    private GameObject player2;
 	    
+	    // player 1 parameters
         [Header("Player 1")]
-        [Tooltip("The character's controller")]
-        public CharacterController Player1CharacterController;
         [Tooltip("Move speed of the character in m/s")]
-        public float Player1MoveSpeed = 2.0f;
+        public float player1MoveSpeed = 2.0f;
         [Tooltip("How fast the character turns to face movement direction")]
         [Range(0.0f, 0.3f)]
-        public float Player1RotationSmoothTime = 0.12f;
+        public float player1RotationSmoothTime = 0.12f;
         [Tooltip("Acceleration and deceleration")]
-        public float Player1SpeedChangeRate = 10.0f;
+        public float player1SpeedChangeRate = 10.0f;
 
         [Space(10)]
         [Tooltip("The height the player can jump")]
-        public float Player1JumpHeight = 1.2f;
+        public float player1JumpHeight = 1.2f;
         [Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
-        public float Player1Gravity = -15.0f;
+        public float player1Gravity = -15.0f;
 
         [Space(10)]
         [Tooltip("Time required to pass before being able to jump again. Set to 0f to instantly jump again")]
-        public float Player1JumpTimeout = 0.50f;
+        public float player1JumpTimeout = 0.50f;
         [Tooltip("Time required to pass before entering the fall state. Useful for walking down stairs")]
-        public float Player1FallTimeout = 0.15f;
+        public float player1FallTimeout = 0.15f;
 
-        [Header("Player Grounded")]
         [Tooltip("If the character is grounded or not. Not part of the CharacterController built in grounded check")]
-        public bool Player1Grounded = true;
+        public bool player1Grounded = true;
         [Tooltip("Useful for rough ground")]
-        public float Player1GroundedOffset = -0.14f;
+        public float player1GroundedOffset = -0.14f;
         [Tooltip("The radius of the grounded check. Should match the radius of the CharacterController")]
-        public float Player1GroundedRadius = 0.28f;
+        public float player1GroundedRadius = 0.28f;
         [Tooltip("What layers the character uses as ground")]
-        public LayerMask Player1GroundLayers;
+        public LayerMask player1GroundLayers;
         
         // player
         private float _speedPlayer1;
@@ -68,44 +67,42 @@ namespace DefaultNamespace
 
         private Animator _animatorPlayer1;
         private CharacterController _controllerPlayer1;
-        private BoyInputs _inputPlayer1;
-        private GameObject _mainCameraPlayer1;
 
         private bool _hasAnimatorPlayer1;
         
         
+        // player 2 parameters
         [Header("Player 2")]
-        [Tooltip("The character's controller")]
-        public CharacterController Player2CharacterController;
         [Tooltip("Move speed of the character in m/s")]
-        public float Player2MoveSpeed = 2.0f;
+        public float player2MoveSpeed = 2.0f;
         [Tooltip("How fast the character turns to face movement direction")]
         [Range(0.0f, 0.3f)]
-        public float Player2RotationSmoothTime = 0.12f;
+        public float player2RotationSmoothTime = 0.12f;
         [Tooltip("Acceleration and deceleration")]
-        public float Player2SpeedChangeRate = 10.0f;
+        public float player2SpeedChangeRate = 10.0f;
 
         [Space(10)]
         [Tooltip("The height the player can jump")]
-        public float Player2JumpHeight = 1.2f;
+        public float player2JumpHeight = 1.2f;
         [Tooltip("The character uses its own gravity value. The engine default is -9.81f")]
-        public float Player2Gravity = -15.0f;
+        public float player2Gravity = -15.0f;
 
         [Space(10)]
         [Tooltip("Time required to pass before being able to jump again. Set to 0f to instantly jump again")]
-        public float Player2JumpTimeout = 0.50f;
+        public float player2JumpTimeout = 0.50f;
         [Tooltip("Time required to pass before entering the fall state. Useful for walking down stairs")]
-        public float Player2FallTimeout = 0.15f;
+        public float player2FallTimeout = 0.15f;
 
+        [FormerlySerializedAs("Player2Grounded")]
         [Header("Player Grounded")]
         [Tooltip("If the character is grounded or not. Not part of the CharacterController built in grounded check")]
-        public bool Player2Grounded = true;
+        public bool player2Grounded = true;
         [Tooltip("Useful for rough ground")]
-        public float Player2GroundedOffset = -0.14f;
+        public float player2GroundedOffset = -0.14f;
         [Tooltip("The radius of the grounded check. Should match the radius of the CharacterController")]
-        public float Player2GroundedRadius = 0.28f;
+        public float player2GroundedRadius = 0.28f;
         [Tooltip("What layers the character uses as ground")]
-        public LayerMask Player2GroundLayers;
+        public LayerMask player2GroundLayers;
         
         // player
         private float _speedPlayer2;
@@ -128,12 +125,12 @@ namespace DefaultNamespace
 
         private Animator _animatorPlayer2;
         private CharacterController _controllerPlayer2;
-        private DogInputs _inputPlayer2;
 
         private bool _hasAnimatorPlayer2;
         
-        
+        // general objects
         private GameObject _mainCamera;
+        private GameInputs _input;
         
         
         private void Awake()
@@ -147,27 +144,25 @@ namespace DefaultNamespace
 
         private void Start()
         {
-            _hasAnimatorPlayer1 = TryGetComponent(out _animatorPlayer1);
-            _hasAnimatorPlayer2 = TryGetComponent(out _animatorPlayer2);
-            _controllerPlayer1 = Player1CharacterController;
-            _controllerPlayer2 = Player2CharacterController;
-            _inputPlayer1 = GetComponent<BoyInputs>();
-            _inputPlayer2 = GetComponent<DogInputs>();
-            
+            _hasAnimatorPlayer1 = player1.TryGetComponent(out _animatorPlayer1);
+            _hasAnimatorPlayer2 = player2.TryGetComponent(out _animatorPlayer2);
+            _controllerPlayer1 = player1.GetComponent<CharacterController>();
+            _controllerPlayer2 = player2.GetComponent<CharacterController>();
+            _input = GetComponent<GameInputs>();
 
             AssignAnimationIDs();
 
             // reset our timeouts on start
-            _jumpTimeoutDeltaPlayer1 = Player1JumpTimeout;
-            _jumpTimeoutDeltaPlayer2 = Player2JumpTimeout;
-            _fallTimeoutDeltaPlayer1 = Player1FallTimeout;
-            _fallTimeoutDeltaPlayer2 = Player2FallTimeout;
+            _jumpTimeoutDeltaPlayer1 = player1JumpTimeout;
+            _jumpTimeoutDeltaPlayer2 = player2JumpTimeout;
+            _fallTimeoutDeltaPlayer1 = player1FallTimeout;
+            _fallTimeoutDeltaPlayer2 = player2FallTimeout;
         }
 
         private void Update()
         {
-            _hasAnimatorPlayer1 = TryGetComponent(out _animatorPlayer1);
-            _hasAnimatorPlayer2 = TryGetComponent(out _animatorPlayer2);
+            _hasAnimatorPlayer1 = player1.TryGetComponent(out _animatorPlayer1);
+            _hasAnimatorPlayer2 = player2.TryGetComponent(out _animatorPlayer2);
 			
             JumpAndGravity();
             GroundedCheck();
@@ -189,28 +184,30 @@ namespace DefaultNamespace
             _animIDMotionSpeedPlayer2 = Animator.StringToHash("MotionSpeed");
         }
         
-         private void GroundedCheck()
+	    private void GroundedCheck()
         {
             // set sphere position, with offset
+            var position = player1.transform.position;
             Vector3 spherePositionPlayer1 = 
-	            new Vector3(player1.transform.position.x, player1.transform.position.y - Player1GroundedOffset, player1.transform.position.z);
-            Player1Grounded = Physics.CheckSphere(spherePositionPlayer1, Player1GroundedRadius, Player1GroundLayers, QueryTriggerInteraction.Ignore);
+	            new Vector3(position.x, position.y - player1GroundedOffset, position.z);
+            player1Grounded = Physics.CheckSphere(spherePositionPlayer1, player1GroundedRadius, player1GroundLayers, QueryTriggerInteraction.Ignore);
 
             // update animator if using character
             if (_hasAnimatorPlayer1)
             {
-                _animatorPlayer1.SetBool(_animIDGroundedPlayer1, Player1Grounded);
+                _animatorPlayer1.SetBool(_animIDGroundedPlayer1, player1Grounded);
             }
             
             // set sphere position, with offset
+            var position1 = player2.transform.position;
             Vector3 spherePositionPlayer2 = 
-	            new Vector3(player2.transform.position.x, player2.transform.position.y - Player2GroundedOffset, player2.transform.position.z);
-            Player2Grounded = Physics.CheckSphere(spherePositionPlayer2, Player2GroundedRadius, Player2GroundLayers, QueryTriggerInteraction.Ignore);
+	            new Vector3(position1.x, position1.y - player2GroundedOffset, position1.z);
+            player2Grounded = Physics.CheckSphere(spherePositionPlayer2, player2GroundedRadius, player2GroundLayers, QueryTriggerInteraction.Ignore);
 
             // update animator if using character
             if (_hasAnimatorPlayer2)
             {
-	            _animatorPlayer2.SetBool(_animIDGroundedPlayer2, Player2Grounded);
+	            _animatorPlayer2.SetBool(_animIDGroundedPlayer2, player2Grounded);
             }
         }
         
@@ -219,26 +216,27 @@ namespace DefaultNamespace
 			// Player 1
 			
 			// set target speed based on move speed, sprint speed and if sprint is pressed
-			float targetSpeedPlayer1 = Player1MoveSpeed;
+			float targetSpeedPlayer1 = player1MoveSpeed;
 
 			// a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
 
 			// note: Vector2's == operator uses approximation so is not floating point error prone, and is cheaper than magnitude
 			// if there is no input, set the target speed to 0
-			if (_inputPlayer1.move == Vector2.zero) targetSpeedPlayer1 = 0.0f;
+			if (_input.boyMove == Vector2.zero) targetSpeedPlayer1 = 0.0f;
 
 			// a reference to the players current horizontal velocity
-			float currentHorizontalSpeedPlayer1 = new Vector3(_controllerPlayer1.velocity.x, 0.0f, _controllerPlayer1.velocity.z).magnitude;
+			var velocity1 = _controllerPlayer1.velocity;
+			float currentHorizontalSpeedPlayer1 = new Vector3(velocity1.x, 0.0f, velocity1.z).magnitude;
 
 			float speedOffsetPlayer1 = 0.1f;
-			float inputMagnitudePlayer1 = _inputPlayer1.move.magnitude;
+			float inputMagnitudePlayer1 = _input.boyMove.magnitude;
 
 			// accelerate or decelerate to target speed
 			if (currentHorizontalSpeedPlayer1 < targetSpeedPlayer1 - speedOffsetPlayer1 || currentHorizontalSpeedPlayer1 > targetSpeedPlayer1 + speedOffsetPlayer1)
 			{
 				// creates curved result rather than a linear one giving a more organic speed change
 				// note T in Lerp is clamped, so we don't need to clamp our speed
-				_speedPlayer1 = Mathf.Lerp(currentHorizontalSpeedPlayer1, targetSpeedPlayer1 * inputMagnitudePlayer1, Time.deltaTime * Player1SpeedChangeRate);
+				_speedPlayer1 = Mathf.Lerp(currentHorizontalSpeedPlayer1, targetSpeedPlayer1 * inputMagnitudePlayer1, Time.deltaTime * player1SpeedChangeRate);
 
 				// round speed to 3 decimal places
 				_speedPlayer1 = Mathf.Round(_speedPlayer1 * 1000f) / 1000f;
@@ -247,18 +245,18 @@ namespace DefaultNamespace
 			{
 				_speedPlayer1 = targetSpeedPlayer1;
 			}
-			_animationBlendPlayer1 = Mathf.Lerp(_animationBlendPlayer1, targetSpeedPlayer1, Time.deltaTime * Player1SpeedChangeRate);
+			_animationBlendPlayer1 = Mathf.Lerp(_animationBlendPlayer1, targetSpeedPlayer1, Time.deltaTime * player1SpeedChangeRate);
 
 			// normalise input direction
-			Vector3 inputDirectionPlayer1 = new Vector3(_inputPlayer1.move.x, 0.0f, _inputPlayer1.move.y).normalized;
+			Vector3 inputDirectionPlayer1 = new Vector3(_input.boyMove.x, 0.0f, _input.boyMove.y).normalized;
 
 			// note: Vector2's != operator uses approximation so is not floating point error prone, and is cheaper than magnitude
 			// if there is a move input rotate player when the player is moving
-			if (_inputPlayer1.move != Vector2.zero)
+			if (_input.boyMove != Vector2.zero)
 			{
 				_targetRotationPlayer1 = Mathf.Atan2(inputDirectionPlayer1.x, inputDirectionPlayer1.z) * Mathf.Rad2Deg + _mainCamera.transform.eulerAngles.y;
 				float rotation = 
-					Mathf.SmoothDampAngle(player1.transform.eulerAngles.y, _targetRotationPlayer1, ref _rotationVelocityPlayer1, Player1RotationSmoothTime);
+					Mathf.SmoothDampAngle(player1.transform.eulerAngles.y, _targetRotationPlayer1, ref _rotationVelocityPlayer1, player1RotationSmoothTime);
 
 				// rotate to face input direction relative to camera position
 				player1.transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
@@ -283,26 +281,27 @@ namespace DefaultNamespace
 			// Player 2
 			
 			// set target speed based on move speed, sprint speed and if sprint is pressed
-			float targetSpeedPlayer2 = Player2MoveSpeed;
+			float targetSpeedPlayer2 = player2MoveSpeed;
 
 			// a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
 
 			// note: Vector2's == operator uses approximation so is not floating point error prone, and is cheaper than magnitude
 			// if there is no input, set the target speed to 0
-			if (_inputPlayer2.move == Vector2.zero) targetSpeedPlayer2 = 0.0f;
+			if (_input.dogMove == Vector2.zero) targetSpeedPlayer2 = 0.0f;
 
 			// a reference to the players current horizontal velocity
-			float currentHorizontalSpeedPlayer2 = new Vector3(_controllerPlayer2.velocity.x, 0.0f, _controllerPlayer2.velocity.z).magnitude;
+			var velocity2 = _controllerPlayer2.velocity;
+			float currentHorizontalSpeedPlayer2 = new Vector3(velocity2.x, 0.0f, velocity2.z).magnitude;
 
 			float speedOffsetPlayer2 = 0.1f;
-			float inputMagnitudePlayer2 = _inputPlayer2.move.magnitude;
+			float inputMagnitudePlayer2 = _input.dogMove.magnitude;
 
 			// accelerate or decelerate to target speed
 			if (currentHorizontalSpeedPlayer2 < targetSpeedPlayer2 - speedOffsetPlayer2 || currentHorizontalSpeedPlayer2 > targetSpeedPlayer2 + speedOffsetPlayer2)
 			{
 				// creates curved result rather than a linear one giving a more organic speed change
 				// note T in Lerp is clamped, so we don't need to clamp our speed
-				_speedPlayer2 = Mathf.Lerp(currentHorizontalSpeedPlayer2, targetSpeedPlayer2 * inputMagnitudePlayer2, Time.deltaTime * Player2SpeedChangeRate);
+				_speedPlayer2 = Mathf.Lerp(currentHorizontalSpeedPlayer2, targetSpeedPlayer2 * inputMagnitudePlayer2, Time.deltaTime * player2SpeedChangeRate);
 
 				// round speed to 3 decimal places
 				_speedPlayer2 = Mathf.Round(_speedPlayer2 * 1000f) / 1000f;
@@ -311,18 +310,18 @@ namespace DefaultNamespace
 			{
 				_speedPlayer2 = targetSpeedPlayer2;
 			}
-			_animationBlendPlayer2 = Mathf.Lerp(_animationBlendPlayer2, targetSpeedPlayer2, Time.deltaTime * Player2SpeedChangeRate);
+			_animationBlendPlayer2 = Mathf.Lerp(_animationBlendPlayer2, targetSpeedPlayer2, Time.deltaTime * player2SpeedChangeRate);
 
 			// normalise input direction
-			Vector3 inputDirectionPlayer2 = new Vector3(_inputPlayer2.move.x, 0.0f, _inputPlayer2.move.y).normalized;
+			Vector3 inputDirectionPlayer2 = new Vector3(_input.dogMove.x, 0.0f, _input.dogMove.y).normalized;
 
 			// note: Vector2's != operator uses approximation so is not floating point error prone, and is cheaper than magnitude
 			// if there is a move input rotate player when the player is moving
-			if (_inputPlayer2.move != Vector2.zero)
+			if (_input.dogMove != Vector2.zero)
 			{
 				_targetRotationPlayer2 = Mathf.Atan2(inputDirectionPlayer2.x, inputDirectionPlayer2.z) * Mathf.Rad2Deg + _mainCamera.transform.eulerAngles.y;
 				float rotation = 
-					Mathf.SmoothDampAngle(player2.transform.eulerAngles.y, _targetRotationPlayer2, ref _rotationVelocityPlayer2, Player2RotationSmoothTime);
+					Mathf.SmoothDampAngle(player2.transform.eulerAngles.y, _targetRotationPlayer2, ref _rotationVelocityPlayer2, player2RotationSmoothTime);
 
 				// rotate to face input direction relative to camera position
 				player2.transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
@@ -346,10 +345,10 @@ namespace DefaultNamespace
 		{
 			// Player 1
 			
-			if (Player1Grounded)
+			if (player1Grounded)
 			{
 				// reset the fall timeout timer
-				_fallTimeoutDeltaPlayer1 = Player1FallTimeout;
+				_fallTimeoutDeltaPlayer1 = player1FallTimeout;
 
 				// update animator if using character
 				if (_hasAnimatorPlayer1)
@@ -365,10 +364,10 @@ namespace DefaultNamespace
 				}
 
 				// Jump
-				if (_inputPlayer1.jump && _jumpTimeoutDeltaPlayer1 <= 0.0f)
+				if (_input.boyJump && _jumpTimeoutDeltaPlayer1 <= 0.0f)
 				{
 					// the square root of H * -2 * G = how much velocity needed to reach desired height
-					_verticalVelocityPlayer2 = Mathf.Sqrt(Player1JumpHeight * -2f * Player1Gravity);
+					_verticalVelocityPlayer2 = Mathf.Sqrt(player1JumpHeight * -2f * player1Gravity);
 
 					// update animator if using character
 					if (_hasAnimatorPlayer1)
@@ -386,7 +385,7 @@ namespace DefaultNamespace
 			else
 			{
 				// reset the jump timeout timer
-				_jumpTimeoutDeltaPlayer1 = Player1JumpTimeout;
+				_jumpTimeoutDeltaPlayer1 = player1JumpTimeout;
 
 				// fall timeout
 				if (_fallTimeoutDeltaPlayer1 >= 0.0f)
@@ -403,23 +402,23 @@ namespace DefaultNamespace
 				}
 
 				// if we are not grounded, do not jump
-				_inputPlayer1.jump = false;
+				_input.boyJump = false;
 			}
 
 			// apply gravity over time if under terminal (multiply by delta time twice to linearly speed up over time)
 			if (_verticalVelocityPlayer1 < _terminalVelocityPlayer1)
 			{
-				_verticalVelocityPlayer1 += Player1Gravity * Time.deltaTime;
+				_verticalVelocityPlayer1 += player1Gravity * Time.deltaTime;
 			}
 			
 			
 			
 			// Player 2
 			
-			if (Player2Grounded)
+			if (player2Grounded)
 			{
 				// reset the fall timeout timer
-				_fallTimeoutDeltaPlayer2 = Player2FallTimeout;
+				_fallTimeoutDeltaPlayer2 = player2FallTimeout;
 
 				// update animator if using character
 				if (_hasAnimatorPlayer2)
@@ -435,10 +434,10 @@ namespace DefaultNamespace
 				}
 
 				// Jump
-				if (_inputPlayer2.jump && _jumpTimeoutDeltaPlayer2 <= 0.0f)
+				if (_input.dogJump && _jumpTimeoutDeltaPlayer2 <= 0.0f)
 				{
 					// the square root of H * -2 * G = how much velocity needed to reach desired height
-					_verticalVelocityPlayer2 = Mathf.Sqrt(Player2JumpHeight * -2f * Player2Gravity);
+					_verticalVelocityPlayer2 = Mathf.Sqrt(player2JumpHeight * -2f * player2Gravity);
 
 					// update animator if using character
 					if (_hasAnimatorPlayer2)
@@ -456,7 +455,7 @@ namespace DefaultNamespace
 			else
 			{
 				// reset the jump timeout timer
-				_jumpTimeoutDeltaPlayer2 = Player2JumpTimeout;
+				_jumpTimeoutDeltaPlayer2 = player2JumpTimeout;
 
 				// fall timeout
 				if (_fallTimeoutDeltaPlayer2 >= 0.0f)
@@ -473,13 +472,13 @@ namespace DefaultNamespace
 				}
 
 				// if we are not grounded, do not jump
-				_inputPlayer2.jump = false;
+				_input.dogJump = false;
 			}
 
 			// apply gravity over time if under terminal (multiply by delta time twice to linearly speed up over time)
 			if (_verticalVelocityPlayer2 < _terminalVelocityPlayer2)
 			{
-				_verticalVelocityPlayer2 += Player2Gravity * Time.deltaTime;
+				_verticalVelocityPlayer2 += player2Gravity * Time.deltaTime;
 			}
 		}
 		
