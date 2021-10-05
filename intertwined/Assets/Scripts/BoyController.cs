@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -61,6 +62,7 @@ namespace DefaultNamespace
         private Animator _animator;
         private CharacterController _controller;
         private BoyInputs _input;
+        private Interacter _interacter;
         private GameObject _mainCamera;
 
         private bool _hasAnimator;
@@ -79,6 +81,7 @@ namespace DefaultNamespace
             _hasAnimator = TryGetComponent(out _animator);
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<BoyInputs>();
+            _interacter = GetComponent<Interacter>();
 
             AssignAnimationIDs();
 
@@ -94,8 +97,9 @@ namespace DefaultNamespace
             JumpAndGravity();
             GroundedCheck();
             Move();
+            _interacter.Interact(_input.interact);
         }
-
+        
         private void AssignAnimationIDs()
         {
             _animIDSpeed = Animator.StringToHash("Speed");
