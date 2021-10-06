@@ -6,29 +6,33 @@ using UnityEngine;
 
 public class Ledge : Interactable
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [Tooltip("The position where the boy will end after the climb")]
+    public Vector3 finalPos;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Boy"))
-        {
-            var playerController = other.gameObject.GetComponent<TwoPlayerController>();
-            playerController.player1Interactable = this;
-        }
+        if (!other.gameObject.CompareTag("Boy")) return;
+        
+        var character = other.gameObject.GetComponent<Character>();
+        character.interactable = this;
+    }
+    
+    private void OnTriggerExit(Collider other)
+    {
+        if (!other.gameObject.CompareTag("Boy")) return;
+        
+        var character = other.gameObject.GetComponent<Character>();
+        character.interactable = null;
     }
 
-    public override void Interact()
+    public override void Interact(Character interacter)
     {
-        print("hello");
+        interacter.transform.position = finalPos;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = new Color(1.0f, 0.0f, 0.0f, 0.35f);
+        Gizmos.DrawWireCube(finalPos, new Vector3(0.5f, 0.1f, 0.5f));
     }
 }

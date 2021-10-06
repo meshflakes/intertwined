@@ -1,20 +1,8 @@
 using System;
+using DefaultNamespace;
 using UnityEngine;
 
-public class Interactable : MonoBehaviour
+public abstract class Interactable : MonoBehaviour
 {
-    protected bool IsInteractionFocus = false;
-
-    // private void OnTriggerExit(Collider other)
-    // {
-    //     if (other.CompareTag("Player"))
-    //     {
-    //         IsInteractionFocus = false;
-    //     }
-    // }
-
-    protected void Interact()
-    {
-        throw new NotImplementedException();
-    } 
+    public abstract void Interact(Character interacter);
 }
