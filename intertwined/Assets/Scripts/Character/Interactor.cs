@@ -7,20 +7,20 @@ namespace Character
     public class Interactor
     {
         private List<GameObject> _inRangeInteractables = new List<GameObject>();
-        private GrabbableInteractable _heldInteractable = null;
+        public GrabbableInteractable HeldInteractable;
         
         public Character PlayerChar { set; get; }
 
         public void UpdateHeldInteractablePosition()
         {
-            if (_heldInteractable != null) _heldInteractable.UpdatePosition();
+            if (HeldInteractable != null) HeldInteractable.UpdatePosition();
         }
 
         public void Interact(bool interact)
         {
             if (!interact) return;
             
-            if (_heldInteractable != null)
+            if (HeldInteractable != null)
             {
                 if (TryInteractionUsingHeldInteractable()) return;
             }
@@ -48,9 +48,9 @@ namespace Character
             while (nextInteractionFocus != null)
             {
                 Interactable.Interactable interactable = nextInteractionFocus.GetComponent<Interactable.Interactable>();
-                if (interactable.UsedWith(_heldInteractable))
+                if (interactable.UsedWith(HeldInteractable))
                 {
-                    interactable.Interact(PlayerChar, _heldInteractable);
+                    interactable.Interact(PlayerChar, HeldInteractable);
                     return true;
                 }
                 
@@ -58,8 +58,8 @@ namespace Character
             }
             
             // no interactable in range to use with held item, release
-            _heldInteractable.Release();
-            _heldInteractable = null;
+            HeldInteractable.Release();
+            HeldInteractable = null;
             return true;
         }
 
