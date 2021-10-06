@@ -17,6 +17,11 @@ namespace Interactable
             _rigidbody = gameObject.GetComponent<Rigidbody>();
         }
 
+        protected bool Held()
+        {
+            return _heldBy != null;
+        }
+
         public void Grab(GameObject obj)
         {
             _heldBy = obj;

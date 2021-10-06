@@ -10,12 +10,21 @@
 
         public override bool UsedWith(Interactable other)
         {
-            throw new System.NotImplementedException();
+            return true;
         }
 
         public override bool Interact(Character.Character interacter)
         {
-            throw new System.NotImplementedException();
+            if (Held())
+            {
+                Release();
+            }
+            else
+            {
+                Grab(interacter.gameObject);
+            }
+
+            return true;
         }
     }
 }
