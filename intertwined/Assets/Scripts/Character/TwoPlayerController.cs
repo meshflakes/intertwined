@@ -1,16 +1,15 @@
 ﻿using InputSystem;
-using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace DefaultNamespace
+namespace Character
 {
     [RequireComponent(typeof(PlayerInput))]
     public class TwoPlayerController : MonoBehaviour
     {
         // player objects
-        [SerializeField] private Character boy;
-        [SerializeField] private Character dog;
+        private Character _boy;
+        private Character _dog;
 
         // general objects
         private GameObject _mainCamera;
@@ -29,6 +28,8 @@ namespace DefaultNamespace
         private void Start()
         {
             _input = GetComponent<GameInputs>();
+            _boy = GameObject.FindGameObjectWithTag("Boy").GetComponent<Character>();
+            _dog = GameObject.FindGameObjectWithTag("Dog").GetComponent<Character>();
         }
 
         private void Update()
@@ -39,14 +40,14 @@ namespace DefaultNamespace
 
         private void Move()
         {
-            boy.Move(_input.boyMove, _mainCamera);
-            dog.Move(_input.dogMove, _mainCamera);
+            _boy.Move(_input.boyMove, _mainCamera);
+            _dog.Move(_input.dogMove, _mainCamera);
         }
 
         private void Interact()
         {
-            boy.Interact(_input.boyInteract);
-            dog.Interact((_input.dogInteract));
+            _boy.Interact(_input.boyInteract);
+            _dog.Interact((_input.dogInteract));
         }
     }
 }

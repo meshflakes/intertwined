@@ -1,8 +1,9 @@
-using System;
-using DefaultNamespace;
 using UnityEngine;
 
-public abstract class Interactable : MonoBehaviour
+namespace Interactable
 {
-    public abstract void Interact(Character interacter);
+    public abstract class Interactable : MonoBehaviour
+    {
+        public abstract void Interact(Character.Character interacter);
+    }
 }

@@ -1,7 +1,6 @@
-using DefaultNamespace;
 using UnityEngine;
 
-public class DoorInteraction : Interactable
+public class DoorInteraction : Interactable.Interactable
 {
     private bool _opened = false;
     private Transform _transform;
@@ -43,7 +42,7 @@ public class DoorInteraction : Interactable
         //     rotation.w);
     }
 
-    public override void Interact(Character interacter)
+    public override void Interact(Character.Character interacter)
     {
         if (!_opened)
         {

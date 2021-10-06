@@ -5,29 +5,196 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="375234c1-0e09-4b62-84ca-c3d819f15b05" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Characters.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Character.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Character.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Character.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Character/TwoPlayerController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ledge.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Dry ground.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Dry ground/Dry ground pattern.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Dry ground/Dry ground pattern.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Dry ground/diffuse.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Dry ground/diffuse.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Dry ground/normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Dry ground/normal.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Dry ground/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Dry ground/preview.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; dead leafs 01.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; dead leafs 01/Grass &amp; dead leafs pattern 01.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; dead leafs 01/Grass &amp; dead leafs pattern 01.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; dead leafs 01/diffuse.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; dead leafs 01/diffuse.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; dead leafs 01/normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; dead leafs 01/normal.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; dead leafs 01/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; dead leafs 01/preview.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; dead leafs 02.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; dead leafs 02/Grass &amp; dead leafs pattern 02.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; dead leafs 02/Grass &amp; dead leafs pattern 02.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; dead leafs 02/diffuse.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; dead leafs 02/diffuse.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; dead leafs 02/normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; dead leafs 02/normal.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; dead leafs 02/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; dead leafs 02/preview.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; rocks.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; rocks/Grass &amp; rocks pattern.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; rocks/Grass &amp; rocks pattern.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; rocks/diffuse.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; rocks/diffuse.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; rocks/normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; rocks/normal.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; rocks/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass &amp; rocks/preview.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 01.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 01/Grass pattern 01.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 01/Grass pattern 01.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 01/diffuse.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 01/diffuse.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 01/normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 01/normal.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 01/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 01/preview.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 02.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 02/Grass pattern 02.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 02/Grass pattern 02.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 02/diffuse.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 02/diffuse.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 02/normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 02/normal.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 02/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 02/preview.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 03.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 03/Grass pattern 03.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 03/Grass pattern 03.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 03/diffuse.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 03/diffuse.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 03/normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 03/normal.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 03/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 03/preview.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 04.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 04/Grass pattern 04.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 04/Grass pattern 04.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 04/diffuse.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 04/diffuse.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 04/normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 04/normal.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 04/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 04/preview.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 05.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 05/Grass pattern 05.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 05/Grass pattern 05.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 05/diffuse.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 05/diffuse.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 05/normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 05/normal.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 05/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 05/preview.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 06.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 06/Grass pattern 06.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 06/Grass pattern 06.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 06/diffuse.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 06/diffuse.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 06/normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 06/normal.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 06/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Grass 06/preview.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; moss.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; moss/Ground &amp; moss pattern.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; moss/Ground &amp; moss pattern.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; moss/diffuse.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; moss/diffuse.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; moss/normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; moss/normal.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; moss/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; moss/preview.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 01.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 01/Ground &amp; rocks pattern 01.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 01/Ground &amp; rocks pattern 01.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 01/diffuse.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 01/diffuse.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 01/normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 01/normal.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 01/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 01/preview.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 02.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 02/Ground &amp; rocks pattern 02.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 02/Ground &amp; rocks pattern 02.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 02/diffuse.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 02/diffuse.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 02/normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 02/normal.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 02/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 02/preview.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 03.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 03/Ground &amp; rocks pattern 03.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 03/Ground &amp; rocks pattern 03.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 03/diffuse.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 03/diffuse.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 03/normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 03/normal.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 03/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; rocks 03/preview.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; weeds.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; weeds/Ground &amp; weeds.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; weeds/Ground &amp; weeds.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; weeds/diffuse.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; weeds/diffuse.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; weeds/normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; weeds/normal.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; weeds/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground &amp; weeds/preview.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground 01.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground 01/Ground pattern 01.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground 01/Ground pattern 01.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground 01/diffuse.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground 01/diffuse.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground 01/normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground 01/normal.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground 01/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground 01/preview.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground 02.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground 02/Ground pattern 02.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground 02/Ground pattern 02.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground 02/diffuse.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground 02/diffuse.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground 02/normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground 02/normal.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground 02/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Ground 02/preview.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Lava.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Lava/Lava pattern.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Lava/Lava pattern.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Lava/diffuse.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Lava/diffuse.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Lava/emissive.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Lava/emissive.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Lava/normal.tga" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Lava/normal.tga.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Lava/preview.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Ground textures pack/Lava/preview.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/TechDemo.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/TechDemo.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.intertwined/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.intertwined/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem/Game.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem/Game.inputactions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/InputSystem/GameInputs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/InputSystem/GameInputs.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BoyCharacter.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/BoyCharacter.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DogCharacter.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DogCharacter.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ControllerScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ControllerScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BasicEnviroScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/BasicEnviroScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ControllerScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ControllerScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FirstLevel.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/FirstLevel.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ParkLevel [Anxiety].unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ParkLevel [Anxiety].unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/ParkLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ParkLevel.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DoorInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DoorInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ledge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ledge.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TwoPlayerController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TwoPlayerController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/TwoPlayerController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Character.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Character.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/TwoPlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/TwoPlayerController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/ClickInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/ClickInteractable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/DoorInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/DoorInteraction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/HoldInteractable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/HoldInteractable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Interactable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Interactable.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Interactable/Ledge.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/Ledge.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,11 +213,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DoorInteraction.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnxietyBar.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DrawTether.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EndGame.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Interactable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1ydYnN28UDUVFK3EggTwAuI8lHZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">

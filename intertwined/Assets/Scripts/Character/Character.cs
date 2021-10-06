@@ -1,8 +1,6 @@
-﻿using System;
-using InputSystem;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace DefaultNamespace
+namespace Character
 {
     public class Character : MonoBehaviour
     {
@@ -32,7 +30,7 @@ namespace DefaultNamespace
         [Tooltip("What layers the character uses as ground")]
         public LayerMask groundLayers;
 
-        [HideInInspector] public Interactable interactable = null;
+        [HideInInspector] public Interactable.Interactable interactable = null;
 
         // player
         private float _speed;
