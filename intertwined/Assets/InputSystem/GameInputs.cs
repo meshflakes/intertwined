@@ -20,7 +20,8 @@ namespace InputSystem
 
         public void OnBoyInteract(InputValue value)
         {
-            BoyInteractInput(value.isPressed);
+            // BoyInteractInput(value.isPressed);
+            BoyInteractInput(Input.GetKeyDown("f"));
         }
 
         private void BoyMoveInput(Vector2 newMoveDirection)

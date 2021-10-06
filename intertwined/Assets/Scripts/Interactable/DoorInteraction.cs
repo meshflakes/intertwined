@@ -1,3 +1,4 @@
+using Interactable;
 using UnityEngine;
 
 public class DoorInteraction : Interactable.Interactable
@@ -42,8 +43,10 @@ public class DoorInteraction : Interactable.Interactable
         //     rotation.w);
     }
 
-    public override void Interact(Character.Character interacter)
+    public override bool Interact(Character.Character interacter)
     {
+        if (!Unlocked) return false;
+        
         if (!_opened)
         {
             Debug.Log("opening");
@@ -56,5 +59,25 @@ public class DoorInteraction : Interactable.Interactable
             _opened = false;
             _transform.RotateAround(_pivotPosition, Vector3.down, Rotation);
         }
+
+        return true;
+    }
+    
+    public override bool Interact(Character.Character interacter, Interactable.Interactable interactable)
+    {
+        if (KeyId == 0) return Interact(interacter);
+
+        if (typeof(KeyType).IsInstanceOfType(interactable)) return false;
+
+        if (!((KeyType) interactable).CanUnlock(KeyId)) return false;
+
+        Unlocked = true;
+        return Interact(interacter);
+    }
+
+
+    public override bool UsedWith(Interactable.Interactable other)
+    {
+        return false;
     }
 }

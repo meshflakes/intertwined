@@ -53,7 +53,7 @@ namespace Character
                 AnxietyCalc.LowerAnxiety();
             }
             _boy.Interact(_input.boyInteract);
-            _dog.Interact((_input.dogInteract));
+            _dog.Interact(_input.dogInteract);
         }
     }
 }

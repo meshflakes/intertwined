@@ -1,0 +1,37 @@
+﻿using System;
+using UnityEngine;
+
+namespace Interactable
+{
+    public abstract class GrabbableInteractable : Interactable
+    {
+        private GameObject _heldBy = null;
+        private Rigidbody _rigidbody;
+
+        private Vector3 _holdingOffset = Vector3.forward;
+        
+        // TODO: may need to add holding positions / animations
+        
+        private void Start()
+        {
+            _rigidbody = gameObject.GetComponent<Rigidbody>();
+        }
+
+        public void Grab(GameObject obj)
+        {
+            _heldBy = obj;
+            _rigidbody.freezeRotation = true;
+            _rigidbody.position = _heldBy.GetComponent<Transform>().position + _holdingOffset;
+        }
+
+        public void Release()
+        {
+            _rigidbody.freezeRotation = false;
+        }
+
+        public void UpdatePosition()
+        {
+            _rigidbody.MovePosition(_heldBy.GetComponent<Transform>().position + _holdingOffset);
+        }
+    }
+}

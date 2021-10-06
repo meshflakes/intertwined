@@ -199,13 +199,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 218399399}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -40, y: 10, z: 153.07}
+  m_LocalRotation: {x: 0.13957192, y: -0.17049097, z: 0.024402928, w: 0.975119}
+  m_LocalPosition: {x: -38.14, y: 10.94, z: 153.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 16.291, y: -19.835, z: 0}
 --- !u!1 &541737487
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,6 +243,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 728477462963579615, guid: e73db07c09b3b1a4393fb6d73353955d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7138741487850349328, guid: e73db07c09b3b1a4393fb6d73353955d, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -293,23 +297,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e73db07c09b3b1a4393fb6d73353955d, type: 3}
---- !u!1 &1542883101 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7519383155138738602, guid: e73db07c09b3b1a4393fb6d73353955d, type: 3}
-  m_PrefabInstance: {fileID: 1542883100}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1542883102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542883101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97c04997b2596994aa06e8d8d127c601, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1750257058
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,8 +328,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 30.456366}
-  m_Center: {x: 0, y: 0, z: -14.728181}
+  m_Size: {x: 6.639401, y: 1, z: 98.07435}
+  m_Center: {x: 0.14814481, y: 0, z: -3.1406536}
 --- !u!23 &1750257060
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -419,6 +406,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d3122715565a7c499bb7a767580f6b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DogCanInteract: 0
+  BoyCanInteract: 0
   Rotation: 90
   DegreesRotatedPerSecond: 20
   Unlocked: 1

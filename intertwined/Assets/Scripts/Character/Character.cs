@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using Interactable;
+using UnityEngine;
 
 namespace Character
 {
@@ -30,7 +32,7 @@ namespace Character
         [Tooltip("What layers the character uses as ground")]
         public LayerMask groundLayers;
 
-        [HideInInspector] public Interactable.Interactable interactable = null;
+        public Interactor CharInteractor;
 
         // player
         private float _speed;
@@ -53,7 +55,6 @@ namespace Character
         private CharacterController _controller;
 
         private bool _hasAnimator;
-
         private void Start()
         {
             _hasAnimator = TryGetComponent(out _animator);
@@ -62,6 +63,9 @@ namespace Character
             AssignAnimationIDs();
 
             _fallTimeoutDelta = fallTimeout;
+
+            CharInteractor = new Interactor();
+            CharInteractor.PlayerChar = this;
         }
 
         private void Update()
@@ -70,6 +74,8 @@ namespace Character
 
             Gravity();
             GroundedCheck();
+            
+            CharInteractor.UpdateHeldInteractablePosition();
         }
 
         private void AssignAnimationIDs()
@@ -209,11 +215,7 @@ namespace Character
 
         public void Interact(bool interact)
         {
-            if (interactable == null) return;
-            if (interact)
-            {
-                interactable.Interact(this);
-            }
+            CharInteractor.Interact(interact);
         }
 
         private void OnDrawGizmosSelected()

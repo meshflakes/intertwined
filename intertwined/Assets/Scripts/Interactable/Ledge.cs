@@ -7,25 +7,15 @@ namespace Interactable
         [Tooltip("The position where the boy will end after the climb")]
         public Vector3 finalPos;
 
-        private void OnTriggerEnter(Collider other)
-        {
-            if (!other.gameObject.CompareTag("Boy")) return;
-        
-            var character = other.gameObject.GetComponent<Character.Character>();
-            character.interactable = this;
-        }
-    
-        private void OnTriggerExit(Collider other)
-        {
-            if (!other.gameObject.CompareTag("Boy")) return;
-        
-            var character = other.gameObject.GetComponent<Character.Character>();
-            character.interactable = null;
-        }
-
-        public override void Interact(Character.Character interacter)
+        public override bool Interact(Character.Character interacter)
         {
             interacter.transform.position = finalPos;
+            return true;
+        }
+
+        public override bool UsedWith(Interactable other)
+        {
+            return false;
         }
 
         private void OnDrawGizmosSelected()
