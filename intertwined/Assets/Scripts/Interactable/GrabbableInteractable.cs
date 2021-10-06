@@ -5,10 +5,10 @@ namespace Interactable
 {
     public abstract class GrabbableInteractable : Interactable
     {
-        private GameObject _heldBy = null;
+        private GameObject _heldBy;
         private Rigidbody _rigidbody;
 
-        private Vector3 _holdingOffset = Vector3.forward;
+        private Vector3 _holdingOffset = new Vector3(3, 3, 0);
         
         // TODO: may need to add holding positions / animations
         
@@ -28,6 +28,7 @@ namespace Interactable
             obj.GetComponent<Character.Character>().CharInteractor.HeldInteractable = this;
             _rigidbody.freezeRotation = true;
             _rigidbody.position = _heldBy.GetComponent<Transform>().position + _holdingOffset;
+            _rigidbody.useGravity = false;
         }
 
         public void Release()
@@ -35,6 +36,7 @@ namespace Interactable
             _heldBy.GetComponent<Character.Character>().CharInteractor.HeldInteractable = null;
             _heldBy = null;
             _rigidbody.freezeRotation = false;
+            _rigidbody.useGravity = true;
         }
 
         public void UpdatePosition()

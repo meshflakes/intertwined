@@ -47,13 +47,17 @@ namespace Character
             GameObject nextInteractionFocus = GetIthInteractionFocus(i);
             while (nextInteractionFocus != null)
             {
-                Interactable.Interactable interactable = nextInteractionFocus.GetComponent<Interactable.Interactable>();
-                if (interactable.UsedWith(HeldInteractable))
-                {
-                    interactable.Interact(PlayerChar, HeldInteractable);
-                    return true;
-                }
+                Interactable.Interactable interactable =
+                    nextInteractionFocus.GetComponent<Interactable.Interactable>();
                 
+                // skip if target interactable is itself
+                if (interactable != HeldInteractable) {
+                    if (interactable.UsedWith(HeldInteractable))
+                    {
+                        interactable.Interact(PlayerChar, HeldInteractable);
+                        return true;
+                    }
+                }
                 nextInteractionFocus = GetIthInteractionFocus(++i);
             }
             
