@@ -212,10 +212,18 @@ namespace Character
                 _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
             }
         }
+        
+        private float _timeBetweenInteractions = 0.3333f;
+        private float _nextInteractionTime = 0f;
 
         public void Interact(bool interact)
         {
-            CharInteractor.Interact(interact);
+            if (Time.time > _nextInteractionTime)
+            {
+                CharInteractor.Interact(interact);
+                _nextInteractionTime = Time.time + _timeBetweenInteractions;
+            }
+                
         }
 
         private void OnDrawGizmosSelected()

@@ -8,7 +8,7 @@ namespace Interactable
         private GameObject _heldBy;
         private Rigidbody _rigidbody;
 
-        private Vector3 _holdingOffset = new Vector3(3, 3, 0);
+        private Vector3 _holdingOffset = new Vector3(1, 1, 0);
         
         // TODO: may need to add holding positions / animations
         
