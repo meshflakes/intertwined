@@ -12,10 +12,9 @@ public class AnxietyCalc : MonoBehaviour
     private static double MAX_DISTANCE = 6.0;
     //Want the anxiety calculations to occur every 250 update calls
     private int frames = 0;
-    private static int UPDATE_TIME = 3;
-    private static int PANIC_UPDATE_TIME = 1;
-    private int updateInterval = UPDATE_TIME;
-    private int nextUpdate = 0;
+    private static int UPDATE_FRAMES = 140;
+    private static int PANIC_UPDATE_FRAMES = 70;
+    private int frameUpdate = UPDATE_FRAMES;
 
     //Indicates whether the players are too far apart and making them more anxious
     private bool more_anxious = false;
