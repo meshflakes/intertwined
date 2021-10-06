@@ -220,7 +220,9 @@ namespace Character
         {
             if (Time.time > _nextInteractionTime)
             {
-                CharInteractor.Interact(interact);
+                // CharInteractor.Interact(interact);
+                // TODO: switch back to regular interaction
+                CharInteractor.Interact(Input.GetKeyDown("f"));
                 _nextInteractionTime = Time.time + _timeBetweenInteractions;
             }
                 
