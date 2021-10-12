@@ -80,7 +80,6 @@ public class AnxietyCalc : MonoBehaviour
             more_anxious = false;
         }
         
-        Debug.Log(anxiety);
         UpdateMusic();
         
         
@@ -120,7 +119,7 @@ public class AnxietyCalc : MonoBehaviour
     }
     
     //Lower anxiety when pet
-    void LowerAnxiety()
+    public void LowerAnxiety()
     {
         if (anxiety >= LOWER_BOUND)
         {
@@ -131,5 +130,11 @@ public class AnxietyCalc : MonoBehaviour
             frames = -frameUpdate;
         }
         
+    }
+
+    public double GetDistance()
+    {
+        Debug.Log(distance);
+        return distance;
     }
 }

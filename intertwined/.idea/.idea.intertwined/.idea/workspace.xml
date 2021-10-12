@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="375234c1-0e09-4b62-84ca-c3d819f15b05" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/TechDemo [mich].unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/TechDemo [mich].unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/dogInteractable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Interactable/dogInteractable.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.intertwined/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.intertwined/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TechDemo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TechDemo.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Anxiety/AnxietyCalc.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Anxiety/AnxietyCalc.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +29,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Interactable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/DogInteractable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Anxiety/AnxietyBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Interactable/Interactable.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1ydYnN28UDUVFK3EggTwAuI8lHZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -85,6 +89,8 @@
       <workItem from="1632583115000" duration="1206000" />
       <workItem from="1632694123390" duration="2124000" />
       <workItem from="1632764503728" duration="4933000" />
+      <workItem from="1634063961771" duration="4756000" />
+      <workItem from="1634070294781" duration="612000" />
     </task>
     <servers />
   </component>
