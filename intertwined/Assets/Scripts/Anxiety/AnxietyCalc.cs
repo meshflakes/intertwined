@@ -40,6 +40,8 @@ public class AnxietyCalc : MonoBehaviour
     private static int ANXIETY_LEVEL_THREE = 60;
     private static int ANXIETY_LEVEL_FOUR = 80;
     private static int ANXIETY_LEVEL_FIVE = 100;
+
+    private static double LIMIT_DIST = 2.0;
     
     // Start is called before the first frame update
     void Start()
@@ -121,7 +123,8 @@ public class AnxietyCalc : MonoBehaviour
     //Lower anxiety when pet
     public void LowerAnxiety()
     {
-        if (anxiety >= LOWER_BOUND)
+        Debug.Log("hey");
+        if (anxiety >= LOWER_BOUND && distance < LIMIT_DIST)
         {
             anxiety = LOWER_BOUND;
             UpdateMusic();
