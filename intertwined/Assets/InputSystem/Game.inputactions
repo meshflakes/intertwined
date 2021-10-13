@@ -75,7 +75,7 @@
                 {
                     "name": "",
                     "id": "ca9853cd-ca56-4ae7-88f0-c4d9f9990d5a",
-                    "path": "<Keyboard>/e",
+                    "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",

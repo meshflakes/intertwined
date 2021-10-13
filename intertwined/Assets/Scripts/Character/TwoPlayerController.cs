@@ -15,6 +15,8 @@ namespace Character
         private GameObject _mainCamera;
         private GameInputs _input;
 
+        public AnxietyCalc AnxietyCalc;
+
 
         private void Awake()
         {
@@ -46,6 +48,10 @@ namespace Character
 
         private void Interact()
         {
+            if (_input.boyInteract && _input.dogInteract)
+            {
+                AnxietyCalc.LowerAnxiety();
+            }
             _boy.Interact(_input.boyInteract);
             _dog.Interact((_input.dogInteract));
         }
