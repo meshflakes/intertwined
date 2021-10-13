@@ -123,14 +123,13 @@ public class AnxietyCalc : MonoBehaviour
     //Lower anxiety when pet
     public void LowerAnxiety()
     {
-        Debug.Log("hey");
         if (anxiety >= LOWER_BOUND && distance < LIMIT_DIST)
         {
+            AnxietyBar.SetAnxiety(LOWER_BOUND);
+            tempAnxietyText.text = "Anx:" + anxiety + "  More anxious:" + more_anxious;
             anxiety = LOWER_BOUND;
             UpdateMusic();
-            AnxietyBar.SetAnxiety(anxiety);
-            //Giving an extra 2 seconds before updating happens again
-            nextUpdate = nextUpdate + 2; 
+            
         }
         
     }
