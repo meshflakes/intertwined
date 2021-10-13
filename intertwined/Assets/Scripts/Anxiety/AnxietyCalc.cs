@@ -12,9 +12,10 @@ public class AnxietyCalc : MonoBehaviour
     private static double MAX_DISTANCE = 6.0;
     //Want the anxiety calculations to occur every 250 update calls
     private int frames = 0;
-    private static int UPDATE_FRAMES = 140;
-    private static int PANIC_UPDATE_FRAMES = 70;
-    private int frameUpdate = UPDATE_FRAMES;
+    private static int UPDATE_TIME = 3;
+    private static int PANIC_UPDATE_TIME = 1;
+    private int updateInterval = UPDATE_TIME;
+    private int nextUpdate = 0;
 
     //Indicates whether the players are too far apart and making them more anxious
     private bool more_anxious = false;
@@ -128,7 +129,9 @@ public class AnxietyCalc : MonoBehaviour
             tempAnxietyText.text = "Anx:" + anxiety + "  More anxious:" + more_anxious;
             anxiety = LOWER_BOUND;
             UpdateMusic();
-            
+            AnxietyBar.SetAnxiety(anxiety);
+            //Giving an extra 2 seconds before updating happens again
+            nextUpdate = nextUpdate + 2; 
         }
         
     }
