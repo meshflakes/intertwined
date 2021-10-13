@@ -12,9 +12,10 @@ public class AnxietyCalc : MonoBehaviour
     private static double MAX_DISTANCE = 6.0;
     //Want the anxiety calculations to occur every 250 update calls
     private int frames = 0;
-    private static int UPDATE_FRAMES = 140;
-    private static int PANIC_UPDATE_FRAMES = 70;
-    private int frameUpdate = UPDATE_FRAMES;
+    private static int UPDATE_TIME = 3;
+    private static int PANIC_UPDATE_TIME = 1;
+    private int updateInterval = UPDATE_TIME;
+    private int nextUpdate = 0;
 
     //Indicates whether the players are too far apart and making them more anxious
     private bool more_anxious = false;
@@ -40,6 +41,8 @@ public class AnxietyCalc : MonoBehaviour
     private static int ANXIETY_LEVEL_THREE = 60;
     private static int ANXIETY_LEVEL_FOUR = 80;
     private static int ANXIETY_LEVEL_FIVE = 100;
+
+    private static double LIMIT_DIST = 2.0;
     
     // Start is called before the first frame update
     void Start()
@@ -55,12 +58,11 @@ public class AnxietyCalc : MonoBehaviour
     void Update()
     {
         distance  = Vector3.Distance(p1.position, p2.position);
-        if (frames >= frameUpdate)
+        if (Time.time >= nextUpdate)
         {
+            nextUpdate = Mathf.FloorToInt(Time.time) + updateInterval;
             UpdateAnxiety();
-            frames = 0;
         }
-        frames++;
 
     }
 
@@ -71,16 +73,15 @@ public class AnxietyCalc : MonoBehaviour
         if(anxiety+1 <=MAX_ANXIETY) anxiety++;
         if (distance >= MAX_DISTANCE)
         {
-            frameUpdate = PANIC_UPDATE_FRAMES;
+            updateInterval = PANIC_UPDATE_TIME;
             more_anxious = true;
         }
         else
         {
-            frameUpdate = UPDATE_FRAMES;
+            updateInterval = UPDATE_TIME;
             more_anxious = false;
         }
         
-        Debug.Log(anxiety);
         UpdateMusic();
         
         
@@ -120,16 +121,22 @@ public class AnxietyCalc : MonoBehaviour
     }
     
     //Lower anxiety when pet
-    void LowerAnxiety()
+    public void LowerAnxiety()
     {
-        if (anxiety >= LOWER_BOUND)
+        if (anxiety >= LOWER_BOUND && distance < LIMIT_DIST)
         {
+            AnxietyBar.SetAnxiety(LOWER_BOUND);
+            tempAnxietyText.text = "Anx:" + anxiety + "  More anxious:" + more_anxious;
             anxiety = LOWER_BOUND;
             UpdateMusic();
-            AnxietyBar.SetAnxiety(anxiety);
-            //Want the frames before the anxiety update to be two cycles
-            frames = -frameUpdate;
+            
         }
         
+    }
+
+    public double GetDistance()
+    {
+        Debug.Log(distance);
+        return distance;
     }
 }
