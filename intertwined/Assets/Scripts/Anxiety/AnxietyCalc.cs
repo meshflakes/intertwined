@@ -129,9 +129,7 @@ public class AnxietyCalc : MonoBehaviour
             tempAnxietyText.text = "Anx:" + anxiety + "  More anxious:" + more_anxious;
             anxiety = LOWER_BOUND;
             UpdateMusic();
-            AnxietyBar.SetAnxiety(anxiety);
-            //Giving an extra 2 seconds before updating happens again
-            nextUpdate = nextUpdate + 2; 
+            
         }
         
     }
