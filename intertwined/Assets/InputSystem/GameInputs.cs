@@ -21,7 +21,6 @@ namespace InputSystem
         public void OnBoyInteract(InputValue value)
         {
             BoyInteractInput(value.isPressed);
-            // BoyInteractInput(Input.GetKeyDown("f"));
         }
 
         private void BoyMoveInput(Vector2 newMoveDirection)
@@ -31,7 +30,7 @@ namespace InputSystem
 
         private void BoyInteractInput(bool newInteractState)
         {
-            boyInteract = newInteractState;
+            boyInteract = !boyInteract;
         }
         
         public void OnDogMove(InputValue value)
@@ -51,7 +50,7 @@ namespace InputSystem
 
         private void DogInteractInput(bool newInteractState)
         {
-            dogInteract = newInteractState;
+            dogInteract = !dogInteract;
         }
     }
 }

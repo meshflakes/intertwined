@@ -67,9 +67,22 @@ namespace Character
             CharInteractor = new Interactor();
             CharInteractor.PlayerChar = this;
         }
+        
+        // TODO: hopefully figure out a good way to handle this
+
+        private bool _toggle = true;
+        private const float DeltaStep = 0.16f;
+        private const float StepHeight = 0.1f;
+        private void ToggleStepThing()
+        {
+            _controller.stepOffset = StepHeight + (_toggle ? DeltaStep : 0);
+            _toggle = !_toggle;
+        }
 
         private void Update()
         {
+            ToggleStepThing();
+            
             _hasAnimator = TryGetComponent(out _animator);
 
             Gravity();
@@ -218,13 +231,13 @@ namespace Character
 
         public void Interact(bool interact)
         {
-            if (Time.time > _nextInteractionTime)
-            {
-                // CharInteractor.Interact(interact);
-                // TODO: switch back to regular interaction
-                CharInteractor.Interact(Input.GetKeyDown("f"));
-                _nextInteractionTime = Time.time + _timeBetweenInteractions;
-            }
+            CharInteractor.Interact(interact);
+            // if (Time.time > _nextInteractionTime)
+            // {
+            //     // TODO: switch back to regular interaction
+            //     // CharInteractor.Interact(Input.GetKeyDown("f"));
+            //     _nextInteractionTime = Time.time + _timeBetweenInteractions;
+            // }
                 
         }
 
