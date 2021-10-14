@@ -65,11 +65,15 @@ public class DoorInteraction : Interactable.Interactable
     
     public override bool Interact(Character.Character interacter, Interactable.Interactable interactable)
     {
+        Debug.Log("Interacting with Door");
         if (KeyId == 0) return Interact(interacter);
 
-        if (typeof(KeyType).IsInstanceOfType(interactable)) return false;
-
+        // TODO: figure out how to check
+        // if (typeof(KeyType).IsInstanceOfType(interactable)) return false;
+        
+        Debug.Log("is key type");
         if (!((KeyType) interactable).CanUnlock(KeyId)) return false;
+        Debug.Log("can unlock");
 
         Unlocked = true;
         return Interact(interacter);
@@ -78,6 +82,6 @@ public class DoorInteraction : Interactable.Interactable
 
     public override bool UsedWith(Interactable.Interactable other)
     {
-        return false;
+        return true;
     }
 }

@@ -226,18 +226,18 @@ namespace Character
             }
         }
         
-        private float _timeBetweenInteractions = 0.3333f;
+        private float _timeBetweenInteractions = 0.2f;
         private float _nextInteractionTime = 0f;
 
         public void Interact(bool interact)
         {
-            CharInteractor.Interact(interact);
-            // if (Time.time > _nextInteractionTime)
-            // {
-            //     // TODO: switch back to regular interaction
-            //     // CharInteractor.Interact(Input.GetKeyDown("f"));
-            //     _nextInteractionTime = Time.time + _timeBetweenInteractions;
-            // }
+            if (Time.time > _nextInteractionTime)
+            {
+                CharInteractor.Interact(interact);
+                // TODO: switch back to regular interaction
+                // CharInteractor.Interact(Input.GetKeyDown("f"));
+                _nextInteractionTime = Time.time + _timeBetweenInteractions;
+            }
                 
         }
 

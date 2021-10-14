@@ -33,6 +33,7 @@ namespace Interactable
             {
                 other.gameObject.GetComponent<Character.Character>()
                     .CharInteractor.AddToInteractablesList(gameObject);
+                Debug.Log("adding to list");
             }
         }
     
@@ -43,6 +44,7 @@ namespace Interactable
             {
                 other.gameObject.GetComponent<Character.Character>()
                     .CharInteractor.RemoveFromInteractablesList(gameObject);
+                Debug.Log("removing from list");
             }
         }
 

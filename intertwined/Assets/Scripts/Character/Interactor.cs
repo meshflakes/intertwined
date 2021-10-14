@@ -19,10 +19,13 @@ namespace Character
         public void Interact(bool interact)
         {
             if (!interact) return;
+            Debug.Log("Interact Pressed");
             
             if (HeldInteractable != null)
             {
+                Debug.Log("Trying to use held interactable");
                 if (TryInteractionUsingHeldInteractable()) return;
+                Debug.Log("Failed to use held interactable");
             }
 
             // Try to interact with any of the other 
@@ -32,6 +35,7 @@ namespace Character
             {
                 if (nextInteractionFocus.GetComponent<Interactable.Interactable>().Interact(PlayerChar))
                 {
+                    Debug.Log("Interacting!!!");
                     return;
                 }
                 

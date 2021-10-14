@@ -14,8 +14,11 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Temp Scenes/FirstLevel.unity
     guid: 8e17d80c9d7a55f429cca210bf15e307
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/TechDemo.unity
     guid: d2a21eda9065345479ea8174b6ebc4d5
+  - enabled: 1
+    path: Assets/Scenes/TechDemo [mich].unity
+    guid: 7d1a2af858e2a364798b0702c7f484e1
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: b145fc2c8a43c804db0ebe387269aaa6, type: 2}
