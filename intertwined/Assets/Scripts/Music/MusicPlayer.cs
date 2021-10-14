@@ -9,7 +9,6 @@ public class MusicPlayer : MonoBehaviour
     public AudioSource ASL3;
     public AudioSource ASL4;
     public AudioSource ASL5;
-    public AudioSource ASL6;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +18,6 @@ public class MusicPlayer : MonoBehaviour
         ASL3.Play();
         ASL4.Play();
         ASL5.Play();
-        ASL6.Play();
         ASL1.volume = 1;
     }
     
@@ -29,7 +27,6 @@ public class MusicPlayer : MonoBehaviour
         ASL3.volume = 0;
         ASL4.volume = 0;
         ASL5.volume = 0;
-        ASL6.volume = 0;
     }
 
     public void playLevelTwo()
@@ -38,7 +35,6 @@ public class MusicPlayer : MonoBehaviour
         ASL3.volume = 1;
         ASL4.volume = 0;
         ASL5.volume = 0;
-        ASL6.volume = 0;
     }
 
     public void playLevelThree()
@@ -47,7 +43,6 @@ public class MusicPlayer : MonoBehaviour
         ASL3.volume = 1;
         ASL4.volume = 1;
         ASL5.volume = 0;
-        ASL6.volume = 0;
     }
 
     public void playLevelFour()
@@ -56,15 +51,6 @@ public class MusicPlayer : MonoBehaviour
         ASL3.volume = 1;
         ASL4.volume = 1;
         ASL5.volume = 1;
-        ASL6.volume = 0;
     }
-
-    public void playLevelFive()
-    {
-        ASL2.volume = 1;
-        ASL3.volume = 1;
-        ASL4.volume = 1;
-        ASL5.volume = 1;
-        ASL6.volume = 0.6f;
-    }
+    
 }
