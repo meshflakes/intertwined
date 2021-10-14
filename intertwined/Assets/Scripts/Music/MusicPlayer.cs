@@ -10,6 +10,8 @@ public class MusicPlayer : MonoBehaviour
     public AudioSource ASL4;
     public AudioSource ASL5;
 
+    private static float TRANSITION_DURATION = 2.0f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,34 +25,51 @@ public class MusicPlayer : MonoBehaviour
     
     public void playLevelOne()
     {
-        ASL2.volume = 1;
-        ASL3.volume = 0;
-        ASL4.volume = 0;
-        ASL5.volume = 0;
+        StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, 1));
+        StartCoroutine(AudioTransition(ASL3, TRANSITION_DURATION, 0));
+        StartCoroutine(AudioTransition(ASL4, TRANSITION_DURATION, 0));
+        StartCoroutine(AudioTransition(ASL5, TRANSITION_DURATION, 0));
+
     }
 
     public void playLevelTwo()
     {
-        ASL2.volume = 1;
-        ASL3.volume = 1;
-        ASL4.volume = 0;
-        ASL5.volume = 0;
+        StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, 1));
+        StartCoroutine(AudioTransition(ASL3, TRANSITION_DURATION, 1));
+        StartCoroutine(AudioTransition(ASL4, TRANSITION_DURATION, 0));
+        StartCoroutine(AudioTransition(ASL5, TRANSITION_DURATION, 0));
+
     }
 
     public void playLevelThree()
     {
-        ASL2.volume = 1;
-        ASL3.volume = 1;
-        ASL4.volume = 1;
-        ASL5.volume = 0;
+        StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, 1));
+        StartCoroutine(AudioTransition(ASL3, TRANSITION_DURATION, 1));
+        StartCoroutine(AudioTransition(ASL4, TRANSITION_DURATION, 1));
+        StartCoroutine(AudioTransition(ASL5, TRANSITION_DURATION, 0));
+
     }
 
     public void playLevelFour()
     {
-        ASL2.volume = 1;
-        ASL3.volume = 1;
-        ASL4.volume = 1;
-        ASL5.volume = 1;
+        StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, 1));
+        StartCoroutine(AudioTransition(ASL3, TRANSITION_DURATION, 1));
+        StartCoroutine(AudioTransition(ASL4, TRANSITION_DURATION, 1));
+        StartCoroutine(AudioTransition(ASL5, TRANSITION_DURATION, 1));
+
     }
     
+    private static IEnumerator AudioTransition(AudioSource audioSource, float duration, float targetVolume)
+    {
+        
+        float startVolume = audioSource.volume;
+        float currentTime = 0;
+        while (currentTime < duration)
+        {
+            currentTime += Time.deltaTime;
+            audioSource.volume = Mathf.Lerp(startVolume, targetVolume, currentTime / duration);
+            yield return null;
+        }
+        yield break;
+    }
 }
