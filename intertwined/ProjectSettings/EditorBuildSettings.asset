@@ -4,5 +4,21 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Scenes/Temp Scenes/ControllerScene.unity
+    guid: 797e6b3b1b6293147a37f94e25862936
+  - enabled: 0
+    path: Assets/Scenes/Temp Scenes/BasicEnviroScene.unity
+    guid: a41d0ead3b8f8d646a4fe1394adf653d
+  - enabled: 0
+    path: Assets/Scenes/Temp Scenes/FirstLevel.unity
+    guid: 8e17d80c9d7a55f429cca210bf15e307
+  - enabled: 0
+    path: Assets/Scenes/TechDemo.unity
+    guid: d2a21eda9065345479ea8174b6ebc4d5
+  - enabled: 1
+    path: Assets/Scenes/TechDemo [mich].unity
+    guid: 7d1a2af858e2a364798b0702c7f484e1
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: b145fc2c8a43c804db0ebe387269aaa6, type: 2}
