@@ -97,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   rotationSmoothTime: 0.12
-  speedChangeRate: 10
+  speedChangeRate: 100
   gravity: -15
   fallTimeout: 0.15
   grounded: 1
@@ -106,7 +106,6 @@ MonoBehaviour:
   groundLayers:
     serializedVersion: 2
     m_Bits: 1
-  interactable: {fileID: 0}
 --- !u!1001 &3175885597809395691
 PrefabInstance:
   m_ObjectHideFlags: 0
