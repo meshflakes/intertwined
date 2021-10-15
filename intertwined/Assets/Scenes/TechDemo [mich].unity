@@ -479,7 +479,7 @@ MonoBehaviour:
   Rotation: 90
   DegreesRotatedPerSecond: 20
   Unlocked: 0
-  KeyId: 1
+  LockId: 1
   Open: 0
   OpeningTowardsNorth: 1
 --- !u!65 &10184780
@@ -9254,7 +9254,7 @@ MonoBehaviour:
   Rotation: 90
   DegreesRotatedPerSecond: 20
   Unlocked: 0
-  KeyId: 1
+  LockId: 1
   Open: 0
   OpeningTowardsNorth: 1
 --- !u!65 &783545362
@@ -11773,7 +11773,6 @@ GameObject:
   - component: {fileID: 1039492325}
   - component: {fileID: 1039492324}
   - component: {fileID: 1039492323}
-  - component: {fileID: 1039492326}
   - component: {fileID: 1039492329}
   - component: {fileID: 1039492328}
   - component: {fileID: 1039492327}
@@ -11847,20 +11846,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!64 &1039492326
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1039492322}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -3481501719365375840, guid: 088e9aeccf1350f4e96014e534a6f4ae, type: 3}
 --- !u!54 &1039492327
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18799,6 +18784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DogCanInteract: 1
   BoyCanInteract: 1
+  unlockableLockIds: 01000000
 --- !u!65 &1631570127
 BoxCollider:
   m_ObjectHideFlags: 0
