@@ -6,21 +6,14 @@ namespace Interactable
     public class KeyInteractable : GrabbableInteractable, KeyType
     {
         [Tooltip("List of lock ids that this key can unlock")]
-        public List<int> unlockableLockIds;
+        public List<int> unlockableLockIds = new List<int>();
 
         private HashSet<int> _unlockableLockIdsSet;
 
         public new void Start()
         {
             base.Start();
-            if (unlockableLockIds != null)
-            {
-                _unlockableLockIdsSet = new HashSet<int>(unlockableLockIds);
-            }
-            else
-            {
-                _unlockableLockIdsSet = new HashSet<int>();
-            }
+            _unlockableLockIdsSet = new HashSet<int>(unlockableLockIds);
         }
 
         public bool CanUnlock(int lockId)
