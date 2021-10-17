@@ -1,5 +1,6 @@
 using Interactable;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class DoorInteraction : Interactable.Interactable
 {
@@ -21,7 +22,7 @@ public class DoorInteraction : Interactable.Interactable
     [Tooltip("Starting 'unlocked' status of the door")]
     public bool Unlocked = true;
     [Tooltip("Id of key required to open the door, 0 if no key is required")]
-    public int KeyId = 0;
+    public int LockId;
     
     [Space(10)]
     [Tooltip("Starting state of the door")]
@@ -65,20 +66,16 @@ public class DoorInteraction : Interactable.Interactable
     
     public override bool Interact(Character.Character interacter, Interactable.Interactable interactable)
     {
-        Debug.Log("Interacting with Door");
-        if (KeyId == 0) return Interact(interacter);
+        if (LockId == 0 || Unlocked) return Interact(interacter);
 
-        // TODO: figure out how to check
-        // if (typeof(KeyType).IsInstanceOfType(interactable)) return false;
-        
-        Debug.Log("is key type");
-        if (!((KeyType) interactable).CanUnlock(KeyId)) return false;
-        Debug.Log("can unlock");
-
-        Unlocked = true;
-        return Interact(interacter);
+        // check if Interactable is a key AND the key can unlock this door
+        if (interactable is KeyType key && key.CanUnlock(LockId))
+        {
+            Unlocked = true;
+            return Interact(interacter);
+        }
+        else return false;
     }
-
 
     public override bool UsedWith(Interactable.Interactable other)
     {
