@@ -5,6 +5,7 @@ namespace Interactable
 {
     public class KeyInteractable : GrabbableInteractable, KeyType
     {
+        [Header("Key")]
         [Tooltip("List of lock ids that this key can unlock")]
         public List<int> unlockableLockIds = new List<int>();
 
