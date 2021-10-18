@@ -15,7 +15,7 @@ namespace Character
         private GameObject _mainCamera;
         private GameInputs _input;
 
-        public AnxietyCalc AnxietyCalc;
+        public AnxietyCalc anxietyCalc;
 
 
         private void Awake()
@@ -42,15 +42,15 @@ namespace Character
 
         private void Move()
         {
-            _boy.Move(_input.boyMove, _mainCamera);
-            _dog.Move(_input.dogMove, _mainCamera);
+            _boy.Move(_input.boyMove, _input.analogMovement, _mainCamera);
+            _dog.Move(_input.dogMove, _input.analogMovement, _mainCamera);
         }
 
         private void Interact()
         {
             if (_input.boyInteract && _input.dogInteract)
             {
-                AnxietyCalc.LowerAnxiety();
+                anxietyCalc.LowerAnxiety();
             }
             _boy.Interact(_input.boyInteract);
             _dog.Interact(_input.dogInteract);

@@ -157,7 +157,7 @@ namespace Character
             }
         }
 
-        public void Move(Vector2 move, GameObject mainCamera)
+        public void Move(Vector2 move, bool analogMovement, GameObject mainCamera)
         {
             // set target speed based on move speed, sprint speed and if sprint is pressed
             float targetSpeed = moveSpeed;
@@ -173,7 +173,7 @@ namespace Character
             var currentHorizontalSpeed = new Vector3(velocity.x, 0.0f, velocity.z).magnitude;
 
             const float speedOffset = 0.1f;
-            var inputMagnitude = move.magnitude;
+            var inputMagnitude = analogMovement ? move.magnitude : 1f;
 
             // accelerate or decelerate to target speed
             if (currentHorizontalSpeed < targetSpeed - speedOffset ||
