@@ -9,7 +9,8 @@ public class MusicPlayer : MonoBehaviour
     public AudioSource ASL3;
     public AudioSource ASL4;
     public AudioSource ASL5;
-    public AudioSource ASL6;
+
+    private static float TRANSITION_DURATION = 2.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,52 +20,56 @@ public class MusicPlayer : MonoBehaviour
         ASL3.Play();
         ASL4.Play();
         ASL5.Play();
-        ASL6.Play();
         ASL1.volume = 1;
     }
     
     public void playLevelOne()
     {
-        ASL2.volume = 1;
-        ASL3.volume = 0;
-        ASL4.volume = 0;
-        ASL5.volume = 0;
-        ASL6.volume = 0;
+        StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, 1));
+        StartCoroutine(AudioTransition(ASL3, TRANSITION_DURATION, 0));
+        StartCoroutine(AudioTransition(ASL4, TRANSITION_DURATION, 0));
+        StartCoroutine(AudioTransition(ASL5, TRANSITION_DURATION, 0));
+
     }
 
     public void playLevelTwo()
     {
-        ASL2.volume = 1;
-        ASL3.volume = 1;
-        ASL4.volume = 0;
-        ASL5.volume = 0;
-        ASL6.volume = 0;
+        StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, 1));
+        StartCoroutine(AudioTransition(ASL3, TRANSITION_DURATION, 1));
+        StartCoroutine(AudioTransition(ASL4, TRANSITION_DURATION, 0));
+        StartCoroutine(AudioTransition(ASL5, TRANSITION_DURATION, 0));
+
     }
 
     public void playLevelThree()
     {
-        ASL2.volume = 1;
-        ASL3.volume = 1;
-        ASL4.volume = 1;
-        ASL5.volume = 0;
-        ASL6.volume = 0;
+        StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, 1));
+        StartCoroutine(AudioTransition(ASL3, TRANSITION_DURATION, 1));
+        StartCoroutine(AudioTransition(ASL4, TRANSITION_DURATION, 1));
+        StartCoroutine(AudioTransition(ASL5, TRANSITION_DURATION, 0));
+
     }
 
     public void playLevelFour()
     {
-        ASL2.volume = 1;
-        ASL3.volume = 1;
-        ASL4.volume = 1;
-        ASL5.volume = 1;
-        ASL6.volume = 0;
-    }
+        StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, 1));
+        StartCoroutine(AudioTransition(ASL3, TRANSITION_DURATION, 1));
+        StartCoroutine(AudioTransition(ASL4, TRANSITION_DURATION, 1));
+        StartCoroutine(AudioTransition(ASL5, TRANSITION_DURATION, 1));
 
-    public void playLevelFive()
+    }
+    
+    private static IEnumerator AudioTransition(AudioSource audioSource, float duration, float targetVolume)
     {
-        ASL2.volume = 1;
-        ASL3.volume = 1;
-        ASL4.volume = 1;
-        ASL5.volume = 1;
-        ASL6.volume = 0.6f;
+        
+        float startVolume = audioSource.volume;
+        float currentTime = 0;
+        while (currentTime < duration)
+        {
+            currentTime += Time.deltaTime;
+            audioSource.volume = Mathf.Lerp(startVolume, targetVolume, currentTime / duration);
+            yield return null;
+        }
+        yield break;
     }
 }
