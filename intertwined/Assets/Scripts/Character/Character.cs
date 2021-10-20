@@ -173,7 +173,7 @@ namespace Character
             // if there is no input, set the target speed to 0
             if (move == Vector2.zero) targetSpeed = 0.0f;
 
-            CalculateAndUpdateSpeed(inputMagnitude, targetSpeed);
+            CalculateAndUpdateSpeed(inputMagnitude, analogMovement, targetSpeed);
             
             var targetDirection = CalculateAndUpdateRotation(move, mainCamera);
 
@@ -191,14 +191,14 @@ namespace Character
             
         }
 
-        private void CalculateAndUpdateSpeed(float inputMagnitude, float targetSpeed)
+        private void CalculateAndUpdateSpeed(float inputMagnitude, bool analogMovement, float targetSpeed)
         {
             // a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
             var velocity = _controller.velocity;
             var currentHorizontalSpeed = new Vector3(velocity.x, 0.0f, velocity.z).magnitude;
 
             const float speedOffset = 0.1f;
-            var inputMagnitude = analogMovement ? move.magnitude : 1f;
+            inputMagnitude = analogMovement ? inputMagnitude : 1f;
 
             // accelerate or decelerate to target speed
             if (currentHorizontalSpeed < targetSpeed - speedOffset ||
