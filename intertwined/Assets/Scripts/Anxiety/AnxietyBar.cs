@@ -8,11 +8,11 @@ public class AnxietyBar : MonoBehaviour
 
     public Slider slider;
 
-    public void SetMaxAnxiety(int max)
+    public void SetMaxAnxiety(float max)
     {
         slider.maxValue = max;
     }
-    public void SetAnxiety(int anxietyAmount)
+    public void SetAnxiety(float anxietyAmount)
     {
         slider.value = anxietyAmount;
     }
