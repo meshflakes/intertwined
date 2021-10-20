@@ -60,7 +60,7 @@ public class AnxietyCalc : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        distance  = Vector3.Distance(p1.position, p2.position);
+        distance  = Vector3.Distance(p1.position,  p2.position);
         if (Time.time >= nextUpdate)
         {
             nextUpdate = Mathf.FloorToInt(Time.time) + updateInterval;
