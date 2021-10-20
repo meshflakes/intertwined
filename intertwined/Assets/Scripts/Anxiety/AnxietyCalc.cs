@@ -12,10 +12,12 @@ public class AnxietyCalc : MonoBehaviour
     private static double MAX_DISTANCE = 6.0;
     //Want the anxiety calculations to occur every 250 update calls
     private int frames = 0;
-    private static int UPDATE_TIME = 3;
-    private static int PANIC_UPDATE_TIME = 1;
-    private int updateInterval = UPDATE_TIME;
+    private static float UPDATE_TIME = 3f;
+    private static float PANIC_UPDATE_TIME = 1f;
+    private float updateInterval = UPDATE_TIME;
     private int nextUpdate = 0;
+    private float timeAnxiety = 0;
+    private float delta = 0;
 
     //Indicates whether the players are too far apart and making them more anxious
     private bool more_anxious = false;
@@ -52,7 +54,7 @@ public class AnxietyCalc : MonoBehaviour
     {
         distance  = Vector3.Distance(p1.position, p2.position);
         
-        tempAnxietyText =GameObject.Find("TempText").GetComponent<Text>();
+        tempAnxietyText =GameObject.Find("AnxietyText").GetComponent<Text>();
         AnxietyBar.SetMaxAnxiety(MAX_ANXIETY);
 
     }
@@ -61,13 +63,16 @@ public class AnxietyCalc : MonoBehaviour
     void Update()
     {
         distance  = Vector3.Distance(p1.position,  p2.position);
-        if (Time.time >= nextUpdate)
+        delta = Time.deltaTime;
+        timeAnxiety += delta;
+        if (timeAnxiety >= updateInterval)
         {
-            nextUpdate = Mathf.FloorToInt(Time.time) + updateInterval;
+            timeAnxiety = 0;
             UpdateAnxiety();
         }
 
-        _timeSincePet += Time.deltaTime;
+        
+        _timeSincePet += delta;
     }
 
     //Every UPDATE_FRAMES amount of frames, this function will be called to update anxiety stat

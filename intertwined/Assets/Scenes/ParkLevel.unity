@@ -15726,7 +15726,7 @@ GameObject:
   - component: {fileID: 601206285}
   - component: {fileID: 601206284}
   m_Layer: 5
-  m_Name: TempText
+  m_Name: AnxietyText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
