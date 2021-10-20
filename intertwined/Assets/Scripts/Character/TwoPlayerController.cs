@@ -49,8 +49,8 @@ namespace Character
 
         private void Interact()
         {
-            _boy.Interact(_input.boyInteract);
-            _dog.Interact(_input.dogInteract);
+            _boy.CharInteractor.Interact(_input.boyInteract);
+            _dog.CharInteractor.Interact(_input.dogInteract);
         }
 
         private void Pet()

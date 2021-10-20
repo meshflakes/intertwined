@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Character
+﻿namespace Character
 {
     public enum CharType
     {

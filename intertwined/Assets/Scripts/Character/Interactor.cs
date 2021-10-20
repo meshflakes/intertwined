@@ -7,8 +7,11 @@ namespace Character
 {
     public class Interactor
     {
-        private List<GameObject> _inRangeInteractables = new List<GameObject>();
         public GrabbableInteractable HeldInteractable;
+        private List<GameObject> _inRangeInteractables = new List<GameObject>();
+        
+        private float _timeBetweenInteractions = 0.2f;
+        private float _nextInteractionTime = 0f;
         
         public Character PlayerChar { set; get; }
 
@@ -20,6 +23,10 @@ namespace Character
         public void Interact(bool interact)
         {
             if (!interact) return;
+            if (!(Time.time > _nextInteractionTime)) return;
+            
+            _nextInteractionTime = Time.time + _timeBetweenInteractions;
+            
             Debug.Log("Interact Pressed");
             
             if (HeldInteractable != null)
@@ -56,12 +63,11 @@ namespace Character
                     nextInteractionFocus.GetComponent<Interactable.Interactable>();
                 
                 // skip if target interactable is itself
-                if (interactable != HeldInteractable) {
-                    if (interactable.UsedWith(HeldInteractable))
-                    {
-                        interactable.Interact(PlayerChar, HeldInteractable);
-                        return true;
-                    }
+                if (interactable != HeldInteractable && interactable.UsedWith(HeldInteractable))
+                {
+                    interactable.Interact(PlayerChar, HeldInteractable); 
+                    return true;
+                    
                 }
                 nextInteractionFocus = GetIthInteractionFocus(++i);
             }
