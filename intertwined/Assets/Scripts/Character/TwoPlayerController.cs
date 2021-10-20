@@ -38,6 +38,7 @@ namespace Character
         {
             Move();
             Interact();
+            Pet();
         }
 
         private void Move()
@@ -48,12 +49,17 @@ namespace Character
 
         private void Interact()
         {
-            if (_input.boyInteract && _input.dogInteract)
-            {
-                anxietyCalc.LowerAnxiety();
-            }
             _boy.Interact(_input.boyInteract);
             _dog.Interact(_input.dogInteract);
+        }
+
+        private void Pet()
+        {
+            if (_boy.CharInteractor.HasInteractables() |
+                _dog.CharInteractor.HasInteractables() |
+                !anxietyCalc.CanPet()) return;
+
+            if (_input.boyInteract & _input.dogInteract) anxietyCalc.LowerAnxiety();
         }
     }
 }
