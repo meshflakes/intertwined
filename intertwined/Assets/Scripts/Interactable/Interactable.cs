@@ -5,10 +5,10 @@ namespace Interactable
     public abstract class Interactable : MonoBehaviour
     {
         [Tooltip("Allows the dog to interact with this Interactable")]
-        public bool DogCanInteract;
+        public bool dogCanInteract;
 
         [Tooltip("Allows the boy to interact with this Interactable")]
-        public bool BoyCanInteract;
+        public bool boyCanInteract;
         
         public abstract bool Interact(Character.Character interacter);
 
@@ -50,8 +50,8 @@ namespace Interactable
 
         private bool CollidingObjectCanInteract(Collider other)
         {
-            return (BoyCanInteract && other.CompareTag("Boy"))
-                || (DogCanInteract && other.CompareTag("Dog"));
+            return (boyCanInteract && other.CompareTag("Boy"))
+                || (dogCanInteract && other.CompareTag("Dog"));
         }
     }
 }

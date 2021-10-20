@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Interactable;
 using UnityEngine;
 
@@ -52,9 +53,17 @@ namespace Character
         private int _animIDMotionSpeed;
 
         private Animator _animator;
+        private bool _hasAnimator;
+        
         private CharacterController _controller;
 
-        private bool _hasAnimator;
+        [Tooltip("Climbing speed of the char")]
+        public float climbSpeed = 2.0f;
+        private bool Climbing => _climbingObj != null;
+        private ClimbableObj _climbingObj;
+        private Vector3 _normalizedClimbDirection;
+        
+        
         private void Start()
         {
             _hasAnimator = TryGetComponent(out _animator);
@@ -67,22 +76,9 @@ namespace Character
             CharInteractor = new Interactor();
             CharInteractor.PlayerChar = this;
         }
-        
-        // TODO: hopefully figure out a good way to handle this
-
-        private bool _toggle = true;
-        private const float DeltaStep = 0.16f;
-        private const float StepHeight = 0.1f;
-        private void ToggleStepThing()
-        {
-            _controller.stepOffset = StepHeight + (_toggle ? DeltaStep : 0);
-            _toggle = !_toggle;
-        }
 
         private void Update()
         {
-            ToggleStepThing();
-            
             _hasAnimator = TryGetComponent(out _animator);
 
             Gravity();
@@ -116,7 +112,12 @@ namespace Character
 
         private void Gravity()
         {
-            if (grounded)
+            if (Climbing)
+            {
+                _fallTimeoutDelta = fallTimeout;
+                _verticalVelocity = Math.Max(_verticalVelocity, 0.0f);
+            }
+            else if (grounded)
             {
                 // reset the fall timeout timer
                 _fallTimeoutDelta = fallTimeout;
@@ -159,21 +160,44 @@ namespace Character
 
         public void Move(Vector2 move, GameObject mainCamera)
         {
-            // set target speed based on move speed, sprint speed and if sprint is pressed
-            float targetSpeed = moveSpeed;
+            var inputMagnitude = move.magnitude;
 
-            // a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
-
-            // note: Vector2's == operator uses approximation so is not floating point error prone, and is cheaper than magnitude
+            if (Climbing)
+            {
+                Climb(move, mainCamera);
+                return;
+            }
+            
+            var targetSpeed = moveSpeed;
+            
             // if there is no input, set the target speed to 0
             if (move == Vector2.zero) targetSpeed = 0.0f;
 
-            // a reference to the players current horizontal velocity
+            CalculateAndUpdateSpeed(inputMagnitude, targetSpeed);
+            
+            var targetDirection = CalculateAndUpdateRotation(move, mainCamera);
+
+            MovePlayer(targetDirection);
+            _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) +
+                             new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+
+            MoveAnimation(inputMagnitude, targetSpeed);
+        }
+
+        private void MovePlayer(Vector3 targetDirection)
+        {
+            _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) +
+                             new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+            
+        }
+
+        private void CalculateAndUpdateSpeed(float inputMagnitude, float targetSpeed)
+        {
+            // a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
             var velocity = _controller.velocity;
             var currentHorizontalSpeed = new Vector3(velocity.x, 0.0f, velocity.z).magnitude;
 
             const float speedOffset = 0.1f;
-            var inputMagnitude = move.magnitude;
 
             // accelerate or decelerate to target speed
             if (currentHorizontalSpeed < targetSpeed - speedOffset ||
@@ -191,54 +215,96 @@ namespace Character
             {
                 _speed = targetSpeed;
             }
+        }
 
-            _animationBlend = Mathf.Lerp(_animationBlend, targetSpeed,
-                Time.deltaTime * speedChangeRate);
-
+        private Vector3 CalculateAndUpdateRotation(Vector2 move, GameObject mainCamera)
+        {
             // normalise input direction
             Vector3 inputDirection = new Vector3(move.x, 0.0f, move.y).normalized;
 
-            // note: Vector2's != operator uses approximation so is not floating point error prone, and is cheaper than magnitude
-            // if there is a move input rotate player when the player is moving
             if (move != Vector2.zero)
             {
                 _targetRotation = Mathf.Atan2(inputDirection.x, inputDirection.z) *
                     Mathf.Rad2Deg + mainCamera.transform.eulerAngles.y;
-                var rotation = Mathf.SmoothDampAngle(
-                    transform.eulerAngles.y, _targetRotation, ref _rotationVelocity, rotationSmoothTime);
+                
+                if (!Climbing) // if climbing rotation is fixed to climb direction
+                {
+                    var rotation = Mathf.SmoothDampAngle(
+                        transform.eulerAngles.y, _targetRotation, ref _rotationVelocity, rotationSmoothTime);
 
-                // rotate to face input direction relative to camera position
-                transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
+                    // rotate to face input direction relative to camera position
+                    transform.rotation = Quaternion.Euler(0.0f, rotation, 0.0f);
+                }
             }
+            
+            return Quaternion.Euler(0.0f, _targetRotation, 0.0f) * Vector3.forward;
+        }
 
+        private void MoveAnimation(float inputMagnitude, float targetSpeed)
+        {
+            if (!_hasAnimator) return;
+            
+            _animationBlend = Mathf.Lerp(_animationBlend, targetSpeed,
+                Time.deltaTime * speedChangeRate);
+            
+            _animator.SetFloat(_animIDSpeed, _animationBlend);
+            _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
+        }
 
-            Vector3 targetDirection = Quaternion.Euler(0.0f, _targetRotation, 0.0f) * Vector3.forward;
+        private void Climb(Vector2 moveInput, GameObject mainCamera)
+        {
+            var climbSpeedModifier = DirectedClimbSpeedModifier(moveInput);
 
-            // move the player
-            _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) +
-                             new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+            var moveAmt = climbSpeed * climbSpeedModifier * Time.deltaTime * _normalizedClimbDirection;
 
-            // update animator if using character
-            if (_hasAnimator)
+            if (!grounded || climbSpeedModifier >= 0)
             {
-                _animator.SetFloat(_animIDSpeed, _animationBlend);
-                _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
+                _controller.Move(moveAmt);
+            }
+            else
+            {
+                StopClimbing();
             }
         }
-        
-        private float _timeBetweenInteractions = 0.2f;
-        private float _nextInteractionTime = 0f;
 
-        public void Interact(bool interact)
+        /**
+         * takes in the movement input, and returns modifier on climb speed:
+         *   positive for climbing up, negative for climbing down
+         */
+        private float DirectedClimbSpeedModifier(Vector2 moveInput)
         {
-            if (Time.time > _nextInteractionTime)
-            {
-                CharInteractor.Interact(interact);
-                // TODO: switch back to regular interaction
-                // CharInteractor.Interact(Input.GetKeyDown("f"));
-                _nextInteractionTime = Time.time + _timeBetweenInteractions;
-            }
-                
+            var transformPosition = transform.position;
+            var position2d = new Vector3(transformPosition.x, 0f, transformPosition.z);
+
+            var climbablePosition = _climbingObj.transform.position;
+            var climbablePosition2d = new Vector3(climbablePosition.x, 0f, climbablePosition.z);
+
+            var climbableDirection = climbablePosition2d - position2d;
+            var projectedMovement = Vector3.Project(new Vector3(moveInput.x, 0f, moveInput.y), climbableDirection);
+
+            var movingInOppositeDirection =
+                (climbablePosition.x - transformPosition.x) < 0 == projectedMovement.x < 0;
+            
+            return movingInOppositeDirection ? projectedMovement.magnitude : -projectedMovement.magnitude;
+        }
+
+        private bool ToStopClimbing()
+        {
+            // TODO: figure out when to stop climbing
+            return false;
+        }
+
+        public void StartClimbing(ClimbableObj obj, Vector3 startingPosition, Quaternion climbingDirection)
+        {
+            _climbingObj = obj;
+            _normalizedClimbDirection = climbingDirection.eulerAngles.normalized;
+
+            // TODO: set starting position
+        }
+
+        public void StopClimbing()
+        {
+            _climbingObj = null;
         }
 
         private void OnDrawGizmosSelected()
