@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 538890590342311547}
   m_LocalRotation: {x: 0.060857736, y: 0.70448303, z: 0.060857736, w: 0.70448303}
-  m_LocalPosition: {x: -3.2703543, y: -5.167508, z: -0.36937714}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 18, y: 15, z: 10}
   m_Children: []
   m_Father: {fileID: 8446449896543090267}
@@ -104,6 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8446449896543090267}
+  - component: {fileID: 7983884306640953915}
   m_Layer: 0
   m_Name: DirtWithPlank
   m_TagString: Untagged
@@ -127,6 +128,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7983884306640953915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886778944283266959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ecd739c3e834577bdfc8eb177b933ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DogCanInteract: 1
+  BoyCanInteract: 0
+  plank: {fileID: 304690550622763103, guid: 023dca5733af83841a7f4eea85ae1214, type: 3}
 --- !u!1 &7753419110386618825
 GameObject:
   m_ObjectHideFlags: 0
@@ -154,7 +170,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7753419110386618825}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.2238965, y: -5.0975084, z: 0.19740677}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 8446449896543090267}
