@@ -42,6 +42,7 @@ public class MusicPlayer : MonoBehaviour
 
     public void playLevelTwo()
     {
+
         StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, 1));
         StartCoroutine(AudioTransition(ASL3, TRANSITION_DURATION, 1));
         StartCoroutine(AudioTransition(ASL4, TRANSITION_DURATION, 0));
@@ -52,6 +53,7 @@ public class MusicPlayer : MonoBehaviour
 
     public void playLevelThree()
     {
+
         StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, 1));
         StartCoroutine(AudioTransition(ASL3, TRANSITION_DURATION, 1));
         StartCoroutine(AudioTransition(ASL4, TRANSITION_DURATION, 1));
