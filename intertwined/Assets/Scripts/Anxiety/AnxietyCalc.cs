@@ -24,7 +24,7 @@ public class AnxietyCalc : MonoBehaviour
     public int anxiety = 0;
     public static int MAX_ANXIETY = 100;
     //The lower bound to how much petting can reduce anxiety by
-    public static int LOWER_BOUND = 60;
+    public int lowerBound = 60;
     
     public Transform p1;
     public Transform p2;
@@ -43,6 +43,10 @@ public class AnxietyCalc : MonoBehaviour
     private static int ANXIETY_LEVEL_FIVE = 100;
 
     private static double LIMIT_DIST = 2.0;
+    
+    // Cooldown time for petting
+    public float petCooldown = 30;
+    private float _timeSincePet = 0;
     
     // Start is called before the first frame update
     void Start()
@@ -64,6 +68,7 @@ public class AnxietyCalc : MonoBehaviour
             UpdateAnxiety();
         }
 
+        _timeSincePet += Time.deltaTime;
     }
 
     //Every UPDATE_FRAMES amount of frames, this function will be called to update anxiety stat
@@ -123,15 +128,16 @@ public class AnxietyCalc : MonoBehaviour
     //Lower anxiety when pet
     public void LowerAnxiety()
     {
-        if (anxiety >= LOWER_BOUND && distance < LIMIT_DIST)
-        {
-            AnxietyBar.SetAnxiety(LOWER_BOUND);
-            tempAnxietyText.text = "Anx:" + anxiety + "  More anxious:" + more_anxious;
-            anxiety = LOWER_BOUND;
-            UpdateMusic();
-            
-        }
-        
+        AnxietyBar.SetAnxiety(lowerBound);
+        tempAnxietyText.text = "Anx:" + anxiety + "  More anxious:" + more_anxious;
+        anxiety = lowerBound;
+        _timeSincePet = 0;
+        UpdateMusic();
+    }
+
+    public bool CanPet()
+    {
+        return anxiety >= lowerBound && distance < LIMIT_DIST && _timeSincePet > petCooldown;
     }
 
     public double GetDistance()

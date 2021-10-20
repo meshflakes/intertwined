@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Interactable;
 using UnityEngine;
 
@@ -92,6 +93,11 @@ namespace Character
         public void RemoveFromInteractablesList(GameObject obj)
         {
             _inRangeInteractables.RemoveAll(gameObj => gameObj == obj);
+        }
+
+        public bool HasInteractables()
+        {
+            return _inRangeInteractables.Any();
         }
     }
 }
