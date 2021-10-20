@@ -43,8 +43,8 @@ namespace Character
 
         private void Move()
         {
-            _boy.Move(_input.boyMove, _mainCamera);
-            _dog.Move(_input.dogMove, _mainCamera);
+            _boy.Move(_input.boyMove, _input.analogMovement, _mainCamera);
+            _dog.Move(_input.dogMove, _input.analogMovement, _mainCamera);
         }
 
         private void Interact()

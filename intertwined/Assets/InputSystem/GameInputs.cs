@@ -12,6 +12,9 @@ namespace InputSystem
         [Header("Dog Input Values")]
         public Vector2 dogMove;
         public bool dogInteract;
+        
+        [Header("Movement Settings")]
+        public bool analogMovement;
 
         public void OnBoyMove(InputValue value)
         {

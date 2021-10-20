@@ -40,7 +40,6 @@ public class AnxietyCalc : MonoBehaviour
     private static int ANXIETY_LEVEL_TWO = 40;
     private static int ANXIETY_LEVEL_THREE = 60;
     private static int ANXIETY_LEVEL_FOUR = 80;
-    private static int ANXIETY_LEVEL_FIVE = 100;
 
     private static double LIMIT_DIST = 2.0;
     
@@ -119,10 +118,7 @@ public class AnxietyCalc : MonoBehaviour
         {
             MusicPlayer.playLevelFour();
         }
-        else if (anxiety == ANXIETY_LEVEL_FIVE)
-        {
-            MusicPlayer.playLevelFive();
-        }
+
     }
     
     //Lower anxiety when pet
