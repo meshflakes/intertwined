@@ -30,7 +30,10 @@ public class CameraControl : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            rotateCam();
+            rotateCam(0.2f);
+        } else if (Input.GetMouseButton(1))
+        {
+            rotateCam(-0.2f);
         }
         transform.LookAt((p1.position + p2.position) / 2f);
 
@@ -56,8 +59,8 @@ public class CameraControl : MonoBehaviour
         
     }
 
-    public void rotateCam()
+    public void rotateCam(float angle)
     {
-        _cameraOffset = Quaternion.AngleAxis(0.2f, Vector3.up) * _cameraOffset;
+        _cameraOffset = Quaternion.AngleAxis(angle, Vector3.up) * _cameraOffset;
     }
 }
