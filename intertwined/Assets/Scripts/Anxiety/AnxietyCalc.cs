@@ -112,19 +112,23 @@ public class AnxietyCalc : MonoBehaviour
         //Updates the music based on anxiety
         if (anxiety == ANXIETY_LEVEL_ONE)
         {
-            MusicPlayer.playLevelOne();
+            MusicPlayer.playParkLevelTracks(1);
+            //MusicPlayer.playLevelOne();
         }
         else if (anxiety == ANXIETY_LEVEL_TWO)
         {
-            MusicPlayer.playLevelTwo();
+            MusicPlayer.playParkLevelTracks(2);
+            //MusicPlayer.playLevelTwo();
         }
         else if (anxiety == ANXIETY_LEVEL_THREE)
         {
-            MusicPlayer.playLevelThree();
+            MusicPlayer.playParkLevelTracks(3);
+            //MusicPlayer.playLevelThree();
         }
         else if (anxiety == ANXIETY_LEVEL_FOUR) 
         {
-            MusicPlayer.playLevelFour();
+            MusicPlayer.playParkLevelTracks(4);
+            //MusicPlayer.playLevelFour();
         }
 
     }

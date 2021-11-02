@@ -13,6 +13,13 @@ public class MusicPlayer : MonoBehaviour
     public AudioSource ParkAmbience2;
     public AudioSource ParkAmbience3;
     
+    private Dictionary<int, int[]> parkLevelMappings = new Dictionary<int, int[]>
+    {
+        {1, new int[] {1, 1, 0, 0, 0, 1, 1, 0}},
+        {2, new int[] {1, 1, 1, 0, 0, 1, 1, 0}},
+        {3, new int[] {1, 1, 1, 1, 0, 1, 1, 0}},
+        {4, new int[] {1, 1, 1, 1, 1, 1, 1, 0}}
+    };
 
     private static float TRANSITION_DURATION = 4.0f;
 
@@ -42,6 +49,13 @@ public class MusicPlayer : MonoBehaviour
         StartCoroutine(AudioTransition(ParkAmbience1, TRANSITION_DURATION, ambience1));
         StartCoroutine(AudioTransition(ParkAmbience2, TRANSITION_DURATION, ambience2));
         StartCoroutine(AudioTransition(ParkAmbience3, TRANSITION_DURATION, ambience3));
+    }
+
+    public void playParkLevelTracks(int level)
+    {
+        int[] volumes;
+        parkLevelMappings.TryGetValue(level, out volumes);
+        playParkTracks(volumes[0], volumes[1], volumes[2], volumes[3], volumes[4], volumes[5], volumes[6], volumes[7]);
     }
     
     public void playLevelOne()
