@@ -81,7 +81,11 @@ public class AnxietyCalc : MonoBehaviour
     void UpdateAnxiety()
     {
         //Increase anxiety by a point
-        if(anxiety+1 <=MAX_ANXIETY) anxiety+=0.2f;
+        if (Mathf.Round((anxiety + 0.2f) * 100f) / 100f <= MAX_ANXIETY)
+        {
+            anxiety += 0.2f;
+            anxiety = Mathf.Round(anxiety * 100f) / 100f;
+        }
         if (distance >= MAX_DISTANCE)
         {
             updateInterval = PANIC_UPDATE_TIME;
@@ -96,13 +100,13 @@ public class AnxietyCalc : MonoBehaviour
         UpdateMusic();
         
         
-        if (anxiety == MAX_ANXIETY)
+        if (anxiety >= MAX_ANXIETY)
         {
             //TODO: Trigger panic mode
         }
         //Displaying anxiety information
         AnxietyBar.SetAnxiety(anxiety);
-        tempAnxietyText.text = "Anx:" + Mathf.Round(anxiety * 100f) / 100f + "  More anxious:" + more_anxious;
+        tempAnxietyText.text = "Anx:" + anxiety + "  More anxious:" + more_anxious;
     }
 
     private void UpdateMusic()
@@ -137,7 +141,7 @@ public class AnxietyCalc : MonoBehaviour
     public void LowerAnxiety()
     {
         AnxietyBar.SetAnxiety(lowerBound);
-        tempAnxietyText.text = "Anx:" + Mathf.Round(anxiety * 100f) / 100f + "  More anxious:" + more_anxious;
+        tempAnxietyText.text = "Anx:" + anxiety + "  More anxious:" + more_anxious;
         anxiety = lowerBound;
         _timeSincePet = 0;
         UpdateMusic();
