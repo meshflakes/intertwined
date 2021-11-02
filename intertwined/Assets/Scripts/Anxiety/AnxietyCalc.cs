@@ -38,12 +38,10 @@ public class AnxietyCalc : MonoBehaviour
     //Music player
     public MusicPlayer MusicPlayer;
     //Anxiety levels (for music and visuals)
-    private static int ANXIETY_LEVEL_ONE = 20;
-    private static int ANXIETY_LEVEL_TWO = 40;
-    private static int ANXIETY_LEVEL_THREE = 60;
-    private static int ANXIETY_LEVEL_FOUR = 80;
-    //Keep track of current anxiety level
-    private int currentAnxietyLevel = 0;
+    private static float ANXIETY_LEVEL_ONE = 20f;
+    private static float ANXIETY_LEVEL_TWO = 40f;
+    private static float ANXIETY_LEVEL_THREE = 60f;
+    private static float ANXIETY_LEVEL_FOUR = 80f;
 
     private static double LIMIT_DIST = 2.0;
     
@@ -112,26 +110,20 @@ public class AnxietyCalc : MonoBehaviour
     private void UpdateMusic()
     {
         //Updates the music based on anxiety
-        if (anxiety >= ANXIETY_LEVEL_ONE && currentAnxietyLevel != ANXIETY_LEVEL_ONE && anxiety < ANXIETY_LEVEL_TWO)
+        if (anxiety == ANXIETY_LEVEL_ONE)
         {
-            currentAnxietyLevel = ANXIETY_LEVEL_ONE;
             MusicPlayer.playLevelOne();
-
         }
-        else if (anxiety >= ANXIETY_LEVEL_TWO && currentAnxietyLevel != ANXIETY_LEVEL_TWO && anxiety < ANXIETY_LEVEL_THREE)
+        else if (anxiety == ANXIETY_LEVEL_TWO)
         {
-            currentAnxietyLevel = ANXIETY_LEVEL_TWO;
             MusicPlayer.playLevelTwo();
         }
-        else if (anxiety >= ANXIETY_LEVEL_THREE && currentAnxietyLevel != ANXIETY_LEVEL_THREE && anxiety < ANXIETY_LEVEL_FOUR)
+        else if (anxiety == ANXIETY_LEVEL_THREE)
         {
-            Debug.Log("Level 3 triggered");
-            currentAnxietyLevel = ANXIETY_LEVEL_THREE;
             MusicPlayer.playLevelThree();
         }
-        else if (anxiety >= ANXIETY_LEVEL_FOUR && currentAnxietyLevel != ANXIETY_LEVEL_FOUR) 
+        else if (anxiety == ANXIETY_LEVEL_FOUR) 
         {
-            currentAnxietyLevel = ANXIETY_LEVEL_FOUR;
             MusicPlayer.playLevelFour();
         }
 

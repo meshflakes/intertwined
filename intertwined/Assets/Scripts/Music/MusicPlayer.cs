@@ -12,6 +12,7 @@ public class MusicPlayer : MonoBehaviour
     public AudioSource ParkAmbience1;
     public AudioSource ParkAmbience2;
     public AudioSource ParkAmbience3;
+    
 
     private static float TRANSITION_DURATION = 4.0f;
 
@@ -29,44 +30,63 @@ public class MusicPlayer : MonoBehaviour
         ASL1.volume = 1;
         ParkAmbience1.volume = 1;
     }
+
+    public void playParkTracks(int theme1, int theme2, int theme3, int theme4, int theme5, int ambience1, int ambience2,
+        int ambience3)
+    {
+        StartCoroutine(AudioTransition(ASL1, TRANSITION_DURATION, theme1));
+        StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, theme2));
+        StartCoroutine(AudioTransition(ASL3, TRANSITION_DURATION, theme3));
+        StartCoroutine(AudioTransition(ASL4, TRANSITION_DURATION, theme4));
+        StartCoroutine(AudioTransition(ASL5, TRANSITION_DURATION, theme5));
+        StartCoroutine(AudioTransition(ParkAmbience1, TRANSITION_DURATION, ambience1));
+        StartCoroutine(AudioTransition(ParkAmbience2, TRANSITION_DURATION, ambience2));
+        StartCoroutine(AudioTransition(ParkAmbience3, TRANSITION_DURATION, ambience3));
+    }
     
     public void playLevelOne()
     {
+        playParkTracks(1, 1, 0, 0, 0, 1, 1, 0);
+        /*
         StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, 1));
         StartCoroutine(AudioTransition(ASL3, TRANSITION_DURATION, 0));
         StartCoroutine(AudioTransition(ASL4, TRANSITION_DURATION, 0));
         StartCoroutine(AudioTransition(ASL5, TRANSITION_DURATION, 0));
-        StartCoroutine(AudioTransition(ParkAmbience2, TRANSITION_DURATION, 1));
+        StartCoroutine(AudioTransition(ParkAmbience2, TRANSITION_DURATION, 1));*/
 
     }
 
     public void playLevelTwo()
     {
-
+        playParkTracks(1, 1, 1, 0, 0, 1, 1, 1);
+            /*
         StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, 1));
         StartCoroutine(AudioTransition(ASL3, TRANSITION_DURATION, 1));
         StartCoroutine(AudioTransition(ASL4, TRANSITION_DURATION, 0));
         StartCoroutine(AudioTransition(ASL5, TRANSITION_DURATION, 0));
-        StartCoroutine(AudioTransition(ParkAmbience3, TRANSITION_DURATION, 1));
+        StartCoroutine(AudioTransition(ParkAmbience3, TRANSITION_DURATION, 1));*/
 
     }
 
     public void playLevelThree()
     {
-
+        playParkTracks(1, 1, 1, 1, 0, 1, 1, 1);
+        /*
         StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, 1));
         StartCoroutine(AudioTransition(ASL3, TRANSITION_DURATION, 1));
         StartCoroutine(AudioTransition(ASL4, TRANSITION_DURATION, 1));
-        StartCoroutine(AudioTransition(ASL5, TRANSITION_DURATION, 0));
+        StartCoroutine(AudioTransition(ASL5, TRANSITION_DURATION, 0));*/
 
     }
 
     public void playLevelFour()
     {
+        playParkTracks(1, 1, 1, 1, 1, 1, 1, 1);
+        /*
         StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, 1));
         StartCoroutine(AudioTransition(ASL3, TRANSITION_DURATION, 1));
         StartCoroutine(AudioTransition(ASL4, TRANSITION_DURATION, 1));
-        StartCoroutine(AudioTransition(ASL5, TRANSITION_DURATION, 0.5f));
+        StartCoroutine(AudioTransition(ASL5, TRANSITION_DURATION, 0.5f));*/
 
     }
     
