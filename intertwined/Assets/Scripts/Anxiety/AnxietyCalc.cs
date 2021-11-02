@@ -12,7 +12,7 @@ public class AnxietyCalc : MonoBehaviour
     private static double MAX_DISTANCE = 6.0;
     //Want the anxiety calculations to occur every 250 update calls
     private int frames = 0;
-    private static float UPDATE_TIME = 0.75f;
+    private static float UPDATE_TIME = 0.15f;
     private static float PANIC_UPDATE_TIME = 0.25f;
     private float updateInterval = UPDATE_TIME;
     private int nextUpdate = 0;
@@ -103,8 +103,7 @@ public class AnxietyCalc : MonoBehaviour
             //TODO: Trigger panic mode
         }
         //Displaying anxiety information
-        AnxietyBar.SetAnxiety(anxiety);
-        tempAnxietyText.text = "Anx:" + anxiety + "  More anxious:" + more_anxious;
+        DisplayAnxiety();
     }
 
     private void UpdateMusic()
@@ -132,9 +131,8 @@ public class AnxietyCalc : MonoBehaviour
     //Lower anxiety when pet
     public void LowerAnxiety()
     {
-        AnxietyBar.SetAnxiety(lowerBound);
-        tempAnxietyText.text = "Anx:" + anxiety + "  More anxious:" + more_anxious;
         anxiety = lowerBound;
+        DisplayAnxiety();
         _timeSincePet = 0;
         UpdateMusic();
     }
@@ -144,9 +142,10 @@ public class AnxietyCalc : MonoBehaviour
         return anxiety >= lowerBound && distance < LIMIT_DIST && _timeSincePet > petCooldown;
     }
 
-    public double GetDistance()
+    public void DisplayAnxiety()
     {
-        Debug.Log(distance);
-        return distance;
+        AnxietyBar.SetAnxiety(anxiety);
+        tempAnxietyText.text = "Anx:" + anxiety + "  More anxious:" + more_anxious;
     }
+
 }
