@@ -66,7 +66,7 @@ namespace Interactable
             UpdatePosition(true);
         }
 
-        public void Release()
+        public virtual void Release()
         {
             _heldByCharacter.CharInteractor.HeldInteractable = null;
             _heldByCharacter = null;
