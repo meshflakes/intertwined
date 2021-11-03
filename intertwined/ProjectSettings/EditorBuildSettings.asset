@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TechDemo [mich].unity
     guid: 7d1a2af858e2a364798b0702c7f484e1
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: e690dbddebdd16f4ab8ae933e36fb112
+  - enabled: 1
     path: Assets/Scenes/ParkLevel.unity
     guid: 62d736e50c037964c975b64d2f0e7b19
   m_configObjects:
