@@ -19,7 +19,11 @@ namespace Interactable
         [NonSerialized]
         public bool ClimbingDisabled = false;
 
-        private void Start()
+        protected bool BeingClimbed => _numCharsClimbing > 0;
+        private int _numCharsClimbing = 0;
+        private const int MaxClimbableAngle = 42;
+
+        protected void Start()
         {
             if (defaultClimbDirection == Vector3.zero)
             {
@@ -28,10 +32,9 @@ namespace Interactable
             defaultClimbDirQuaternion = Quaternion.Euler(defaultClimbDirection);
         }
         
-        // private void OnCollisionEnter(Collision other)
-        private void OnTriggerEnter(Collider other)
+        protected void OnTriggerEnter(Collider other)
         {
-            Debug.Log("Collision Detected");
+            Debug.Log("Collision Detected, Climbing disabled: " + ClimbingDisabled);
             if (CollidingObjectCanInteract(other) && CurrentlyClimbable())
             {
                 // TODO: check angle of approach (glance vs full collision)
@@ -41,38 +44,42 @@ namespace Interactable
                         this, 
                         Vector3.zero,
                         GetClimbingDirection(other.transform.position));
+                _numCharsClimbing++;
                 Debug.Log("setting as in-focus movement interactable");
             }
         }
     
-        private void OnTriggerExit(Collider other)
+        protected void OnTriggerExit(Collider other)
         {
             if (CollidingObjectCanInteract(other))
             {
                 other.gameObject.GetComponent<Character.Character>()
                     .StopClimbing();
+                _numCharsClimbing--;
                 Debug.Log("removing as in-focus movement interactable");
             }
         }
         
-        private bool CollidingObjectCanInteract(Collider other)
+        protected bool CollidingObjectCanInteract(Collider other)
         {
-            Debug.Log(other.CompareTag("Boy"));
             return (boyCanInteract && other.CompareTag("Boy"))
                    || (dogCanInteract && other.CompareTag("Dog"));
         }
 
         public bool CurrentlyClimbable()
         {
-            // TODO: add angle etc. checks here
-            return !ClimbingDisabled;
+            if (ClimbingDisabled) return false;
+
+            var eulerRotation = transform.rotation.eulerAngles;
+            var xzRotationMagnitude = Math.Sqrt(Math.Pow(eulerRotation.x, 2) + Math.Pow(eulerRotation.z, 2));
+            return xzRotationMagnitude <= MaxClimbableAngle;
         }
         
         public Quaternion GetClimbingDirection(Vector3 currentCharPosition)
         {
-            // TODO: adjust for rotation of object
-            // return gameObject.transform.rotation;
-            return  defaultClimbDirQuaternion * transform.rotation;
+            // TODO: use defaultClimbDir to affect climbing direction
+            // return  defaultClimbDirQuaternion * transform.rotation;
+            return transform.rotation;
         }
     }
 }
