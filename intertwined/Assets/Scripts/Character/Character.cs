@@ -100,6 +100,7 @@ namespace Character
             // set sphere position, with offset
             var position = transform.position;
             var spherePosition = new Vector3(position.x, position.y - groundedOffset, position.z);
+            // TODO: modify spherePosition based on rotation of char
             grounded =
                 Physics.CheckSphere(spherePosition, groundedRadius, groundLayers, QueryTriggerInteraction.Ignore);
 
@@ -178,8 +179,6 @@ namespace Character
             var targetDirection = CalculateAndUpdateRotation(move, mainCamera);
 
             MovePlayer(targetDirection);
-            _controller.Move(targetDirection.normalized * (_speed * Time.deltaTime) +
-                             new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 
             MoveAnimation(inputMagnitude, targetSpeed);
         }
@@ -256,7 +255,8 @@ namespace Character
         {
             var climbSpeedModifier = DirectedClimbSpeedModifier(moveInput);
 
-            var moveAmt = climbSpeed * climbSpeedModifier * Time.deltaTime * _normalizedClimbDirection;
+            // TODO: insert correct location in GetClimbingDirection
+            var moveAmt = climbSpeed * climbSpeedModifier * Time.deltaTime * (_climbingObj.GetClimbingDirection(Vector3.zero) * Vector3.up);
 
             if (!grounded || climbSpeedModifier >= 0)
             {
@@ -277,7 +277,9 @@ namespace Character
             var transformPosition = transform.position;
             var position2d = new Vector3(transformPosition.x, 0f, transformPosition.z);
 
-            var climbablePosition = _climbingObj.transform.position;
+            // percieve climbable position to be further away from the char than it is, so the forward movement
+            // according to the player is interpreted as moving up the ladder
+            var climbablePosition = _climbingObj.transform.position + (transform.rotation * Vector3.forward);
             var climbablePosition2d = new Vector3(climbablePosition.x, 0f, climbablePosition.z);
 
             var climbableDirection = climbablePosition2d - position2d;
@@ -286,7 +288,7 @@ namespace Character
             var movingInOppositeDirection =
                 (climbablePosition.x - transformPosition.x) < 0 == projectedMovement.x < 0;
             
-            return movingInOppositeDirection ? projectedMovement.magnitude : -projectedMovement.magnitude;
+            return movingInOppositeDirection ? moveInput.magnitude : -moveInput.magnitude;
         }
 
         private bool ToStopClimbing()
@@ -299,6 +301,8 @@ namespace Character
         {
             _climbingObj = obj;
             _normalizedClimbDirection = climbingDirection.eulerAngles.normalized;
+            var currRotationEuler = transform.rotation.eulerAngles;
+            transform.rotation = Quaternion.Euler(climbingDirection.eulerAngles.x, currRotationEuler.y, currRotationEuler.z);
 
             // TODO: set starting position
         }
@@ -306,6 +310,8 @@ namespace Character
         public void StopClimbing()
         {
             _climbingObj = null;
+            var currRotationEuler = transform.rotation.eulerAngles;
+            transform.rotation = Quaternion.Euler(0, currRotationEuler.y, 0);
         }
 
         private void OnDrawGizmosSelected()

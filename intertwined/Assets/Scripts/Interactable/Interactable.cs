@@ -9,12 +9,15 @@ namespace Interactable
 
         [Tooltip("Allows the boy to interact with this Interactable")]
         public bool boyCanInteract;
+
+        [HideInInspector]
+        public bool Enabled = true;
         
         public abstract bool Interact(Character.Character interacter);
 
         public virtual bool Interact(Character.Character interacter, Interactable interactable)
         {
-            return Interact(interacter);
+            return Enabled && Interact(interacter);
         }
 
         /**
@@ -50,8 +53,9 @@ namespace Interactable
 
         private bool CollidingObjectCanInteract(Collider other)
         {
-            return (boyCanInteract && other.CompareTag("Boy"))
-                || (dogCanInteract && other.CompareTag("Dog"));
+            return Enabled &&
+                  (boyCanInteract && other.CompareTag("Boy")
+                || dogCanInteract && other.CompareTag("Dog"));
         }
     }
 }
