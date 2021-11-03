@@ -19,7 +19,7 @@
                     "id": "980e881e-182c-404c-8cbf-3d09fdb48fef",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Press(behavior=2)"
                 },
                 {
                     "name": "DogMove",
@@ -35,7 +35,7 @@
                     "id": "65db62d5-051b-4001-8905-77be3f28f159",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Press(behavior=2)"
                 },
                 {
                     "name": "RotateCam",
@@ -81,7 +81,7 @@
                     "name": "",
                     "id": "c3b49b80-794c-4280-b714-9c40e17b5030",
                     "path": "<Keyboard>/q",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "",
                     "action": "BoyInteract",
@@ -213,7 +213,7 @@
                     "name": "",
                     "id": "59591499-62ae-4653-a7a7-4501e2851e61",
                     "path": "<Keyboard>/e",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "",
                     "action": "DogInteract",

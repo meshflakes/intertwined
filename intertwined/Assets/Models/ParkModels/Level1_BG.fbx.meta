@@ -1,39 +1,9 @@
 fileFormatVersion: 2
-guid: 4b653722f0518c3438fd7074c410aa76
+guid: db0f51a873b24ad4caf3449b76afd75e
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: defaultPolygonShader
-    second: {fileID: 2100000, guid: 5fd92b767221702498fbb5235e8a662b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert1
-    second: {fileID: 2100000, guid: 5fd92b767221702498fbb5235e8a662b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert3
-    second: {fileID: 2100000, guid: 5fd92b767221702498fbb5235e8a662b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert4
-    second: {fileID: 2100000, guid: 5fd92b767221702498fbb5235e8a662b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert6
-    second: {fileID: 2100000, guid: 5fd92b767221702498fbb5235e8a662b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: standardSurface1
-    second: {fileID: 2100000, guid: 5fd92b767221702498fbb5235e8a662b, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
