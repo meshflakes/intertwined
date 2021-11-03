@@ -38,12 +38,10 @@ public class AnxietyCalc : MonoBehaviour
     //Music player
     public MusicPlayer MusicPlayer;
     //Anxiety levels (for music and visuals)
-    private static int ANXIETY_LEVEL_ONE = 20;
-    private static int ANXIETY_LEVEL_TWO = 40;
-    private static int ANXIETY_LEVEL_THREE = 60;
-    private static int ANXIETY_LEVEL_FOUR = 80;
-    //Keep track of current anxiety level
-    private int currentAnxietyLevel = 0;
+    private static float ANXIETY_LEVEL_ONE = 20f;
+    private static float ANXIETY_LEVEL_TWO = 40f;
+    private static float ANXIETY_LEVEL_THREE = 60f;
+    private static float ANXIETY_LEVEL_FOUR = 80f;
 
     private static double LIMIT_DIST = 2.0;
     
@@ -81,7 +79,11 @@ public class AnxietyCalc : MonoBehaviour
     void UpdateAnxiety()
     {
         //Increase anxiety by a point
-        if(anxiety+1 <=MAX_ANXIETY) anxiety+=0.2f;
+        if (Mathf.Round((anxiety + 0.2f) * 100f) / 100f <= MAX_ANXIETY)
+        {
+            anxiety += 0.2f;
+            anxiety = Mathf.Round(anxiety * 100f) / 100f;
+        }
         if (distance >= MAX_DISTANCE)
         {
             updateInterval = PANIC_UPDATE_TIME;
@@ -96,39 +98,32 @@ public class AnxietyCalc : MonoBehaviour
         UpdateMusic();
         
         
-        if (anxiety == MAX_ANXIETY)
+        if (anxiety >= MAX_ANXIETY)
         {
             //TODO: Trigger panic mode
         }
         //Displaying anxiety information
-        AnxietyBar.SetAnxiety(anxiety);
-        tempAnxietyText.text = "Anx:" + Mathf.Round(anxiety * 100f) / 100f + "  More anxious:" + more_anxious;
+        DisplayAnxiety();
     }
 
     private void UpdateMusic()
     {
         //Updates the music based on anxiety
-        if (anxiety >= ANXIETY_LEVEL_ONE && currentAnxietyLevel != ANXIETY_LEVEL_ONE && anxiety < ANXIETY_LEVEL_TWO)
+        if (anxiety == ANXIETY_LEVEL_ONE)
         {
-            currentAnxietyLevel = ANXIETY_LEVEL_ONE;
-            MusicPlayer.playLevelOne();
-
+            MusicPlayer.playParkLevelTracks(1);
         }
-        else if (anxiety >= ANXIETY_LEVEL_TWO && currentAnxietyLevel != ANXIETY_LEVEL_TWO && anxiety < ANXIETY_LEVEL_THREE)
+        else if (anxiety == ANXIETY_LEVEL_TWO)
         {
-            currentAnxietyLevel = ANXIETY_LEVEL_TWO;
-            MusicPlayer.playLevelTwo();
+            MusicPlayer.playParkLevelTracks(2);
         }
-        else if (anxiety >= ANXIETY_LEVEL_THREE && currentAnxietyLevel != ANXIETY_LEVEL_THREE && anxiety < ANXIETY_LEVEL_FOUR)
+        else if (anxiety == ANXIETY_LEVEL_THREE)
         {
-            Debug.Log("Level 3 triggered");
-            currentAnxietyLevel = ANXIETY_LEVEL_THREE;
-            MusicPlayer.playLevelThree();
+            MusicPlayer.playParkLevelTracks(3);
         }
-        else if (anxiety >= ANXIETY_LEVEL_FOUR && currentAnxietyLevel != ANXIETY_LEVEL_FOUR) 
+        else if (anxiety == ANXIETY_LEVEL_FOUR) 
         {
-            currentAnxietyLevel = ANXIETY_LEVEL_FOUR;
-            MusicPlayer.playLevelFour();
+            MusicPlayer.playParkLevelTracks(4);
         }
 
     }
@@ -136,9 +131,8 @@ public class AnxietyCalc : MonoBehaviour
     //Lower anxiety when pet
     public void LowerAnxiety()
     {
-        AnxietyBar.SetAnxiety(lowerBound);
-        tempAnxietyText.text = "Anx:" + Mathf.Round(anxiety * 100f) / 100f + "  More anxious:" + more_anxious;
         anxiety = lowerBound;
+        DisplayAnxiety();
         _timeSincePet = 0;
         UpdateMusic();
     }
@@ -148,9 +142,10 @@ public class AnxietyCalc : MonoBehaviour
         return anxiety >= lowerBound && distance < LIMIT_DIST && _timeSincePet > petCooldown;
     }
 
-    public double GetDistance()
+    public void DisplayAnxiety()
     {
-        Debug.Log(distance);
-        return distance;
+        AnxietyBar.SetAnxiety(anxiety);
+        tempAnxietyText.text = "Anx:" + anxiety + "  More anxious:" + more_anxious;
     }
+
 }
