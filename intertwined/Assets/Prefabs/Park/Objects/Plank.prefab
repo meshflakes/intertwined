@@ -104,6 +104,7 @@ MonoBehaviour:
   boyHoldingAngle: {x: 0, y: 90, z: -60}
   dogHoldingOffset: {x: 0, y: 0, z: 0}
   dogHoldingAngle: {x: 0, y: 0, z: 0}
+  unlockableLockIds: 02000000
 --- !u!65 &304690550622763093
 BoxCollider:
   m_ObjectHideFlags: 0
