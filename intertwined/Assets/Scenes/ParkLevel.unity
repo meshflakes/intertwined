@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -604,6 +604,7 @@ MonoBehaviour:
   maxDist: 12
   _followTimeDelta: 0.8
   smoothness: 0.5
+  cam: {fileID: 26742976}
 --- !u!114 &26742979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8541,6 +8542,10 @@ PrefabInstance:
       value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: 5200212173859453913, guid: 610db64ce5741224dafc91ff2cd034e3, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 26742976}
+    - target: {fileID: 5200212173859453913, guid: 610db64ce5741224dafc91ff2cd034e3, type: 3}
       propertyPath: moveSpeed
       value: 2
       objectReference: {fileID: 0}
@@ -12602,6 +12607,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6035343440631321799, guid: c7ab411e5eb61ef4197c9aeb505136c7, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 26742976}
     - target: {fileID: 7280143954052682667, guid: c7ab411e5eb61ef4197c9aeb505136c7, type: 3}
       propertyPath: m_RootOrder
       value: 1
