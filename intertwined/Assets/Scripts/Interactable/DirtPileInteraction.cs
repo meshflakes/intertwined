@@ -9,8 +9,9 @@ namespace Interactable
         
         public override bool Interact(Character.Character interacter)
         {
-            var transform1 = transform;
-            Instantiate(plank, transform1.position, transform1.rotation);
+            var plankChildTransform = transform.Find("Plank");
+            
+            Instantiate(plank, plankChildTransform.position, plankChildTransform.rotation);
             Destroy(gameObject);
 
             return true;
