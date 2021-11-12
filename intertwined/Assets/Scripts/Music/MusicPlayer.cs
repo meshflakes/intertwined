@@ -13,12 +13,12 @@ public class MusicPlayer : MonoBehaviour
     public AudioSource ParkAmbience2;
     public AudioSource ParkAmbience3;
     
-    private Dictionary<int, int[]> parkLevelMappings = new Dictionary<int, int[]>
+    private Dictionary<float, float[]> parkLevelMappings = new Dictionary<float, float[]>
     {
-        {1, new int[] {1, 1, 0, 0, 0, 1, 1, 0}},
-        {2, new int[] {1, 1, 1, 0, 0, 1, 1, 0}},
-        {3, new int[] {1, 1, 1, 1, 0, 1, 1, 0}},
-        {4, new int[] {1, 1, 1, 1, 1, 1, 1, 0}}
+        {1, new float[] {0.5f, 0.5f, 0, 0, 0, 0.5f, 0.5f, 0}},
+        {2, new float[] {0.5f, 0.5f, 0.5f, 0, 0, 0.5f, 0.5f, 0.5f}},
+        {3, new float[] {0.5f, 0.5f, 0.5f, 0.5f, 0, 0.5f, 0.5f, 0.5f}},
+        {4, new float[] {0.5f, 0.5f, 0.5f, 0.5f, 0.25f, 0.5f, 0.5f, 0.5f}}
     };
 
     private static float TRANSITION_DURATION = 4.0f;
@@ -34,13 +34,13 @@ public class MusicPlayer : MonoBehaviour
         ParkAmbience1.Play();
         ParkAmbience2.Play();
         ParkAmbience3.Play();
-        ASL1.volume = 1;
-        ParkAmbience1.volume = 1;
+        ASL1.volume = 0.5f;
+        ParkAmbience1.volume = 0.5f;
     }
     
     public void playParkLevelTracks(int level)
     {
-        int[] volumes;
+        float[] volumes;
         parkLevelMappings.TryGetValue(level, out volumes);
         StartCoroutine(AudioTransition(ASL1, TRANSITION_DURATION, volumes[0]));
         StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, volumes[1]));
