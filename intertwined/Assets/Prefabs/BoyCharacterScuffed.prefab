@@ -12603,6 +12603,7 @@ GameObject:
   - component: {fileID: 7945357952661375259}
   - component: {fileID: 190272336808584161}
   - component: {fileID: 6035343440631321799}
+  - component: {fileID: 4052100769423236195}
   m_Layer: 8
   m_Name: BoyCharacterScuffed
   m_TagString: Boy
@@ -12684,6 +12685,14 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   climbSpeed: 2
+--- !u!33 &4052100769423236195
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7945357952661375249}
+  m_Mesh: {fileID: 0}
 --- !u!1 &7946509752409811728
 GameObject:
   m_ObjectHideFlags: 0
