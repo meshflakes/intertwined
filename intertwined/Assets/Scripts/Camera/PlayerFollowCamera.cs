@@ -6,20 +6,21 @@ namespace Camera
     
     public class PlayerFollowCamera : CameraController
     {
-        private Transform _p1;
-        private Transform _p2;
+        private readonly Transform _p1;
+        private readonly Transform _p2;
 
-        private float _zoom;
-        private float _zoomStartDist;
-        private float _maxDist;
-        private float _smoothness;
+        private readonly float _zoom;
+        private readonly float _zoomStartDist;
+        private readonly float _maxDist;
+        private readonly float _smoothness;
+        private readonly Transform _cameraTransform;
         private Vector3 _cameraOffset;
-        private Transform _cameraTransform;
+        private readonly float _cameraRotation;
 
         private Vector3 _targetCameraPos;
         
         public PlayerFollowCamera(Transform p1, Transform p2, float zoom, float zoomStartDist, 
-                float maxDist, float smoothness, Vector3 cameraOffset, Transform cameraTransform)
+                float maxDist, float smoothness, Vector3 cameraOffset, Transform cameraTransform, float cameraRotation)
         {
             _p1 = p1;
             _p2 = p2;
@@ -29,11 +30,11 @@ namespace Camera
             _smoothness = smoothness;
             _cameraOffset = cameraOffset;
             _cameraTransform = cameraTransform;
+            _cameraRotation = cameraRotation;
         }
 
         public override void UpdateCamera()
         {
-            PlayerControlledRotation();
             PlayerControlledRotation();
             
             var p1Position = _p1.position;
@@ -58,10 +59,10 @@ namespace Camera
             // TODO: change to get input from input system instead of manual key check
             if (Input.GetMouseButton(0))
             {
-                RotateCam(0.2f);
+                RotateCam(_cameraRotation * Time.deltaTime);
             } else if (Input.GetMouseButton(1))
             {
-                RotateCam(-0.2f);
+                RotateCam(-_cameraRotation * Time.deltaTime);
             }
         }
         
