@@ -29,13 +29,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304690550622763103}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 3.28, y: 0, z: -0.6}
+  m_LocalRotation: {x: 0.6791078, y: 0.4755164, z: 0.4580641, w: 0.32073995}
+  m_LocalPosition: {x: 3.28, y: 2.1, z: -0.6}
   m_LocalScale: {x: 18, y: 15, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 112, z: 110}
 --- !u!33 &304690550622763097
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -99,10 +99,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dogCanInteract: 0
   boyCanInteract: 1
+  Enabled: 1
   boyHoldingOffset: {x: 0.1, y: 1.05, z: 1}
   boyHoldingAngle: {x: 0, y: 90, z: -60}
   dogHoldingOffset: {x: 0, y: 0, z: 0}
   dogHoldingAngle: {x: 0, y: 0, z: 0}
+  unlockableLockIds: 02000000
 --- !u!65 &304690550622763093
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -24,18 +24,18 @@ namespace Interactable
         private Quaternion _boyHoldingQuaternion;
         private Quaternion _dogHoldingQuaternion;
 
-        private bool _hasRigidBody;
-        private Rigidbody _rigidbody;
-        private Transform _transform;
+        protected bool HasRigidBody;
+        protected Rigidbody GrabbableRigidbody;
+        protected Transform GrabbableTransform;
         private Transform _defaultParentTransform;
         
         protected void Start()
         {
-            _rigidbody = gameObject.GetComponent<Rigidbody>();
-            _hasRigidBody = _rigidbody != null;
+            GrabbableRigidbody = gameObject.GetComponent<Rigidbody>();
+            HasRigidBody = GrabbableRigidbody != null;
             
-            _transform = gameObject.GetComponent<Transform>();
-            _defaultParentTransform = _transform.parent;
+            GrabbableTransform = gameObject.GetComponent<Transform>();
+            _defaultParentTransform = GrabbableTransform.parent;
             
             _boyHoldingQuaternion = Quaternion.Euler(boyHoldingAngle);
             _dogHoldingQuaternion = Quaternion.Euler(dogHoldingAngle);
@@ -49,18 +49,18 @@ namespace Interactable
         public void Grab(GameObject obj)
         {
             // Set parent to the holding char
-            _transform.SetParent(_heldByTransform, true);
+            GrabbableTransform.SetParent(_heldByTransform, true);
             _heldByTransform = obj.GetComponent<Transform>();
             
             _heldByCharacter = obj.GetComponent<Character.Character>();
             _heldByCharacter.CharInteractor.HeldInteractable = this;
             _holdingChar = obj.CompareTag("Dog") ? CharType.Dog : CharType.Boy;
             
-            if (_hasRigidBody)
+            if (HasRigidBody)
             {
-                _rigidbody.freezeRotation = true;
-                _rigidbody.useGravity = false;
-                _rigidbody.detectCollisions = false;
+                GrabbableRigidbody.freezeRotation = true;
+                GrabbableRigidbody.useGravity = false;
+                GrabbableRigidbody.detectCollisions = false;
             }
             
             UpdatePosition(true);
@@ -74,13 +74,13 @@ namespace Interactable
             _holdingChar = null;
             
             // reparent to original
-            _transform.SetParent(_defaultParentTransform, true);
+            GrabbableTransform.SetParent(_defaultParentTransform, true);
             
-            if (_hasRigidBody)
+            if (HasRigidBody)
             {
-                _rigidbody.freezeRotation = false;
-                _rigidbody.useGravity = true;
-                _rigidbody.detectCollisions = true;
+                GrabbableRigidbody.freezeRotation = false;
+                GrabbableRigidbody.useGravity = true;
+                GrabbableRigidbody.detectCollisions = true;
             }
         }
 
@@ -101,17 +101,17 @@ namespace Interactable
             var updatedPosition = _heldByTransform.position + _heldByTransform.TransformVector(positionOffset);
             var updatedRotation = _heldByTransform.rotation * rotationOffset;
             
-            if (!firstUpdate && _hasRigidBody)
+            if (!firstUpdate && HasRigidBody)
             {
-                _rigidbody.MovePosition(updatedPosition);
-                _rigidbody.MoveRotation(updatedRotation);
-                _rigidbody.velocity = Vector3.zero;
-                _rigidbody.angularVelocity = Vector3.zero;
+                GrabbableRigidbody.MovePosition(updatedPosition);
+                GrabbableRigidbody.MoveRotation(updatedRotation);
+                GrabbableRigidbody.velocity = Vector3.zero;
+                GrabbableRigidbody.angularVelocity = Vector3.zero;
             }
             else
             {
-                _transform.position = updatedPosition;
-                _transform.rotation = updatedRotation;
+                GrabbableTransform.position = updatedPosition;
+                GrabbableTransform.rotation = updatedRotation;
             }
         }
     }
