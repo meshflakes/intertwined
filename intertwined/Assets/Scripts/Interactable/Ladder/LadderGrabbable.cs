@@ -20,7 +20,7 @@ namespace Interactable.Ladder
         
         public override bool Interact(Character.Character interacter)
         {
-            if (!Enabled)
+            if (!interactableEnabled)
             {
                 Debug.Log("Ladder disabled, cannot grab");
                 return false;

@@ -103,7 +103,7 @@ public class AnxietyCalc : MonoBehaviour
             //TODO: Trigger panic mode
         }
         //Displaying anxiety information
-        Debug.Log(anxiety);
+        // Debug.Log(anxiety);
         // DisplayAnxiety();
     }
 
