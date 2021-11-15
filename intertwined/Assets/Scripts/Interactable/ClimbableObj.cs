@@ -34,7 +34,7 @@ namespace Interactable
         
         protected void OnTriggerEnter(Collider other)
         {
-            Debug.Log("Collision Detected, Climbing disabled: " + ClimbingDisabled);
+            Debug.Log($"CollidingObjectCanInteract(other)={CollidingObjectCanInteract(other)}, CurrentlyClimbable()={CurrentlyClimbable()}");
             if (CollidingObjectCanInteract(other) && CurrentlyClimbable())
             {
                 // TODO: check angle of approach (glance vs full collision)
@@ -45,7 +45,7 @@ namespace Interactable
                         Vector3.zero,
                         GetClimbingDirection(other.transform.position));
                 _numCharsClimbing++;
-                Debug.Log("setting as in-focus movement interactable");
+                Debug.Log($"setting {gameObject.name} as in-focus movement interactable");
             }
         }
     
@@ -56,7 +56,7 @@ namespace Interactable
                 other.gameObject.GetComponent<Character.Character>()
                     .StopClimbing();
                 _numCharsClimbing--;
-                Debug.Log("removing as in-focus movement interactable");
+                Debug.Log($"removing {gameObject.name} as in-focus movement interactable");
             }
         }
         
@@ -71,6 +71,9 @@ namespace Interactable
             if (ClimbingDisabled) return false;
 
             var eulerRotation = transform.rotation.eulerAngles;
+            if (eulerRotation.x > 180) eulerRotation.x -= 360;
+            if (eulerRotation.z > 180) eulerRotation.z -= 360;
+            
             var xzRotationMagnitude = Math.Sqrt(Math.Pow(eulerRotation.x, 2) + Math.Pow(eulerRotation.z, 2));
             return xzRotationMagnitude <= MaxClimbableAngle;
         }
