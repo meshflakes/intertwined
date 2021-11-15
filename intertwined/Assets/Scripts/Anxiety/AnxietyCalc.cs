@@ -32,8 +32,8 @@ public class AnxietyCalc : MonoBehaviour
     public Transform p2;
     
     //This is for updating the anxiety bar
-    public AnxietyBar AnxietyBar;
-    private Text tempAnxietyText;
+    // public AnxietyBar AnxietyBar;
+    // private Text tempAnxietyText;
     
     //Music player
     public MusicPlayer MusicPlayer;
@@ -54,8 +54,8 @@ public class AnxietyCalc : MonoBehaviour
     {
         distance  = Vector3.Distance(p1.position, p2.position);
         
-        tempAnxietyText =GameObject.Find("AnxietyText").GetComponent<Text>();
-        AnxietyBar.SetMaxAnxiety(MAX_ANXIETY);
+        // tempAnxietyText =GameObject.Find("AnxietyText").GetComponent<Text>();
+        // AnxietyBar.SetMaxAnxiety(MAX_ANXIETY);
 
     }
 
@@ -103,7 +103,8 @@ public class AnxietyCalc : MonoBehaviour
             //TODO: Trigger panic mode
         }
         //Displaying anxiety information
-        DisplayAnxiety();
+        Debug.Log(anxiety);
+        // DisplayAnxiety();
     }
 
     private void UpdateMusic()
@@ -132,7 +133,7 @@ public class AnxietyCalc : MonoBehaviour
     public void LowerAnxiety()
     {
         anxiety = lowerBound;
-        DisplayAnxiety();
+        // DisplayAnxiety();
         _timeSincePet = 0;
         UpdateMusic();
     }
@@ -142,10 +143,10 @@ public class AnxietyCalc : MonoBehaviour
         return anxiety >= lowerBound && distance < LIMIT_DIST && _timeSincePet > petCooldown;
     }
 
-    public void DisplayAnxiety()
-    {
-        AnxietyBar.SetAnxiety(anxiety);
-        tempAnxietyText.text = "Anx:" + anxiety + "  More anxious:" + more_anxious;
-    }
+    // public void DisplayAnxiety()
+    // {
+    //     AnxietyBar.SetAnxiety(anxiety);
+    //     tempAnxietyText.text = "Anx:" + anxiety + "  More anxious:" + more_anxious;
+    // }
 
 }
