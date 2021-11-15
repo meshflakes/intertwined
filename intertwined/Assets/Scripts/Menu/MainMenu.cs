@@ -19,7 +19,7 @@ namespace Menu
 
         private void StartParkLevel()
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            SceneManager.LoadScene("Scenes/ParkLevel");
         }
         
         public void QuitGame()
