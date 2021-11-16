@@ -28,7 +28,7 @@ namespace Interactable.Ladder
         public void StartedClimbing()
         {
             _beingClimbed = true;
-            _ladderGrabbable.Enabled = false;
+            _ladderGrabbable.interactableEnabled = false;
         }
 
         public void StartedGrabbing()
@@ -48,7 +48,7 @@ namespace Interactable.Ladder
         public void StoppedClimbing()
         {
             _beingClimbed = false;
-            _ladderGrabbable.Enabled = true;
+            _ladderGrabbable.interactableEnabled = true;
         }
     }
 }

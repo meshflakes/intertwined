@@ -1,4 +1,7 @@
+using System;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Interactable
 {
@@ -10,14 +13,16 @@ namespace Interactable
         [Tooltip("Allows the boy to interact with this Interactable")]
         public bool boyCanInteract;
 
-        [HideInInspector]
-        public bool Enabled = true;
+        [FormerlySerializedAs("Enabled")] [HideInInspector]
+        public bool interactableEnabled = true;
+
+        private List<Character.Character> _characters;
         
         public abstract bool Interact(Character.Character interacter);
 
         public virtual bool Interact(Character.Character interacter, Interactable interactable)
         {
-            return Enabled && Interact(interacter);
+            return interactableEnabled && Interact(interacter);
         }
 
         /**
@@ -36,7 +41,7 @@ namespace Interactable
             {
                 other.gameObject.GetComponent<Character.Character>()
                     .CharInteractor.AddToInteractablesList(gameObject);
-                Debug.Log("adding to list");
+                Debug.Log($"adding {gameObject.name} to list: {gameObject}");
             }
         }
     
@@ -47,15 +52,23 @@ namespace Interactable
             {
                 other.gameObject.GetComponent<Character.Character>()
                     .CharInteractor.RemoveFromInteractablesList(gameObject);
-                Debug.Log("removing from list");
+                Debug.Log($"removing {gameObject.name} from list");
             }
         }
 
-        private bool CollidingObjectCanInteract(Collider other)
+        private bool CollidingObjectCanInteract(Component other)
         {
-            return Enabled &&
+            return interactableEnabled &&
                   (boyCanInteract && other.CompareTag("Boy")
                 || dogCanInteract && other.CompareTag("Dog"));
+        }
+
+        protected void RemoveInteractableFromCharacters()
+        {
+            GameObject.FindWithTag("Boy").GetComponent<Character.Character>().CharInteractor
+                .RemoveFromInteractablesList(gameObject);
+            GameObject.FindWithTag("Dog").GetComponent<Character.Character>().CharInteractor
+                .RemoveFromInteractablesList(gameObject);
         }
     }
 }

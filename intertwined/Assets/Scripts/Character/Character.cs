@@ -63,7 +63,6 @@ namespace Character
         private ClimbableObj _climbingObj;
         private Vector3 _normalizedClimbDirection;
         
-        
         private void Start()
         {
             _hasAnimator = TryGetComponent(out _animator);
@@ -100,7 +99,6 @@ namespace Character
             // set sphere position, with offset
             var position = transform.position;
             var spherePosition = new Vector3(position.x, position.y - groundedOffset, position.z);
-            // TODO: modify spherePosition based on rotation of char
             grounded =
                 Physics.CheckSphere(spherePosition, groundedRadius, groundLayers, QueryTriggerInteraction.Ignore);
 
@@ -162,7 +160,7 @@ namespace Character
         public void Move(Vector2 move, bool analogMovement, GameObject mainCamera)
         {
             var inputMagnitude = move.magnitude;
-
+            
             if (Climbing)
             {
                 Climb(move, mainCamera);
@@ -300,6 +298,7 @@ namespace Character
         public void StartClimbing(ClimbableObj obj, Vector3 startingPosition, Quaternion climbingDirection)
         {
             _climbingObj = obj;
+            Debug.Log($"climbing obj set as {_climbingObj}");
             _normalizedClimbDirection = climbingDirection.eulerAngles.normalized;
             var currRotationEuler = transform.rotation.eulerAngles;
             transform.rotation = Quaternion.Euler(climbingDirection.eulerAngles.x, currRotationEuler.y, currRotationEuler.z);

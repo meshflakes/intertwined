@@ -12,8 +12,9 @@ namespace Interactable
             var plankChildTransform = transform.Find("Plank");
             
             Instantiate(plank, plankChildTransform.position, plankChildTransform.rotation);
+            RemoveInteractableFromCharacters();
             Destroy(gameObject);
-
+            
             return true;
         }
 

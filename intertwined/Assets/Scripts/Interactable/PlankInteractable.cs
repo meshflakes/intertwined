@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Cinemachine.Utility;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace Interactable
@@ -17,8 +15,6 @@ namespace Interactable
         private bool _droppingToFinalPosition = false;
         private Vector3 _finalPosition = new Vector3(-20.42524f, 0.087f, -27.59458f);
         private Vector3 _finalAngle = new Vector3(0, 118.087f, 0);
-        // private Vector3 _finalPosition = new Vector3(-20.42524f, 0.08663402f, -27.59458f);
-        // private Vector3 _finalAngle = new Vector3(0, 118.087f, 0);
 
         public new void Start()
         {
@@ -29,22 +25,16 @@ namespace Interactable
 
         public void Update()
         {
-            // Debug.Log("script still exists");
-            // Debug.Log($"Plank world space rotation: {_transform.rotation.eulerAngles}, position: {_transform.position}");
             if (_droppingToFinalPosition)
             {
                 var z = GrabbableTransform.rotation.eulerAngles.z;
-                // var zAngle = Math.Pow(, 2);
-                Debug.Log($"Dropping to final position, angle value = {GrabbableTransform.rotation.eulerAngles.z}");
                 if (z > 358.5f || z < 2)
                 {
-                    Debug.Log("executing deletion");
                     Destroy(GrabbableRigidbody);
-                    Debug.Log($"still has rigidbody = {TryGetComponent(out Rigidbody _)}");
                     GrabbableTransform.position = _finalPosition;
                     GrabbableTransform.rotation = Quaternion.Euler(_finalAngle);
-                    // Destroy(GetComponent<PlankInteractable>());
-                    this.enabled = false;
+                    RemoveInteractableFromCharacters();
+                    enabled = false;
                 }
             }
         }

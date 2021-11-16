@@ -27,13 +27,10 @@ namespace Character
             
             _nextInteractionTime = Time.time + _timeBetweenInteractions;
             
-            Debug.Log("Interact Pressed");
-            
             if (HeldInteractable != null)
             {
                 Debug.Log("Trying to use held interactable");
                 if (TryInteractionUsingHeldInteractable()) return;
-                Debug.Log("Failed to use held interactable");
             }
 
             // Try to interact with any of the other 
@@ -43,10 +40,11 @@ namespace Character
             {
                 if (nextInteractionFocus.GetComponent<Interactable.Interactable>().Interact(PlayerChar))
                 {
-                    Debug.Log("Interacting!!!");
+                    Debug.Log($"Successful interaction with {nextInteractionFocus.name}");
                     return;
                 }
-                
+                else Debug.Log($"Failed interaction with {nextInteractionFocus.name}");
+
                 nextInteractionFocus = GetIthInteractionFocus(++i);
             }
                 
@@ -83,6 +81,7 @@ namespace Character
             // TODO: come up with more sophisticated logic for interaction
             if (i < _inRangeInteractables.Count)
             {
+                Debug.Log($"retrieved Interactable: {_inRangeInteractables[i]}, {_inRangeInteractables[i].name}");
                 return _inRangeInteractables[i];
             }
             else
