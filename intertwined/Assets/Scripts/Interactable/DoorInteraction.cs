@@ -1,7 +1,5 @@
 using System;
-using Interactable;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace Interactable
 {
@@ -10,9 +8,6 @@ namespace Interactable
     public class DoorInteraction : Interactable
     {
         private Transform _transform;
-        private Quaternion _closedRotation;
-        private Quaternion _openRotation;
-        private Quaternion _transitionRotationPerUpdate;
         private Vector3 _pivotPosition;
         private bool Swinging => _remainingRotation != 0;
         private float _remainingRotation = 0f;
