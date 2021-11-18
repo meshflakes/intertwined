@@ -204,8 +204,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dogCanInteract: 0
   boyCanInteract: 1
-  Enabled: 1
-  boyHoldingOffset: {x: 0, y: 2, z: 1}
+  interactableEnabled: 1
+  boyHoldingOffset: {x: 0, y: 1.35, z: 1}
   boyHoldingAngle: {x: 15, y: 0, z: 0}
   dogHoldingOffset: {x: 0, y: 0, z: 0}
   dogHoldingAngle: {x: 0, y: 0, z: 0}
