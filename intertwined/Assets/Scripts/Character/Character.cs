@@ -163,6 +163,8 @@ namespace Character
             
             if (Climbing)
             {
+                Debug.Log("Climbing=True");
+
                 Climb(move, mainCamera);
                 return;
             }
@@ -256,6 +258,7 @@ namespace Character
             // TODO: insert correct location in GetClimbingDirection
             var moveAmt = climbSpeed * climbSpeedModifier * Time.deltaTime * (_climbingObj.GetClimbingDirection(Vector3.zero) * Vector3.up);
 
+            Debug.Log($"grounded={grounded}, climbSpeedModifier={climbSpeedModifier}");
             if (!grounded || climbSpeedModifier >= 0)
             {
                 _controller.Move(moveAmt);
@@ -277,7 +280,8 @@ namespace Character
 
             // percieve climbable position to be further away from the char than it is, so the forward movement
             // according to the player is interpreted as moving up the ladder
-            var climbablePosition = _climbingObj.transform.position + (transform.rotation * Vector3.forward);
+            var climbablePosition = _climbingObj.transform.position + Vector3.forward;
+            // var climbablePosition = _climbingObj.transform.position + (transform.rotation * Vector3.forward);
             var climbablePosition2d = new Vector3(climbablePosition.x, 0f, climbablePosition.z);
 
             var climbableDirection = climbablePosition2d - position2d;
@@ -303,6 +307,7 @@ namespace Character
             var currRotationEuler = transform.rotation.eulerAngles;
             transform.rotation = Quaternion.Euler(climbingDirection.eulerAngles.x, currRotationEuler.y, currRotationEuler.z);
 
+            Debug.Log($"Climbing={Climbing}");
             // TODO: set starting position
         }
 

@@ -39,13 +39,15 @@ namespace Interactable
             {
                 // TODO: check angle of approach (glance vs full collision)
                 // TODO: calculate starting position
-                other.gameObject.GetComponent<Character.Character>()
-                    .StartClimbing(
+                Character.Character character = other.gameObject.GetComponent<Character.Character>();
+                character.StartClimbing(
                         this, 
                         Vector3.zero,
                         GetClimbingDirection(other.transform.position));
                 _numCharsClimbing++;
                 Debug.Log($"setting {gameObject.name} as in-focus movement interactable");
+                // Debug.Log($"character.Climbing={character.Climbing}, character.");
+                
             }
         }
     
