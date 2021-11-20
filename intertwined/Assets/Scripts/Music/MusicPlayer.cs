@@ -15,10 +15,10 @@ public class MusicPlayer : MonoBehaviour
     
     private Dictionary<float, float[]> parkLevelMappings = new Dictionary<float, float[]>
     {
-        {1, new float[] {0.5f, 0.5f, 0, 0, 0, 0.5f, 0.5f, 0}},
-        {2, new float[] {0.5f, 0.5f, 0.5f, 0, 0, 0.5f, 0.5f, 0.5f}},
-        {3, new float[] {0.5f, 0.5f, 0.5f, 0.5f, 0, 0.5f, 0.5f, 0.5f}},
-        {4, new float[] {0.5f, 0.5f, 0.5f, 0.5f, 0.25f, 0.5f, 0.5f, 0.5f}}
+        {1, new float[] {0.5f, 0.5f, 0, 0, 0, 0.5f, 0.25f, 0}},
+        {2, new float[] {0.5f, 0.5f, 0.5f, 0, 0, 0.5f, 0.25f, 0.35f}},
+        {3, new float[] {0.5f, 0.5f, 0.5f, 0.5f, 0, 0.5f, 0.25f, 0.35f}},
+        {4, new float[] {0.5f, 0.5f, 0.5f, 0.5f, 0.25f, 0.5f, 0.25f, 0.35f}}
     };
 
     private static float TRANSITION_DURATION = 4.0f;
