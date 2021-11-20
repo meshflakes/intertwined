@@ -7,6 +7,8 @@ TagManager:
   - CinemachineTarget
   - Boy
   - Dog
+  - DogSubObjects
+  - BoySubObjects
   layers:
   - Default
   - TransparentFX
@@ -16,7 +18,7 @@ TagManager:
   - UI
   - Character
   - Character Only Collision
-  - 
+  - Objects
   - 
   - 
   - 

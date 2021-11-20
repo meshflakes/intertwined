@@ -97,8 +97,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99d543356a4246029f5e4ceff3be6200, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogCanInteract: 0
-  boyCanInteract: 0
+  dogCanInteract: 1
+  boyCanInteract: 1
   interactableEnabled: 1
   boyHoldingOffset: {x: 0.3, y: 0.25, z: 0.1}
   boyHoldingAngle: {x: 0, y: 90, z: 0}

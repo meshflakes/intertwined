@@ -100,7 +100,7 @@ MonoBehaviour:
   dogCanInteract: 0
   boyCanInteract: 1
   interactableEnabled: 1
-  boyHoldingOffset: {x: 0.1, y: 0.4, z: 1}
+  boyHoldingOffset: {x: 0, y: 0.4, z: 1}
   boyHoldingAngle: {x: 0, y: 90, z: -60}
   dogHoldingOffset: {x: 0, y: 0, z: 0}
   dogHoldingAngle: {x: 0, y: 0, z: 0}

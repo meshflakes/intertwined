@@ -39,15 +39,13 @@ namespace Interactable
             {
                 // TODO: check angle of approach (glance vs full collision)
                 // TODO: calculate starting position
-                Character.Character character = other.gameObject.GetComponent<Character.Character>();
+                var character = other.gameObject.GetComponentInParent<Character.Character>();
                 character.StartClimbing(
                         this, 
                         Vector3.zero,
                         GetClimbingDirection(other.transform.position));
                 _numCharsClimbing++;
                 Debug.Log($"setting {gameObject.name} as in-focus movement interactable");
-                // Debug.Log($"character.Climbing={character.Climbing}, character.");
-                
             }
         }
     
@@ -55,7 +53,7 @@ namespace Interactable
         {
             if (CollidingObjectCanInteract(other))
             {
-                other.gameObject.GetComponent<Character.Character>()
+                other.gameObject.GetComponentInParent<Character.Character>()
                     .StopClimbing();
                 _numCharsClimbing--;
                 Debug.Log($"removing {gameObject.name} as in-focus movement interactable");
@@ -68,7 +66,7 @@ namespace Interactable
                    || (dogCanInteract && other.CompareTag("Dog"));
         }
 
-        public bool CurrentlyClimbable()
+        protected virtual bool CurrentlyClimbable()
         {
             if (ClimbingDisabled) return false;
 

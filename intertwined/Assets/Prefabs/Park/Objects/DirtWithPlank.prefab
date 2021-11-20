@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 538890590342311547}
   m_LocalRotation: {x: 0.37332854, y: 0.639747, z: 0.4315764, w: 0.51487035}
   m_LocalPosition: {x: -0.434, y: 2.194, z: -0.604}
-  m_LocalScale: {x: 18, y: 15, z: 10}
+  m_LocalScale: {x: 18, y: 15, z: 5}
   m_Children: []
   m_Father: {fileID: 8446449896543090267}
   m_RootOrder: 0
@@ -105,6 +105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8446449896543090267}
   - component: {fileID: 7983884306640953915}
+  - component: {fileID: 1462202076}
   m_Layer: 0
   m_Name: DirtWithPlank
   m_TagString: Untagged
@@ -140,10 +141,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ecd739c3e834577bdfc8eb177b933ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogCanInteract: 0
+  dogCanInteract: 1
   boyCanInteract: 0
-  Enabled: 1
+  interactableEnabled: 1
   plank: {fileID: 304690550622763103, guid: 023dca5733af83841a7f4eea85ae1214, type: 3}
+--- !u!65 &1462202076
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886778944283266959}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.2667513, y: 1, z: 2.9360306}
+  m_Center: {x: -0.40114385, y: 0, z: -0.037354942}
 --- !u!1 &7753419110386618825
 GameObject:
   m_ObjectHideFlags: 0

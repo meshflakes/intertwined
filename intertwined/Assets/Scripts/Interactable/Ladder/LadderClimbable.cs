@@ -28,5 +28,13 @@ namespace Interactable.Ladder
             
             if (CollidingObjectCanInteract(other) && !BeingClimbed) _ladderManager.StoppedClimbing();
         }
+
+        protected override bool CurrentlyClimbable()
+        {
+            // Debug.Log("in LadderClimbable's CurrentlyClimbable method");
+            if (_rigidbody.velocity.magnitude > 0.1f) return false;
+
+            return base.CurrentlyClimbable();
+        }
     }
 }
