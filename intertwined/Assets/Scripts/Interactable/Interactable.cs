@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -43,12 +42,8 @@ namespace Interactable
                     .CharInteractor.AddToInteractablesList(gameObject);
                 Debug.Log($"adding {gameObject.name} to list: {gameObject}");
             }
-            
-            
         }
         
-        
-    
         protected void OnTriggerExit(Collider other)
         {
             // Remove itself to the character's interactables list
