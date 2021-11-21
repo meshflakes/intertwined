@@ -54,8 +54,7 @@ namespace Camera
         
             _targetCameraPos = midpoint + _cameraOffset * zoomModifier; 
             
-            // TODO: change smoothness to have some dependence on delta time (for consistent smoothing across frame rates)
-            _cameraTransform.position = Vector3.Slerp(_cameraTransform.position, _targetCameraPos, _smoothness);
+            _cameraTransform.position = Vector3.Slerp(_cameraTransform.position, _targetCameraPos, _smoothness * Time.deltaTime);
         }
 
         private void PlayerControlledRotation()
