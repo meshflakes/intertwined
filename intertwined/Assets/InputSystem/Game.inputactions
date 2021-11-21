@@ -223,7 +223,7 @@
                     "path": "<Keyboard>/e",
                     "interactions": "Press(behavior=2)",
                     "processors": "",
-                    "groups": "",
+                    "groups": "KeyboardMouse",
                     "action": "DogInteract",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -351,11 +351,22 @@
                 },
                 {
                     "name": "",
+                    "id": "fcddf9c1-d54f-4d09-965c-b706f9df376f",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "RotateCamClockwise",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "c8d936db-dd22-446d-b265-782b4be1f581",
                     "path": "<Gamepad>/start",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
-                    "groups": "",
+                    "groups": "KeyboardMouse",
                     "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -366,7 +377,7 @@
                     "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "KeyboardMouse",
                     "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -378,6 +389,17 @@
                     "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "Gamepad",
+                    "action": "RotateCamAntiClockwise",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "af1506c3-2f22-4600-b772-03cb44d3273f",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
                     "action": "RotateCamAntiClockwise",
                     "isComposite": false,
                     "isPartOfComposite": false
