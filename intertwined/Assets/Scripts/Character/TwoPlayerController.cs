@@ -30,8 +30,8 @@ namespace Character
         private void Start()
         {
             _input = GetComponent<GameInputs>();
-            _boy = GameObject.FindGameObjectWithTag("Boy").GetComponent<Character>();
-            _dog = GameObject.FindGameObjectWithTag("Dog").GetComponent<Character>();
+            _boy = GameObject.FindGameObjectWithTag("Boy").GetComponentInParent<Character>();
+            _dog = GameObject.FindGameObjectWithTag("Dog").GetComponentInParent<Character>();
         }
 
         private void Update()
