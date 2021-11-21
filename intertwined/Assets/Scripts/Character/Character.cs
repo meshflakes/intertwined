@@ -156,35 +156,11 @@ namespace Character
                 _verticalVelocity += gravity * Time.deltaTime;
             }
         }
-
+        
         public void Move(Vector2 move, bool analogMovement, GameObject mainCamera)
         {
-            
-            //If players are about to be out of bounds, do not let them move in that direction
-            Vector3 vp = UnityEngine.Camera.main.WorldToViewportPoint(transform.position);
-            if (vp.x < 0.05 && move.x < 0)
-            {
-                move = Vector2.zero;
-            }
-            else if (vp.x > 0.95 && move.x > 0)
-            {
-                move = Vector2.zero;
-            }
-            if (vp.y < 0.05 && move.y < 0)
-            {
-                move = Vector2.zero;
-            }
-            else if (vp.y > 0.95 && move.y > 0)
-            {
-                move = Vector2.zero;
-            }
-            /*
-            if (!( vp.x > 0.05 && vp.x < 0.95 && vp.y > 0.05 && vp.y < 0.95))
-            {
-                Debug.Log("Out of range");
+            move = LimitMoveBounds(move);
 
-            }*/
-            
             var inputMagnitude = move.magnitude;
             
             if (Climbing)
@@ -355,6 +331,30 @@ namespace Character
             var position = transform.position;
             Gizmos.DrawSphere(new Vector3(position.x, position.y - groundedOffset, position.z),
                 groundedRadius);
+        }
+        
+        private Vector2 LimitMoveBounds(Vector2 move)
+        {
+            //If players are about to be out of bounds, do not let them move in that direction
+            Vector3 vp = UnityEngine.Camera.main.WorldToViewportPoint(transform.position);
+            if (vp.x < 0.05 && move.x < 0)
+            {
+                move = Vector2.zero;
+            }
+            else if (vp.x > 0.95 && move.x > 0)
+            {
+                move = Vector2.zero;
+            }
+            if (vp.y < 0.05 && move.y < 0)
+            {
+                move = Vector2.zero;
+            }
+            else if (vp.y > 0.95 && move.y > 0)
+            {
+                move = Vector2.zero;
+            }
+
+            return move;
         }
     }
 }
