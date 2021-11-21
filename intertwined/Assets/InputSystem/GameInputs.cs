@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Diagnostics;
+using UnityEngine;
 using UnityEngine.InputSystem;
+using Debug = UnityEngine.Debug;
 
 namespace InputSystem
 {
@@ -43,7 +45,18 @@ namespace InputSystem
 
         public void OnDogInteract(InputValue value)
         {
+            // UnityEngine.Debug.Log($"OnDogInteract calling function: {new StackFrame(1, true).GetMethod().Name}");
             DogInteractInput(value.isPressed);
+        }
+
+        public void OnRotateCamClockwise(InputValue value)
+        {
+            Debug.Log($"OnRotateCamClockwise called with value={value.isPressed}, by {new StackFrame(1, true).GetMethod().Name}");
+        }
+        
+        public void OnRotateCamAntiClockwise(InputValue value)
+        {
+            Debug.Log($"OnRotateCamClockwise called with value={value.isPressed}, by {new StackFrame(1, true).GetMethod().Name}");
         }
 
         private void DogMoveInput(Vector2 newMoveDirection)
@@ -53,6 +66,7 @@ namespace InputSystem
 
         private void DogInteractInput(bool newInteractState)
         {
+
             dogInteract = !dogInteract;
         }
     }

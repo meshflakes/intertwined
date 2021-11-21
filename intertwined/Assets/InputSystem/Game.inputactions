@@ -38,9 +38,17 @@
                     "interactions": "Press(behavior=2)"
                 },
                 {
-                    "name": "RotateCam",
+                    "name": "RotateCamClockwise",
                     "type": "Button",
                     "id": "7cae0da7-61a4-454a-a3cd-08454c045319",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RotateCamAntiClockwise",
+                    "type": "Button",
+                    "id": "314a177b-2dfe-4195-9440-8cf55afbf7cd",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -333,11 +341,11 @@
                 {
                     "name": "",
                     "id": "e0c4891f-b572-47de-baa0-2d616dd85273",
-                    "path": "<Gamepad>/rightShoulder",
-                    "interactions": "",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "RotateCam",
+                    "action": "RotateCamClockwise",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -360,6 +368,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9ddd0c0b-30d8-47e1-8bdc-789df3ec2e68",
+                    "path": "<Gamepad>/rightShoulder",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "RotateCamAntiClockwise",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
