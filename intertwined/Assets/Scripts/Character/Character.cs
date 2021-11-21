@@ -62,7 +62,7 @@ namespace Character
         private bool Climbing => _climbingObj != null;
         private ClimbableObj _climbingObj;
         private Vector3 _normalizedClimbDirection;
-        
+
         private void Start()
         {
             _hasAnimator = TryGetComponent(out _animator);
@@ -159,6 +159,39 @@ namespace Character
 
         public void Move(Vector2 move, bool analogMovement, GameObject mainCamera)
         {
+            
+            //TODO:
+            //Check for camera to be PlayerFollow (not a cutscene cam)
+            //_currentCamera = CameraTypes.PlayerFollow;
+            //Check whether players are about to be out of bounds
+            //If players are about to be out of bounds, do not let them move in that direction
+            //TODO: Prevent characters from moving out of bounds
+            Vector3 vp = UnityEngine.Camera.main.WorldToViewportPoint(transform.position);
+            Debug.Log(transform.position);
+            if (vp.x < 0.05 && move.x < 0)
+            {
+                move.x=0;
+            }
+            else if (vp.x > 0.95 && move.x > 0)
+            {
+                move.x = 0;
+            }
+
+            if (vp.y < 0.05 && move.y < 0)
+            {
+                move.y = 0;
+            }
+            else if (vp.y > 0.95 && move.y > 0)
+            {
+                move.y = 0;
+            }
+            if (!( vp.x > 0.05 && vp.x < 0.95 && vp.y > 0.05 && vp.y < 0.95))
+            {
+                Debug.Log("Out of range");
+
+            }
+
+            
             var inputMagnitude = move.magnitude;
             
             if (Climbing)
