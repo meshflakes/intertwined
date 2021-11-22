@@ -13,6 +13,8 @@ namespace Menu
         public static bool IsPaused = false;
         private GameInputs _input;
 
+        private float timeSincePause = 0;
+        private float pauseCooldown = 1;
         private void Start()
         {
             _input = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameInputs>();
@@ -21,14 +23,18 @@ namespace Menu
 
         private void Update()
         {
-            if (_input.paused)
+            timeSincePause += Time.unscaledDeltaTime;
+            if (_input.paused && timeSincePause>pauseCooldown)
             {
-                //Toggle
-                Pause();
-            }
-            else
-            {
-                Resume();
+                if (IsPaused)
+                {
+                    Resume();
+                }
+                else
+                {
+                    Pause();
+                }
+                timeSincePause = 0;
             }
         }
         

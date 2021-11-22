@@ -364,7 +364,7 @@
                     "name": "",
                     "id": "c8d936db-dd22-446d-b265-782b4be1f581",
                     "path": "<Gamepad>/start",
-                    "interactions": "Press",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Pause",
