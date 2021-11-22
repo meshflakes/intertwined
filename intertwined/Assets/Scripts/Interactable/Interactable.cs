@@ -1,9 +1,11 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 
 namespace Interactable
 {
+    [RequireComponent(typeof(Collider))]
     public abstract class Interactable : MonoBehaviour
     {
         [Tooltip("Allows the dog to interact with this Interactable")]
@@ -16,7 +18,17 @@ namespace Interactable
         public bool interactableEnabled = true;
 
         private List<Character.Character> _characters;
-        
+
+        protected void OnValidate()
+        {
+            foreach (var interactableCollider in GetComponents<Collider>())
+            {
+                if (interactableCollider.isTrigger) return;
+            }
+
+            throw new ArgumentException($"No trigger collider on interactable: {gameObject.name}");
+        }
+
         public abstract bool Interact(Character.Character interacter);
 
         public virtual bool Interact(Character.Character interacter, Interactable interactable)
@@ -40,7 +52,7 @@ namespace Interactable
             {
                 other.gameObject.GetComponentInParent<Character.Character>()
                     .CharInteractor.AddToInteractablesList(gameObject);
-                Debug.Log($"adding {gameObject.name} to list: {gameObject}");
+                Debug.Log($"adding {gameObject.name} to list");
             }
         }
         

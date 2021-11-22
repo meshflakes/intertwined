@@ -19,8 +19,8 @@ TagManager:
   - Character
   - Character Only Collision
   - Objects
-  - 
-  - 
+  - Ignore Characters
+  - CharacterBlocker
   - 
   - 
   - 

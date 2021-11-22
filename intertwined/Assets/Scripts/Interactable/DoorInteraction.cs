@@ -1,10 +1,10 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Interactable
 {
-
-
+    [RequireComponent(typeof(AudioSource))]
     public class DoorInteraction : Interactable
     {
         private Transform _transform;
@@ -28,16 +28,21 @@ namespace Interactable
         [Space(10)] [Tooltip("Starting state of the door")]
         public bool open = false;
 
-        [Tooltip("Toggle direction of opening the door")]
-        public bool openingTowardsNorth = true;
+        [Tooltip("Toggle direction of opening the door")] [FormerlySerializedAs("openingTowardsNorth")]
+        public bool openClockwise = true;
 
+        public bool canBeClosedAfterOpening = false;
 
+        [Header("Audio")]
+        public AudioSource doorOpenAudio;
+        public AudioSource unlockAudio;
+        public AudioSource doorLockedAudio;
 
         protected void Start()
         {
             _transform = gameObject.GetComponent<Transform>();
             _pivotPosition = _transform.Find("DoorPivot").position;
-            _rotationAxisModifier = openingTowardsNorth ? 1 : -1;
+            _rotationAxisModifier = openClockwise ? 1 : -1;
         }
 
         protected void Update()
@@ -51,38 +56,42 @@ namespace Interactable
 
         public override bool Interact(Character.Character interacter)
         {
-            Debug.Log("Trying to interact with door");
             if (!unlocked || Swinging) return false;
 
             if (!open)
             {
-                Debug.Log("opening");
+                if (doorOpenAudio != null && !doorOpenAudio.isPlaying) doorOpenAudio.Play();
                 open = true;
                 _remainingRotation = rotation;
                 _rotationAxis = Vector3.up * _rotationAxisModifier;
+                return true;
             }
-            else
+            else if (canBeClosedAfterOpening)
             {
-                Debug.Log("closing");
                 open = false;
                 _remainingRotation = rotation;
                 _rotationAxis = Vector3.down * _rotationAxisModifier;
+                return true;
             }
 
-            return true;
+            return false;
         }
 
         public override bool Interact(Character.Character interacter, Interactable interactable)
         {
             if (lockId == 0 || unlocked) return Interact(interacter);
 
-            // check if Interactable is a key AND the key can unlock this door
             if (interactable is KeyType key && key.CanUnlock(lockId))
             {
+                if (unlockAudio != null && !unlockAudio.isPlaying) unlockAudio.Play();
                 unlocked = true;
                 return Interact(interacter);
             }
-            else return false;
+            else
+            {
+                if (!doorLockedAudio.isPlaying) doorLockedAudio.Play();
+                return false;
+            }
         }
 
         public override bool UsedWith(Interactable other)
