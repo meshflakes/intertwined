@@ -22,11 +22,14 @@ namespace Interactable
 
         private bool _inFinalPosition = false;
 
+        private int _previousLayer;
+
         public new void Start()
         {
             base.Start();
             _unlockableLockIdsSet = new HashSet<int>(unlockableLockIds);
             _unlockableLockIdsSet.Add(2);
+            _previousLayer = gameObject.layer;
         }
 
         protected new void OnValidate()
@@ -49,6 +52,7 @@ namespace Interactable
                 if (z > 358.5f || z < 2)
                 {
                     _droppingToFinalPosition = false;
+                    gameObject.layer = _previousLayer;
                     
                     Destroy(GrabbableRigidbody);
                     GrabbableTransform.position = _finalPosition;
@@ -91,6 +95,7 @@ namespace Interactable
         public void AidedRelease()
         {
             base.Release();
+            gameObject.layer = LayerMask.NameToLayer("Ignore Characters");
             
             GrabbableRigidbody.MovePosition(_releasePosition);
             GrabbableRigidbody.MoveRotation(Quaternion.Euler(_releaseAngle));
