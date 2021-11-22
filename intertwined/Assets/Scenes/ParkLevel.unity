@@ -12296,7 +12296,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pauseMenuUI: {fileID: 1233354556}
-  inputActionAsset: {fileID: -944628639613478452, guid: 26272aa5daa31114fa97146ffc81c657, type: 3}
 --- !u!4 &462784472 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2558262452497233017, guid: 1d741d41c4cbcf847998ef3bf2db7a77, type: 3}
@@ -33769,7 +33768,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 936.5, y: 526}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1233354558
 MonoBehaviour:
@@ -33791,7 +33790,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: cd79fc1c43f4b2d4b949e47acb4cc86a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
