@@ -22,6 +22,8 @@ namespace Controls
         [Header("Camera Rotation Inputs")]
         public bool clockwiseRotation;
         public bool antiClockwiseRotation;
+
+        public bool paused;
         
         public void OnBoyMove(InputValue value)
         {
@@ -73,6 +75,11 @@ namespace Controls
         public void OnRotateCamAntiClockwise(InputValue value)
         {
             antiClockwiseRotation = value.Get<Single>() > 0.5f;
+        }
+
+        public void OnPause(InputValue value)
+        {
+            paused = value.Get<Single>() > 0.5f;
         }
 
         private int GetNetRotationEffect()

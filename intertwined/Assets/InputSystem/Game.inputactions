@@ -59,7 +59,7 @@
                     "id": "7ac41cda-7a16-4cec-b1f9-1346e83cc8f1",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "Press(behavior=2)"
                 }
             ],
             "bindings": [
@@ -366,7 +366,7 @@
                     "path": "<Gamepad>/start",
                     "interactions": "Press",
                     "processors": "",
-                    "groups": "KeyboardMouse",
+                    "groups": "Gamepad",
                     "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -426,7 +426,7 @@
                     "path": "<Keyboard>/enter",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "KeyboardMouse",
                     "action": "Begin",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -437,7 +437,7 @@
                     "path": "<Gamepad>/start",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Gamepad",
                     "action": "Begin",
                     "isComposite": false,
                     "isPartOfComposite": false
