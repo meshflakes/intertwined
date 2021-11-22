@@ -38,9 +38,17 @@
                     "interactions": "Press(behavior=2)"
                 },
                 {
-                    "name": "RotateCam",
+                    "name": "RotateCamClockwise",
                     "type": "Button",
                     "id": "7cae0da7-61a4-454a-a3cd-08454c045319",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RotateCamAntiClockwise",
+                    "type": "Button",
+                    "id": "314a177b-2dfe-4195-9440-8cf55afbf7cd",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -215,7 +223,7 @@
                     "path": "<Keyboard>/e",
                     "interactions": "Press(behavior=2)",
                     "processors": "",
-                    "groups": "",
+                    "groups": "KeyboardMouse",
                     "action": "DogInteract",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -334,10 +342,21 @@
                     "name": "",
                     "id": "e0c4891f-b572-47de-baa0-2d616dd85273",
                     "path": "<Gamepad>/rightShoulder",
-                    "interactions": "",
+                    "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "Gamepad",
-                    "action": "RotateCam",
+                    "action": "RotateCamClockwise",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fcddf9c1-d54f-4d09-965c-b706f9df376f",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "RotateCamClockwise",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -345,9 +364,9 @@
                     "name": "",
                     "id": "c8d936db-dd22-446d-b265-782b4be1f581",
                     "path": "<Gamepad>/start",
-                    "interactions": "",
+                    "interactions": "Press",
                     "processors": "",
-                    "groups": "",
+                    "groups": "KeyboardMouse",
                     "action": "Pause",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -358,8 +377,30 @@
                     "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "KeyboardMouse",
                     "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9ddd0c0b-30d8-47e1-8bdc-789df3ec2e68",
+                    "path": "<Gamepad>/leftShoulder",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "RotateCamAntiClockwise",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "af1506c3-2f22-4600-b772-03cb44d3273f",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "Press(behavior=2)",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "RotateCamAntiClockwise",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

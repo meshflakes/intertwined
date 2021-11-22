@@ -1,4 +1,5 @@
 ﻿using System;
+using Controls;
 using UnityEngine;
 
 namespace Camera
@@ -18,6 +19,7 @@ namespace Camera
         private readonly float _cameraRotation;
 
         private Vector3 _targetCameraPos;
+        private GameInputs _input;
         
         public PlayerFollowCamera(Transform p1, Transform p2, float zoom, float zoomStartDist, 
                 float maxDist, float smoothness, Vector3 cameraOffset, Transform cameraTransform, float cameraRotation)
@@ -31,6 +33,8 @@ namespace Camera
             _cameraOffset = cameraOffset;
             _cameraTransform = cameraTransform;
             _cameraRotation = cameraRotation;
+            
+            _input = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameInputs>();
         }
 
         public override void UpdateCamera()
@@ -50,20 +54,12 @@ namespace Camera
         
             _targetCameraPos = midpoint + _cameraOffset * zoomModifier; 
             
-            // TODO: change smoothness to have some dependence on delta time (for consistent smoothing across frame rates)
-            _cameraTransform.position = Vector3.Slerp(_cameraTransform.position, _targetCameraPos, _smoothness);
+            _cameraTransform.position = Vector3.Slerp(_cameraTransform.position, _targetCameraPos, _smoothness * Time.deltaTime);
         }
 
         private void PlayerControlledRotation()
         {
-            // TODO: change to get input from input system instead of manual key check
-            if (Input.GetMouseButton(0))
-            {
-                RotateCam(_cameraRotation * Time.deltaTime);
-            } else if (Input.GetMouseButton(1))
-            {
-                RotateCam(-_cameraRotation * Time.deltaTime);
-            }
+            RotateCam(_input.CameraRotation * _cameraRotation * Time.deltaTime);
         }
         
         private void RotateCam(float angle)
