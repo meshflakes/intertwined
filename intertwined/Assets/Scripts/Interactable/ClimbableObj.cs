@@ -62,8 +62,8 @@ namespace Interactable
         
         protected bool CollidingObjectCanInteract(Collider other)
         {
-            return (boyCanInteract && other.CompareTag("Boy"))
-                   || (dogCanInteract && other.CompareTag("Dog"));
+            return (boyCanInteract && (other.CompareTag("Boy") || other.CompareTag("BoySubObjects")))
+                   || (dogCanInteract && (other.CompareTag("Dog") || other.CompareTag("DogSubObjects")));
         }
 
         protected virtual bool CurrentlyClimbable()
