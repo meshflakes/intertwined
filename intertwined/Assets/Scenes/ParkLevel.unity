@@ -55777,6 +55777,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: BoySubObjects
       objectReference: {fileID: 0}
+    - target: {fileID: 9045712147612786109, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
+      propertyPath: smoothness
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045712147612786109, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
+      propertyPath: cameraRotation
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 9045712147612786110, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.012081
