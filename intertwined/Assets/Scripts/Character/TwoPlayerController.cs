@@ -1,10 +1,8 @@
-﻿using InputSystem;
+﻿using Controls;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace Character
 {
-    [RequireComponent(typeof(PlayerInput))]
     public class TwoPlayerController : MonoBehaviour
     {
         // player objects
@@ -17,7 +15,6 @@ namespace Character
 
         public AnxietyCalc anxietyCalc;
 
-
         private void Awake()
         {
             // get a reference to our main camera
@@ -29,9 +26,9 @@ namespace Character
 
         private void Start()
         {
-            _input = GetComponent<GameInputs>();
-            _boy = GameObject.FindGameObjectWithTag("Boy").GetComponent<Character>();
-            _dog = GameObject.FindGameObjectWithTag("Dog").GetComponent<Character>();
+            _input = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameInputs>();
+            _boy = GameObject.FindGameObjectWithTag("Boy").GetComponentInParent<Character>();
+            _dog = GameObject.FindGameObjectWithTag("Dog").GetComponentInParent<Character>();
         }
 
         private void Update()

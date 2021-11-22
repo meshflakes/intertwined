@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 304690550622763103}
   m_LocalRotation: {x: 0.6791078, y: 0.4755164, z: 0.4580641, w: 0.32073995}
   m_LocalPosition: {x: 3.28, y: 2.1, z: -0.6}
-  m_LocalScale: {x: 18, y: 15, z: 10}
+  m_LocalScale: {x: 18, y: 15, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -99,8 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dogCanInteract: 0
   boyCanInteract: 1
-  Enabled: 1
-  boyHoldingOffset: {x: 0.1, y: 1.05, z: 1}
+  interactableEnabled: 1
+  boyHoldingOffset: {x: 0, y: 0.4, z: 1}
   boyHoldingAngle: {x: 0, y: 90, z: -60}
   dogHoldingOffset: {x: 0, y: 0, z: 0}
   dogHoldingAngle: {x: 0, y: 0, z: 0}

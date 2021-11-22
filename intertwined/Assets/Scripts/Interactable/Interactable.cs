@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
@@ -34,23 +33,23 @@ namespace Interactable
          */
         public abstract bool UsedWith(Interactable other);
         
-        private void OnTriggerEnter(Collider other)
+        protected void OnTriggerEnter(Collider other)
         {
             // Add itself to the character's interactables list
             if (CollidingObjectCanInteract(other))
             {
-                other.gameObject.GetComponent<Character.Character>()
+                other.gameObject.GetComponentInParent<Character.Character>()
                     .CharInteractor.AddToInteractablesList(gameObject);
                 Debug.Log($"adding {gameObject.name} to list: {gameObject}");
             }
         }
-    
-        private void OnTriggerExit(Collider other)
+        
+        protected void OnTriggerExit(Collider other)
         {
             // Remove itself to the character's interactables list
             if (CollidingObjectCanInteract(other))
             {
-                other.gameObject.GetComponent<Character.Character>()
+                other.gameObject.GetComponentInParent<Character.Character>()
                     .CharInteractor.RemoveFromInteractablesList(gameObject);
                 Debug.Log($"removing {gameObject.name} from list");
             }
@@ -59,15 +58,15 @@ namespace Interactable
         private bool CollidingObjectCanInteract(Component other)
         {
             return interactableEnabled &&
-                  (boyCanInteract && other.CompareTag("Boy")
-                || dogCanInteract && other.CompareTag("Dog"));
+                  (boyCanInteract && (other.CompareTag("Boy") || other.CompareTag("BoySubObjects"))
+                || dogCanInteract && (other.CompareTag("Dog") || other.CompareTag("DogSubObjects")));
         }
 
         protected void RemoveInteractableFromCharacters()
         {
-            GameObject.FindWithTag("Boy").GetComponent<Character.Character>().CharInteractor
+            GameObject.FindWithTag("Boy").GetComponentInParent<Character.Character>().CharInteractor
                 .RemoveFromInteractablesList(gameObject);
-            GameObject.FindWithTag("Dog").GetComponent<Character.Character>().CharInteractor
+            GameObject.FindWithTag("Dog").GetComponentInParent<Character.Character>().CharInteractor
                 .RemoveFromInteractablesList(gameObject);
         }
     }

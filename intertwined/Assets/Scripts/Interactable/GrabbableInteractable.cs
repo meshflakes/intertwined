@@ -52,7 +52,7 @@ namespace Interactable
             GrabbableTransform.SetParent(_heldByTransform, true);
             _heldByTransform = obj.GetComponent<Transform>();
             
-            _heldByCharacter = obj.GetComponent<Character.Character>();
+            _heldByCharacter = obj.GetComponentInParent<Character.Character>();
             _heldByCharacter.CharInteractor.HeldInteractable = this;
             _holdingChar = obj.CompareTag("Dog") ? CharType.Dog : CharType.Boy;
             
