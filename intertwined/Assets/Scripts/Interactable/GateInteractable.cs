@@ -12,6 +12,9 @@ namespace Interactable
         [Tooltip("Time spent viewing the end position")]
         public float minimumTimeBeforeReturn = 3;
 
+        public AudioSource unlockAndOpenAudio;
+        public AudioSource lockedAudio;
+
         private CameraSequenceManager _cameraSequence;
         private GameObject _lock;
         
@@ -27,9 +30,14 @@ namespace Interactable
 
         public override bool Interact(Character.Character interacter)
         {
-            if (unlocked) return base.Interact(interacter);
+            if (unlocked)
+            {
+                unlockAndOpenAudio.Play();
+                return base.Interact(interacter);
+            }
             
             // TODO: remove player control? 
+            if (!lockedAudio.isPlaying) lockedAudio.Play();
             _cameraSequence.StartNewCameraSequence();
             return true;
         }
@@ -39,6 +47,7 @@ namespace Interactable
             if (!unlocked && base.Interact(interacter, interactable) && unlocked)
             {
                 Destroy(_lock);
+                if (!unlockAndOpenAudio.isPlaying) unlockAndOpenAudio.Play();
                 return true;
             }
 
