@@ -1,40 +1,43 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Controls;
 
 namespace Menu
 {
     public class PauseMenu : MonoBehaviour
     {
 
-        private GameObject _pauseMenuUI;
+        public GameObject _pauseMenuUI;
 
-        public InputActionAsset inputActionAsset;
         public static bool IsPaused = false;
+        private GameInputs _input;
 
+        private float timeSincePause = 0;
+        private float pauseCooldown = 1;
         private void Start()
         {
-            _pauseMenuUI = transform.Find("PauseMenuUI").gameObject;
-            
-            inputActionAsset.Enable();
-
-            var pause = inputActionAsset.FindAction("Pause");
-
-            pause.started += PauseClicked;
+            _input = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameInputs>();
+            Pause();
         }
 
-        private void PauseClicked(InputAction.CallbackContext context)
+        private void Update()
         {
-            if (IsPaused)
+            timeSincePause += Time.unscaledDeltaTime;
+            if (_input.paused && timeSincePause>pauseCooldown)
             {
-                Resume();
+                if (IsPaused)
+                {
+                    Resume();
+                }
+                else
+                {
+                    Pause();
+                }
+                timeSincePause = 0;
             }
-            else
-            {
-                Pause();
-            }
-            
         }
+        
 
         public void Resume()
         {
