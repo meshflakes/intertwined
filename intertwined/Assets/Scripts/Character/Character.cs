@@ -51,6 +51,7 @@ namespace Character
         private int _animIDGrounded;
         private int _animIDFreeFall;
         private int _animIDMotionSpeed;
+        private Animator anim; 
 
         private Animator _animator;
         private bool _hasAnimator;
@@ -65,6 +66,7 @@ namespace Character
 
         private void Start()
         {
+            anim = GetComponentInChildren<Animator> ();
             _hasAnimator = TryGetComponent(out _animator);
             _controller = GetComponent<CharacterController>();
 
@@ -174,7 +176,12 @@ namespace Character
             var targetSpeed = moveSpeed;
             
             // if there is no input, set the target speed to 0
-            if (move == Vector2.zero) targetSpeed = 0.0f;
+            if (move == Vector2.zero)
+            {
+                anim.SetInteger("Walking", 0);
+                targetSpeed = 0.0f;
+            }
+            else anim.SetInteger("Walking", 1);;
 
             CalculateAndUpdateSpeed(inputMagnitude, analogMovement, targetSpeed);
             

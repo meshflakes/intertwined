@@ -1,0 +1,1288 @@
+fileFormatVersion: 2
+guid: 81fa04a6c8d54f34a9ef1dec958ab0f8
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: Take 001
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: "Avatar Rig Configuration mis-match. Inbetween bone rotation
+      in configuration does not match rotation in animation file:\n\t'Intertwined_Dog_rig:neck_02_jnt'
+      : rotation error = 5.110975 deg\n"
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Intertwined_Dog_rig:pelvis_jnt' has translation
+      animation that will be discarded.\n\t'Intertwined_Dog_rig:pelvis_jnt' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'Intertwined_Dog_rig:spine_01_jnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Intertwined_Dog_rig:spine_01_jnt'
+      has scale animation that will be discarded.\n\t'Intertwined_Dog_rig:spine_02_jnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Intertwined_Dog_rig:spine_02_jnt'
+      has scale animation that will be discarded.\n\t'Intertwined_Dog_rig:spine_03_jnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Intertwined_Dog_rig:spine_03_jnt'
+      has scale animation that will be discarded.\n\t'Intertwined_Dog_rig:spine_04_jnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Intertwined_Dog_rig:spine_04_jnt'
+      has scale animation that will be discarded.\n\t'Intertwined_Dog_rig:neck_01_jnt'
+      has translation animation that will be discarded.\n\t'Intertwined_Dog_rig:neck_02_jnt'
+      has translation animation that will be discarded.\n\t'Intertwined_Dog_rig:neck_02_jnt'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Intertwined_Dog_rig:clavicle_L_IK_jnt'
+      has translation animation that will be discarded.\n\t'Intertwined_Dog_rig:clavicle_R_IK_jnt'
+      has translation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 1
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: Dog_running_Anim_Nov21(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:dog_geo_grp
+      parentName: Dog_running_Anim_Nov21(Clone)
+      position: {x: -0, y: 0.015848229, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:dog_geo
+      parentName: Intertwined_Dog_rig:dog_geo_grp
+      position: {x: -0, y: -0.015848229, z: 0}
+      rotation: {x: 0.00013066016, y: -0.000010417418, z: 0.000012351022, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:eyes_geo
+      parentName: Intertwined_Dog_rig:dog_geo_grp
+      position: {x: -0, y: -0.015848229, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:DO_NOT_TOUCH
+      parentName: Dog_running_Anim_Nov21(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:Joint_grp
+      parentName: Intertwined_Dog_rig:DO_NOT_TOUCH
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:root_jnt
+      parentName: Intertwined_Dog_rig:Joint_grp
+      position: {x: 0.000734258, y: 0.015069446, z: -0.0013925596}
+      rotation: {x: -0.023670506, y: 0.64907247, z: -0.7599319, w: -0.025458785}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:spine_01_jnt
+      parentName: Intertwined_Dog_rig:root_jnt
+      position: {x: 6.1629755e-34, y: 0, z: -3.330669e-18}
+      rotation: {x: 0.06040148, y: -0.6901668, z: 0.71837616, w: 0.06290663}
+      scale: {x: 0.99978054, y: 1.0099474, z: 1}
+    - name: Intertwined_Dog_rig:spine_02_jnt
+      parentName: Intertwined_Dog_rig:spine_01_jnt
+      position: {x: -3.4340062e-19, y: 0.002925308, z: 8.881784e-18}
+      rotation: {x: -0.055983912, y: -0.016612794, z: 0.06375516, w: 0.9962556}
+      scale: {x: 0.99978054, y: 1.0099474, z: 1}
+    - name: Intertwined_Dog_rig:spine_03_jnt
+      parentName: Intertwined_Dog_rig:spine_02_jnt
+      position: {x: -1.0181613e-17, y: 0.0024109986, z: 0}
+      rotation: {x: -0.058822926, y: -0.016588336, z: 0.064881474, w: 0.99601966}
+      scale: {x: 0.99978054, y: 1.0099474, z: 1}
+    - name: Intertwined_Dog_rig:spine_04_jnt
+      parentName: Intertwined_Dog_rig:spine_03_jnt
+      position: {x: -8.483119e-18, y: 0.0025301017, z: -6.661338e-18}
+      rotation: {x: -0.056839578, y: -0.018001089, z: 0.044154968, w: 0.997244}
+      scale: {x: 0.99978054, y: 1.0099474, z: 1}
+    - name: Intertwined_Dog_rig:spine_05_jnt
+      parentName: Intertwined_Dog_rig:spine_04_jnt
+      position: {x: -6.4009167e-18, y: 0.0027665545, z: 8.881784e-18}
+      rotation: {x: -0.0047382955, y: 0.0043312726, z: -0.039125714, w: 0.99921376}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:front_L_IK_handle_grp
+      parentName: Intertwined_Dog_rig:spine_05_jnt
+      position: {x: -0, y: -0.011794751, z: 0.0150566315}
+      rotation: {x: -0.5057576, y: 0, z: -0, w: 0.86267567}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:elbow_L_Front_IK
+      parentName: Intertwined_Dog_rig:front_L_IK_handle_grp
+      position: {x: -0.004009958, y: 0.005804822, z: 0.01495677}
+      rotation: {x: -0.21679746, y: 0.082694784, z: 0.04522005, w: 0.97165614}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:wrist_L_Front_IK
+      parentName: Intertwined_Dog_rig:front_L_IK_handle_grp
+      position: {x: -0.0036150657, y: 0.0037168919, z: 0.016505562}
+      rotation: {x: 0.97183424, y: 0.04515196, z: -0.08273197, w: 0.21599756}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:finger_L_Front_IK
+      parentName: Intertwined_Dog_rig:front_L_IK_handle_grp
+      position: {x: -0.0028562348, y: 0.00405706, z: 0.020737436}
+      rotation: {x: 0.5344791, y: 0.0904269, z: -0.026575431, w: 0.83991003}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:front_R_IK_handle_grp
+      parentName: Intertwined_Dog_rig:spine_05_jnt
+      position: {x: -0, y: -0.011794751, z: 0.0150566315}
+      rotation: {x: -0.5057576, y: 0, z: -0, w: 0.86267567}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:elbow_R_Front_IK
+      parentName: Intertwined_Dog_rig:front_R_IK_handle_grp
+      position: {x: 0.005545593, y: 0.008076514, z: 0.010523874}
+      rotation: {x: -0.00007371434, y: 0.09055567, z: 0.026133329, w: 0.9955485}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:wrist_R_Front_IK
+      parentName: Intertwined_Dog_rig:front_R_IK_handle_grp
+      position: {x: 0.005777311, y: 0.005509763, z: 0.011045633}
+      rotation: {x: 0.00074569834, y: 0.09057714, z: 0.026058784, w: 0.9955482}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:finger_R_Front_IK
+      parentName: Intertwined_Dog_rig:front_R_IK_handle_grp
+      position: {x: 0.0065204236, y: 0.00016851383, z: 0.013552744}
+      rotation: {x: -0.7034132, y: 0.04562352, z: 0.08247286, w: 0.70450455}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:neck_01_jnt
+      parentName: Intertwined_Dog_rig:spine_05_jnt
+      position: {x: -0.00023645359, y: 0.0026875224, z: 0.000013535145}
+      rotation: {x: 0.024323355, y: 0.06553544, z: -0.06607597, w: 0.99536294}
+      scale: {x: 1.000741, y: 0.99947065, z: 0.99980813}
+    - name: Intertwined_Dog_rig:neck_02_jnt
+      parentName: Intertwined_Dog_rig:neck_01_jnt
+      position: {x: -2.94903e-19, y: 0.0021053872, z: -1.11022296e-17}
+      rotation: {x: -0.07433402, y: 0.000000014901158, z: -0.0000000065192567, w: 0.99723345}
+      scale: {x: 1.0002153, y: 1.003328, z: 0.9963912}
+    - name: Intertwined_Dog_rig:head_jnt
+      parentName: Intertwined_Dog_rig:neck_02_jnt
+      position: {x: -7.632783e-19, y: 0.002416289, z: 4.440892e-18}
+      rotation: {x: -0.06853305, y: -0.0000000066904757, z: -0.000000016013681, w: 0.9976489}
+      scale: {x: 1, y: 1.004222, z: 0.99570304}
+    - name: Intertwined_Dog_rig:head_end_jnt
+      parentName: Intertwined_Dog_rig:head_jnt
+      position: {x: -0, y: 0.010245452, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:jaw_jnt
+      parentName: Intertwined_Dog_rig:head_jnt
+      position: {x: 1.3877787e-19, y: -0.00012433155, z: -0.00019761344}
+      rotation: {x: 0.48346046, y: -0.000000019017016, z: 0.00000000900479, w: 0.87536615}
+      scale: {x: 1, y: 0.983244, z: 1.0171403}
+    - name: Intertwined_Dog_rig:jaw_end_jnt
+      parentName: Intertwined_Dog_rig:jaw_jnt
+      position: {x: -0, y: 0.010511634, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ear_L_01_jnt
+      parentName: Intertwined_Dog_rig:head_jnt
+      position: {x: -0.0032171183, y: 0.006157105, z: -0.0022176525}
+      rotation: {x: -0.121194445, y: 0.1932104, z: 0.27120712, w: 0.9351088}
+      scale: {x: 1.008155, y: 1.0032914, z: 0.9887148}
+    - name: Intertwined_Dog_rig:ear_L_02_jnt
+      parentName: Intertwined_Dog_rig:ear_L_01_jnt
+      position: {x: -0, y: 0.0018632498, z: -4.440892e-18}
+      rotation: {x: -0, y: -0, z: 0.0000000018626447, w: 1}
+      scale: {x: 0.9999998, y: 0.9999999, z: 1}
+    - name: Intertwined_Dog_rig:ear_L_03_jnt
+      parentName: Intertwined_Dog_rig:ear_L_02_jnt
+      position: {x: -0, y: 0.002125187, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ear_R_01_jnt
+      parentName: Intertwined_Dog_rig:head_jnt
+      position: {x: 0.0032171197, y: 0.0061570834, z: -0.0022176383}
+      rotation: {x: 0.9351088, y: -0.27120706, z: 0.19321036, w: 0.12119448}
+      scale: {x: 1.0069027, y: 1.0042608, z: 0.9889676}
+    - name: Intertwined_Dog_rig:ear_R_02_jnt
+      parentName: Intertwined_Dog_rig:ear_R_01_jnt
+      position: {x: 0.0000000068607795, y: -0.001863268, z: -0.00000005330568}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000005}
+    - name: Intertwined_Dog_rig:ear_R_03_jnt
+      parentName: Intertwined_Dog_rig:ear_R_02_jnt
+      position: {x: -0.000000051685547, y: -0.0021252078, z: 0.00000007617481}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:clavicle_L_IK_jnt
+      parentName: Intertwined_Dog_rig:spine_05_jnt
+      position: {x: -0.0046513365, y: 0.004729278, z: 0.0014740266}
+      rotation: {x: 0.62926716, y: -0.5302054, z: 0.30372682, w: 0.48026553}
+      scale: {x: 1.0023931, y: 0.99990386, z: 0.9977906}
+    - name: Intertwined_Dog_rig:shoulder_L_IK_jnt
+      parentName: Intertwined_Dog_rig:clavicle_L_IK_jnt
+      position: {x: -0, y: 0.00611746, z: 0}
+      rotation: {x: 0.029307637, y: -0.07364671, z: 0.12919204, w: 0.98844665}
+      scale: {x: 1.0017732, y: 0.97888523, z: 1.0196328}
+    - name: Intertwined_Dog_rig:elbow_L_IK_jnt
+      parentName: Intertwined_Dog_rig:shoulder_L_IK_jnt
+      position: {x: -0, y: 0.0065216, z: 0}
+      rotation: {x: -0.016369503, y: 0.0022569806, z: -0.0018517441, w: 0.9998618}
+      scale: {x: 1.0000001, y: 1.0092163, z: 0.9911193}
+    - name: Intertwined_Dog_rig:wrist_L_IK_jnt1
+      parentName: Intertwined_Dog_rig:elbow_L_IK_jnt
+      position: {x: -0, y: 0.0037647183, z: 0}
+      rotation: {x: 0.034593266, y: 0.00042926802, z: -0.004441083, w: 0.99939156}
+      scale: {x: 1.0001131, y: 1.0003327, z: 0.99956083}
+    - name: Intertwined_Dog_rig:finger_L_IK_jnt
+      parentName: Intertwined_Dog_rig:wrist_L_IK_jnt1
+      position: {x: -0, y: 0.0025720154, z: -0.0005466988}
+      rotation: {x: -0.7070883, y: 0.000000017400346, z: 0.000000009448733, w: 0.70712525}
+      scale: {x: 1.0000001, y: 0.9999991, z: 1.0000015}
+    - name: Intertwined_Dog_rig:finger_end_L_IK_jnt
+      parentName: Intertwined_Dog_rig:finger_L_IK_jnt
+      position: {x: -0, y: 0.004031722, z: 0.0015315076}
+      rotation: {x: 0.18051913, y: -0, z: -0, w: 0.98357147}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:clavicle_R_IK_jnt
+      parentName: Intertwined_Dog_rig:spine_05_jnt
+      position: {x: 0.003739258, y: 0.0014421798, z: 0.0001731601}
+      rotation: {x: -0.4595658, y: 0.40860927, z: 0.4482066, w: 0.64880556}
+      scale: {x: 1.0023931, y: 0.99990314, z: 0.99779}
+    - name: Intertwined_Dog_rig:shoulder_R_IK_jnt
+      parentName: Intertwined_Dog_rig:clavicle_R_IK_jnt
+      position: {x: -0, y: -0.0061174696, z: -9.0317953e-10}
+      rotation: {x: 0.013620189, y: -0.07835631, z: 0.13415582, w: 0.98776364}
+      scale: {x: 1.0002714, y: 0.9762031, z: 1.0238371}
+    - name: Intertwined_Dog_rig:elbow_R_IK_jnt
+      parentName: Intertwined_Dog_rig:shoulder_R_IK_jnt
+      position: {x: -0, y: -0.006521607, z: 0.0000000035604286}
+      rotation: {x: -0.01342473, y: 0.0022754285, z: 0.0012235163, w: 0.9999066}
+      scale: {x: 1, y: 1.0371302, z: 0.96425694}
+    - name: Intertwined_Dog_rig:wrist_R_IK_jnt1
+      parentName: Intertwined_Dog_rig:elbow_R_IK_jnt
+      position: {x: -0, y: -0.003764717, z: 0.0000000030863094}
+      rotation: {x: 0.03458418, y: -0.0004217063, z: 0.0065456005, w: 0.99938035}
+      scale: {x: 1.0007246, y: 0.9645528, z: 1.0362052}
+    - name: Intertwined_Dog_rig:finger_R_IK_jnt
+      parentName: Intertwined_Dog_rig:wrist_R_IK_jnt1
+      position: {x: -0, y: -0.0025720154, z: 0.00054669066}
+      rotation: {x: -0.7070884, y: 0.0000000027932792, z: -0.00000001663449, w: 0.7071252}
+      scale: {x: 1.0000001, y: 0.9857462, z: 1.0146967}
+    - name: Intertwined_Dog_rig:finger_end_R_IK_jnt
+      parentName: Intertwined_Dog_rig:finger_R_IK_jnt
+      position: {x: -0, y: -0.004031725, z: -0.0015315112}
+      rotation: {x: 0.18051913, y: -0, z: -0, w: 0.98357147}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:pelvis_jnt
+      parentName: Intertwined_Dog_rig:root_jnt
+      position: {x: 0.00081772916, y: 2.220446e-18, z: 0}
+      rotation: {x: 0.021134967, y: -0.7067835, z: 0.021152863, w: -0.7067977}
+      scale: {x: 1, y: 1.0000001, z: 0.9999999}
+    - name: Intertwined_Dog_rig:tail_root_jnt
+      parentName: Intertwined_Dog_rig:pelvis_jnt
+      position: {x: -0.003981922, y: -4.609068e-10, z: 1.2963265e-10}
+      rotation: {x: -0.44336948, y: 0.57144904, z: 0.16987842, w: 0.6693362}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:tail_1_jnt
+      parentName: Intertwined_Dog_rig:tail_root_jnt
+      position: {x: -0, y: 0.0034576212, z: 0}
+      rotation: {x: 0.0056236, y: -0.0023639556, z: -0.08927644, w: 0.99598825}
+      scale: {x: 1, y: 1.2283664, z: 1}
+    - name: Intertwined_Dog_rig:tail_2_jnt
+      parentName: Intertwined_Dog_rig:tail_1_jnt
+      position: {x: -0, y: 0.00325472, z: 0}
+      rotation: {x: 0.41461477, y: -0.0021567035, z: 0.0491015, w: 0.9086688}
+      scale: {x: 1, y: 1.2283664, z: 1}
+    - name: Intertwined_Dog_rig:tail_3_jnt
+      parentName: Intertwined_Dog_rig:tail_2_jnt
+      position: {x: -0, y: 0.0033063276, z: 0}
+      rotation: {x: 0.41686362, y: -0.0021363974, z: 0.12654276, w: 0.9001151}
+      scale: {x: 1, y: 1.2283664, z: 1}
+    - name: Intertwined_Dog_rig:tail_4_jnt
+      parentName: Intertwined_Dog_rig:tail_3_jnt
+      position: {x: -0, y: 0.0031902292, z: 0}
+      rotation: {x: 0.42666036, y: -0.0021461227, z: 0.01897348, w: 0.9042103}
+      scale: {x: 1, y: 1.2283664, z: 1}
+    - name: Intertwined_Dog_rig:tail_5_jnt
+      parentName: Intertwined_Dog_rig:tail_4_jnt
+      position: {x: -0, y: 0.0032339557, z: 0}
+      rotation: {x: 0.19509207, y: -0.002326969, z: 0.0271979, w: 0.98040503}
+      scale: {x: 1, y: 1.2283664, z: 1}
+    - name: Intertwined_Dog_rig:tail_6_jnt
+      parentName: Intertwined_Dog_rig:tail_5_jnt
+      position: {x: -0, y: 0.0024403664, z: 0}
+      rotation: {x: 0.041607834, y: -0.002365084, z: 0.07295823, w: 0.9964639}
+      scale: {x: 1, y: 1.2283664, z: 1}
+    - name: Intertwined_Dog_rig:tail_7_jnt
+      parentName: Intertwined_Dog_rig:tail_6_jnt
+      position: {x: -0, y: 0.0015798649, z: 0}
+      rotation: {x: 0.019194469, y: -0.0023561858, z: 0.1189243, w: 0.992715}
+      scale: {x: 1, y: 1.2283664, z: 1}
+    - name: Intertwined_Dog_rig:tail_8_jnt
+      parentName: Intertwined_Dog_rig:tail_7_jnt
+      position: {x: 1.4791142e-33, y: 0.0014380218, z: 2.220446e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1.2283664, z: 1}
+    - name: Intertwined_Dog_rig:leg_L_driver_grp
+      parentName: Intertwined_Dog_rig:pelvis_jnt
+      position: {x: 0.00853269, y: -0.017020375, z: 0.00000027595263}
+      rotation: {x: -0.02115286, y: 0.7067977, z: 0.021134961, w: 0.7067835}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:hip_L_driver_jnt
+      parentName: Intertwined_Dog_rig:leg_L_driver_grp
+      position: {x: -0.004667028, y: 0.016392805, z: -0.0090712}
+      rotation: {x: 0.97358537, y: 0.020147348, z: -0.07652732, w: 0.21417089}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:knee_L_driver_jnt
+      parentName: Intertwined_Dog_rig:hip_L_driver_jnt
+      position: {x: -0, y: 0.008525699, z: 0}
+      rotation: {x: 0.5552747, y: -0, z: -0, w: 0.83166707}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_L_driver_jnt
+      parentName: Intertwined_Dog_rig:knee_L_driver_jnt
+      position: {x: -0, y: 0.007039233, z: 0}
+      rotation: {x: -0.4055582, y: 0, z: -0, w: 0.91406924}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ball_L_driver_jnt
+      parentName: Intertwined_Dog_rig:ankle_L_driver_jnt
+      position: {x: -0, y: 0.003283878, z: -0.00096649793}
+      rotation: {x: -0.7061133, y: 0, z: -0, w: 0.7080989}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:toe_L_driver_jnt
+      parentName: Intertwined_Dog_rig:ball_L_driver_jnt
+      position: {x: -0, y: 0.0037510274, z: 0.0016544001}
+      rotation: {x: 0.20620418, y: -0, z: -0, w: 0.978509}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ball_L_Rear_IK
+      parentName: Intertwined_Dog_rig:ball_L_driver_jnt
+      position: {x: 0.00000044617252, y: -0.000003989294, z: -0.00000086706103}
+      rotation: {x: 0.7062058, y: 0.000016102122, z: -0.0000013386654, w: 0.7080066}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_L_IK_offset
+      parentName: Intertwined_Dog_rig:ankle_L_driver_jnt
+      position: {x: -6.214407e-11, y: 0.0032830003, z: -0.00096251135}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_L_Rear_IK
+      parentName: Intertwined_Dog_rig:ankle_L_IK_offset
+      position: {x: 0.00000038553472, y: -0.003284131, z: 0.00096564007}
+      rotation: {x: 0.99999875, y: 0, z: 0, w: -0.0015901219}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:leg_L_IK_handles
+      parentName: Intertwined_Dog_rig:pelvis_jnt
+      position: {x: 0.00853269, y: -0.017020375, z: 0.00000027595263}
+      rotation: {x: -0.02115286, y: 0.7067977, z: 0.021134961, w: 0.7067835}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:driver_L_Rear_IK
+      parentName: Intertwined_Dog_rig:leg_L_IK_handles
+      position: {x: -0.0045522354, y: 0.0002941788, z: -0.009010868}
+      rotation: {x: 0.0055144425, y: -0.07162172, z: -0.055806227, w: 0.99585426}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:toe_L_Rear_IK
+      parentName: Intertwined_Dog_rig:leg_L_IK_handles
+      position: {x: -0.005270797, y: -0.0013582074, z: -0.0053374222}
+      rotation: {x: 0.7079749, y: -0.090149514, z: 0.01120809, w: 0.7003706}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:leg_R_driver_grp
+      parentName: Intertwined_Dog_rig:pelvis_jnt
+      position: {x: 0.00853269, y: -0.017020375, z: 0.00000027595263}
+      rotation: {x: -0.02115286, y: 0.7067977, z: 0.021134961, w: 0.7067835}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:hip_R_driver_jnt
+      parentName: Intertwined_Dog_rig:leg_R_driver_grp
+      position: {x: 0.0046670297, y: 0.0163928, z: -0.0090712}
+      rotation: {x: 0.12928715, y: 0.0760794, z: 0.028212782, w: 0.9882817}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:knee_R_driver_jnt
+      parentName: Intertwined_Dog_rig:hip_R_driver_jnt
+      position: {x: -0, y: -0.008525697, z: 0.00000000501158}
+      rotation: {x: 0.2117973, y: -0, z: -0, w: 0.97731364}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_R_driver_jnt
+      parentName: Intertwined_Dog_rig:knee_R_driver_jnt
+      position: {x: -0, y: -0.0070392573, z: -0.000000007652729}
+      rotation: {x: -0.054776624, y: 0, z: -0, w: 0.9984986}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ball_R_driver_jnt
+      parentName: Intertwined_Dog_rig:ankle_R_driver_jnt
+      position: {x: -0, y: -0.0032838704, z: 0.00096656126}
+      rotation: {x: -0.7061133, y: 0, z: -0, w: 0.7080989}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:toe_R_driver_jnt
+      parentName: Intertwined_Dog_rig:ball_R_driver_jnt
+      position: {x: -0, y: -0.0037509843, z: -0.0016544042}
+      rotation: {x: 0.20620418, y: -0, z: -0, w: 0.978509}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ball_R_Rear_IK
+      parentName: Intertwined_Dog_rig:ball_R_driver_jnt
+      position: {x: 0.00000044616667, y: 0.000003794994, z: 0.0000010975684}
+      rotation: {x: 0.7062058, y: -0.000016102122, z: 0.0000013386651, w: 0.7080066}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_R_IK_offset
+      parentName: Intertwined_Dog_rig:ankle_R_driver_jnt
+      position: {x: 0.0000004461176, y: -0.003282759, z: 0.0009627658}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_R_Rear_IK
+      parentName: Intertwined_Dog_rig:ankle_R_IK_offset
+      position: {x: -0.00000006060036, y: 0.0032841216, z: -0.00096569915}
+      rotation: {x: 0.0015901324, y: -0, z: -0, w: 0.99999875}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:leg_R_IK_handles
+      parentName: Intertwined_Dog_rig:pelvis_jnt
+      position: {x: 0.008494644, y: -0.01638505, z: 0.0000002602324}
+      rotation: {x: -0.02115286, y: 0.7067977, z: 0.021134961, w: 0.7067835}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:driver_R_Rear_IK
+      parentName: Intertwined_Dog_rig:leg_R_IK_handles
+      position: {x: 0.004853312, y: -0.0011969219, z: -0.016724687}
+      rotation: {x: 0.0055144886, y: -0.071619876, z: -0.055805407, w: 0.99585444}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:toe_R_Rear_IK
+      parentName: Intertwined_Dog_rig:leg_R_IK_handles
+      position: {x: 0.0041344217, y: -0.0028506648, z: -0.013047299}
+      rotation: {x: -0.7003163, y: -0.011193565, z: -0.09010262, w: 0.7080348}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:hip_L_IK_jnt
+      parentName: Intertwined_Dog_rig:pelvis_jnt
+      position: {x: -0.0015025192, y: -0.0011987435, z: 0.004667028}
+      rotation: {x: 0.5203258, y: -0.5143875, z: -0.50616735, w: -0.45657557}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000001}
+    - name: Intertwined_Dog_rig:knee_L_IK_jnt
+      parentName: Intertwined_Dog_rig:hip_L_IK_jnt
+      position: {x: -0, y: 0.008525699, z: 0}
+      rotation: {x: -0.28724036, y: 0.0034929211, z: -0.0031106765, w: -0.9578472}
+      scale: {x: 1, y: 0.9999996, z: 0.9999997}
+    - name: Intertwined_Dog_rig:ankle_L_IK_jnt
+      parentName: Intertwined_Dog_rig:knee_L_IK_jnt
+      position: {x: -0, y: 0.007039233, z: 0}
+      rotation: {x: 0.88694286, y: 0.015088754, z: 0.036824152, w: -0.46016157}
+      scale: {x: 1, y: 1, z: 1.0000002}
+    - name: Intertwined_Dog_rig:ball_L_IK_jnt
+      parentName: Intertwined_Dog_rig:ankle_L_IK_jnt
+      position: {x: -0, y: 0.003283878, z: -0.00096649793}
+      rotation: {x: -0.697937, y: 0.000017389288, z: 0.00004695548, w: 0.7161593}
+      scale: {x: 1.0000001, y: 0.99999976, z: 0.99999976}
+    - name: Intertwined_Dog_rig:toe_L_IK_jnt
+      parentName: Intertwined_Dog_rig:ball_L_IK_jnt
+      position: {x: -0, y: 0.0037510274, z: 0.0016544001}
+      rotation: {x: 0.2062044, y: -0.000000015588736, z: 0.000000050302322, w: 0.97850895}
+      scale: {x: 1, y: 1.0000002, z: 1.0000002}
+    - name: Intertwined_Dog_rig:hip_R_IK_jnt
+      parentName: Intertwined_Dog_rig:pelvis_jnt
+      position: {x: -0.0015025182, y: -0.0011987494, z: -0.0046670297}
+      rotation: {x: 0.5217133, y: 0.52440727, z: -0.44364658, w: 0.50595444}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:knee_R_IK_jnt
+      parentName: Intertwined_Dog_rig:hip_R_IK_jnt
+      position: {x: -0, y: -0.008525697, z: 0.00000000501158}
+      rotation: {x: 0.289205, y: -0.012760863, z: 0.012566969, w: 0.9570997}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Intertwined_Dog_rig:ankle_R_IK_jnt
+      parentName: Intertwined_Dog_rig:knee_R_IK_jnt
+      position: {x: -0, y: -0.0070392573, z: -0.000000007652729}
+      rotation: {x: -0.88013965, y: -0.009016943, z: -0.049811956, w: 0.47200817}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: Intertwined_Dog_rig:ball_R_IK_jnt
+      parentName: Intertwined_Dog_rig:ankle_R_IK_jnt
+      position: {x: -0, y: -0.0032838704, z: 0.00096656126}
+      rotation: {x: -0.70611334, y: 0.0000018556448, z: -0.00000075522166, w: 0.7080988}
+      scale: {x: 1.0000001, y: 0.99999994, z: 0.9999999}
+    - name: Intertwined_Dog_rig:toe_R_IK_jnt
+      parentName: Intertwined_Dog_rig:ball_R_IK_jnt
+      position: {x: -0, y: -0.0037509843, z: -0.0016544042}
+      rotation: {x: 0.20620432, y: 0.00000001973683, z: 0.0000000052143605, w: 0.97850895}
+      scale: {x: 1, y: 1.0000002, z: 1.0000001}
+    - name: Intertwined_Dog_rig:ribbon_systems
+      parentName: Intertwined_Dog_rig:DO_NOT_TOUCH
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:spine_ribbon_base
+      parentName: Intertwined_Dog_rig:ribbon_systems
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:spine_ribbon_base 1
+      parentName: Intertwined_Dog_rig:spine_ribbon_base
+      position: {x: -2.9802322e-10, y: 0.018150248, z: -0.0022797599}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:spine_ribbon_hair_system
+      parentName: Intertwined_Dog_rig:spine_ribbon_base
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:spine_ribbon_hair_1
+      parentName: Intertwined_Dog_rig:spine_ribbon_hair_system
+      position: {x: -0.000002811704, y: 0.021019515, z: 0.002952832}
+      rotation: {x: 0.54496825, y: 0.5921319, z: 0.47808304, w: -0.3518892}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:spine_ribbon_bind_jnt_1
+      parentName: Intertwined_Dog_rig:spine_ribbon_hair_1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7414168, y: -0.050413016, z: -0.04979351, w: -0.66729325}
+      scale: {x: 1.0099478, y: 1, z: 1.0000004}
+    - name: Intertwined_Dog_rig:spine_ribbon_hair_2
+      parentName: Intertwined_Dog_rig:spine_ribbon_hair_system
+      position: {x: 0.00021854011, y: 0.020588065, z: 0.0016430852}
+      rotation: {x: 0.5443403, y: 0.5931828, z: 0.47587642, w: -0.35407552}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:spine_ribbon_bind_jnt_2
+      parentName: Intertwined_Dog_rig:spine_ribbon_hair_2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7388489, y: -0.05576244, z: -0.055497706, w: -0.6692629}
+      scale: {x: 1.0099478, y: 0.9997807, z: 1.0000001}
+    - name: Intertwined_Dog_rig:spine_ribbon_hair_3
+      parentName: Intertwined_Dog_rig:spine_ribbon_hair_system
+      position: {x: 0.00041677445, y: 0.020187024, z: 0.00034190397}
+      rotation: {x: 0.5406149, y: 0.5755648, z: 0.47903666, w: -0.3833857}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:spine_ribbon_bind_jnt_3
+      parentName: Intertwined_Dog_rig:spine_ribbon_hair_3
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.73244, y: -0.042926937, z: -0.04320091, w: -0.67810225}
+      scale: {x: 1.0099475, y: 1.0000001, z: 1.0000002}
+    - name: Intertwined_Dog_rig:spine_ribbon_hair_4
+      parentName: Intertwined_Dog_rig:spine_ribbon_hair_system
+      position: {x: 0.0005407758, y: 0.019907512, z: -0.0009174936}
+      rotation: {x: 0.5364463, y: 0.5546567, z: 0.48077476, w: -0.41645777}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:spine_ribbon_bind_jnt_4
+      parentName: Intertwined_Dog_rig:spine_ribbon_hair_4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7253977, y: -0.026819259, z: -0.028063536, w: -0.68723464}
+      scale: {x: 1.0099475, y: 0.99999964, z: 0.9999999}
+    - name: Intertwined_Dog_rig:spine_ribbon_hair_5
+      parentName: Intertwined_Dog_rig:spine_ribbon_hair_system
+      position: {x: 0.0006103682, y: 0.019685587, z: -0.0021616174}
+      rotation: {x: 0.5358671, y: 0.52959025, z: 0.47791615, w: -0.45163783}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:spine_ribbon_bind_jnt_5
+      parentName: Intertwined_Dog_rig:spine_ribbon_hair_5
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.71895397, y: -0.005573064, z: -0.0069496036, w: -0.69500065}
+      scale: {x: 1.0099475, y: 1.0000001, z: 1}
+    - name: Intertwined_Dog_rig:spine_ribbon_hair_6
+      parentName: Intertwined_Dog_rig:spine_ribbon_hair_system
+      position: {x: 0.0005837954, y: 0.01956928, z: -0.0033806257}
+      rotation: {x: 0.5349285, y: 0.5012894, z: 0.47407693, w: -0.48765922}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:spine_ribbon_bind_jnt_6
+      parentName: Intertwined_Dog_rig:spine_ribbon_hair_6
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.71331763, y: 0.017864227, z: 0.016048074, w: -0.7004294}
+      scale: {x: 1.0099475, y: 0.9999999, z: 0.99999994}
+    - name: Intertwined_Dog_rig:spine_ribbon_hair_7
+      parentName: Intertwined_Dog_rig:spine_ribbon_hair_system
+      position: {x: 0.0004862251, y: 0.019504044, z: -0.0046331994}
+      rotation: {x: -0.5343649, y: -0.4699139, z: -0.46815988, w: 0.5238907}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:spine_ribbon_bind_jnt_7
+      parentName: Intertwined_Dog_rig:spine_ribbon_hair_7
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.7086519, y: -0.04239261, z: -0.042623907, w: 0.70299256}
+      scale: {x: 1.0099474, y: 1.0000001, z: 1.0000001}
+    - name: Intertwined_Dog_rig:spine_ribbon_hair_8
+      parentName: Intertwined_Dog_rig:spine_ribbon_hair_system
+      position: {x: 0.00026388443, y: 0.0195378, z: -0.006047007}
+      rotation: {x: -0.5319155, y: -0.44429883, z: -0.4644691, w: 0.5513012}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:spine_ribbon_bind_jnt_8
+      parentName: Intertwined_Dog_rig:spine_ribbon_hair_8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.7059771, y: -0.06092781, z: -0.062387377, w: 0.70284563}
+      scale: {x: 1.0099475, y: 1, z: 1.0000004}
+    - name: Intertwined_Dog_rig:spine_ribbon_hair_9
+      parentName: Intertwined_Dog_rig:spine_ribbon_hair_system
+      position: {x: 0.0000033568556, y: 0.019595917, z: -0.007500253}
+      rotation: {x: -0.53152305, y: -0.4444703, z: -0.46281576, w: 0.5529296}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:spine_ribbon_bind_jnt_9
+      parentName: Intertwined_Dog_rig:spine_ribbon_hair_9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.70455116, y: -0.062001817, z: -0.06329154, w: 0.70410067}
+      scale: {x: 1.0099478, y: 1.0000001, z: 1.0000005}
+    - name: Intertwined_Dog_rig:spine_ribbon_ctrls
+      parentName: Intertwined_Dog_rig:spine_ribbon_base
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:SPINE_01_CTRL
+      parentName: Intertwined_Dog_rig:spine_ribbon_ctrls
+      position: {x: 1.303286e-34, y: 0.019595826, z: -0.0075}
+      rotation: {x: 0.7213239, y: 0, z: 0, w: 0.6925979}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:SPINE_03_CTRL
+      parentName: Intertwined_Dog_rig:spine_ribbon_ctrls
+      position: {x: 0.00064002495, y: 0.019669276, z: -0.0020923943}
+      rotation: {x: 0.6331608, y: -0.048907287, z: 0.040033486, w: 0.77143556}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:SPINE_05_CTRL
+      parentName: Intertwined_Dog_rig:spine_ribbon_ctrls
+      position: {x: -2.2565102e-17, y: 0.021015136, z: 0.0029404801}
+      rotation: {x: 0.5012905, y: -0.10886082, z: 0.063748546, w: 0.85603344}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:spine_IK_spline
+      parentName: Intertwined_Dog_rig:spine_ribbon_base
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:spine_IK
+      parentName: Intertwined_Dog_rig:spine_ribbon_base
+      position: {x: 0.0002745499, y: 0.020576997, z: 0.002945654}
+      rotation: {x: 0.59236103, y: -0.059961453, z: -0.008449499, w: 0.80339384}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_base
+      parentName: Intertwined_Dog_rig:ribbon_systems
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_hair_system
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_base
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_hair_1
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_hair_system
+      position: {x: -0.0014113734, y: 0.019754725, z: -0.011435509}
+      rotation: {x: -0.28214037, y: -0.31399438, z: -0.7164967, w: 0.55537087}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_bind_jnt_1
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_hair_1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.72030544, y: 0.09466639, z: 0.065533325, w: 0.68403494}
+      scale: {x: 1.2283666, y: 0.9999999, z: 1.0000002}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_hair_2
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_hair_system
+      position: {x: -0.00048860075, y: 0.021930516, z: -0.014078622}
+      rotation: {x: -0.2612395, y: -0.32762083, z: -0.74373513, w: 0.5208423}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_bind_jnt_2
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_hair_2
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.71224236, y: 0.12805194, z: 0.1026098, w: 0.6824843}
+      scale: {x: 1.228367, y: 1, z: 1.0000004}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_hair_3
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_hair_system
+      position: {x: 0.0008495505, y: 0.024516646, z: -0.016400196}
+      rotation: {x: -0.07991286, y: -0.22701105, z: -0.78453994, w: 0.5714692}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_bind_jnt_3
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_hair_3
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.65797794, y: -0.0074611455, z: 0.26188782, w: 0.7059916}
+      scale: {x: 1.2283666, y: 1, z: 1.0000004}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_hair_4
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_hair_system
+      position: {x: 0.001509148, y: 0.027985668, z: -0.016414994}
+      rotation: {x: 0.24620081, y: 0.023243638, z: -0.6975824, w: 0.67247576}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_bind_jnt_4
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_hair_4
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.47474313, y: -0.3442553, z: 0.45764178, w: 0.6683348}
+      scale: {x: 1.2283666, y: 1.0000001, z: 1.0000002}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_hair_5
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_hair_system
+      position: {x: 0.0007196049, y: 0.030368682, z: -0.014021254}
+      rotation: {x: 0.510561, y: 0.30457845, z: -0.48323, w: 0.6426884}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_bind_jnt_5
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_hair_5
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.22283843, y: -0.6319539, z: 0.5697486, w: 0.47577724}
+      scale: {x: 1.2283666, y: 1.0000005, z: 1.0000006}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_hair_6
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_hair_system
+      position: {x: -0.0006002879, y: 0.03024355, z: -0.010737547}
+      rotation: {x: 0.63456994, y: 0.47669336, z: -0.29694685, w: 0.5309492}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_bind_jnt_6
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_hair_6
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.03345567, y: -0.7506833, z: 0.60084397, w: 0.27265692}
+      scale: {x: 1.2283663, y: 1.0000005, z: 1.0000004}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_hair_7
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_hair_system
+      position: {x: -0.0017085843, y: 0.02898879, z: -0.008323161}
+      rotation: {x: 0.68904567, y: 0.51181865, z: -0.1913383, w: 0.47607502}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_bind_jnt_7
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_hair_7
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.077191554, y: -0.7783558, z: 0.58999425, w: 0.20027587}
+      scale: {x: 1.2283669, y: 1.0000004, z: 1.0000005}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_hair_8
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_hair_system
+      position: {x: -0.0026818912, y: 0.027850224, z: -0.006891301}
+      rotation: {x: 0.7430477, y: 0.45725903, z: -0.12066417, w: 0.47353393}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_bind_jnt_8
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_hair_8
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.17397124, y: -0.7723804, z: 0.56577, w: 0.23036239}
+      scale: {x: 1.2283665, y: 1.0000004, z: 1.0000005}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_hair_9
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_hair_system
+      position: {x: -0.003781219, y: 0.026842628, z: -0.0059047877}
+      rotation: {x: 0.7755448, y: 0.40835738, z: -0.07755811, w: 0.47514132}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_bind_jnt_9
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_hair_9
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.23587942, y: -0.76039976, z: 0.5459267, w: 0.26099288}
+      scale: {x: 1.2283661, y: 1.0000004, z: 1.0000004}
+    - name: Intertwined_Dog_rig:tail_dog_ribbon_base 1
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_base
+      position: {x: -0.000000005662441, y: 0.025083596, z: -0.019595332}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:tail_ribbon_ctrl_grp
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_base
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:TAIL_ROOT_CTRL
+      parentName: Intertwined_Dog_rig:tail_ribbon_ctrl_grp
+      position: {x: -0.0014088409, y: 0.019756936, z: -0.011434506}
+      rotation: {x: -0.41023126, y: -0.027156955, z: -0.07512407, w: 0.9084763}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:TAIL_4_CTRL
+      parentName: Intertwined_Dog_rig:tail_ribbon_ctrl_grp
+      position: {x: 0.0013454759, y: 0.029891511, z: -0.01569744}
+      rotation: {x: 0.32912534, y: -0.2636886, z: 0.047026135, w: 0.9055017}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:TAIL_8_CTRL
+      parentName: Intertwined_Dog_rig:tail_ribbon_ctrl_grp
+      position: {x: -0.003908825, y: 0.026748294, z: -0.0058260146}
+      rotation: {x: 0.86523885, y: -0.33738598, z: 0.14013655, w: 0.3433573}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:tail_IK
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_base
+      position: {x: -0.004086911, y: 0.027166523, z: -0.0070175263}
+      rotation: {x: 0.8832479, y: -0.18356387, z: 0.27462995, w: 0.33279997}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:tail_IK_spline
+      parentName: Intertwined_Dog_rig:tail_dog_ribbon_base
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:dog_controller_grp
+      parentName: Dog_running_Anim_Nov21(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:world_pos
+      parentName: Intertwined_Dog_rig:dog_controller_grp
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:WORLS_CTRL
+      parentName: Intertwined_Dog_rig:world_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:COG_pos
+      parentName: Intertwined_Dog_rig:WORLS_CTRL
+      position: {x: -0, y: 0.0175, z: -0.0075}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:COG_CTRL
+      parentName: Intertwined_Dog_rig:COG_pos
+      position: {x: -0, y: 0.0020958255, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:upper_spine_pos
+      parentName: Intertwined_Dog_rig:COG_CTRL
+      position: {x: -0, y: 0.00141931, z: -0.010440479}
+      rotation: {x: 2.189668e-17, y: 0.86292756, z: -0.50532764, w: -8.3781465e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:UPPER_SPINE_CTRL
+      parentName: Intertwined_Dog_rig:upper_spine_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 3.8195162e-11, y: -0.061725095, z: 0.11002076, w: 0.99201083}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:neck_01_pos
+      parentName: Intertwined_Dog_rig:UPPER_SPINE_CTRL
+      position: {x: -0, y: 0.0027111792, z: 0}
+      rotation: {x: 0.0123804, y: -0, z: -0, w: 0.99992335}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:neck_01_ctrl
+      parentName: Intertwined_Dog_rig:neck_01_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -5.3162776e-11, y: 0.02633583, z: -0.049792115, w: 0.9984124}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:neck_02_pos
+      parentName: Intertwined_Dog_rig:neck_01_ctrl
+      position: {x: -0, y: 0.0021053872, z: 0}
+      rotation: {x: -0.07433398, y: 0, z: -0, w: 0.99723345}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:neck_02_ctrl
+      parentName: Intertwined_Dog_rig:neck_02_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -2.8124253e-11, y: 0.026459327, z: -0.035887275, w: 0.9990055}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:head_pos
+      parentName: Intertwined_Dog_rig:neck_02_ctrl
+      position: {x: -0, y: 0.002416289, z: 0}
+      rotation: {x: -0.06853303, y: 0, z: -0, w: 0.99764884}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:head_ctrl
+      parentName: Intertwined_Dog_rig:head_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ear_R_01_pos
+      parentName: Intertwined_Dog_rig:head_ctrl
+      position: {x: 0.0032171197, y: 0.0061570834, z: -0.0022176383}
+      rotation: {x: 0.9351088, y: -0.2712071, z: 0.19321032, w: 0.12119438}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:EAR_R_01_CTRL
+      parentName: Intertwined_Dog_rig:ear_R_01_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ear_R_02_pos
+      parentName: Intertwined_Dog_rig:EAR_R_01_CTRL
+      position: {x: 0.0000000068607795, y: -0.001863268, z: -0.00000005330568}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:EAR_R_02_CTRL
+      parentName: Intertwined_Dog_rig:ear_R_02_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ear_L_01_pos
+      parentName: Intertwined_Dog_rig:head_ctrl
+      position: {x: -0.0032171183, y: 0.006157105, z: -0.0022176525}
+      rotation: {x: -0.12119438, y: 0.19321032, z: 0.2712071, w: 0.9351088}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:EAR_L_01_CTRL
+      parentName: Intertwined_Dog_rig:ear_L_01_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ear_L_02_pos
+      parentName: Intertwined_Dog_rig:EAR_L_01_CTRL
+      position: {x: -0, y: 0.0018632498, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:EAR_L_02_CTRL
+      parentName: Intertwined_Dog_rig:ear_L_02_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:jaw_pos
+      parentName: Intertwined_Dog_rig:head_ctrl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.48346055, y: -0, z: -0, w: 0.8753662}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:Jaw_ctrl
+      parentName: Intertwined_Dog_rig:jaw_pos
+      position: {x: -0, y: -0.00023347248, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:clavicle_L_Front_pos
+      parentName: Intertwined_Dog_rig:UPPER_SPINE_CTRL
+      position: {x: -0.0045698574, y: 0.0035537072, z: 0.0015712504}
+      rotation: {x: 0.80661476, y: 0, z: 0, w: 0.59107757}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:clavicle_L_Front_ctrl
+      parentName: Intertwined_Dog_rig:clavicle_L_Front_pos
+      position: {x: 0.00033658306, y: -0.00063773914, z: -0.0014626626}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:clavicle_R_Front_pos
+      parentName: Intertwined_Dog_rig:UPPER_SPINE_CTRL
+      position: {x: 0.00456986, y: 0.0035537165, z: 0.0015712387}
+      rotation: {x: -0.59107757, y: 0, z: -0, w: 0.80661476}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:clavicle_R_Front_ctrl
+      parentName: Intertwined_Dog_rig:clavicle_R_Front_pos
+      position: {x: -0.00072046724, y: 0.0005680457, z: -0.0027284021}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:mid_spine_pos
+      parentName: Intertwined_Dog_rig:COG_CTRL
+      position: {x: -0.00064002495, y: 0.00007345055, z: -0.005407606}
+      rotation: {x: 0.040033493, y: 0.7714355, z: -0.6331608, w: 0.048907343}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:MID_SPINE_CTRL
+      parentName: Intertwined_Dog_rig:mid_spine_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:lower_spine_pos
+      parentName: Intertwined_Dog_rig:COG_CTRL
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 4.240939e-17, y: -0.6925979, z: 0.72132385, w: -4.4168348e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:LOWER_SPINE_CTRL
+      parentName: Intertwined_Dog_rig:lower_spine_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:pelvis_pos
+      parentName: Intertwined_Dog_rig:LOWER_SPINE_CTRL
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.49524665, y: -0.5047086, z: 0.49524665, w: 0.5047086}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:pelvis_ctrl
+      parentName: Intertwined_Dog_rig:pelvis_pos
+      position: {x: -1.3304113e-18, y: 4.2635945e-18, z: 0.00081772916}
+      rotation: {x: 0.051447093, y: 0.07481142, z: 0.005382903, w: 0.99585515}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:tail_01_pos
+      parentName: Intertwined_Dog_rig:pelvis_ctrl
+      position: {x: -0.0039819223, y: 0, z: 0}
+      rotation: {x: -0.30595547, y: 0.63748825, z: 0.30595547, w: 0.63748825}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:TAIL_01_CTRL
+      parentName: Intertwined_Dog_rig:tail_01_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0.16962193, w: 0.9855092}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:tail_02_pos
+      parentName: Intertwined_Dog_rig:pelvis_ctrl
+      position: {x: -0.008195271, y: 0.009540357, z: -0.004438219}
+      rotation: {x: 0.2240435, y: 0.38701826, z: -0.18339503, w: 0.8754357}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:TAIL_02_CTRL
+      parentName: Intertwined_Dog_rig:tail_02_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:tail_03_pos
+      parentName: Intertwined_Dog_rig:pelvis_ctrl
+      position: {x: -0.021068554, y: 0.013700566, z: 0}
+      rotation: {x: -0.30595547, y: 0.63748825, z: 0.30595547, w: 0.63748825}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:TAIL_03_CTRL
+      parentName: Intertwined_Dog_rig:tail_03_pos
+      position: {x: -0.002490404, y: -0.02101253, z: 0.008921462}
+      rotation: {x: 0.89306784, y: -0.44764128, z: -0.0011428784, w: -0.04523054}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:worldspace_pos_locator
+      parentName: Intertwined_Dog_rig:WORLS_CTRL
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_R_Rear_pos
+      parentName: Intertwined_Dog_rig:dog_controller_grp
+      position: {x: 0.0046674153, y: 0.005885521, z: -0.012231538}
+      rotation: {x: -0.0014594723, y: -0.000010437046, z: 0.000012334442, w: 0.9999989}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_R_Rear_ctrl
+      parentName: Intertwined_Dog_rig:ankle_R_Rear_pos
+      position: {x: -0.00000012437668, y: 0.000060143637, z: -0.006019039}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:toe_R_Rear_pos
+      parentName: Intertwined_Dog_rig:ankle_R_Rear_ctrl
+      position: {x: -0, y: -0.004948801, z: 0.0047128852}
+      rotation: {x: -0.5449252, y: 0, z: -0, w: 0.83848464}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:toe_R_Rear_ctrl
+      parentName: Intertwined_Dog_rig:toe_R_Rear_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ball_R_Rear_pos
+      parentName: Intertwined_Dog_rig:toe_R_Rear_ctrl
+      position: {x: -0, y: 0.0040996266, z: 0.000000020940501}
+      rotation: {x: -0.20620419, y: 0, z: -0, w: 0.978509}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ball_R_Rear_ctrl
+      parentName: Intertwined_Dog_rig:ball_R_Rear_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:toe_bend_R_Rear_pos
+      parentName: Intertwined_Dog_rig:toe_R_Rear_ctrl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:toe_bend_R_Rear_ctrl
+      parentName: Intertwined_Dog_rig:toe_bend_R_Rear_pos
+      position: {x: -0.000000028788067, y: 0, z: 0}
+      rotation: {x: 5.551115e-17, y: -4.2351647e-21, z: -5.0821977e-21, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_R_Rear_PV_pos
+      parentName: Intertwined_Dog_rig:ankle_R_Rear_ctrl
+      position: {x: 0.00000006276502, y: 0.0026414723, z: 0.009533315}
+      rotation: {x: 0.55834633, y: -0, z: -0, w: 0.82960796}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_R_Rear_PV_ctrl
+      parentName: Intertwined_Dog_rig:ankle_R_Rear_PV_pos
+      position: {x: 0.00000002941612, y: 0.0013062228, z: 0.00053530064}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_R_Rear_offset_pos
+      parentName: Intertwined_Dog_rig:ankle_R_Rear_ctrl
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_R_Rear_offset_ctrl
+      parentName: Intertwined_Dog_rig:ankle_R_Rear_offset_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_L_Rear_pos
+      parentName: Intertwined_Dog_rig:dog_controller_grp
+      position: {x: -0.004667028, y: 0.005884174, z: -0.012228579}
+      rotation: {x: 0.99999875, y: -0, z: 0, w: 0.0015900397}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_L_Rear_ctrl
+      parentName: Intertwined_Dog_rig:ankle_L_Rear_pos
+      position: {x: 0.0010834977, y: 0.0032932907, z: -0.0039261407}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:toe_L_Rear_pos
+      parentName: Intertwined_Dog_rig:ankle_L_Rear_ctrl
+      position: {x: 4.970815e-10, y: 0.001663303, z: -0.003742711}
+      rotation: {x: -0.54500866, y: 0.000042615367, z: 0.000037137193, w: 0.8384304}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:toe_L_Rear_ctrl
+      parentName: Intertwined_Dog_rig:toe_L_Rear_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0.0000020265727, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ball_L_Rear_pos
+      parentName: Intertwined_Dog_rig:toe_L_Rear_ctrl
+      position: {x: -0.00000044571232, y: -0.004095664, z: -0.0000008158277}
+      rotation: {x: -0.20610683, y: -0.000003952829, z: -0.000056388082, w: 0.9785295}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ball_L_Rear_ctrl
+      parentName: Intertwined_Dog_rig:ball_L_Rear_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:toe_bend_L_Rear_pos
+      parentName: Intertwined_Dog_rig:toe_L_Rear_ctrl
+      position: {x: -0, y: 0.0000040003315, z: 0}
+      rotation: {x: 0.00009949849, y: -0.000015495338, z: -0.000054361153, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:toe_bend_L_Rear_ctrl
+      parentName: Intertwined_Dog_rig:toe_bend_L_Rear_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_L_Rear_PV_pos
+      parentName: Intertwined_Dog_rig:ankle_L_Rear_ctrl
+      position: {x: 6.214407e-11, y: -0.005924561, z: -0.008566789}
+      rotation: {x: 0.55834633, y: -0, z: -0, w: 0.82960796}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_L_Rear_PV_ctrl
+      parentName: Intertwined_Dog_rig:ankle_L_Rear_PV_pos
+      position: {x: -0, y: 9.957198e-11, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_L_Rear_offset_pos
+      parentName: Intertwined_Dog_rig:ankle_L_Rear_ctrl
+      position: {x: 6.214407e-11, y: -0.003283878, z: 0.00096649845}
+      rotation: {x: 0.000000010536712, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_L_Rear_offset_ctrl
+      parentName: Intertwined_Dog_rig:ankle_L_Rear_offset_pos
+      position: {x: -6.214407e-11, y: 0.003283878, z: -0.00096649735}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_R_Front_pos
+      parentName: Intertwined_Dog_rig:dog_controller_grp
+      position: {x: 0.00456986, y: 0.0052031395, z: 0.00273363}
+      rotation: {x: 0.00032475582, y: -0, z: -0, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_R_Front_ctrl
+      parentName: Intertwined_Dog_rig:ankle_R_Front_pos
+      position: {x: -0.001056733, y: 0.005480185, z: 0.008639731}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:toe_R_Front_pos
+      parentName: Intertwined_Dog_rig:ankle_R_Front_ctrl
+      position: {x: -0, y: -0.004948801, z: 0.0047128852}
+      rotation: {x: -0.5449252, y: 0, z: -0, w: 0.83848464}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:toe_R_Front_ctrl
+      parentName: Intertwined_Dog_rig:toe_R_Front_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ball_R_Front_pos
+      parentName: Intertwined_Dog_rig:toe_R_Front_ctrl
+      position: {x: -0, y: 0.0040996266, z: 0.000000020940501}
+      rotation: {x: -0.20620419, y: 0, z: -0, w: 0.978509}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ball_R_Front_ctrl
+      parentName: Intertwined_Dog_rig:ball_R_Front_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:toe_bend_R_Front_pos
+      parentName: Intertwined_Dog_rig:toe_R_Front_ctrl
+      position: {x: -0, y: 0.00018133353, z: 0.000077841905}
+      rotation: {x: -0.027554395, y: 0, z: -0, w: 0.9996203}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:toe_bend_R_Front_ctrl
+      parentName: Intertwined_Dog_rig:toe_bend_R_Front_pos
+      position: {x: -0, y: 0, z: -0.004090384}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:elbow_R_Front_PV_pos
+      parentName: Intertwined_Dog_rig:ankle_R_Front_ctrl
+      position: {x: -0, y: 0.0030112162, z: -0.0019949581}
+      rotation: {x: 0.065025486, y: -0, z: -0, w: 0.9978836}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:elbow_R_Front_PV_ctrl
+      parentName: Intertwined_Dog_rig:elbow_R_Front_PV_pos
+      position: {x: 0.0005039366, y: -0.001065883, z: -0.00810291}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_L_Front_pos
+      parentName: Intertwined_Dog_rig:dog_controller_grp
+      position: {x: -0.0045698574, y: 0.0052031395, z: 0.0027336264}
+      rotation: {x: 0.99999994, y: 0, z: 0, w: -0.0003247725}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ankle_L_Front_ctrl
+      parentName: Intertwined_Dog_rig:ankle_L_Front_pos
+      position: {x: -0.002220263, y: -0.005158674, z: -0.011762804}
+      rotation: {x: -0.09518123, y: 0, z: -0, w: 0.99546}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:toe_L_Front_pos
+      parentName: Intertwined_Dog_rig:ankle_L_Front_ctrl
+      position: {x: 4.3493745e-10, y: 0.0049471813, z: -0.0047092093}
+      rotation: {x: -0.54500866, y: 0.000042615367, z: 0.000037137193, w: 0.8384304}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:toe_L_Front_ctrl
+      parentName: Intertwined_Dog_rig:toe_L_Front_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.123807736, y: 0.000013461045, z: -0.000003835546, w: 0.99230623}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ball_L_Front_pos
+      parentName: Intertwined_Dog_rig:toe_L_Front_ctrl
+      position: {x: -0.00000044571232, y: -0.004095664, z: -0.0000008158277}
+      rotation: {x: -0.20610683, y: -0.000003952829, z: -0.000056388082, w: 0.9785295}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:ball_L_Front_ctrl
+      parentName: Intertwined_Dog_rig:ball_L_Front_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:toe_bend_L_Front_pos
+      parentName: Intertwined_Dog_rig:toe_L_Front_ctrl
+      position: {x: -0.00000001727469, y: -0.00017668812, z: -0.00007652493}
+      rotation: {x: -0.027454935, y: -0.000013991565, z: -0.00005476748, w: 0.99962306}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:toe_bend_L_Front_ctrl
+      parentName: Intertwined_Dog_rig:toe_bend_L_Front_pos
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:elbow_L_Front_PV_pos
+      parentName: Intertwined_Dog_rig:ankle_L_Front_ctrl
+      position: {x: -0, y: -0.0030097177, z: 0.001994992}
+      rotation: {x: 0.065025486, y: -0, z: -0, w: 0.9978836}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Dog_rig:elbow_L_Front_PV_ctrl
+      parentName: Intertwined_Dog_rig:elbow_L_Front_PV_pos
+      position: {x: 5.377643e-19, y: 0.0076505593, z: 0.007392448}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
