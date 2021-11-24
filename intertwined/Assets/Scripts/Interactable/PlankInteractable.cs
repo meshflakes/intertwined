@@ -23,7 +23,7 @@ namespace Interactable
         private bool _inFinalPosition = false;
 
         private int _previousLayer;
-        private Animator anim;
+        private Animator _anim;
 
         public new void Start()
         {
@@ -44,7 +44,6 @@ namespace Interactable
         {
             if (!_inFinalPosition && _droppingToFinalPosition)
             {
-                
                 var z = GrabbableTransform.rotation.eulerAngles.z;
                 if (!_plankFallingAudioPlayed && (z > 330 || z < 30))
                 {
@@ -74,19 +73,19 @@ namespace Interactable
         public override bool Interact(Character.Character interacter)
         {
             if (_inFinalPosition) return false;
-            
-            if (Held())
+
+
+                if (Held())
             {
                 Debug.Log("Releasing Object");
                 Release();
-                anim.SetInteger("Interacting", 0);
             }
             else
             {
-                anim = interacter.GetComponentInChildren<Animator>();
+                _anim = interacter.GetComponentInChildren<Animator>();
                 Debug.Log("Grabbing object");
                 Grab(interacter.gameObject);
-                anim.SetInteger("Interacting", 1);
+                _anim.SetInteger("Interacting", 1);
             }
 
             return true;

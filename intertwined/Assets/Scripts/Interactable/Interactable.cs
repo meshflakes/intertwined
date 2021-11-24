@@ -53,6 +53,8 @@ namespace Interactable
             {
                 other.gameObject.GetComponentInParent<Character.Character>()
                     .CharInteractor.AddToInteractablesList(gameObject);
+                //TODO clean up this. It is not a good way to handle exiting the plank hold animation
+                other.gameObject.GetComponentInParent<Character.Character>().GetComponentInChildren<Animator>().SetInteger("Interacting", 0);
                 Debug.Log($"adding {gameObject.name} to list");
             }
         }
