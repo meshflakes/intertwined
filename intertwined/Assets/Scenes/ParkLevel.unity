@@ -30827,8 +30827,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.7195277, y: 0.49227548, z: 0.28643808}
-  m_Center: {x: 0.1681644, y: -0.025294041, z: -0.13189173}
+  m_Size: {x: 0.7195277, y: 0.49227548, z: 0.4967051}
+  m_Center: {x: 0.16816439, y: -0.025294041, z: -0.23702525}
 --- !u!65 &1130152158
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56366,6 +56366,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8857253380707484730, guid: a1a0fad02d8429b4f9b5b7fc4b0215fd, type: 3}
+      propertyPath: animationDuration
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8857253380707484864, guid: a1a0fad02d8429b4f9b5b7fc4b0215fd, type: 3}
       propertyPath: m_Name
       value: Sign
