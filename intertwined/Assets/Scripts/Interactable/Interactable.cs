@@ -50,8 +50,10 @@ namespace Interactable
             // Add itself to the character's interactables list
             if (CollidingObjectCanInteract(other))
             {
-                other.gameObject.GetComponentInParent<Character.Character>()
-                    .CharInteractor.AddToInteractablesList(gameObject);
+                var interacter = other.gameObject.GetComponentInParent<Character.Character>();
+                interacter.CharInteractor.AddToInteractablesList(gameObject);
+                TryForceInteraction(interacter);
+                
                 Debug.Log($"adding {gameObject.name} to list");
             }
         }
@@ -80,6 +82,12 @@ namespace Interactable
                 .RemoveFromInteractablesList(gameObject);
             GameObject.FindWithTag("Dog").GetComponentInParent<Character.Character>().CharInteractor
                 .RemoveFromInteractablesList(gameObject);
+        }
+        
+        private void TryForceInteraction(Character.Character interacter)
+        {
+            if (this is IForcedInteractable forcedInteractable && forcedInteractable.CanForceInteraction(interacter))
+                interacter.CharInteractor.StartForcedInteraction(this);
         }
     }
 }
