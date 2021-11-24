@@ -8386,6 +8386,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -3744925389070329982, guid: 94eed05aa87f61a46b308bbac6d602a7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 30c482332641ae84fa3bdd685d6203c1, type: 2}
     - target: {fileID: -1186130797144775159, guid: 94eed05aa87f61a46b308bbac6d602a7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.02858
@@ -36599,6 +36603,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SecurityBuilding
       objectReference: {fileID: 0}
+    - target: {fileID: 1580425214778846209, guid: d435a4d4291ad214abd349667ea456e1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95cc81f7b706fa246b590d719fc825be, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d435a4d4291ad214abd349667ea456e1, type: 3}
 --- !u!1001 &1251350932
