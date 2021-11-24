@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Controls;
 using UnityEngine;
 
@@ -17,7 +18,8 @@ namespace Camera
         private readonly Transform _cameraTransform;
         private Vector3 _cameraOffset;
         private readonly float _cameraRotation;
-
+        
+        List<GameObject> hiddenItems = new List<GameObject>();
         private Vector3 _targetCameraPos;
         private GameInputs _input;
         
@@ -43,6 +45,8 @@ namespace Camera
             
             var p1Position = _p1.position;
             var p2Position = _p2.position;
+
+            CheckVisualObstacle(p1Position, p2Position);
             
             _cameraTransform.LookAt((p1Position + p2Position) / 2f);
 
@@ -53,7 +57,6 @@ namespace Camera
             var zoomModifier = distance > _zoomStartDist ? distance * _zoom : 1;
         
             _targetCameraPos = midpoint + _cameraOffset * zoomModifier; 
-            
             _cameraTransform.position = Vector3.Slerp(_cameraTransform.position, _targetCameraPos, _smoothness * Time.deltaTime);
         }
 
@@ -65,6 +68,44 @@ namespace Camera
         private void RotateCam(float angle)
         {
             _cameraOffset = Quaternion.AngleAxis(angle, Vector3.up) * _cameraOffset;
+        }
+
+        private void CheckVisualObstacle(Vector3 p1Position, Vector3 p2Position)
+        {
+            int layerMask = 1 << 3;
+
+            float rayOffSet = 1;
+            RaycastHit hit;
+            if (Physics.Raycast(_cameraTransform.position,  (p1Position + Vector3.up * rayOffSet) - _cameraTransform.position, 
+                out hit, (p1Position - _cameraTransform.position).magnitude, layerMask))
+            {
+                Debug.DrawRay(_cameraTransform.position, ((p1Position + Vector3.up * rayOffSet) - _cameraTransform.position), Color.yellow);
+                Debug.Log("Did Hit" + hit.collider.gameObject.name);
+                hit.collider.gameObject.GetComponent<Renderer> ().enabled = false;
+                hiddenItems.Add(hit.collider.gameObject);
+                
+            } else if (Physics.Raycast(_cameraTransform.position,  p2Position - _cameraTransform.position, 
+                out hit, (p2Position - _cameraTransform.position).magnitude, layerMask))
+            {
+                Debug.DrawRay(_cameraTransform.position, ((p2Position + Vector3.up * rayOffSet) - _cameraTransform.position), Color.yellow);
+                Debug.Log("Did Hit" + hit.collider.gameObject.name);
+                hit.collider.gameObject.GetComponent<Renderer> ().enabled = false;
+                hiddenItems.Add(hit.collider.gameObject);
+                
+            }
+            else
+            {
+                Debug.DrawRay(_cameraTransform.position, ((p1Position + Vector3.up * rayOffSet) - _cameraTransform.position), Color.white);
+                Debug.DrawRay(_cameraTransform.position, ((p2Position) - _cameraTransform.position), Color.white);
+                Debug.Log("Did not Hit");
+                foreach (var item in hiddenItems)
+                {
+                    Debug.Log("Bringing back: " + item.name);
+                    item.GetComponent<Renderer>().enabled = true;
+                }
+                hiddenItems.Clear();
+                
+            }
         }
     }
 }

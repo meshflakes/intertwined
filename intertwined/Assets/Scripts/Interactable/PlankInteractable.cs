@@ -23,6 +23,7 @@ namespace Interactable
         private bool _inFinalPosition = false;
 
         private int _previousLayer;
+        private Animator _anim;
 
         public new void Start()
         {
@@ -72,16 +73,19 @@ namespace Interactable
         public override bool Interact(Character.Character interacter)
         {
             if (_inFinalPosition) return false;
-            
-            if (Held())
+
+
+                if (Held())
             {
                 Debug.Log("Releasing Object");
                 Release();
             }
             else
             {
+                _anim = interacter.GetComponentInChildren<Animator>();
                 Debug.Log("Grabbing object");
                 Grab(interacter.gameObject);
+                _anim.SetInteger("Interacting", 1);
             }
 
             return true;
