@@ -18,6 +18,7 @@ namespace Interactable
         public bool interactableEnabled = true;
 
         private List<Character.Character> _characters;
+        private Animator anim; 
 
         protected void OnValidate()
         {

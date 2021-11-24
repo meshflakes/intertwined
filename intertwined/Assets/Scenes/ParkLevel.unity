@@ -1155,6 +1155,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2875565789092080580, guid: 76d2145cfe1466b4ebe0ed8f1f8dfb40, type: 3}
   m_PrefabInstance: {fileID: 46373040}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &49160503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 49160504}
+  - component: {fileID: 49160505}
+  m_Layer: 0
+  m_Name: Forest Postbridge (9)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &49160504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49160503}
+  m_LocalRotation: {x: -0, y: 0.9326432, z: -0, w: 0.36080024}
+  m_LocalPosition: {x: 17.44, y: 1.029, z: 48.96}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 137.701, z: 0}
+--- !u!65 &49160505
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49160503}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 5.1276217, z: 16.26457}
+  m_Center: {x: -0.00017451128, y: 0.93587303, z: 22.526428}
 --- !u!1001 &51395451
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3956,6 +4000,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2586288981929427181, guid: 8bf8358b291bc8f49bef092c7103374a, type: 3}
   m_PrefabInstance: {fileID: 172319025}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &183796539
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 183796540}
+  - component: {fileID: 183796541}
+  m_Layer: 0
+  m_Name: Forest Postbridge (14)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &183796540
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183796539}
+  m_LocalRotation: {x: -0, y: 0.15601227, z: -0, w: 0.9877552}
+  m_LocalPosition: {x: 4.97, y: 1.029, z: -21.98}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 17.951, z: 0}
+--- !u!65 &183796541
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 183796539}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 5.1276217, z: 22.56015}
+  m_Center: {x: 0.000021556192, y: 0.93587303, z: 2.4698606}
 --- !u!4 &185972328 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2875565789092080580, guid: 76d2145cfe1466b4ebe0ed8f1f8dfb40, type: 3}
@@ -9448,6 +9536,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2558262452497233017, guid: 1d741d41c4cbcf847998ef3bf2db7a77, type: 3}
   m_PrefabInstance: {fileID: 673819646}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &375494327
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 375494328}
+  - component: {fileID: 375494329}
+  m_Layer: 0
+  m_Name: Forest Prebridge (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &375494328
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375494327}
+  m_LocalRotation: {x: -0, y: -0.17572995, z: -0, w: 0.9844384}
+  m_LocalPosition: {x: -40.41, y: 1.3309745, z: -40.55}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -20.242, z: 0}
+--- !u!65 &375494329
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375494327}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.8247795, y: 8.490128, z: 1.0000001}
+  m_Center: {x: -0.67423123, y: -0.48146474, z: -0.0000000138825555}
 --- !u!1001 &377253564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11223,6 +11355,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2875565789092080580, guid: 76d2145cfe1466b4ebe0ed8f1f8dfb40, type: 3}
   m_PrefabInstance: {fileID: 421015710}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &421655260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 421655261}
+  - component: {fileID: 421655262}
+  m_Layer: 0
+  m_Name: Forest Postbridge (16)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &421655261
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421655260}
+  m_LocalRotation: {x: -0, y: 0.7233445, z: -0, w: 0.69048727}
+  m_LocalPosition: {x: 26.83, y: 1.029, z: -35.87}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 92.663, z: 0}
+--- !u!65 &421655262
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421655260}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 5.1276217, z: 33.83007}
+  m_Center: {x: 0.000021528029, y: 0.93587303, z: -3.1650984}
 --- !u!1001 &426034352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16062,6 +16238,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2875565789092080580, guid: 76d2145cfe1466b4ebe0ed8f1f8dfb40, type: 3}
   m_PrefabInstance: {fileID: 571878662}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &579135651
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 579135652}
+  - component: {fileID: 579135653}
+  m_Layer: 0
+  m_Name: Forest Postbridge (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &579135652
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579135651}
+  m_LocalRotation: {x: -0, y: 0.335455, z: -0, w: 0.9420563}
+  m_LocalPosition: {x: -13.81, y: 1.029, z: 32.34}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 39.2, z: 0}
+--- !u!65 &579135653
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 579135651}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 5.1276217, z: 16.26457}
+  m_Center: {x: -0.00017451128, y: 0.93587303, z: 22.526428}
 --- !u!95 &579216127 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: f5aff3879cdf2eb4e861f4c86d6f019c, type: 3}
@@ -16573,6 +16793,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2586288981929427181, guid: 8bf8358b291bc8f49bef092c7103374a, type: 3}
   m_PrefabInstance: {fileID: 586279672}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &586487194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 586487195}
+  - component: {fileID: 586487196}
+  m_Layer: 0
+  m_Name: Forest Postbridge (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &586487195
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586487194}
+  m_LocalRotation: {x: -0, y: 0.81563854, z: -0, w: 0.57856184}
+  m_LocalPosition: {x: -49.83872, y: 1.029, z: 53.338703}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 109.301, z: 0}
+--- !u!65 &586487196
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586487194}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 5.1276217, z: 16.26457}
+  m_Center: {x: -0.00017451128, y: 0.93587303, z: 22.526428}
 --- !u!1001 &591470806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19208,6 +19472,7 @@ Transform:
   - {fileID: 927011481}
   - {fileID: 1355076890}
   - {fileID: 1645488129}
+  - {fileID: 1487323799}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20579,6 +20844,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2586288981929427181, guid: 8bf8358b291bc8f49bef092c7103374a, type: 3}
   m_PrefabInstance: {fileID: 745493382}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &752860584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 752860585}
+  - component: {fileID: 752860586}
+  m_Layer: 0
+  m_Name: Forest Postbridge (12)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &752860585
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752860584}
+  m_LocalRotation: {x: -0, y: 0.82193553, z: -0, w: 0.5695806}
+  m_LocalPosition: {x: 13.707668, y: 1.029, z: 7.891148}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 110.558, z: 0}
+--- !u!65 &752860586
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 752860584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 5.1276217, z: 16.26457}
+  m_Center: {x: -0.00017451128, y: 0.93587303, z: 22.526428}
 --- !u!4 &756984103 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2558262452497233017, guid: 1d741d41c4cbcf847998ef3bf2db7a77, type: 3}
@@ -20868,6 +21177,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2875565789092080580, guid: 76d2145cfe1466b4ebe0ed8f1f8dfb40, type: 3}
   m_PrefabInstance: {fileID: 762460632}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &763504175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 763504176}
+  - component: {fileID: 763504177}
+  m_Layer: 0
+  m_Name: Forest Prebridge (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &763504176
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763504175}
+  m_LocalRotation: {x: -0, y: -0.646441, z: -0, w: 0.76296407}
+  m_LocalPosition: {x: -45.92, y: 1.3309745, z: -35.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: -80.548, z: 0}
+--- !u!65 &763504177
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 763504175}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 28.455498, y: 8.490128, z: 1.0000001}
+  m_Center: {x: 4.4504466, y: -0.48146486, z: 0.0000013398824}
 --- !u!1001 &771000898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24802,6 +25155,64 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 297884115535486826, guid: 9165a819eddcb034d858d318f28c8ff3, type: 3}
   m_PrefabInstance: {fileID: 890860195}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &893232044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 893232045}
+  - component: {fileID: 893232047}
+  - component: {fileID: 893232046}
+  m_Layer: 0
+  m_Name: Bushes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &893232045
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893232044}
+  m_LocalRotation: {x: -0, y: -0.4651799, z: -0, w: 0.88521624}
+  m_LocalPosition: {x: -6.11, y: 1.368, z: -10.13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -55.444, z: 0}
+--- !u!65 &893232046
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893232044}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 24.231884, y: 3.5017917, z: 1.6291292}
+  m_Center: {x: -8.557486, y: 0.0058630705, z: 3.49918}
+--- !u!65 &893232047
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893232044}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 23.200462, y: 3.5017917, z: 0.77920854}
+  m_Center: {x: -7.418441, y: 0.0058630705, z: -0.11053763}
 --- !u!1001 &895642422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24876,6 +25287,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 297884115535486826, guid: 9165a819eddcb034d858d318f28c8ff3, type: 3}
   m_PrefabInstance: {fileID: 895642422}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &900318409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 900318410}
+  - component: {fileID: 900318411}
+  m_Layer: 0
+  m_Name: Forest Postbridge (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &900318410
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900318409}
+  m_LocalRotation: {x: -0, y: 0.7078134, z: -0, w: 0.70639956}
+  m_LocalPosition: {x: -14.843114, y: 1.029, z: 47.49107}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 90.115, z: 0}
+--- !u!65 &900318411
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 900318409}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 5.1276217, z: 16.26457}
+  m_Center: {x: -0.00017451128, y: 0.93587303, z: 22.526428}
 --- !u!1001 &903904862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25469,6 +25924,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 53aa1f3460cca9e4d91deaca847597dd, type: 3}
   m_PrefabInstance: {fileID: 1866424093}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &936853187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 936853188}
+  - component: {fileID: 936853189}
+  m_Layer: 0
+  m_Name: Forest Postbridge (13)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &936853188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936853187}
+  m_LocalRotation: {x: -0, y: -0.642268, z: -0, w: 0.76648015}
+  m_LocalPosition: {x: 10.07, y: 1.029, z: -9.51}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: -79.922, z: 0}
+--- !u!65 &936853189
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936853187}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 5.1276217, z: 14.940899}
+  m_Center: {x: 0.000014301889, y: 0.93587303, z: 6.9704237}
 --- !u!1001 &943961921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32191,6 +32690,50 @@ Transform:
   m_Father: {fileID: 232913345}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1175024388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1175024389}
+  - component: {fileID: 1175024390}
+  m_Layer: 0
+  m_Name: Forest Postbridge (15)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1175024389
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175024388}
+  m_LocalRotation: {x: -0, y: 0.8966284, z: -0, w: 0.4427839}
+  m_LocalPosition: {x: 7.63, y: 1.029, z: -30.32}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 127.437, z: 0}
+--- !u!65 &1175024390
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175024388}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 5.1276217, z: 22.56015}
+  m_Center: {x: 0.000021556192, y: 0.93587303, z: 2.4698606}
 --- !u!4 &1179063371 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6834365105930872039, guid: 2af7b21b95031ae4e9ee40d08d74516d, type: 3}
@@ -32628,6 +33171,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2875565789092080580, guid: 76d2145cfe1466b4ebe0ed8f1f8dfb40, type: 3}
   m_PrefabInstance: {fileID: 1198151736}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1199583293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1199583294}
+  - component: {fileID: 1199583295}
+  m_Layer: 0
+  m_Name: Forest Postbridge (11)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1199583294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199583293}
+  m_LocalRotation: {x: -0, y: 0.95975477, z: -0, w: -0.2808396}
+  m_LocalPosition: {x: 42.94, y: 1.029, z: 27.62}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 212.621, z: 0}
+--- !u!65 &1199583295
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1199583293}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 5.1276217, z: 16.26457}
+  m_Center: {x: -0.00017451128, y: 0.93587303, z: 22.526428}
 --- !u!1001 &1201687176
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35841,6 +36428,94 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2558262452497233017, guid: 1d741d41c4cbcf847998ef3bf2db7a77, type: 3}
   m_PrefabInstance: {fileID: 1300246284}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1301769462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1301769463}
+  - component: {fileID: 1301769464}
+  m_Layer: 0
+  m_Name: Forest Prebridge (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1301769463
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301769462}
+  m_LocalRotation: {x: -0, y: 0.5075737, z: -0, w: 0.8616084}
+  m_LocalPosition: {x: -33.04, y: 1.26, z: -43.57}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 61.005, z: 0}
+--- !u!65 &1301769464
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301769462}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.8247795, y: 8.490128, z: 1.0000001}
+  m_Center: {x: -0.67423123, y: -0.48146474, z: -0.0000000138825555}
+--- !u!1 &1302190108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1302190109}
+  - component: {fileID: 1302190110}
+  m_Layer: 0
+  m_Name: Forest Postbridge (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1302190109
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302190108}
+  m_LocalRotation: {x: -0, y: 0.9060899, z: -0, w: 0.42308524}
+  m_LocalPosition: {x: 4.09, y: 1.029, z: 56.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 129.941, z: 0}
+--- !u!65 &1302190110
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302190108}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 5.1276217, z: 16.26457}
+  m_Center: {x: -0.00017451128, y: 0.93587303, z: 22.526428}
 --- !u!1001 &1303240144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40651,6 +41326,58 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 297884115535486826, guid: 9165a819eddcb034d858d318f28c8ff3, type: 3}
   m_PrefabInstance: {fileID: 1485169068}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1487323798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1487323799}
+  m_Layer: 0
+  m_Name: Area Colliders
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1487323799
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1487323798}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 893232045}
+  - {fileID: 1986777896}
+  - {fileID: 1301769463}
+  - {fileID: 375494328}
+  - {fileID: 763504176}
+  - {fileID: 1996045013}
+  - {fileID: 1619656578}
+  - {fileID: 1560559487}
+  - {fileID: 2034884230}
+  - {fileID: 586487195}
+  - {fileID: 1920197781}
+  - {fileID: 579135652}
+  - {fileID: 900318410}
+  - {fileID: 1302190109}
+  - {fileID: 49160504}
+  - {fileID: 1958867173}
+  - {fileID: 1199583294}
+  - {fileID: 752860585}
+  - {fileID: 936853188}
+  - {fileID: 183796540}
+  - {fileID: 1175024389}
+  - {fileID: 421655261}
+  m_Father: {fileID: 693836894}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1487635240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42913,6 +43640,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2875565789092080580, guid: 76d2145cfe1466b4ebe0ed8f1f8dfb40, type: 3}
   m_PrefabInstance: {fileID: 1558775724}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1560559486
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1560559487}
+  - component: {fileID: 1560559488}
+  m_Layer: 0
+  m_Name: Forest Postbridge (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1560559487
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560559486}
+  m_LocalRotation: {x: -0, y: -0.21422172, z: -0, w: 0.97678506}
+  m_LocalPosition: {x: -29.68, y: 1.029, z: 18.88}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: -24.74, z: 0}
+--- !u!65 &1560559488
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560559486}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 5.1276217, z: 36.73175}
+  m_Center: {x: -0.000023960398, y: 0.93587303, z: 12.293033}
 --- !u!1001 &1561818702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44382,6 +45153,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2586288981929427181, guid: 8bf8358b291bc8f49bef092c7103374a, type: 3}
   m_PrefabInstance: {fileID: 1619398668}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1619656577
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1619656578}
+  - component: {fileID: 1619656579}
+  m_Layer: 0
+  m_Name: Forest Postbridge (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1619656578
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619656577}
+  m_LocalRotation: {x: -0, y: -0.5206528, z: -0, w: 0.8537686}
+  m_LocalPosition: {x: -14.49, y: 1.029, z: 6.61}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: -62.752, z: 0}
+--- !u!65 &1619656579
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619656577}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 5.1276217, z: 20.388083}
+  m_Center: {x: 0.000012499952, y: 0.93587303, z: 9.694021}
 --- !u!1001 &1622971812
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51646,6 +52461,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2586288981929427181, guid: 8bf8358b291bc8f49bef092c7103374a, type: 3}
   m_PrefabInstance: {fileID: 1916605966}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1920197780
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1920197781}
+  - component: {fileID: 1920197782}
+  m_Layer: 0
+  m_Name: Forest Postbridge (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1920197781
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920197780}
+  m_LocalRotation: {x: -0, y: 0.70803857, z: -0, w: 0.7061738}
+  m_LocalPosition: {x: -36.39, y: 1.029, z: 43.49}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 90.151, z: 0}
+--- !u!65 &1920197782
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1920197780}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 5.1276217, z: 18.504929}
+  m_Center: {x: -0.00017452256, y: 0.93587303, z: 23.646729}
 --- !u!1001 &1926094133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52234,6 +53093,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2875565789092080580, guid: 76d2145cfe1466b4ebe0ed8f1f8dfb40, type: 3}
   m_PrefabInstance: {fileID: 1955856850}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1958867172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1958867173}
+  - component: {fileID: 1958867174}
+  m_Layer: 0
+  m_Name: Forest Postbridge (10)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1958867173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958867172}
+  m_LocalRotation: {x: -0, y: 0.9967677, z: -0, w: -0.08033805}
+  m_LocalPosition: {x: 38.24, y: 1.029, z: 43.76}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 189.216, z: 0}
+--- !u!65 &1958867174
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958867172}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 5.1276217, z: 16.26457}
+  m_Center: {x: -0.00017451128, y: 0.93587303, z: 22.526428}
 --- !u!1001 &1959281172
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -52900,6 +53803,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2586288981929427181, guid: 8bf8358b291bc8f49bef092c7103374a, type: 3}
   m_PrefabInstance: {fileID: 1984076709}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1986777895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1986777896}
+  - component: {fileID: 1986777897}
+  m_Layer: 0
+  m_Name: Forest Prebridge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1986777896
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986777895}
+  m_LocalRotation: {x: -0, y: -0.12787361, z: -0, w: 0.9917905}
+  m_LocalPosition: {x: -15.98, y: 1.26, z: -43.84}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -14.693, z: 0}
+--- !u!65 &1986777897
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986777895}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 23.129858, y: 8.490128, z: 1.0000001}
+  m_Center: {x: -6.3268037, y: -0.48146474, z: 0.000011182823}
 --- !u!1001 &1986903292
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -53110,6 +54057,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2875565789092080580, guid: 76d2145cfe1466b4ebe0ed8f1f8dfb40, type: 3}
   m_PrefabInstance: {fileID: 1993531518}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1996045012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1996045013}
+  - component: {fileID: 1996045014}
+  m_Layer: 0
+  m_Name: Forest Postbridge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1996045013
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996045012}
+  m_LocalRotation: {x: -0, y: -0.23003863, z: -0, w: 0.9731815}
+  m_LocalPosition: {x: -7.6758566, y: 1.029, z: -5.4911675}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: -26.599, z: 0}
+--- !u!65 &1996045014
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996045012}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 5.1276217, z: 14.017253}
+  m_Center: {x: 0.000013954821, y: 0.93587315, z: 6.5086036}
 --- !u!1 &1999809220 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 94eed05aa87f61a46b308bbac6d602a7, type: 3}
@@ -53769,6 +54760,50 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -6845263518638733942, guid: d435a4d4291ad214abd349667ea456e1, type: 3}
+--- !u!1 &2034884229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2034884230}
+  - component: {fileID: 2034884231}
+  m_Layer: 0
+  m_Name: Forest Postbridge (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2034884230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034884229}
+  m_LocalRotation: {x: -0, y: 0.24349543, z: -0, w: 0.9699021}
+  m_LocalPosition: {x: -46.59, y: 1.029, z: 25.38}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1487323799}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 28.186, z: 0}
+--- !u!65 &2034884231
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034884229}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 5.1276217, z: 16.26457}
+  m_Center: {x: -0.00017451128, y: 0.93587303, z: 22.526428}
 --- !u!1001 &2044586474
 PrefabInstance:
   m_ObjectHideFlags: 0
