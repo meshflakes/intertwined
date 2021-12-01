@@ -18,6 +18,7 @@ namespace Interactable
         public bool interactableEnabled = true;
 
         private List<Character.Character> _characters;
+        private Animator anim; 
 
         protected void OnValidate()
         {
@@ -50,8 +51,13 @@ namespace Interactable
             // Add itself to the character's interactables list
             if (CollidingObjectCanInteract(other))
             {
-                other.gameObject.GetComponentInParent<Character.Character>()
-                    .CharInteractor.AddToInteractablesList(gameObject);
+                var interacter = other.gameObject.GetComponentInParent<Character.Character>();
+                interacter.CharInteractor.AddToInteractablesList(gameObject);
+                TryForceInteraction(interacter);
+				
+				//TODO clean up this. It is not a good way to handle exiting the plank hold animation
+                other.gameObject.GetComponentInParent<Character.Character>().GetComponentInChildren<Animator>().SetInteger("Interacting", 0);
+
                 Debug.Log($"adding {gameObject.name} to list");
             }
         }
@@ -80,6 +86,12 @@ namespace Interactable
                 .RemoveFromInteractablesList(gameObject);
             GameObject.FindWithTag("Dog").GetComponentInParent<Character.Character>().CharInteractor
                 .RemoveFromInteractablesList(gameObject);
+        }
+        
+        private void TryForceInteraction(Character.Character interacter)
+        {
+            if (this is IForcedInteractable forcedInteractable && forcedInteractable.CanForceInteraction(interacter))
+                interacter.CharInteractor.StartForcedInteraction(this);
         }
     }
 }

@@ -51,6 +51,11 @@ namespace Character
             
         }
 
+        public bool StartForcedInteraction(Interactable.Interactable interactable)
+        {
+            return interactable.Interact(PlayerChar);
+        }
+
         private bool TryInteractionUsingHeldInteractable()
         {
             var i = 0;

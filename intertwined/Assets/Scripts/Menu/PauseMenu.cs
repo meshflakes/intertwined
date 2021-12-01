@@ -18,7 +18,7 @@ namespace Menu
         private void Start()
         {
             _input = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameInputs>();
- 
+            Pause();
         }
 
         private void Update()
