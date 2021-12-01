@@ -19951,7 +19951,6 @@ GameObject:
   m_Component:
   - component: {fileID: 663464211}
   - component: {fileID: 663464212}
-  - component: {fileID: 663464213}
   m_Layer: 0
   m_Name: AnxietyManager
   m_TagString: Untagged
@@ -19992,18 +19991,6 @@ MonoBehaviour:
   MusicPlayer: {fileID: 1153721048}
   petCooldown: 30
   AnxLight: {fileID: 462179819}
---- !u!114 &663464213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 663464210}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a18d7750b9a0fb4478ebc48062bcfc0f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &663521683
 PrefabInstance:
   m_ObjectHideFlags: 0
