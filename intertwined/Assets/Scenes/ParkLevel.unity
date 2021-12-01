@@ -9023,7 +9023,7 @@ GameObject:
   - component: {fileID: 357099498}
   - component: {fileID: 357099499}
   m_Layer: 6
-  m_Name: Point Light
+  m_Name: DogPointLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12565,6 +12565,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9045712147612786113, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
   m_PrefabInstance: {fileID: 9045712147622743423}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &462179819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462179818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df16c182b3055874f8e32978ce35e108, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  directionalLight: {fileID: 1243909319}
+  boyLight: {fileID: 285020468}
+  dogLight: {fileID: 357099499}
 --- !u!114 &462179820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12578,24 +12593,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pauseMenuUI: {fileID: 1233354556}
---- !u!114 &462179825
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 462179818}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30b1c6546274274489d89d43b0f8abaa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fogPlane: {fileID: 308326381}
-  boy: {fileID: 818730460}
-  fogLayer:
-    serializedVersion: 2
-    m_Bits: 2048
-  radius: 20
 --- !u!4 &462784472 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2558262452497233017, guid: 1d741d41c4cbcf847998ef3bf2db7a77, type: 3}

@@ -48,7 +48,8 @@ public class AnxietyCalc : MonoBehaviour
     // Cooldown time for petting
     public float petCooldown = 30;
     private float _timeSincePet = 0;
-    
+
+    public AnxietyLighting AnxLight;
     // Start is called before the first frame update
     void Start()
     {
@@ -88,11 +89,16 @@ public class AnxietyCalc : MonoBehaviour
         {
             updateInterval = PANIC_UPDATE_TIME;
             more_anxious = true;
+            //TODO: Different lighting due to anxiety
+            AnxLight.farLighting(Mathf.Min(7f,  distance - (float)MAX_DISTANCE));
+            
         }
         else
         {
             updateInterval = UPDATE_TIME;
             more_anxious = false;
+            //Normal lighting due to anxiety
+            AnxLight.normalLighting();
         }
         
         UpdateMusic();
