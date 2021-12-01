@@ -89,7 +89,6 @@ public class AnxietyCalc : MonoBehaviour
         {
             updateInterval = PANIC_UPDATE_TIME;
             more_anxious = true;
-            //TODO: Different lighting due to anxiety
             AnxLight.farLighting(Mathf.Min(7f,  distance - (float)MAX_DISTANCE));
             
         }
@@ -97,7 +96,6 @@ public class AnxietyCalc : MonoBehaviour
         {
             updateInterval = UPDATE_TIME;
             more_anxious = false;
-            //Normal lighting due to anxiety
             AnxLight.normalLighting();
         }
         
