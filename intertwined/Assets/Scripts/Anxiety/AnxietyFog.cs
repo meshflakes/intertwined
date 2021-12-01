@@ -24,7 +24,7 @@ public class AnxietyFog : MonoBehaviour
         Ray r = new Ray(transform.position, boy.position - transform.position);
         RaycastHit hit;
         Debug.Log(boy.position);
-        if (Physics.Raycast(r, out hit, 1000, fogLayer, QueryTriggerInteraction.Collide))
+        if (Physics.Raycast(r, out hit, 2000, fogLayer, QueryTriggerInteraction.Collide))
         {
             Debug.Log("hit");
             for (int i=0; i< planeVertices.Length; i++) {

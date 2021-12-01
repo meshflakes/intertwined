@@ -12,6 +12,7 @@ namespace Anxiety
 
         private void Start()
         {
+            /*
             _anxiety = GetComponent<AnxietyCalc>();
             
             _vignette = ScriptableObject.CreateInstance<Vignette>();
@@ -19,16 +20,17 @@ namespace Anxiety
             _vignette.intensity.Override(1f);
 
             _volume = PostProcessManager.instance.QuickVolume(gameObject.layer, 100f, _vignette);
+        */
         }
 
         private void Update()
         {
-            _vignette.intensity.value = _anxiety.anxiety / 100f;
+           // _vignette.intensity.value = _anxiety.anxiety / 100f;
         }
         
         private void OnDestroy()
         {
-            RuntimeUtilities.DestroyVolume(_volume, true, true);
+            //RuntimeUtilities.DestroyVolume(_volume, true, true);
         }
     }
 }
