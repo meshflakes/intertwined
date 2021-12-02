@@ -101,13 +101,11 @@ MonoBehaviour:
   dogCanInteract: 0
   boyCanInteract: 1
   interactableEnabled: 1
-  boyHoldingOffset: {x: 0, y: 0.4, z: 1}
+  boyHoldingOffset: {x: 0, y: 0.45, z: 1}
   boyHoldingAngle: {x: 0, y: 90, z: -60}
   dogHoldingOffset: {x: 0, y: 0, z: 0}
   dogHoldingAngle: {x: 0, y: 0, z: 0}
   unlockableLockIds: 02000000
-  audioEvents: 
-  audioSources: []
   plankFallAudio: {fileID: 4984662895095155542}
 --- !u!65 &304690550622763093
 BoxCollider:
@@ -137,7 +135,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &304690550622763099
 BoxCollider:
   m_ObjectHideFlags: 0
