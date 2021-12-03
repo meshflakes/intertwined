@@ -80,7 +80,7 @@ namespace Camera
                 out hit, (p1Position - _cameraTransform.position).magnitude, layerMask))
             {
                 Debug.DrawRay(_cameraTransform.position, ((p1Position + Vector3.up * rayOffSet) - _cameraTransform.position), Color.yellow);
-                Debug.Log("Did Hit" + hit.collider.gameObject.name);
+                // Debug.Log("Did Hit" + hit.collider.gameObject.name);
                 hit.collider.gameObject.GetComponent<Renderer> ().enabled = false;
                 hiddenItems.Add(hit.collider.gameObject);
                 
@@ -88,7 +88,7 @@ namespace Camera
                 out hit, (p2Position - _cameraTransform.position).magnitude, layerMask))
             {
                 Debug.DrawRay(_cameraTransform.position, ((p2Position + Vector3.up * rayOffSet) - _cameraTransform.position), Color.yellow);
-                Debug.Log("Did Hit" + hit.collider.gameObject.name);
+                // Debug.Log("Did Hit" + hit.collider.gameObject.name);
                 hit.collider.gameObject.GetComponent<Renderer> ().enabled = false;
                 hiddenItems.Add(hit.collider.gameObject);
                 
@@ -97,10 +97,10 @@ namespace Camera
             {
                 Debug.DrawRay(_cameraTransform.position, ((p1Position + Vector3.up * rayOffSet) - _cameraTransform.position), Color.white);
                 Debug.DrawRay(_cameraTransform.position, ((p2Position) - _cameraTransform.position), Color.white);
-                Debug.Log("Did not Hit");
+                // Debug.Log("Did not Hit");
                 foreach (var item in hiddenItems)
                 {
-                    Debug.Log("Bringing back: " + item.name);
+                    // Debug.Log("Bringing back: " + item.name);
                     item.GetComponent<Renderer>().enabled = true;
                 }
                 hiddenItems.Clear();

@@ -23,10 +23,14 @@ namespace Menu
         {
             if (_boyMadeIt && _dogMadeIt)
             {
-                GoToCredits();
+                GoToMainMenu();
             }
         }
 
+        private void GoToMainMenu()
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
         private void GoToCredits()
         {
             SceneManager.LoadScene("Credits");
