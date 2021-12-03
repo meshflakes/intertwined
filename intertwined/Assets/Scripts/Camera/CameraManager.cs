@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Camera
 {
@@ -12,33 +13,33 @@ namespace Camera
         public float zoomStartDist = 6;
         public float maxDist = 12;
         public float smoothness = 0.5f;
-        public float cameraRotation = 30;
+        [FormerlySerializedAs("cameraRotation")] public float cameraRotationSpeed = 30;
     
         private Vector3 _cameraOffset;
         private CameraController _playerFollowCamera;
         private CameraController _sequenceCamera;
         private CameraTypes _currentCamera = CameraTypes.PlayerFollow;
-        
-        // TODO: use / remove
-        // public Collider camTrigger;
-        // public float followTimeDelta = 0.8f;
+        private DefaultCameraCalculator _defaultCameraCalculator;
     
         private void Start()
         {
             var cameraTransform = transform;
+            _playerFollowCamera = new PlayerFollowCamera(p1, p2, smoothness, cameraTransform);
             
             _cameraOffset = cameraTransform.position - ((p1.position + p2.position) / 2f);
-            _playerFollowCamera =
-                new PlayerFollowCamera(p1, p2, zoom, zoomStartDist, maxDist, smoothness, _cameraOffset, cameraTransform,
-                    cameraRotation);
+            _defaultCameraCalculator = new DefaultCameraCalculator(p1, p2, zoom, zoomStartDist, maxDist, _cameraOffset,
+                cameraRotationSpeed);
         }
 
         private void Update()
         {
+            _defaultCameraCalculator.UpdateDefaultCameraPositionAndRotation(transform.position, 
+                out var targetPosition, out var targetRotation);
+            
             switch (_currentCamera)
             {
                 case CameraTypes.PlayerFollow:
-                    _playerFollowCamera.UpdateCamera();
+                    _playerFollowCamera.UpdateCamera(targetPosition, targetRotation);
                     break;
                 case CameraTypes.CameraSequence:
                     if (_sequenceCamera.YieldingCameraControl)
@@ -46,7 +47,7 @@ namespace Camera
                         _sequenceCamera = null;
                         _currentCamera = CameraTypes.PlayerFollow;
                     }
-                    else _sequenceCamera.UpdateCamera();
+                    else _sequenceCamera.UpdateCamera(targetPosition, targetRotation);
 
                     break;
                 
