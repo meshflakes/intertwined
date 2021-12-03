@@ -33125,7 +33125,7 @@ MonoBehaviour:
   unlockAudio: {fileID: 0}
   doorLockedAudio: {fileID: 0}
   animationDuration: 1
-  minimumTimeBeforeReturn: 5
+  minimumTimeBeforeReturn: 1.5
   unlockAndOpenAudio: {fileID: 1130152160}
   lockedAudio: {fileID: 1130152159}
 --- !u!65 &1130152156
@@ -60698,6 +60698,10 @@ PrefabInstance:
     - target: {fileID: 8857253380707484730, guid: a1a0fad02d8429b4f9b5b7fc4b0215fd, type: 3}
       propertyPath: animationDuration
       value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8857253380707484730, guid: a1a0fad02d8429b4f9b5b7fc4b0215fd, type: 3}
+      propertyPath: minimumTimeBeforeReturn
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8857253380707484864, guid: a1a0fad02d8429b4f9b5b7fc4b0215fd, type: 3}
       propertyPath: m_Name

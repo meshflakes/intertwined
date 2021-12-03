@@ -1,9 +1,8 @@
-﻿using UnityEngine;
+﻿using Controls;
+using UnityEngine;
 
 namespace Camera
 {
-
-    
     /**
      * Short lived camera controller that is used to focus on a certain object for a certain duration,
      * then can be returns control to the player when a button is pressed
@@ -24,7 +23,9 @@ namespace Camera
         private float _animationEndTime;
         private CameraMovementPhase _cameraMovementPhase = CameraMovementPhase.MoveToEnd;
 
-        public CameraSequenceController(Vector3 startingPosition, Quaternion startingRotation, Vector3 endingPosition, 
+        private readonly GameInputs _input;
+
+        private CameraSequenceController(Vector3 startingPosition, Quaternion startingRotation, Vector3 endingPosition, 
                 Quaternion endingRotation, Transform cameraTransform, float animationDuration, float minimumTimeBeforeReturn)
         {
              _startingPosition = startingPosition;
@@ -34,6 +35,8 @@ namespace Camera
              _cameraTransform = cameraTransform;
              _animationDuration = animationDuration;
              _minimumTimeBeforeReturn = minimumTimeBeforeReturn;
+             
+             _input = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameInputs>();
         }
         
         public CameraSequenceController(Vector3 endingPosition, Quaternion endingRotation, Transform cameraTransform,
@@ -41,7 +44,7 @@ namespace Camera
             : this(cameraTransform.position, cameraTransform.rotation, endingPosition,
                 endingRotation, cameraTransform, animationDuration, minimumTimeBeforeReturn) {}
         
-        public override void UpdateCamera(Vector3 position, Quaternion rotation)
+        public override void UpdateCamera(Vector3 targetPosition, Quaternion targetRotation)
         {
             var phaseCompleted = false;
             switch (_cameraMovementPhase)
@@ -56,10 +59,8 @@ namespace Camera
                     break;
                 
                 case CameraMovementPhase.MoveBackToStart:
-                    phaseCompleted = MoveCamera(position, rotation,
+                    phaseCompleted = MoveCamera(targetPosition, targetRotation,
                         _endingPosition, _endingRotation);
-                    // phaseCompleted = MoveCamera(_startingPosition, _startingRotation,
-                    //     _endingPosition, _endingRotation);
                     break;
                 
                 case CameraMovementPhase.YieldCameraControl:
@@ -76,8 +77,9 @@ namespace Camera
 
         private bool CheckIfMoveBackToStart()
         {
-            // TODO: check for player input 
-            return Time.time > _animationEndTime + _minimumTimeBeforeReturn;
+            if (Time.time <= _animationEndTime + _minimumTimeBeforeReturn) return false;
+            
+            return _input.AnyCharInput();
         }
 
         /**
