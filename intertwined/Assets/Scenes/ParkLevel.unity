@@ -57391,7 +57391,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2007671005
 MonoBehaviour:
@@ -60819,6 +60819,10 @@ PrefabInstance:
     - target: {fileID: 9045712147612786109, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
       propertyPath: cameraRotation
       value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045712147612786109, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
+      propertyPath: cameraRotationSpeed
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 9045712147612786110, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
       propertyPath: m_LocalPosition.x

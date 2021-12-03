@@ -41,7 +41,7 @@ namespace Camera
             : this(cameraTransform.position, cameraTransform.rotation, endingPosition,
                 endingRotation, cameraTransform, animationDuration, minimumTimeBeforeReturn) {}
         
-        public override void UpdateCamera()
+        public override void UpdateCamera(Vector3 position, Quaternion rotation)
         {
             var phaseCompleted = false;
             switch (_cameraMovementPhase)
@@ -56,8 +56,10 @@ namespace Camera
                     break;
                 
                 case CameraMovementPhase.MoveBackToStart:
-                    phaseCompleted = MoveCamera(_startingPosition, _startingRotation,
+                    phaseCompleted = MoveCamera(position, rotation,
                         _endingPosition, _endingRotation);
+                    // phaseCompleted = MoveCamera(_startingPosition, _startingRotation,
+                    //     _endingPosition, _endingRotation);
                     break;
                 
                 case CameraMovementPhase.YieldCameraControl:

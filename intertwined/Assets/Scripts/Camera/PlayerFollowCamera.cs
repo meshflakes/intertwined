@@ -39,36 +39,38 @@ namespace Camera
             _input = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameInputs>();
         }
 
-        public override void UpdateCamera()
+        public override void UpdateCamera(Vector3 position, Quaternion rotation)
         {
-            PlayerControlledRotation();
+            // PlayerControlledRotation();
             
             var p1Position = _p1.position;
             var p2Position = _p2.position;
 
             CheckVisualObstacle(p1Position, p2Position);
             
-            _cameraTransform.LookAt((p1Position + p2Position) / 2f);
+            // _cameraTransform.LookAt((p1Position + p2Position) / 2f);
 
-            var midpoint = (p1Position + p2Position) / 2f;
-            var distance = (p1Position - p2Position).magnitude;
-            distance = Math.Min(distance, _maxDist);
-
-            var zoomModifier = distance > _zoomStartDist ? distance * _zoom : 1;
-        
-            _targetCameraPos = midpoint + _cameraOffset * zoomModifier; 
-            _cameraTransform.position = Vector3.Slerp(_cameraTransform.position, _targetCameraPos, _smoothness * Time.deltaTime);
+            _cameraTransform.rotation = rotation;
+            
+            // var midpoint = (p1Position + p2Position) / 2f;
+            // var distance = (p1Position - p2Position).magnitude;
+            // distance = Math.Min(distance, _maxDist);
+            //
+            // var zoomModifier = distance > _zoomStartDist ? distance * _zoom : 1;
+            //
+            // _targetCameraPos = midpoint + _cameraOffset * zoomModifier; 
+            _cameraTransform.position = Vector3.Slerp(_cameraTransform.position, position, _smoothness * Time.deltaTime);
         }
 
-        private void PlayerControlledRotation()
-        {
-            RotateCam(_input.CameraRotation * _cameraRotation * Time.deltaTime);
-        }
-        
-        private void RotateCam(float angle)
-        {
-            _cameraOffset = Quaternion.AngleAxis(angle, Vector3.up) * _cameraOffset;
-        }
+        // private void PlayerControlledRotation()
+        // {
+        //     RotateCam(_input.CameraRotation * _cameraRotation * Time.deltaTime);
+        // }
+        //
+        // private void RotateCam(float angle)
+        // {
+        //     _cameraOffset = Quaternion.AngleAxis(angle, Vector3.up) * _cameraOffset;
+        // }
 
         private void CheckVisualObstacle(Vector3 p1Position, Vector3 p2Position)
         {
