@@ -31,7 +31,7 @@ namespace Camera
             _input = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameInputs>();
         }
 
-        public void UpdateDefaultCameraPositionAndRotation(Vector3 currentCameraPos, out Vector3 position, out Quaternion rotation)
+        public void UpdateDefaultCameraPositionAndRotation(Vector3 currentCameraPos, out Vector3 targetPosition, out Quaternion targetRotation)
         {
             PlayerControlledRotation();
             
@@ -39,15 +39,14 @@ namespace Camera
             var p2Position = _p2.position;
             
             var midpoint = (p1Position + p2Position) / 2f;
-            rotation = Quaternion.LookRotation(midpoint - currentCameraPos);
+            targetRotation = Quaternion.LookRotation(midpoint - currentCameraPos);
 
             var distance = (p1Position - p2Position).magnitude;
             distance = Math.Min(distance, _maxDist);
 
             var zoomModifier = distance > _zoomStartDist ? distance * _zoom : 1;
         
-            position = midpoint + _cameraOffset * zoomModifier; 
-            // _cameraTransform.position = Vector3.Slerp(_cameraTransform.position, _targetCameraPos, _smoothness * Time.deltaTime);
+            targetPosition = midpoint + _cameraOffset * zoomModifier; 
         }
 
         private void PlayerControlledRotation()

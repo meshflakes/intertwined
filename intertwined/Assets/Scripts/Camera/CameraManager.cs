@@ -20,20 +20,13 @@ namespace Camera
         private CameraController _sequenceCamera;
         private CameraTypes _currentCamera = CameraTypes.PlayerFollow;
         private DefaultCameraCalculator _defaultCameraCalculator;
-        
-        // TODO: use / remove
-        // public Collider camTrigger;
-        // public float followTimeDelta = 0.8f;
     
         private void Start()
         {
             var cameraTransform = transform;
+            _playerFollowCamera = new PlayerFollowCamera(p1, p2, smoothness, cameraTransform);
             
             _cameraOffset = cameraTransform.position - ((p1.position + p2.position) / 2f);
-            _playerFollowCamera =
-                new PlayerFollowCamera(p1, p2, zoom, zoomStartDist, maxDist, smoothness, _cameraOffset, cameraTransform,
-                    cameraRotationSpeed);
-
             _defaultCameraCalculator = new DefaultCameraCalculator(p1, p2, zoom, zoomStartDist, maxDist, _cameraOffset,
                 cameraRotationSpeed);
         }
@@ -41,12 +34,12 @@ namespace Camera
         private void Update()
         {
             _defaultCameraCalculator.UpdateDefaultCameraPositionAndRotation(transform.position, 
-                out var position, out var rotation);
+                out var targetPosition, out var targetRotation);
             
             switch (_currentCamera)
             {
                 case CameraTypes.PlayerFollow:
-                    _playerFollowCamera.UpdateCamera(position, rotation);
+                    _playerFollowCamera.UpdateCamera(targetPosition, targetRotation);
                     break;
                 case CameraTypes.CameraSequence:
                     if (_sequenceCamera.YieldingCameraControl)
@@ -54,7 +47,7 @@ namespace Camera
                         _sequenceCamera = null;
                         _currentCamera = CameraTypes.PlayerFollow;
                     }
-                    else _sequenceCamera.UpdateCamera(position, rotation);
+                    else _sequenceCamera.UpdateCamera(targetPosition, targetRotation);
 
                     break;
                 

@@ -3,7 +3,6 @@
     public enum CameraTypes
     {
         PlayerFollow,
-        WatchInteractable,
         CameraSequence
     }
 }
