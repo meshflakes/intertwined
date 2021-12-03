@@ -12290,7 +12290,7 @@ MonoBehaviour:
   dogCanInteract: 0
   boyCanInteract: 1
   interactableEnabled: 1
-  rotation: 180
+  rotation: 90
   degreesRotatedPerSecond: 90
   unlocked: 1
   lockId: 0
