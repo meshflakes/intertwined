@@ -28,6 +28,7 @@ public class AnxietyCalc : MonoBehaviour
     //The lower bound to how much petting can reduce anxiety by
     public int lowerBound = 60;
     
+    //Boy
     public Transform p1;
     public Transform p2;
     
@@ -50,6 +51,14 @@ public class AnxietyCalc : MonoBehaviour
     private float _timeSincePet = 0;
 
     public AnxietyLighting AnxLight;
+
+    private Prompts.Prompt promptOnBoy;
+    private Prompts.Prompt promptOnDog;
+
+    public Sprite promptOnBoySprite;
+    public Sprite promptonDogSprite;
+
+    public GameObject canvas;
     // Start is called before the first frame update
     void Start()
     {
@@ -57,12 +66,18 @@ public class AnxietyCalc : MonoBehaviour
         
         // tempAnxietyText =GameObject.Find("AnxietyText").GetComponent<Text>();
         // AnxietyBar.SetMaxAnxiety(MAX_ANXIETY);
-
+        promptOnBoy = new Prompts.Prompt(promptOnBoySprite, p1, true, canvas);
+        promptOnDog = new Prompts.Prompt(promptonDogSprite, p2, true, canvas);
     }
 
     // Update is called once per frame
     void Update()
     {
+        
+        promptOnBoy.Update();
+        promptOnDog.Update();
+        
+        
         distance  = Vector3.Distance(p1.position,  p2.position);
         delta = Time.deltaTime;
         timeAnxiety += delta;
