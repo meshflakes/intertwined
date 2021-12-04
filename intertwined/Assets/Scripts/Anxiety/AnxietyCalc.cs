@@ -11,7 +11,7 @@ public class AnxietyCalc : MonoBehaviour
     // The distancce between p1 and p2
     private float distance;
     // The maximum disatance apart between p1 and p2 before they get more anxious
-    private static double MAX_DISTANCE = 6.0;
+    private static double MAX_DISTANCE = 7.0;
     //Want the anxiety calculations to occur every 250 update calls
     private int frames = 0;
     private static float UPDATE_TIME = 0.75f;
@@ -111,6 +111,8 @@ public class AnxietyCalc : MonoBehaviour
         }
         else
         {
+            promptManager.destroyCurrentPrompt(Character.CharType.Boy); 
+            promptManager.destroyCurrentPrompt(Character.CharType.Dog); 
             updateInterval = UPDATE_TIME;
             more_anxious = false;
             AnxLight.normalLighting();
