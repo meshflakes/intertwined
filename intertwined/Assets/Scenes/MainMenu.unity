@@ -751,7 +751,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &532534248
 RectTransform:
   m_ObjectHideFlags: 0
@@ -849,6 +849,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 7ac41cda-7a16-4cec-b1f9-1346e83cc8f1
     m_ActionName: Game/Pause[/SwitchProControllerHID/start,/Keyboard/escape]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 314a177b-2dfe-4195-9440-8cf55afbf7cd
+    m_ActionName: Game/RotateCamAntiClockwise[/SwitchProControllerHID/leftShoulder,/SwitchProControllerHID/leftShoulder,/SwitchProControllerHID/leftShoulder,/Mouse/rightButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Menu

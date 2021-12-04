@@ -1,11 +1,23 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 namespace Menu
 {
     public class MainMenu : MonoBehaviour
     {
+        private EventSystem _eventSystem;
+        private GameObject _playButton;
         private GameObject comic;
+
+        private void Start()
+        {
+            _eventSystem = EventSystem.current;
+            _playButton = transform.Find("PlayButton").gameObject;
+            _eventSystem.SetSelectedGameObject(_playButton);
+        }
+
         public void PlayGame()
         {
             var parent = gameObject.transform.parent;
