@@ -14129,6 +14129,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pauseMenuUI: {fileID: 1233354556}
+--- !u!20 &462179824 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 9045712147612786111, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
+  m_PrefabInstance: {fileID: 9045712147622743423}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &462784472 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2558262452497233017, guid: 1d741d41c4cbcf847998ef3bf2db7a77, type: 3}
@@ -21111,6 +21116,7 @@ MonoBehaviour:
   promptOnBoySprite: {fileID: 21300000, guid: 42d8452d3f3c58e428d290aa89c0086b, type: 3}
   promptonDogSprite: {fileID: 21300000, guid: 542aa2e592f86f44ebee19b07ea5de9c, type: 3}
   canvas: {fileID: 1601558175}
+  cam: {fileID: 462179824}
 --- !u!1001 &663521683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -49748,7 +49754,7 @@ GameObject:
   - component: {fileID: 1601558177}
   - component: {fileID: 1601558176}
   m_Layer: 5
-  m_Name: WorldCanvas
+  m_Name: PromptsCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

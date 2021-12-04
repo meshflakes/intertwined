@@ -13,7 +13,6 @@ public class Prompts : MonoBehaviour
         private Image promptImage;
         //private GameObject canvas;
         private Transform target;
-
         public Prompt(Sprite sprite, Transform target, bool display, GameObject canvas)
         {
             this.target = target;
@@ -21,8 +20,8 @@ public class Prompts : MonoBehaviour
             promptImage = promptObject.AddComponent<Image>();
             promptImage.sprite = sprite;
             promptImage.GetComponent<RectTransform>().SetParent(canvas.transform);
-            promptImage.rectTransform.sizeDelta = new Vector2(5, 5);
-            promptObject.transform.position = target.position;
+            promptImage.rectTransform.sizeDelta = new Vector2(2, 2);
+            promptObject.transform.position = new Vector3(target.position.x, target.position.y+2, target.position.z);
             this.display = display;
             promptObject.SetActive(display);
 
@@ -40,23 +39,24 @@ public class Prompts : MonoBehaviour
         {
             if (display)
             {
-                //Scuffed rotating the image towards the camera
+                //TODO: How to rotate the image to face the camera?
+                /*
                 promptObject.transform.eulerAngles = new Vector3(
                     UnityEngine.Camera.main.transform.eulerAngles.x,
                     UnityEngine.Camera.main.transform.parent.gameObject.transform.eulerAngles.y,
                     promptObject.transform.eulerAngles.x);
-                
-                promptObject.transform.position = target.position;
+                */
+                promptObject.transform.position = new Vector3(target.position.x, target.position.y+2, target.position.z);
             }
         }
 
-        void show()
+        public void Show()
         {
             display = true;
             promptObject.SetActive(true);
         }
 
-        void hide()
+        public void Hide()
         {
             display = false;
             promptObject.SetActive(false);

@@ -59,6 +59,7 @@ public class AnxietyCalc : MonoBehaviour
     public Sprite promptonDogSprite;
 
     public GameObject canvas;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -66,8 +67,8 @@ public class AnxietyCalc : MonoBehaviour
         
         // tempAnxietyText =GameObject.Find("AnxietyText").GetComponent<Text>();
         // AnxietyBar.SetMaxAnxiety(MAX_ANXIETY);
-        promptOnBoy = new Prompts.Prompt(promptOnBoySprite, p1, true, canvas);
-        promptOnDog = new Prompts.Prompt(promptonDogSprite, p2, true, canvas);
+        promptOnBoy = new Prompts.Prompt(promptOnBoySprite, p1, false, canvas);
+        promptOnDog = new Prompts.Prompt(promptonDogSprite, p2, false, canvas);
     }
 
     // Update is called once per frame
@@ -102,6 +103,8 @@ public class AnxietyCalc : MonoBehaviour
         }
         if (distance >= MAX_DISTANCE)
         {
+            promptOnBoy.Show();
+            promptOnDog.Show();
             updateInterval = PANIC_UPDATE_TIME;
             more_anxious = true;
             AnxLight.farLighting(Mathf.Min(7f,  distance - (float)MAX_DISTANCE));
@@ -109,6 +112,8 @@ public class AnxietyCalc : MonoBehaviour
         }
         else
         {
+            promptOnBoy.Hide();
+            promptOnDog.Hide();
             updateInterval = UPDATE_TIME;
             more_anxious = false;
             AnxLight.normalLighting();
