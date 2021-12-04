@@ -34785,6 +34785,7 @@ MonoBehaviour:
   minimumTimeBeforeReturn: 1.5
   unlockAndOpenAudio: {fileID: 1130152160}
   lockedAudio: {fileID: 1130152159}
+  promptManager: {fileID: 977034561}
 --- !u!65 &1130152156
 BoxCollider:
   m_ObjectHideFlags: 0
