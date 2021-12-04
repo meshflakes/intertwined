@@ -26,6 +26,8 @@ namespace Character
             if (!(Time.time > _nextInteractionTime)) return;
             
             _nextInteractionTime = Time.time + _timeBetweenInteractions;
+
+            SortInteractablesByPriority();
             
             if (HeldInteractable != null)
             {
@@ -54,6 +56,14 @@ namespace Character
         public bool StartForcedInteraction(Interactable.Interactable interactable)
         {
             return interactable.Interact(PlayerChar);
+        }
+
+        private void SortInteractablesByPriority()
+        {
+            // sort _inRangeInteractables by defined priority in descending order 
+            _inRangeInteractables.Sort((x, y) => 
+                -x.GetComponent<Interactable.Interactable>().interactablePriority.CompareTo(
+                    y.GetComponent<Interactable.Interactable>().interactablePriority));
         }
 
         private bool TryInteractionUsingHeldInteractable()

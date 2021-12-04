@@ -17,6 +17,9 @@ namespace Interactable
         [FormerlySerializedAs("Enabled")] [HideInInspector]
         public bool interactableEnabled = true;
 
+        [Tooltip("Sets the priority level of an interactable for when multiple interactables are in range")]
+        public float interactablePriority;
+
         private List<Character.Character> _characters;
         private Animator anim; 
 
