@@ -25,6 +25,7 @@ public class AnxietyLighting : MonoBehaviour
     public void farLighting(float level)
     {
         if(!crRunning) StartCoroutine(DirectionalLightTransition(directionalLight, 1f, 0f));
+        UnityEngine.RenderSettings.ambientLight = Color.black;
         boyLight.intensity = 8f-level;
         dogLight.intensity = 8f-level;
     }
@@ -32,6 +33,7 @@ public class AnxietyLighting : MonoBehaviour
     public void normalLighting()
     {
         if(!crRunning) StartCoroutine(DirectionalLightTransition(directionalLight, 1f, 1f));
+        UnityEngine.RenderSettings.ambientLight = Color.gray;
         boyLight.intensity = 0f;
         dogLight.intensity = 0f;
     }
