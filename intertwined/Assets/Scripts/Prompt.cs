@@ -13,6 +13,10 @@ public class Prompts : MonoBehaviour
         private Image promptImage;
         //private GameObject canvas;
         private Transform target;
+
+        private static int offset = 2;
+        private static int size = 2;
+        
         public Prompt(Sprite sprite, Transform target, bool display, GameObject canvas)
         {
             this.target = target;
@@ -20,8 +24,8 @@ public class Prompts : MonoBehaviour
             promptImage = promptObject.AddComponent<Image>();
             promptImage.sprite = sprite;
             promptImage.GetComponent<RectTransform>().SetParent(canvas.transform);
-            promptImage.rectTransform.sizeDelta = new Vector2(2, 2);
-            promptObject.transform.position = new Vector3(target.position.x, target.position.y+2, target.position.z);
+            promptImage.rectTransform.sizeDelta = new Vector2(size, size);
+            promptObject.transform.position = new Vector3(target.position.x, target.position.y+offset, target.position.z);
             this.display = display;
             promptObject.SetActive(display);
 
@@ -46,7 +50,7 @@ public class Prompts : MonoBehaviour
                     UnityEngine.Camera.main.transform.parent.gameObject.transform.eulerAngles.y,
                     promptObject.transform.eulerAngles.x);
                 */
-                promptObject.transform.position = new Vector3(target.position.x, target.position.y+2, target.position.z);
+                promptObject.transform.position = new Vector3(target.position.x, target.position.y+offset, target.position.z);
             }
         }
 
