@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Prompts;
+using UnityEngine;
 
 namespace Interactable
 {
@@ -10,8 +11,11 @@ namespace Interactable
         [Tooltip("Id of key required to open the door, 0 if no key is required")]
         public int lockId = 2;
 
+        public PromptManager promptManager;
         public override bool Interact(Character.Character interacter)
         {
+            promptManager.destroyCurrentPrompt(Character.CharType.Boy);
+            promptManager.RegisterNewPrompt(Character.CharType.Boy, 2f, Prompts.PromptType.Drowning);
             return false;
         }
 

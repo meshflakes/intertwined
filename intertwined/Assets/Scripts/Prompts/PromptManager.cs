@@ -90,5 +90,19 @@ namespace Prompts
                 return _dogCurrentPrompt != null;
             }
         }
+
+        public void destroyCurrentPrompt(CharType character)
+        {
+            if (character == CharType.Boy && _boyCurrentPrompt != null)
+            {
+                _boyCurrentPrompt.DestroyPrompt();
+                _boyCurrentPrompt = null;
+            }
+            if (character == CharType.Dog && _dogCurrentPrompt != null)
+            {
+                _dogCurrentPrompt.DestroyPrompt();
+                _dogCurrentPrompt = null;
+            } 
+        }
     }
 }

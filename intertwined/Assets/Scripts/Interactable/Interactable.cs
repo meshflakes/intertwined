@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Prompts;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -18,8 +19,8 @@ namespace Interactable
         public bool interactableEnabled = true;
 
         private List<Character.Character> _characters;
-        private Animator anim; 
-
+        private Animator anim;
+        
         protected void OnValidate()
         {
             foreach (var interactableCollider in GetComponents<Collider>())
