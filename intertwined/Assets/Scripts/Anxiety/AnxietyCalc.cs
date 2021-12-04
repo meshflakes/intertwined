@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Character;
+using Prompts;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -52,8 +54,7 @@ public class AnxietyCalc : MonoBehaviour
 
     public AnxietyLighting AnxLight;
 
-    private Prompts.Prompt promptOnBoy;
-    private Prompts.Prompt promptOnDog;
+    public PromptManager promptManager;
 
     public Sprite promptOnBoySprite;
     public Sprite promptonDogSprite;
@@ -67,16 +68,14 @@ public class AnxietyCalc : MonoBehaviour
         
         // tempAnxietyText =GameObject.Find("AnxietyText").GetComponent<Text>();
         // AnxietyBar.SetMaxAnxiety(MAX_ANXIETY);
-        promptOnBoy = new Prompts.Prompt(promptOnBoySprite, p1, false, canvas);
-        promptOnDog = new Prompts.Prompt(promptonDogSprite, p2, false, canvas);
+
     }
 
     // Update is called once per frame
     void Update()
     {
         
-        promptOnBoy.Update();
-        promptOnDog.Update();
+
         
         
         distance  = Vector3.Distance(p1.position,  p2.position);
@@ -103,8 +102,8 @@ public class AnxietyCalc : MonoBehaviour
         }
         if (distance >= MAX_DISTANCE)
         {
-            promptOnBoy.Show();
-            promptOnDog.Show();
+            promptManager.RegisterNewPrompt(CharType.Boy, 2f, PromptType.Dog);
+            promptManager.RegisterNewPrompt(CharType.Dog, 2f, PromptType.Boy);
             updateInterval = PANIC_UPDATE_TIME;
             more_anxious = true;
             AnxLight.farLighting(Mathf.Min(7f,  distance - (float)MAX_DISTANCE));
@@ -112,8 +111,6 @@ public class AnxietyCalc : MonoBehaviour
         }
         else
         {
-            promptOnBoy.Hide();
-            promptOnDog.Hide();
             updateInterval = UPDATE_TIME;
             more_anxious = false;
             AnxLight.normalLighting();

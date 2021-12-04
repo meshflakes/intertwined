@@ -14129,11 +14129,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _pauseMenuUI: {fileID: 1233354556}
---- !u!20 &462179824 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 9045712147612786111, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
-  m_PrefabInstance: {fileID: 9045712147622743423}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &462784472 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2558262452497233017, guid: 1d741d41c4cbcf847998ef3bf2db7a77, type: 3}
@@ -21113,10 +21108,10 @@ MonoBehaviour:
   MusicPlayer: {fileID: 1153721048}
   petCooldown: 30
   AnxLight: {fileID: 462179819}
-  promptOnBoySprite: {fileID: 21300000, guid: 42d8452d3f3c58e428d290aa89c0086b, type: 3}
-  promptonDogSprite: {fileID: 21300000, guid: 542aa2e592f86f44ebee19b07ea5de9c, type: 3}
+  promptManager: {fileID: 977034561}
+  promptOnBoySprite: {fileID: 21300000, guid: 3faf9d77fff1ee34ebaea9f81e3eae1c, type: 3}
+  promptonDogSprite: {fileID: 21300000, guid: 694a5c4e50863cb4c98c82e47789647f, type: 3}
   canvas: {fileID: 1601558175}
-  cam: {fileID: 462179824}
 --- !u!1001 &663521683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30121,6 +30116,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2586288981929427181, guid: 8bf8358b291bc8f49bef092c7103374a, type: 3}
   m_PrefabInstance: {fileID: 971589214}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &977034560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 977034562}
+  - component: {fileID: 977034561}
+  m_Layer: 0
+  m_Name: PromptManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &977034561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977034560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ba6557e8c0a4bf4da87f4305874c971, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 694a5c4e50863cb4c98c82e47789647f, type: 3}
+  - {fileID: 21300000, guid: 3faf9d77fff1ee34ebaea9f81e3eae1c, type: 3}
+--- !u!4 &977034562
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977034560}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -50.401955, y: 19.606705, z: -35.400505}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &979259833
 GameObject:
   m_ObjectHideFlags: 0
@@ -49755,7 +49796,7 @@ GameObject:
   - component: {fileID: 1601558176}
   m_Layer: 5
   m_Name: PromptsCanvas
-  m_TagString: Untagged
+  m_TagString: PromptsCanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55171,10 +55212,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c7b37a502f951d45a900aafffa12fbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  display: 1
-  promptObject: {fileID: 0}
-  promptImage: {fileID: 0}
-  canvas: {fileID: 0}
 --- !u!114 &1807436935
 MonoBehaviour:
   m_ObjectHideFlags: 0
