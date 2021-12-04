@@ -16,7 +16,7 @@ namespace Prompts
         //private GameObject canvas;
         private Transform target;
 
-        private static int offset = 2;
+        private static float offset = 0.9f;
         private static float size = 1.5f;
 
         private Transform _mainCameraTransform;

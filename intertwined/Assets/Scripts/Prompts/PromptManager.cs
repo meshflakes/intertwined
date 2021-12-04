@@ -62,10 +62,8 @@ namespace Prompts
             }
         }
         
-        //TODO: check if there's another running prompt
 
-        //Register to who?
-        //With what prompt
+
         public void RegisterNewPrompt(CharType character, float duration, PromptType prompt )
         {
             // TODO: implement
@@ -80,7 +78,17 @@ namespace Prompts
                 _dogCurrentPrompt = new Prompt(sprites[(int)prompt], _dogTransform, _canvasTransform);
             }
         }
-        
-        
+
+        public bool hasActivePrompt(CharType character)
+        {
+            if (character == CharType.Boy)
+            {
+                return _boyCurrentPrompt != null;
+            }
+            else
+            {
+                return _dogCurrentPrompt != null;
+            }
+        }
     }
 }

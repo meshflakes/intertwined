@@ -102,8 +102,8 @@ public class AnxietyCalc : MonoBehaviour
         }
         if (distance >= MAX_DISTANCE)
         {
-            promptManager.RegisterNewPrompt(CharType.Boy, 2f, PromptType.Dog);
-            promptManager.RegisterNewPrompt(CharType.Dog, 2f, PromptType.Boy);
+            if (!promptManager.hasActivePrompt(CharType.Boy)) promptManager.RegisterNewPrompt(CharType.Boy, 2f, PromptType.Dog);
+            if (!promptManager.hasActivePrompt(CharType.Dog))promptManager.RegisterNewPrompt(CharType.Dog, 2f, PromptType.Boy);
             updateInterval = PANIC_UPDATE_TIME;
             more_anxious = true;
             AnxLight.farLighting(Mathf.Min(7f,  distance - (float)MAX_DISTANCE));

@@ -3,6 +3,13 @@ namespace Prompts
     public enum PromptType
     {
         Boy,
-        Dog
+        Dog,
+        Plank,
+        Drowning,
+        Electricity,
+        Gas,
+        Key,
+        Ladder,
+        X
     }
 }
