@@ -12,7 +12,6 @@ public class AnxietyCalc : MonoBehaviour
     private float distance;
     // The maximum disatance apart between p1 and p2 before they get more anxious
     private static double MAX_DISTANCE = 7.0;
-    //Want the anxiety calculations to occur every 250 update calls
     private int frames = 0;
     private static float UPDATE_TIME = 0.75f;
     private static float PANIC_UPDATE_TIME = 0.25f;
@@ -74,10 +73,6 @@ public class AnxietyCalc : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-
-        
-        
         distance  = Vector3.Distance(p1.position,  p2.position);
         delta = Time.deltaTime;
         timeAnxiety += delta;
@@ -102,8 +97,8 @@ public class AnxietyCalc : MonoBehaviour
         }
         if (distance >= MAX_DISTANCE)
         {
-            if (!promptManager.hasActivePrompt(CharType.Boy)) promptManager.RegisterNewPrompt(CharType.Boy, 2f, PromptType.Dog);
-            if (!promptManager.hasActivePrompt(CharType.Dog))promptManager.RegisterNewPrompt(CharType.Dog, 2f, PromptType.Boy);
+            if (!promptManager.HasActivePrompt(CharType.Boy)) promptManager.RegisterNewPrompt(CharType.Boy, 2f, PromptType.Dog);
+            if (!promptManager.HasActivePrompt(CharType.Dog))promptManager.RegisterNewPrompt(CharType.Dog, 2f, PromptType.Boy);
             updateInterval = PANIC_UPDATE_TIME;
             more_anxious = true;
             AnxLight.farLighting(Mathf.Min(7f,  distance - (float)MAX_DISTANCE));
@@ -111,8 +106,7 @@ public class AnxietyCalc : MonoBehaviour
         }
         else
         {
-            promptManager.destroyCurrentPrompt(Character.CharType.Boy); 
-            promptManager.destroyCurrentPrompt(Character.CharType.Dog); 
+            promptManager.DestoryAnxietyPrompts();
             updateInterval = UPDATE_TIME;
             more_anxious = false;
             AnxLight.normalLighting();

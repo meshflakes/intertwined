@@ -39,8 +39,7 @@ namespace Interactable
                 unlockAndOpenAudio.Play();
                 return base.Interact(interacter);
             }
-
-            promptManager.destroyCurrentPrompt(Character.CharType.Boy); 
+            
             promptManager.RegisterNewPrompt(Character.CharType.Boy, 5f, Prompts.PromptType.Key);
             // TODO: remove player control? 
             if (!lockedAudio.isPlaying) lockedAudio.Play();
