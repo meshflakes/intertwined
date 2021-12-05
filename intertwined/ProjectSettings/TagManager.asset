@@ -7,19 +7,21 @@ TagManager:
   - CinemachineTarget
   - Boy
   - Dog
+  - DogSubObjects
+  - BoySubObjects
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Trees
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Character
+  - Character Only Collision
+  - Objects
+  - Ignore Characters
+  - CharacterBlocker
+  - AnxietyFog
   - 
   - 
   - 

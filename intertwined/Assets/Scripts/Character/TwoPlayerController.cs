@@ -1,10 +1,8 @@
-﻿using InputSystem;
+﻿using Controls;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace Character
 {
-    [RequireComponent(typeof(PlayerInput))]
     public class TwoPlayerController : MonoBehaviour
     {
         // player objects
@@ -15,8 +13,7 @@ namespace Character
         private GameObject _mainCamera;
         private GameInputs _input;
 
-        public AnxietyCalc AnxietyCalc;
-
+        public AnxietyCalc anxietyCalc;
 
         private void Awake()
         {
@@ -29,31 +26,37 @@ namespace Character
 
         private void Start()
         {
-            _input = GetComponent<GameInputs>();
-            _boy = GameObject.FindGameObjectWithTag("Boy").GetComponent<Character>();
-            _dog = GameObject.FindGameObjectWithTag("Dog").GetComponent<Character>();
+            _input = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameInputs>();
+            _boy = GameObject.FindGameObjectWithTag("Boy").GetComponentInParent<Character>();
+            _dog = GameObject.FindGameObjectWithTag("Dog").GetComponentInParent<Character>();
         }
 
         private void Update()
         {
             Move();
             Interact();
+            Pet();
         }
 
         private void Move()
         {
-            _boy.Move(_input.boyMove, _mainCamera);
-            _dog.Move(_input.dogMove, _mainCamera);
+            _boy.Move(_input.boyMove, _input.analogMovement, _mainCamera);
+            _dog.Move(_input.dogMove, _input.analogMovement, _mainCamera);
         }
 
         private void Interact()
         {
-            if (_input.boyInteract && _input.dogInteract)
-            {
-                AnxietyCalc.LowerAnxiety();
-            }
-            _boy.Interact(_input.boyInteract);
-            _dog.Interact(_input.dogInteract);
+            _boy.CharInteractor.Interact(_input.boyInteract);
+            _dog.CharInteractor.Interact(_input.dogInteract);
+        }
+
+        private void Pet()
+        {
+            if (_boy.CharInteractor.HasInteractables() |
+                _dog.CharInteractor.HasInteractables() |
+                !anxietyCalc.CanPet()) return;
+
+            if (_input.boyInteract & _input.dogInteract) anxietyCalc.LowerAnxiety();
         }
     }
 }

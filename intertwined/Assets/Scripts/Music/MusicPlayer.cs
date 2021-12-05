@@ -13,6 +13,14 @@ public class MusicPlayer : MonoBehaviour
     public AudioSource ParkAmbience2;
     public AudioSource ParkAmbience3;
 
+    private Dictionary<float, float[]> parkLevelMappings = new Dictionary<float, float[]>
+    {
+        {1, new float[] {0.5f, 0.5f, 0, 0, 0, 0.5f, 0.25f, 0}},
+        {2, new float[] {0.5f, 0.5f, 0.5f, 0, 0, 0.5f, 0.25f, 0.35f}},
+        {3, new float[] {0.5f, 0.5f, 0.5f, 0.5f, 0, 0.5f, 0.25f, 0.35f}},
+        {4, new float[] {0.5f, 0.5f, 0.5f, 0.5f, 0.25f, 0.5f, 0.25f, 0.35f}}
+    };
+
     private static float TRANSITION_DURATION = 4.0f;
 
     // Start is called before the first frame update
@@ -26,47 +34,25 @@ public class MusicPlayer : MonoBehaviour
         ParkAmbience1.Play();
         ParkAmbience2.Play();
         ParkAmbience3.Play();
-        ASL1.volume = 1;
-        ParkAmbience1.volume = 1;
+
+        ASL1.volume = 0.5f;
+        ParkAmbience1.volume = 0.5f;
     }
     
-    public void playLevelOne()
+    public void playParkLevelTracks(int level)
     {
-        StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, 1));
-        StartCoroutine(AudioTransition(ASL3, TRANSITION_DURATION, 0));
-        StartCoroutine(AudioTransition(ASL4, TRANSITION_DURATION, 0));
-        StartCoroutine(AudioTransition(ASL5, TRANSITION_DURATION, 0));
-        StartCoroutine(AudioTransition(ParkAmbience2, TRANSITION_DURATION, 1));
-
+        float[] volumes;
+        parkLevelMappings.TryGetValue(level, out volumes);
+        StartCoroutine(AudioTransition(ASL1, TRANSITION_DURATION, volumes[0]));
+        StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, volumes[1]));
+        StartCoroutine(AudioTransition(ASL3, TRANSITION_DURATION, volumes[2]));
+        StartCoroutine(AudioTransition(ASL4, TRANSITION_DURATION, volumes[3]));
+        StartCoroutine(AudioTransition(ASL5, TRANSITION_DURATION, volumes[4]));
+        StartCoroutine(AudioTransition(ParkAmbience1, TRANSITION_DURATION, volumes[5]));
+        StartCoroutine(AudioTransition(ParkAmbience2, TRANSITION_DURATION, volumes[6]));
+        StartCoroutine(AudioTransition(ParkAmbience3, TRANSITION_DURATION, volumes[7]));
     }
-
-    public void playLevelTwo()
-    {
-        StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, 1));
-        StartCoroutine(AudioTransition(ASL3, TRANSITION_DURATION, 1));
-        StartCoroutine(AudioTransition(ASL4, TRANSITION_DURATION, 0));
-        StartCoroutine(AudioTransition(ASL5, TRANSITION_DURATION, 0));
-        StartCoroutine(AudioTransition(ParkAmbience3, TRANSITION_DURATION, 1));
-
-    }
-
-    public void playLevelThree()
-    {
-        StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, 1));
-        StartCoroutine(AudioTransition(ASL3, TRANSITION_DURATION, 1));
-        StartCoroutine(AudioTransition(ASL4, TRANSITION_DURATION, 1));
-        StartCoroutine(AudioTransition(ASL5, TRANSITION_DURATION, 0));
-
-    }
-
-    public void playLevelFour()
-    {
-        StartCoroutine(AudioTransition(ASL2, TRANSITION_DURATION, 1));
-        StartCoroutine(AudioTransition(ASL3, TRANSITION_DURATION, 1));
-        StartCoroutine(AudioTransition(ASL4, TRANSITION_DURATION, 1));
-        StartCoroutine(AudioTransition(ASL5, TRANSITION_DURATION, 0.5f));
-
-    }
+    
     
     private static IEnumerator AudioTransition(AudioSource audioSource, float duration, float targetVolume)
     {

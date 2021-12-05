@@ -1,20 +1,44 @@
+using System;
+using System.Collections.Generic;
+using Prompts;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Interactable
 {
+    [RequireComponent(typeof(Collider))]
     public abstract class Interactable : MonoBehaviour
     {
         [Tooltip("Allows the dog to interact with this Interactable")]
-        public bool DogCanInteract;
+        public bool dogCanInteract;
 
         [Tooltip("Allows the boy to interact with this Interactable")]
-        public bool BoyCanInteract;
+        public bool boyCanInteract;
+
+        [FormerlySerializedAs("Enabled")] [HideInInspector]
+        public bool interactableEnabled = true;
+
+        [Tooltip("Sets the priority level of an interactable for when multiple interactables are in range")]
+        public float interactablePriority;
+
+        private List<Character.Character> _characters;
+        private Animator anim;
         
+        protected void OnValidate()
+        {
+            foreach (var interactableCollider in GetComponents<Collider>())
+            {
+                if (interactableCollider.isTrigger) return;
+            }
+
+            throw new ArgumentException($"No trigger collider on interactable: {gameObject.name}");
+        }
+
         public abstract bool Interact(Character.Character interacter);
 
         public virtual bool Interact(Character.Character interacter, Interactable interactable)
         {
-            return Interact(interacter);
+            return interactableEnabled && Interact(interacter);
         }
 
         /**
@@ -26,32 +50,52 @@ namespace Interactable
          */
         public abstract bool UsedWith(Interactable other);
         
-        private void OnTriggerEnter(Collider other)
+        protected void OnTriggerEnter(Collider other)
         {
             // Add itself to the character's interactables list
             if (CollidingObjectCanInteract(other))
             {
-                other.gameObject.GetComponent<Character.Character>()
-                    .CharInteractor.AddToInteractablesList(gameObject);
-                Debug.Log("adding to list");
+                var interacter = other.gameObject.GetComponentInParent<Character.Character>();
+                interacter.CharInteractor.AddToInteractablesList(gameObject);
+                TryForceInteraction(interacter);
+				
+				//TODO clean up this. It is not a good way to handle exiting the plank hold animation
+                other.gameObject.GetComponentInParent<Character.Character>().GetComponentInChildren<Animator>().SetInteger("Interacting", 0);
+
+                Debug.Log($"adding {gameObject.name} to list");
             }
         }
-    
-        private void OnTriggerExit(Collider other)
+        
+        protected void OnTriggerExit(Collider other)
         {
             // Remove itself to the character's interactables list
             if (CollidingObjectCanInteract(other))
             {
-                other.gameObject.GetComponent<Character.Character>()
+                other.gameObject.GetComponentInParent<Character.Character>()
                     .CharInteractor.RemoveFromInteractablesList(gameObject);
-                Debug.Log("removing from list");
+                Debug.Log($"removing {gameObject.name} from list");
             }
         }
 
-        private bool CollidingObjectCanInteract(Collider other)
+        private bool CollidingObjectCanInteract(Component other)
         {
-            return (BoyCanInteract && other.CompareTag("Boy"))
-                || (DogCanInteract && other.CompareTag("Dog"));
+            return interactableEnabled &&
+                  (boyCanInteract && (other.CompareTag("Boy") || other.CompareTag("BoySubObjects"))
+                || dogCanInteract && (other.CompareTag("Dog") || other.CompareTag("DogSubObjects")));
+        }
+
+        protected void RemoveInteractableFromCharacters()
+        {
+            GameObject.FindWithTag("Boy").GetComponentInParent<Character.Character>().CharInteractor
+                .RemoveFromInteractablesList(gameObject);
+            GameObject.FindWithTag("Dog").GetComponentInParent<Character.Character>().CharInteractor
+                .RemoveFromInteractablesList(gameObject);
+        }
+        
+        private void TryForceInteraction(Character.Character interacter)
+        {
+            if (this is IForcedInteractable forcedInteractable && forcedInteractable.CanForceInteraction(interacter))
+                interacter.CharInteractor.StartForcedInteraction(this);
         }
     }
 }
