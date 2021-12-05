@@ -101,8 +101,6 @@ public class AnxietyCalc : MonoBehaviour
         }
         if (distance >= MAX_DISTANCE)
         {
-            Debug.Log("yo");
-            Debug.Log("Time" + Time.time + "Next" + nextAnxietyPromptTime);
             if(Time.time> nextAnxietyPromptTime)
             {
                 if (!promptManager.HasActivePrompt(CharType.Boy)) promptManager.RegisterNewPrompt(CharType.Boy, PROMPT_DURACTION, PromptType.Dog);

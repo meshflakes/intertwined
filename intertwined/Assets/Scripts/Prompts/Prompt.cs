@@ -28,7 +28,7 @@ namespace Prompts
             promptImage.sprite = sprite;
             promptImage.GetComponent<RectTransform>().SetParent(canvas);
             promptImage.rectTransform.sizeDelta = new Vector2(size, size);
-            promptObject.transform.position = new Vector3(target.position.x + offset, target.position.y +offset, target.position.z);
+            promptObject.transform.position = new Vector3(target.position.x + offset, target.position.y + offset, target.position.z);
             promptObject.SetActive(true);
 
             _mainCameraTransform = GameObject.FindGameObjectWithTag("MainCamera").transform;
