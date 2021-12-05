@@ -8,7 +8,6 @@ namespace Prompts
 {
     public class Prompt
     {
-        private bool display = true;
         private GameObject promptObject;
 
         private Image promptImage;
@@ -29,12 +28,16 @@ namespace Prompts
             promptImage.sprite = sprite;
             promptImage.GetComponent<RectTransform>().SetParent(canvas);
             promptImage.rectTransform.sizeDelta = new Vector2(size, size);
-            promptObject.transform.position = new Vector3(target.position.x, target.position.y + offset, target.position.z);
+            promptObject.transform.position = new Vector3(target.position.x + offset, target.position.y + offset, target.position.z);
             promptObject.SetActive(true);
 
             _mainCameraTransform = GameObject.FindGameObjectWithTag("MainCamera").transform;
+            
+        }
 
-
+        public Sprite GetSprite()
+        {
+            return promptImage.sprite;
         }
 
         public void DestroyPrompt()
@@ -45,29 +48,23 @@ namespace Prompts
         
         public void UpdatePromptPosition()
         {
-            if (display)
-            {
-                //TODO: How to rotate the image to face the camera?
 
-                promptObject.transform.eulerAngles = new Vector3(
-                    _mainCameraTransform.eulerAngles.x,
-                    _mainCameraTransform.eulerAngles.y,
-                    0);
+            promptObject.transform.eulerAngles = new Vector3(
+                _mainCameraTransform.eulerAngles.x,
+                _mainCameraTransform.eulerAngles.y,
+                0);
 
-                promptObject.transform.position =
-                    new Vector3(target.position.x, target.position.y + offset, target.position.z);
-            }
+            promptObject.transform.position =
+                new Vector3(target.position.x+offset, target.position.y + offset, target.position.z);
         }
 
         public void Show()
         {
-            display = true;
             promptObject.SetActive(true);
         }
 
         public void Hide()
         {
-            display = false;
             promptObject.SetActive(false);
         }
 

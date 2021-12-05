@@ -19,6 +19,7 @@ namespace Prompts
         private float _boyPromptTimeout;
         private Prompt _dogCurrentPrompt;
         private float _dogPromptTimeout;
+        
         private void Start()
         {
             _canvasTransform = GameObject.FindGameObjectWithTag("PromptsCanvas").transform;
@@ -66,20 +67,21 @@ namespace Prompts
 
         public void RegisterNewPrompt(CharType character, float duration, PromptType prompt )
         {
-            // TODO: implement
             if (character == CharType.Boy)
             {
+                DestroyCurrentPrompt(CharType.Boy);
                 _boyPromptTimeout = Time.time + duration;
                 _boyCurrentPrompt = new Prompt(sprites[(int)prompt], _boyTransform, _canvasTransform);
             }
             else if (character == CharType.Dog)
             {
+                DestroyCurrentPrompt(CharType.Dog);
                 _dogPromptTimeout = Time.time + duration;
                 _dogCurrentPrompt = new Prompt(sprites[(int)prompt], _dogTransform, _canvasTransform);
             }
         }
 
-        public bool hasActivePrompt(CharType character)
+        public bool HasActivePrompt(CharType character)
         {
             if (character == CharType.Boy)
             {
@@ -91,7 +93,7 @@ namespace Prompts
             }
         }
 
-        public void destroyCurrentPrompt(CharType character)
+        private void DestroyCurrentPrompt(CharType character)
         {
             if (character == CharType.Boy && _boyCurrentPrompt != null)
             {
@@ -103,6 +105,21 @@ namespace Prompts
                 _dogCurrentPrompt.DestroyPrompt();
                 _dogCurrentPrompt = null;
             } 
+        }
+
+        //Destroy promtps that are related to anxiety if exists
+        public void DestoryAnxietyPrompts()
+        {
+            if (_boyCurrentPrompt != null && _boyCurrentPrompt.GetSprite() == sprites[(int) PromptType.Dog])
+            {
+                _boyCurrentPrompt.DestroyPrompt();
+                _boyCurrentPrompt = null;
+            }
+            if (_dogCurrentPrompt != null && _dogCurrentPrompt.GetSprite() == sprites[(int) PromptType.Boy])
+            {
+                _dogCurrentPrompt.DestroyPrompt();
+                _dogCurrentPrompt = null;
+            }
         }
     }
 }

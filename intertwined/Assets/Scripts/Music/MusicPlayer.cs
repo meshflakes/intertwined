@@ -12,7 +12,7 @@ public class MusicPlayer : MonoBehaviour
     public AudioSource ParkAmbience1;
     public AudioSource ParkAmbience2;
     public AudioSource ParkAmbience3;
-    
+
     private Dictionary<float, float[]> parkLevelMappings = new Dictionary<float, float[]>
     {
         {1, new float[] {0.5f, 0.5f, 0, 0, 0, 0.5f, 0.25f, 0}},
@@ -34,6 +34,7 @@ public class MusicPlayer : MonoBehaviour
         ParkAmbience1.Play();
         ParkAmbience2.Play();
         ParkAmbience3.Play();
+
         ASL1.volume = 0.5f;
         ParkAmbience1.volume = 0.5f;
     }
