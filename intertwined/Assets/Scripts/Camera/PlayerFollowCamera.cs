@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using Controls;
 using UnityEngine;
 
@@ -13,6 +14,8 @@ namespace Camera
         private readonly Transform _cameraTransform;
         
         List<GameObject> hiddenItems = new List<GameObject>();
+        private List<Material[]> hiddenItemMats = new List<Material[]>();
+        //List<Material> hiddenItemMats = new List<Material>();
         private GameInputs _input;
         
         public PlayerFollowCamera(Transform p1, Transform p2, float smoothness, Transform cameraTransform)
@@ -40,37 +43,53 @@ namespace Camera
         private void CheckVisualObstacle(Vector3 p1Position, Vector3 p2Position)
         {
             int layerMask = 1 << 3;
+            Material transparent = Resources.Load<Material>("GeneralTransparent");
+            Material[] newMats = {transparent, transparent};
+            Material[] oldMats = new Material[2];
 
             float rayOffSet = 1;
             RaycastHit hit;
+            
             if (Physics.Raycast(_cameraTransform.position,  (p1Position + Vector3.up * rayOffSet) - _cameraTransform.position, 
                 out hit, (p1Position - _cameraTransform.position).magnitude, layerMask))
             {
                 Debug.DrawRay(_cameraTransform.position, ((p1Position + Vector3.up * rayOffSet) - _cameraTransform.position), Color.yellow);
-                // Debug.Log("Did Hit" + hit.collider.gameObject.name);
-                hit.collider.gameObject.GetComponent<Renderer> ().enabled = false;
-                hiddenItems.Add(hit.collider.gameObject);
-                
+                var collided = hit.collider.gameObject;
+                oldMats = collided.GetComponent<Renderer>().materials;
+                collided.GetComponent<Renderer>().materials = newMats;
+                hiddenItemMats.Add(oldMats);
+                hiddenItems.Add(collided);
+
             } else if (Physics.Raycast(_cameraTransform.position,  p2Position - _cameraTransform.position, 
                 out hit, (p2Position - _cameraTransform.position).magnitude, layerMask))
             {
                 Debug.DrawRay(_cameraTransform.position, ((p2Position + Vector3.up * rayOffSet) - _cameraTransform.position), Color.yellow);
                 // Debug.Log("Did Hit" + hit.collider.gameObject.name);
-                hit.collider.gameObject.GetComponent<Renderer> ().enabled = false;
-                hiddenItems.Add(hit.collider.gameObject);
+                var collided = hit.collider.gameObject;
+                oldMats = collided.GetComponent<Renderer>().materials;
+                collided.GetComponent<Renderer>().materials = newMats;
+                hiddenItemMats.Add(oldMats);
+                hiddenItems.Add(collided);
                 
             }
             else
             {
+                //did not hit 
                 Debug.DrawRay(_cameraTransform.position, ((p1Position + Vector3.up * rayOffSet) - _cameraTransform.position), Color.white);
                 Debug.DrawRay(_cameraTransform.position, ((p2Position) - _cameraTransform.position), Color.white);
-                // Debug.Log("Did not Hit");
+                var parallelListCount = 0;
+                
                 foreach (var item in hiddenItems)
                 {
                     // Debug.Log("Bringing back: " + item.name);
-                    item.GetComponent<Renderer>().enabled = true;
+                    if (hiddenItemMats[parallelListCount][0].name != "GeneralTransparent (Instance)")
+                    {
+                        item.GetComponent<Renderer>().materials = hiddenItemMats[parallelListCount];
+                    }
+                    parallelListCount++;
                 }
                 hiddenItems.Clear();
+                hiddenItemMats.Clear();
                 
             }
         }

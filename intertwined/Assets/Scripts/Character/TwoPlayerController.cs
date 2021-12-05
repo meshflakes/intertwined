@@ -56,7 +56,11 @@ namespace Character
                 _dog.CharInteractor.HasInteractables() |
                 !anxietyCalc.CanPet()) return;
 
-            if (_input.boyInteract & _input.dogInteract) anxietyCalc.LowerAnxiety();
+            if (_input.boyInteract & _input.dogInteract)
+            {
+                _boy.GetComponentInChildren<Animator> ().SetTrigger("Petting");
+                anxietyCalc.LowerAnxiety();
+            }
         }
     }
 }

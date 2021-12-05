@@ -1,0 +1,2755 @@
+fileFormatVersion: 2
+guid: a66eb891cffdb9f48b1cb4537967eed0
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      74: 1827226128182048838
+    second: Take 001
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Intertwined_Boy_rig_Textured:Bind_Hips'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      internalID: 0
+      firstFrame: 1
+      lastFrame: 96
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0.96
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Intertwined_Boy_rig_Textured:Bind_Root
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_LeftUpLeg
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_RightUpLeg
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_LeftLeg
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_RightLeg
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_LeftFoot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_RightFoot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_LeftShoulder
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_RightShoulder
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_LeftArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_RightArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_LeftForeArm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_RightForeArm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_LeftHand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_RightHand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_LeftToeBase
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_RightToeBase
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_LeftHandThumb1
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_LeftHandThumb2
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_LeftHandThumb3
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_LeftHandMiddle1
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_LeftHandMiddle2
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_LeftHandMiddle3
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_LeftHandRing1
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_LeftHandRing2
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_LeftHandRing3
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_LeftHandPinky1
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_LeftHandPinky2
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_LeftHandPinky3
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_RightHandThumb1
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_RightHandThumb2
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_RightHandThumb3
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_RightHandMiddle1
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_RightHandMiddle2
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_RightHandMiddle3
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_RightHandRing1
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_RightHandRing2
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_RightHandRing3
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_RightHandPinky1
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_RightHandPinky2
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_RightHandPinky3
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Intertwined_Boy_rig_Textured:Bind_Spine2
+      humanName: UpperChest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Boy_idle_Anim(Clone)
+      parentName: 
+      position: {x: 0.000000005364418, y: -0.005, z: -0.0009953966}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:CTRL_GRP
+      parentName: Boy_idle_Anim(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:global_CTRL
+      parentName: Intertwined_Boy_rig_Textured:CTRL_GRP
+      position: {x: -0.000000005364418, y: 0.005, z: 0.0009953966}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHand_CTRLs_GRP
+      parentName: Intertwined_Boy_rig_Textured:global_CTRL
+      position: {x: -0.00435249, y: 0.015938753, z: 0.0012818044}
+      rotation: {x: 0.80497456, y: -0.09302474, z: 0.58359796, w: 0.052685834}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandIndex1_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHand_CTRLs_GRP
+      position: {x: 0.0006955831, y: 0.0018081947, z: 0.000001097386}
+      rotation: {x: 0.012349494, y: -0.0009256981, z: -0.07474295, w: 0.9971259}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandIndex1_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandIndex1_CTRL_POS_GRP
+      position: {x: -0, y: -2.220446e-18, z: 8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandIndex1_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandIndex1_CTRL_AnimData_CONST_GRP
+      position: {x: 1.110223e-18, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandIndex1_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftHandIndex1_CTRL_In_Rig_CONST_GRP
+      position: {x: 1.110223e-18, y: -2.220446e-18, z: -4.440892e-18}
+      rotation: {x: 0.15052524, y: -0, z: -0, w: 0.98860615}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandIndex2_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandIndex1_CTRL
+      position: {x: 0.0000006248411, y: 0.00053568924, z: 9.771694e-13}
+      rotation: {x: -0.033152867, y: 0, z: -0, w: 0.9994503}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandIndex2_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandIndex2_CTRL_POS_GRP
+      position: {x: -0, y: -2.220446e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandIndex2_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandIndex2_CTRL_AnimData_CONST_GRP
+      position: {x: 5.551115e-19, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandIndex2_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftHandIndex2_CTRL_In_Rig_CONST_GRP
+      position: {x: 2.7755574e-18, y: -6.661338e-18, z: -8.881784e-18}
+      rotation: {x: 0.20786881, y: -0, z: -0, w: 0.97815675}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandIndex3_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandIndex2_CTRL
+      position: {x: 0.0000002316056, y: 0.0005166673, z: 3.3097568e-12}
+      rotation: {x: 0.1575994, y: -0, z: -0, w: 0.9875032}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandIndex3_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandIndex3_CTRL_POS_GRP
+      position: {x: -5.551115e-19, y: -2.220446e-18, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandIndex3_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandIndex3_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: -1.110223e-18, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandIndex3_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftHandIndex3_CTRL_In_Rig_CONST_GRP
+      position: {x: -0, y: -1.110223e-18, z: 4.440892e-18}
+      rotation: {x: 0.28284243, y: -0, z: -0, w: 0.9591664}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandThumb1_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHand_CTRLs_GRP
+      position: {x: 0.00058395125, y: 0.0002877614, z: 0.00010630373}
+      rotation: {x: 0.07538813, y: -0.03516016, z: -0.42121357, w: 0.9031387}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandThumb1_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandThumb1_CTRL_POS_GRP
+      position: {x: -0, y: 0, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandThumb1_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandThumb1_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandThumb1_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftHandThumb1_CTRL_In_Rig_CONST_GRP
+      position: {x: -0, y: -3.8857806e-18, z: 0}
+      rotation: {x: 0.22993451, y: -0.23880255, z: 0.1548543, w: 0.9306576}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandThumb2_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandThumb1_CTRL
+      position: {x: 0.0001238686, y: 0.0005129563, z: 4.0100145e-12}
+      rotation: {x: 0.03762494, y: -0, z: -0, w: 0.99929196}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandThumb2_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandThumb2_CTRL_POS_GRP
+      position: {x: 2.220446e-18, y: -3.4694467e-19, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandThumb2_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandThumb2_CTRL_AnimData_CONST_GRP
+      position: {x: 2.220446e-18, y: -3.4694467e-19, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandThumb2_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftHandThumb2_CTRL_In_Rig_CONST_GRP
+      position: {x: 4.440892e-18, y: -4.9439617e-18, z: -8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandThumb3_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandThumb2_CTRL
+      position: {x: 0.000021177962, y: 0.00060927245, z: -6.4813974e-12}
+      rotation: {x: 0.08203291, y: -0, z: -0, w: 0.9966296}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandThumb3_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandThumb3_CTRL_POS_GRP
+      position: {x: -0, y: 1.6653345e-18, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandThumb3_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandThumb3_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 1.6653345e-18, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandThumb3_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftHandThumb3_CTRL_In_Rig_CONST_GRP
+      position: {x: -1.110223e-18, y: 3.330669e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandMiddle1_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHand_CTRLs_GRP
+      position: {x: 0.00026706673, y: 0.0018241693, z: -0.0000034847617}
+      rotation: {x: -0.004020697, y: 0.00020414016, z: -0.050710008, w: 0.9987053}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandMiddle1_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandMiddle1_CTRL_POS_GRP
+      position: {x: -0, y: 0, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandMiddle1_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandMiddle1_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: -2.220446e-18, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandMiddle1_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftHandMiddle1_CTRL_In_Rig_CONST_GRP
+      position: {x: -1.6653345e-18, y: -6.661338e-18, z: 0}
+      rotation: {x: 0.15052524, y: -0, z: -0, w: 0.98860615}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandMiddle2_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandMiddle1_CTRL
+      position: {x: 0.00000004937501, y: 0.00065378495, z: 2.2334134e-13}
+      rotation: {x: -0.024684912, y: 0, z: -0, w: 0.9996953}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandMiddle2_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandMiddle2_CTRL_POS_GRP
+      position: {x: -0, y: 2.220446e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandMiddle2_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandMiddle2_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandMiddle2_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftHandMiddle2_CTRL_In_Rig_CONST_GRP
+      position: {x: 1.110223e-18, y: 6.661338e-18, z: 4.440892e-18}
+      rotation: {x: 0.20786881, y: -0, z: -0, w: 0.97815675}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandMiddle3_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandMiddle2_CTRL
+      position: {x: 0.00000020155221, y: 0.0005938262, z: 3.0939696e-13}
+      rotation: {x: 0.03810373, y: -0, z: -0, w: 0.9992738}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandMiddle3_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandMiddle3_CTRL_POS_GRP
+      position: {x: -5.551115e-19, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandMiddle3_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandMiddle3_CTRL_AnimData_CONST_GRP
+      position: {x: -5.551115e-19, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandMiddle3_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftHandMiddle3_CTRL_In_Rig_CONST_GRP
+      position: {x: -1.110223e-18, y: 6.661338e-18, z: 0}
+      rotation: {x: 0.28284243, y: -0, z: -0, w: 0.9591664}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandRing1_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHand_CTRLs_GRP
+      position: {x: -0.00026289074, y: 0.001783394, z: 0.00001370384}
+      rotation: {x: -0.039918974, y: 0.0034667659, z: -0.08644993, w: 0.9954501}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandRing1_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandRing1_CTRL_POS_GRP
+      position: {x: -0, y: 2.220446e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandRing1_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandRing1_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 2.220446e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandRing1_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftHandRing1_CTRL_In_Rig_CONST_GRP
+      position: {x: 1.110223e-18, y: 0, z: 0}
+      rotation: {x: 0.15052524, y: -0, z: -0, w: 0.98860615}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandRing2_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandRing1_CTRL
+      position: {x: 0.00000023285249, y: 0.00060472504, z: 4.0213076e-12}
+      rotation: {x: 0.028402233, y: -0, z: -0, w: 0.9995966}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandRing2_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandRing2_CTRL_POS_GRP
+      position: {x: -0, y: -2.220446e-18, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandRing2_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandRing2_CTRL_AnimData_CONST_GRP
+      position: {x: 1.110223e-18, y: -4.440892e-18, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandRing2_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftHandRing2_CTRL_In_Rig_CONST_GRP
+      position: {x: -0, y: 2.220446e-18, z: -1.3322676e-17}
+      rotation: {x: 0.20786881, y: -0, z: -0, w: 0.97815675}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandRing3_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandRing2_CTRL
+      position: {x: -0.000000082344954, y: 0.00056874857, z: 3.7525983e-13}
+      rotation: {x: 0.09008135, y: -0, z: -0, w: 0.9959344}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandRing3_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandRing3_CTRL_POS_GRP
+      position: {x: -1.110223e-18, y: 2.220446e-18, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandRing3_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandRing3_CTRL_AnimData_CONST_GRP
+      position: {x: -1.110223e-18, y: 2.220446e-18, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandRing3_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftHandRing3_CTRL_In_Rig_CONST_GRP
+      position: {x: -1.110223e-18, y: -4.440892e-18, z: 0}
+      rotation: {x: 0.28284243, y: -0, z: -0, w: 0.9591664}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandPinky1_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHand_CTRLs_GRP
+      position: {x: -0.00069975905, y: 0.0016884044, z: 0.000022470058}
+      rotation: {x: -0.02992753, y: 0.001960336, z: -0.06533329, w: 0.9974127}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandPinky1_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandPinky1_CTRL_POS_GRP
+      position: {x: -0, y: 4.440892e-18, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandPinky1_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandPinky1_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 2.220446e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandPinky1_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftHandPinky1_CTRL_In_Rig_CONST_GRP
+      position: {x: -0, y: 2.220446e-18, z: -4.440892e-18}
+      rotation: {x: 0.15052524, y: -0, z: -0, w: 0.98860615}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandPinky2_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandPinky1_CTRL
+      position: {x: -0.00000017458792, y: 0.0005894488, z: 2.1442182e-12}
+      rotation: {x: 0.056058563, y: -0, z: -0, w: 0.9984275}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandPinky2_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandPinky2_CTRL_POS_GRP
+      position: {x: -0, y: -2.220446e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandPinky2_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandPinky2_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 2.220446e-18, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandPinky2_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftHandPinky2_CTRL_In_Rig_CONST_GRP
+      position: {x: 2.220446e-18, y: 1.11022296e-17, z: 1.7763568e-17}
+      rotation: {x: 0.20786881, y: -0, z: -0, w: 0.97815675}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandPinky3_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandPinky2_CTRL
+      position: {x: 0.00000023793022, y: 0.00047137387, z: -1.2834844e-12}
+      rotation: {x: 0.087266125, y: -0, z: -0, w: 0.99618506}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandPinky3_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandPinky3_CTRL_POS_GRP
+      position: {x: -1.110223e-18, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandPinky3_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHandPinky3_CTRL_AnimData_CONST_GRP
+      position: {x: -1.110223e-18, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHandPinky3_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftHandPinky3_CTRL_In_Rig_CONST_GRP
+      position: {x: -3.330669e-18, y: 0, z: -8.881784e-18}
+      rotation: {x: 0.28284243, y: -0, z: -0, w: 0.9591664}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHand_CTRLs_GRP
+      parentName: Intertwined_Boy_rig_Textured:global_CTRL
+      position: {x: 0.0047410023, y: 0.015935874, z: 0.0009918212}
+      rotation: {x: 0.76746154, y: 0.12124345, z: -0.6294788, w: -0.0077017415}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandIndex1_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHand_CTRLs_GRP
+      position: {x: -0.0006953515, y: 0.0019780323, z: 0.000006311089}
+      rotation: {x: 0.006890419, y: 0.00031091264, z: 0.04507552, w: 0.9989598}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandIndex1_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandIndex1_CTRL_POS_GRP
+      position: {x: -0, y: -2.220446e-18, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandIndex1_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandIndex1_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: -2.220446e-18, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandIndex1_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightHandIndex1_CTRL_In_Rig_CONST_GRP
+      position: {x: 1.6653345e-18, y: -4.440892e-18, z: 0}
+      rotation: {x: 0.13956393, y: -0, z: -0, w: 0.9902131}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandIndex2_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandIndex1_CTRL
+      position: {x: -0.0000022004765, y: 0.000503964, z: 8.400569e-13}
+      rotation: {x: -0.022496473, y: 0, z: -0, w: 0.9997469}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandIndex2_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandIndex2_CTRL_POS_GRP
+      position: {x: -5.551115e-19, y: 0, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandIndex2_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandIndex2_CTRL_AnimData_CONST_GRP
+      position: {x: -5.551115e-19, y: 0, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandIndex2_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightHandIndex2_CTRL_In_Rig_CONST_GRP
+      position: {x: -2.220446e-18, y: 6.661338e-18, z: 1.7763568e-17}
+      rotation: {x: 0.1566369, y: -0, z: -0, w: 0.9876563}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandIndex3_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandIndex2_CTRL
+      position: {x: -0.0000008202598, y: 0.00046719206, z: 2.9407588e-14}
+      rotation: {x: 0.19997495, y: -0, z: -0, w: 0.979801}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandIndex3_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandIndex3_CTRL_POS_GRP
+      position: {x: -5.551115e-19, y: -5.551115e-19, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandIndex3_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandIndex3_CTRL_AnimData_CONST_GRP
+      position: {x: -5.551115e-19, y: -5.551115e-19, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandIndex3_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightHandIndex3_CTRL_In_Rig_CONST_GRP
+      position: {x: 1.110223e-18, y: 5.551115e-19, z: -8.881784e-18}
+      rotation: {x: 0.26203877, y: -0, z: -0, w: 0.9650574}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandThumb1_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHand_CTRLs_GRP
+      position: {x: -0.0006466051, y: 0.0003400569, z: 0.00010262963}
+      rotation: {x: 0.06657742, y: 0.028544178, z: 0.39301237, w: 0.9166755}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandThumb1_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandThumb1_CTRL_POS_GRP
+      position: {x: -0, y: -5.551115e-19, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandThumb1_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandThumb1_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: -5.551115e-19, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandThumb1_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightHandThumb1_CTRL_In_Rig_CONST_GRP
+      position: {x: -2.220446e-18, y: 1.3877787e-18, z: 0}
+      rotation: {x: 0.20932314, y: 0.28218728, z: -0.24725972, w: 0.90300435}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandThumb2_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandThumb1_CTRL
+      position: {x: -0.00015959278, y: 0.0005682099, z: 6.785936e-12}
+      rotation: {x: 0.030960174, y: -0, z: -0, w: 0.9995206}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandThumb2_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandThumb2_CTRL_POS_GRP
+      position: {x: -1.110223e-18, y: -1.6653345e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandThumb2_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandThumb2_CTRL_AnimData_CONST_GRP
+      position: {x: -1.110223e-18, y: -2.4980017e-18, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandThumb2_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightHandThumb2_CTRL_In_Rig_CONST_GRP
+      position: {x: -0, y: -2.7755575e-19, z: 8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandThumb3_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandThumb2_CTRL
+      position: {x: -0.0000055838696, y: 0.00055302255, z: -9.548113e-12}
+      rotation: {x: 0.046066105, y: -0, z: -0, w: 0.9989384}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandThumb3_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandThumb3_CTRL_POS_GRP
+      position: {x: -1.110223e-18, y: 1.2490008e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandThumb3_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandThumb3_CTRL_AnimData_CONST_GRP
+      position: {x: -1.110223e-18, y: 1.2490008e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandThumb3_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightHandThumb3_CTRL_In_Rig_CONST_GRP
+      position: {x: -1.110223e-18, y: 2.7755575e-19, z: 8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandMiddle1_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHand_CTRLs_GRP
+      position: {x: -0.00024642248, y: 0.0019037066, z: 0.0000007571559}
+      rotation: {x: 0.0013752263, y: 0.000058529633, z: 0.04252147, w: 0.9990946}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandMiddle1_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandMiddle1_CTRL_POS_GRP
+      position: {x: -0, y: 2.220446e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandMiddle1_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandMiddle1_CTRL_AnimData_CONST_GRP
+      position: {x: -5.551115e-19, y: 0, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandMiddle1_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightHandMiddle1_CTRL_In_Rig_CONST_GRP
+      position: {x: -0, y: -2.220446e-18, z: 4.440892e-18}
+      rotation: {x: 0.13956393, y: -0, z: -0, w: 0.9902131}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandMiddle2_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandMiddle1_CTRL
+      position: {x: -0.0000004778867, y: 0.0005783456, z: 3.3888447e-14}
+      rotation: {x: -0.022772301, y: 0, z: -0, w: 0.9997407}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandMiddle2_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandMiddle2_CTRL_POS_GRP
+      position: {x: -5.551115e-19, y: 0, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandMiddle2_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandMiddle2_CTRL_AnimData_CONST_GRP
+      position: {x: -5.551115e-19, y: 2.220446e-18, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandMiddle2_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightHandMiddle2_CTRL_In_Rig_CONST_GRP
+      position: {x: -1.110223e-18, y: 1.11022296e-17, z: -4.440892e-18}
+      rotation: {x: 0.1566369, y: -0, z: -0, w: 0.9876563}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandMiddle3_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandMiddle2_CTRL
+      position: {x: -0.0000010211027, y: 0.00058906927, z: -2.4849545e-12}
+      rotation: {x: 0.120321065, y: -0, z: -0, w: 0.9927351}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandMiddle3_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandMiddle3_CTRL_POS_GRP
+      position: {x: -5.551115e-19, y: -1.110223e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandMiddle3_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandMiddle3_CTRL_AnimData_CONST_GRP
+      position: {x: -5.551115e-19, y: -1.110223e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandMiddle3_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightHandMiddle3_CTRL_In_Rig_CONST_GRP
+      position: {x: -1.6653345e-18, y: -1.110223e-18, z: 4.440892e-18}
+      rotation: {x: 0.26203877, y: -0, z: -0, w: 0.9650574}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandRing1_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHand_CTRLs_GRP
+      position: {x: 0.00022766633, y: 0.0020036388, z: -0.00002012275}
+      rotation: {x: 0.006423508, y: 0.00020055946, z: 0.031206876, w: 0.99949235}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandRing1_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandRing1_CTRL_POS_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandRing1_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandRing1_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandRing1_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightHandRing1_CTRL_In_Rig_CONST_GRP
+      position: {x: 1.110223e-18, y: 0, z: 4.440892e-18}
+      rotation: {x: 0.13956393, y: -0, z: -0, w: 0.9902131}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandRing2_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandRing1_CTRL
+      position: {x: -0.00000058980925, y: 0.0005353177, z: 2.6839864e-13}
+      rotation: {x: -0.019878263, y: 0, z: -0, w: 0.9998024}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandRing2_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandRing2_CTRL_POS_GRP
+      position: {x: 5.551115e-19, y: -2.220446e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandRing2_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandRing2_CTRL_AnimData_CONST_GRP
+      position: {x: 5.551115e-19, y: -2.220446e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandRing2_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightHandRing2_CTRL_In_Rig_CONST_GRP
+      position: {x: -2.7755574e-18, y: 2.220446e-18, z: -4.440892e-18}
+      rotation: {x: 0.1566369, y: -0, z: -0, w: 0.9876563}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandRing3_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandRing2_CTRL
+      position: {x: -0.0000013422845, y: 0.00048826315, z: 1.0331246e-12}
+      rotation: {x: 0.13927566, y: -0, z: -0, w: 0.9902536}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandRing3_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandRing3_CTRL_POS_GRP
+      position: {x: -0, y: 0, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandRing3_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandRing3_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandRing3_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightHandRing3_CTRL_In_Rig_CONST_GRP
+      position: {x: -2.220446e-18, y: 4.440892e-18, z: 8.881784e-18}
+      rotation: {x: 0.26203877, y: -0, z: -0, w: 0.9650574}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandPinky1_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHand_CTRLs_GRP
+      position: {x: 0.00071410765, y: 0.0017083556, z: 0.00001934801}
+      rotation: {x: -0.008716532, y: -0.00049021555, z: 0.05614887, w: 0.99838424}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandPinky1_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandPinky1_CTRL_POS_GRP
+      position: {x: -0, y: 2.220446e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandPinky1_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandPinky1_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandPinky1_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightHandPinky1_CTRL_In_Rig_CONST_GRP
+      position: {x: -3.330669e-18, y: -6.661338e-18, z: 8.881784e-18}
+      rotation: {x: 0.13956393, y: -0, z: -0, w: 0.9902131}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandPinky2_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandPinky1_CTRL
+      position: {x: 0.0000002177513, y: 0.000578332, z: 1.3437739e-12}
+      rotation: {x: 0.018195905, y: -0, z: -0, w: 0.9998345}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandPinky2_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandPinky2_CTRL_POS_GRP
+      position: {x: -2.220446e-18, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandPinky2_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandPinky2_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandPinky2_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightHandPinky2_CTRL_In_Rig_CONST_GRP
+      position: {x: 1.110223e-18, y: 4.440892e-18, z: 1.3322676e-17}
+      rotation: {x: 0.1566369, y: -0, z: -0, w: 0.9876563}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandPinky3_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandPinky2_CTRL
+      position: {x: 0.000000031690952, y: 0.00048368098, z: 1.2253753e-13}
+      rotation: {x: 0.025653295, y: -0, z: -0, w: 0.9996709}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandPinky3_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandPinky3_CTRL_POS_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandPinky3_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHandPinky3_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 2.220446e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHandPinky3_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightHandPinky3_CTRL_In_Rig_CONST_GRP
+      position: {x: 2.220446e-18, y: 2.220446e-18, z: -8.881784e-18}
+      rotation: {x: 0.26203877, y: -0, z: -0, w: 0.9650574}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftFoot_Options
+      parentName: Intertwined_Boy_rig_Textured:global_CTRL
+      position: {x: -0.0027440258, y: 0.0040296535, z: -0.00014691011}
+      rotation: {x: 0.019466856, y: 0.40015742, z: 0.91618127, w: 0.010342133}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightFoot_Options
+      parentName: Intertwined_Boy_rig_Textured:global_CTRL
+      position: {x: 0.003067297, y: 0.0040296796, z: -0.00023207857}
+      rotation: {x: -0.019151755, y: 0.40523177, z: 0.91395515, w: -0.010313601}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHand_Options
+      parentName: Intertwined_Boy_rig_Textured:global_CTRL
+      position: {x: -0.00435249, y: 0.015938753, z: 0.0012818044}
+      rotation: {x: 0.80497456, y: -0.09302474, z: 0.58359796, w: 0.052685834}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHand_Options
+      parentName: Intertwined_Boy_rig_Textured:global_CTRL
+      position: {x: 0.0047410023, y: 0.015935874, z: 0.0009918212}
+      rotation: {x: 0.76746154, y: 0.12124345, z: -0.6294788, w: -0.0077017415}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Root_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:global_CTRL
+      position: {x: -0, y: 0.018589735, z: 0.00065045897}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Root_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:Root_CTRL_POS_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Root_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:Root_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Root_CTRL
+      parentName: Intertwined_Boy_rig_Textured:Root_CTRL_In_Rig_CONST_GRP
+      position: {x: 0.00013762101, y: -0.000112235364, z: 0.00038812836}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Pelvis_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:Root_CTRL
+      position: {x: -0, y: -2.220446e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Pelvis_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:Pelvis_CTRL_POS_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Pelvis_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:Pelvis_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Pelvis_CTRL
+      parentName: Intertwined_Boy_rig_Textured:Pelvis_CTRL_In_Rig_CONST_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftUpLeg_FK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:Pelvis_CTRL
+      position: {x: -0.0012703633, y: -0.0006736922, z: 0.000064378604}
+      rotation: {x: 0.0005960442, y: -0.016691625, z: 0.99922365, w: 0.035681453}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftUpLeg_FK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftUpLeg_FK_CTRL_POS_GRP
+      position: {x: -5.551115e-19, y: 0, z: -3.469447e-20}
+      rotation: {x: 5.551115e-17, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftUpLeg_FK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftUpLeg_FK_CTRL_AnimData_CONST_GRP
+      position: {x: -5.551115e-19, y: 0, z: -3.469447e-20}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftUpLeg_FK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftUpLeg_FK_CTRL_In_Rig_CONST_GRP
+      position: {x: -0, y: 0, z: -1.7347234e-19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftLeg_FK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftUpLeg_FK_CTRL
+      position: {x: -1.01510085e-11, y: 0.0071555837, z: -6.755757e-12}
+      rotation: {x: -0.02929222, y: -0.00050392584, z: 0.017193474, w: 0.9994229}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftLeg_FK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftLeg_FK_CTRL_POS_GRP
+      position: {x: -0, y: 0, z: 1.3877787e-19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftLeg_FK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftLeg_FK_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: 1.3877787e-19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftLeg_FK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftLeg_FK_CTRL_In_Rig_CONST_GRP
+      position: {x: -0, y: 6.661338e-18, z: -3.4694467e-19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftFoot_FK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftLeg_FK_CTRL
+      position: {x: 1.09113205e-11, y: 0.0067863767, z: -1.731939e-11}
+      rotation: {x: 0.44215235, y: -0.011782004, z: 0.0058086375, w: 0.8968438}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftFoot_FK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftFoot_FK_CTRL_POS_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftFoot_FK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftFoot_FK_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftFoot_FK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftFoot_FK_CTRL_In_Rig_CONST_GRP
+      position: {x: -0, y: -5.551115e-19, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftToeBase_FK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftFoot_FK_CTRL
+      position: {x: -0.000000017391361, y: 0.0058229608, z: -0.000000009149125}
+      rotation: {x: 0.36493862, y: 0.0019277285, z: -0.0007556181, w: 0.93102926}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftToeBase_FK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftToeBase_FK_CTRL_POS_GRP
+      position: {x: -2.7755575e-19, y: 0, z: 1.0842021e-21}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftToeBase_FK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftToeBase_FK_CTRL_AnimData_CONST_GRP
+      position: {x: -2.7755575e-19, y: 0, z: 1.0842021e-21}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftToeBase_FK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftToeBase_FK_CTRL_In_Rig_CONST_GRP
+      position: {x: 2.7755575e-19, y: 1.110223e-18, z: 3.2526064e-21}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightUpLeg_FK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:Pelvis_CTRL
+      position: {x: 0.0012703633, y: -0.0006736922, z: 0.00007686697}
+      rotation: {x: -0.0006853151, y: -0.019195015, z: 0.99917895, w: -0.03567345}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightUpLeg_FK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightUpLeg_FK_CTRL_POS_GRP
+      position: {x: -0, y: 2.220446e-18, z: -7.372575e-20}
+      rotation: {x: 5.551115e-17, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightUpLeg_FK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightUpLeg_FK_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 2.220446e-18, z: -2.0816681e-19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightUpLeg_FK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightUpLeg_FK_CTRL_In_Rig_CONST_GRP
+      position: {x: -0, y: -4.440892e-18, z: 2.0816681e-19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightLeg_FK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightUpLeg_FK_CTRL
+      position: {x: 3.5195968e-11, y: 0.007156866, z: -4.230451e-12}
+      rotation: {x: -0.030981714, y: 0.00053313805, z: -0.017197344, w: 0.9993719}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightLeg_FK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightLeg_FK_CTRL_POS_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightLeg_FK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightLeg_FK_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: -2.7755575e-19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightLeg_FK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightLeg_FK_CTRL_In_Rig_CONST_GRP
+      position: {x: -2.7755575e-19, y: -2.220446e-18, z: 2.7755575e-19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightFoot_FK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightLeg_FK_CTRL
+      position: {x: -1.4713859e-11, y: 0.0067918575, z: -4.0478464e-11}
+      rotation: {x: 0.45086116, y: 0.011317805, z: -0.0057173506, w: 0.8925041}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightFoot_FK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightFoot_FK_CTRL_POS_GRP
+      position: {x: 2.7755575e-19, y: -5.551115e-19, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightFoot_FK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightFoot_FK_CTRL_AnimData_CONST_GRP
+      position: {x: 2.7755575e-19, y: -5.551115e-19, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightFoot_FK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightFoot_FK_CTRL_In_Rig_CONST_GRP
+      position: {x: 1.110223e-18, y: -5.551115e-19, z: -2.220446e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightToeBase_FK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightFoot_FK_CTRL
+      position: {x: 0.000000028138096, y: 0.0058939275, z: -0.00000003317852}
+      rotation: {x: 0.35977218, y: -0.0014538933, z: 0.0005606094, w: 0.9330389}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightToeBase_FK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightToeBase_FK_CTRL_POS_GRP
+      position: {x: -0, y: 0, z: -2.1684043e-21}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightToeBase_FK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightToeBase_FK_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: -2.1684043e-21}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightToeBase_FK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightToeBase_FK_CTRL_In_Rig_CONST_GRP
+      position: {x: -1.110223e-18, y: 0, z: -2.1684043e-21}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Spine_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:Root_CTRL
+      position: {x: -0, y: 0.0012082362, z: -0.00025287733}
+      rotation: {x: -0.10297534, y: 0, z: -0, w: 0.9946839}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Spine_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:Spine_CTRL_POS_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Spine_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:Spine_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Spine_CTRL
+      parentName: Intertwined_Boy_rig_Textured:Spine_CTRL_In_Rig_CONST_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Spine1_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:Spine_CTRL
+      position: {x: -0, y: 0.0014401517, z: -1.7575619e-12}
+      rotation: {x: -0.000000043755417, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Spine1_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:Spine1_CTRL_POS_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Spine1_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:Spine1_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Spine1_CTRL
+      parentName: Intertwined_Boy_rig_Textured:Spine1_CTRL_In_Rig_CONST_GRP
+      position: {x: -0, y: 0, z: -5.551115e-19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Spine2_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:Spine1_CTRL
+      position: {x: -0, y: 0.0016458881, z: 2.1670166e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Spine2_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:Spine2_CTRL_POS_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Spine2_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:Spine2_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Spine2_CTRL
+      parentName: Intertwined_Boy_rig_Textured:Spine2_CTRL_In_Rig_CONST_GRP
+      position: {x: -0, y: 0, z: -5.551115e-19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Neck_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:Spine2_CTRL
+      position: {x: -0, y: 0.0018516221, z: -1.8648563e-10}
+      rotation: {x: 0.10297538, y: -0, z: -0, w: 0.9946839}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Neck_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:Neck_CTRL_POS_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Neck_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:Neck_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Neck_CTRL
+      parentName: Intertwined_Boy_rig_Textured:Neck_CTRL_In_Rig_CONST_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.028442517, y: -0, z: -0, w: 0.99959546}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Head_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:Neck_CTRL
+      position: {x: -0, y: 0.00077049015, z: -0.000024302304}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Head_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:Head_CTRL_POS_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Head_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:Head_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Head_CTRL
+      parentName: Intertwined_Boy_rig_Textured:Head_CTRL_In_Rig_CONST_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Head_CTRL_Inherit_Rotation_GRP
+      parentName: Intertwined_Boy_rig_Textured:Head_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftShoulder_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:Spine2_CTRL
+      position: {x: -0.00064798555, y: 0.0016468468, z: -0.000039983996}
+      rotation: {x: 0.55183554, y: -0.43161657, z: 0.5866211, w: 0.40627617}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftShoulder_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftShoulder_CTRL_POS_GRP
+      position: {x: 5.551115e-19, y: 2.220446e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftShoulder_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftShoulder_CTRL_AnimData_CONST_GRP
+      position: {x: -5.551115e-19, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftShoulder_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftShoulder_CTRL_In_Rig_CONST_GRP
+      position: {x: -0, y: 2.220446e-18, z: -2.2204459e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftArm_FK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftShoulder_CTRL
+      position: {x: 3.0937935e-12, y: 0.0013602877, z: -1.4909313e-11}
+      rotation: {x: -0.12445778, y: 0.0003313083, z: -0.002641307, w: 0.99222136}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftArm_FK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftArm_FK_CTRL_POS_GRP
+      position: {x: 5.551115e-19, y: -2.0816681e-19, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftArm_FK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftArm_FK_CTRL_AnimData_CONST_GRP
+      position: {x: 5.551115e-19, y: -2.0816681e-19, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftArm_FK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftArm_FK_CTRL_In_Rig_CONST_GRP
+      position: {x: 5.551115e-19, y: 2.0816681e-19, z: 0}
+      rotation: {x: 0.46172875, y: 0.34467608, z: 0.27829558, w: 0.7684768}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftForeArm_FK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftArm_FK_CTRL
+      position: {x: 1.4411072e-12, y: 0.0033331474, z: -1.4238477e-12}
+      rotation: {x: -0.025210798, y: 0.0011547663, z: -0.045741882, w: 0.99863446}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftForeArm_FK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftForeArm_FK_CTRL_POS_GRP
+      position: {x: -5.551115e-19, y: -1.110223e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftForeArm_FK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftForeArm_FK_CTRL_AnimData_CONST_GRP
+      position: {x: 5.551115e-19, y: -1.110223e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftForeArm_FK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftForeArm_FK_CTRL_In_Rig_CONST_GRP
+      position: {x: 1.110223e-18, y: 1.110223e-18, z: 0}
+      rotation: {x: 0.13236128, y: -0.0097402455, z: 0.0413969, w: 0.99028885}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHand_FK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftForeArm_FK_CTRL
+      position: {x: -3.8170994e-12, y: 0.0052033365, z: -6.9465766e-13}
+      rotation: {x: -0.005723492, y: -0.178601, z: 0.07383388, w: 0.9811307}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHand_FK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHand_FK_CTRL_POS_GRP
+      position: {x: -0, y: -2.220446e-18, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHand_FK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHand_FK_CTRL_AnimData_CONST_GRP
+      position: {x: -1.110223e-18, y: 0, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHand_FK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftHand_FK_CTRL_In_Rig_CONST_GRP
+      position: {x: -1.110223e-18, y: -4.440892e-18, z: 4.440892e-18}
+      rotation: {x: -0.035104692, y: -0.45095426, z: 0.077167474, w: 0.8885117}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightShoulder_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:Spine2_CTRL
+      position: {x: 0.00064798555, y: 0.0016479995, z: -0.000045491888}
+      rotation: {x: -0.5489897, y: -0.4338536, z: 0.5885659, w: -0.40493402}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightShoulder_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightShoulder_CTRL_POS_GRP
+      position: {x: -1.110223e-18, y: -1.110223e-18, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightShoulder_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightShoulder_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightShoulder_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightShoulder_CTRL_In_Rig_CONST_GRP
+      position: {x: -0, y: 1.110223e-18, z: -2.6645352e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightArm_FK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightShoulder_CTRL
+      position: {x: -3.3304093e-12, y: 0.0013602877, z: -1.4857435e-11}
+      rotation: {x: -0.12233928, y: -0.001566074, z: 0.012703859, w: 0.9924058}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightArm_FK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightArm_FK_CTRL_POS_GRP
+      position: {x: -0, y: -4.1633362e-19, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightArm_FK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightArm_FK_CTRL_AnimData_CONST_GRP
+      position: {x: -1.110223e-18, y: 1.3877787e-19, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightArm_FK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightArm_FK_CTRL_In_Rig_CONST_GRP
+      position: {x: -1.6653345e-18, y: -3.4694467e-19, z: -4.440892e-18}
+      rotation: {x: 0.43889692, y: -0.3730857, z: -0.33861282, w: 0.74398786}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightForeArm_FK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightArm_FK_CTRL
+      position: {x: 7.445091e-12, y: 0.0033316943, z: 1.3351427e-11}
+      rotation: {x: -0.027094409, y: -0.0009831705, z: 0.03624964, w: 0.9989749}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightForeArm_FK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightForeArm_FK_CTRL_POS_GRP
+      position: {x: 1.110223e-18, y: 0, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightForeArm_FK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightForeArm_FK_CTRL_AnimData_CONST_GRP
+      position: {x: 1.110223e-18, y: 0, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightForeArm_FK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightForeArm_FK_CTRL_In_Rig_CONST_GRP
+      position: {x: 1.6653345e-18, y: 0, z: -1.3322676e-17}
+      rotation: {x: 0.1319532, y: -0, z: -0, w: 0.99125594}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHand_FK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightForeArm_FK_CTRL
+      position: {x: 4.2541746e-13, y: 0.0052020024, z: 1.5575452e-12}
+      rotation: {x: -0.006265351, y: 0.19036797, z: -0.05690749, w: 0.980042}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHand_FK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHand_FK_CTRL_POS_GRP
+      position: {x: -0, y: -2.220446e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHand_FK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHand_FK_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: -2.220446e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHand_FK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightHand_FK_CTRL_In_Rig_CONST_GRP
+      position: {x: 2.220446e-18, y: -4.440892e-18, z: 4.440892e-18}
+      rotation: {x: -0.019255633, y: 0.45692018, z: -0.16004848, w: 0.8747787}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftForeArm_IK_CTRL_parent_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:global_CTRL
+      position: {x: -0.0019443711, y: 0.024010302, z: -0.00060548674}
+      rotation: {x: 0.44651976, y: -0.4427059, z: 0.5761001, w: 0.5222454}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftForeArm_IK_CTRL_parent_Global_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftForeArm_IK_CTRL_parent_POS_GRP
+      position: {x: -2.220446e-18, y: 6.938894e-20, z: 0}
+      rotation: {x: 1.110223e-16, y: 3.597e-41, z: 2.7755576e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftForeArm_IK_CTRL_parent_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftForeArm_IK_CTRL_parent_Global_POS_GRP
+      position: {x: 5.551115e-19, y: -1.5959455e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftForeArm_IK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftForeArm_IK_CTRL_parent_AnimData_CONST_GRP
+      position: {x: 1.4411072e-12, y: 0.0033331474, z: -1.4238566e-12}
+      rotation: {x: -0.025210798, y: 0.0011547663, z: -0.045741882, w: 0.99863446}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftForeArm_IK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftForeArm_IK_CTRL_POS_GRP
+      position: {x: -5.551115e-19, y: -1.110223e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftForeArm_IK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftForeArm_IK_CTRL_AnimData_CONST_GRP
+      position: {x: 2.220446e-18, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftForeArm_IK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftForeArm_IK_CTRL_In_Rig_CONST_GRP
+      position: {x: -0.0035777919, y: 1.110223e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftForeArm_IK_CTRL_GuideCurve_Cluster1Handle
+      parentName: Intertwined_Boy_rig_Textured:LeftForeArm_IK_CTRL
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.45232874, y: 0.4355976, z: -0.5407796, w: 0.5596525}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL_grandparent_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:global_CTRL
+      position: {x: -0.0019443711, y: 0.024010302, z: -0.00060548674}
+      rotation: {x: 0.44651976, y: -0.4427059, z: 0.5761001, w: 0.5222454}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL_grandparent_Global_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL_grandparent_POS_GRP
+      position: {x: -1.6653345e-18, y: -8.3266725e-19, z: 4.440892e-18}
+      rotation: {x: 1.110223e-16, y: 3.597e-41, z: 2.7755576e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL_grandparent_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL_grandparent_Global_POS_GRP
+      position: {x: 5.551115e-19, y: -2.0816681e-19, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL_grandparent_inRig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL_grandparent_AnimData_CONST_GRP
+      position: {x: 5.551115e-19, y: 2.0816681e-19, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL_parent_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL_grandparent_inRig_CONST_GRP
+      position: {x: 1.4411106e-12, y: 0.0033331474, z: -1.4238655e-12}
+      rotation: {x: -0.025210798, y: 0.0011547663, z: -0.045741882, w: 0.99863446}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL_parent_Global_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL_parent_POS_GRP
+      position: {x: -5.551115e-19, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL_parent_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL_parent_Global_POS_GRP
+      position: {x: -5.551115e-19, y: -4.440892e-18, z: 8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL_parent_AnimData_CONST_GRP
+      position: {x: -3.817098e-12, y: 0.0052033365, z: -6.946532e-13}
+      rotation: {x: -0.005723492, y: -0.178601, z: 0.07383388, w: 0.9811307}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL_POS_GRP
+      position: {x: -0, y: -2.220446e-18, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL_AnimData_CONST_GRP
+      position: {x: -1.110223e-18, y: 0, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL_In_Rig_CONST_GRP
+      position: {x: -1.110223e-18, y: 0, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftHand_IK_Handle
+      parentName: Intertwined_Boy_rig_Textured:LeftHand_IK_CTRL
+      position: {x: -1.1393313e-10, y: -9.377003e-10, z: -1.4942048e-11}
+      rotation: {x: -0.5050124, y: 0.563825, z: -0.48861724, w: 0.43395513}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightForeArm_IK_CTRL_parent_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:global_CTRL
+      position: {x: 0.0019443711, y: 0.024010302, z: -0.0006223684}
+      rotation: {x: 0.44807613, y: 0.4380832, z: -0.5749024, w: 0.5261161}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightForeArm_IK_CTRL_parent_Global_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightForeArm_IK_CTRL_parent_POS_GRP
+      position: {x: -0, y: 6.938894e-20, z: -1.7763568e-17}
+      rotation: {x: 1.43878e-40, y: 2.220446e-16, z: -5.551115e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightForeArm_IK_CTRL_parent_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightForeArm_IK_CTRL_parent_Global_POS_GRP
+      position: {x: -1.110223e-18, y: -2.0122792e-18, z: -8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightForeArm_IK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightForeArm_IK_CTRL_parent_AnimData_CONST_GRP
+      position: {x: 7.44509e-12, y: 0.0033316943, z: 1.3351435e-11}
+      rotation: {x: -0.027094409, y: -0.0009831705, z: 0.03624964, w: 0.9989749}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightForeArm_IK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightForeArm_IK_CTRL_POS_GRP
+      position: {x: 1.110223e-18, y: 0, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightForeArm_IK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightForeArm_IK_CTRL_AnimData_CONST_GRP
+      position: {x: 1.6653345e-18, y: 0, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightForeArm_IK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightForeArm_IK_CTRL_In_Rig_CONST_GRP
+      position: {x: 0.0035777919, y: 0, z: -1.3322676e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightForeArm_IK_CTRL_GuideCurve_Cluster1Handle
+      parentName: Intertwined_Boy_rig_Textured:RightForeArm_IK_CTRL
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.44867712, y: -0.43645093, z: 0.5438125, w: 0.55898786}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL_grandparent_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:global_CTRL
+      position: {x: 0.0019443711, y: 0.024010302, z: -0.0006223684}
+      rotation: {x: 0.44807613, y: 0.4380832, z: -0.5749024, w: 0.5261161}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL_grandparent_Global_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL_grandparent_POS_GRP
+      position: {x: 2.220446e-18, y: -9.020562e-19, z: 1.3322676e-17}
+      rotation: {x: 5.551115e-17, y: 1.7984e-41, z: 2.7755576e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL_grandparent_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL_grandparent_Global_POS_GRP
+      position: {x: -1.110223e-18, y: 1.3877787e-19, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL_grandparent_inRig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL_grandparent_AnimData_CONST_GRP
+      position: {x: -1.110223e-18, y: 2.7755575e-19, z: -4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL_parent_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL_grandparent_inRig_CONST_GRP
+      position: {x: 7.44509e-12, y: 0.0033316943, z: 1.3351413e-11}
+      rotation: {x: -0.027094409, y: -0.0009831705, z: 0.03624964, w: 0.9989749}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL_parent_Global_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL_parent_POS_GRP
+      position: {x: -0, y: -1.110223e-18, z: 8.881784e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL_parent_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL_parent_Global_POS_GRP
+      position: {x: 2.7755574e-18, y: -4.440892e-18, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL_parent_AnimData_CONST_GRP
+      position: {x: 4.2542025e-13, y: 0.0052020024, z: 1.5575673e-12}
+      rotation: {x: -0.006265351, y: 0.19036797, z: -0.05690749, w: 0.980042}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL_POS_GRP
+      position: {x: -0, y: -2.220446e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: -2.220446e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL_In_Rig_CONST_GRP
+      position: {x: 2.220446e-18, y: 0, z: 4.440892e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightHand_IK_Handle
+      parentName: Intertwined_Boy_rig_Textured:RightHand_IK_CTRL
+      position: {x: 2.7305194e-10, y: -0.0000000028413456, z: -5.939404e-11}
+      rotation: {x: 0.5149073, y: 0.5630939, z: -0.47662142, w: -0.4366094}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftLeg_IK_CTRL_parent_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:global_CTRL
+      position: {x: -0.0012703633, y: 0.017916042, z: 0.0007148376}
+      rotation: {x: 0.00059604505, y: -0.016691625, z: 0.99922365, w: 0.035681397}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftLeg_IK_CTRL_parent_Global_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftLeg_IK_CTRL_parent_POS_GRP
+      position: {x: -0, y: 0, z: -5.2041703e-20}
+      rotation: {x: 3.9039605e-12, y: -5.4593597e-11, z: 9.23808e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftLeg_IK_CTRL_parent_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftLeg_IK_CTRL_parent_Global_POS_GRP
+      position: {x: -0, y: 2.220446e-18, z: -8.1532003e-19}
+      rotation: {x: 5.551115e-17, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftLeg_IK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftLeg_IK_CTRL_parent_AnimData_CONST_GRP
+      position: {x: -1.0151011e-11, y: 0.0071555837, z: -6.755757e-12}
+      rotation: {x: -0.02929222, y: -0.00050392584, z: 0.017193474, w: 0.9994229}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftLeg_IK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftLeg_IK_CTRL_POS_GRP
+      position: {x: -0, y: 0, z: 1.3877787e-19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftLeg_IK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftLeg_IK_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftLeg_IK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftLeg_IK_CTRL_In_Rig_CONST_GRP
+      position: {x: 0.000009873592, y: -0.00073436386, z: 0.00796101}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftLeg_IK_CTRL_GuideCurve_Cluster1Handle
+      parentName: Intertwined_Boy_rig_Textured:LeftLeg_IK_CTRL
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.00023294115, y: -0.045979705, z: 0.99877125, w: -0.018489784}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftLeg_IK_CTRL_Follow_Foot_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftLeg_IK_CTRL_AnimData_CONST_GRP
+      position: {x: 0.0007122842, y: 0.000026310328, z: 0.0000015435919}
+      rotation: {x: 9.966e-42, y: 4.7704896e-18, z: -6.583818e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftLeg_IK_CTRL_Follow_Knee_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftLeg_IK_CTRL_Follow_Foot_GRP
+      position: {x: -0, y: 0, z: 0.0039601224}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_grandparent_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:global_CTRL
+      position: {x: -0.0012703633, y: 0.017916042, z: 0.0007148376}
+      rotation: {x: 0.00059604505, y: -0.016691625, z: 0.99922365, w: 0.035681397}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_grandparent_Global_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_grandparent_POS_GRP
+      position: {x: -0, y: 0, z: -3.122502e-19}
+      rotation: {x: 3.9039605e-12, y: -5.4593597e-11, z: 9.23808e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_grandparent_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_grandparent_Global_POS_GRP
+      position: {x: -5.551115e-19, y: 0, z: -3.469447e-20}
+      rotation: {x: 5.551115e-17, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_grandparent_inRig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_grandparent_AnimData_CONST_GRP
+      position: {x: -0, y: 0, z: -1.7347234e-19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_parent_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_grandparent_inRig_CONST_GRP
+      position: {x: -1.0151009e-11, y: 0.0071555837, z: -6.755759e-12}
+      rotation: {x: -0.02929222, y: -0.00050392584, z: 0.017193474, w: 0.9994229}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_parent_Global_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_parent_POS_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_parent_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_parent_Global_POS_GRP
+      position: {x: -1.110223e-18, y: 4.440892e-18, z: 1.6653345e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_parent_AnimData_CONST_GRP
+      position: {x: 1.0911318e-11, y: 0.0067863767, z: -1.7319387e-11}
+      rotation: {x: 0.44215235, y: -0.011782004, z: 0.0058086375, w: 0.8968438}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_POS_GRP
+      position: {x: 2.7755575e-19, y: 1.110223e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_AnimData_CONST_GRP
+      position: {x: 2.7755575e-19, y: 1.110223e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_Reorient_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_In_Rig_CONST_GRP
+      position: {x: 2.9146811e-18, y: 1.1991334e-18, z: -2.2701755e-18}
+      rotation: {x: 0.02157176, y: 0.40017864, z: 0.9161348, w: -0.009422802}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL_Reorient_GRP
+      position: {x: -0.0007127641, y: 0, z: 0.000003275251}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Left_Toe_IK_AnimData_GRP
+      parentName: Intertwined_Boy_rig_Textured:LeftFoot_IK_CTRL
+      position: {x: 0.00006427301, y: -0.003957924, z: 0.006473634}
+      rotation: {x: 0.021454241, y: 0.7069455, z: 0.70694214, w: 0.00082134927}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Left_Toe_End_IK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:Left_Toe_IK_AnimData_GRP
+      position: {x: -2.7755575e-19, y: 1.110223e-18, z: -1.0842021e-21}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Left_ToeBase_IK_AnimData_GRP
+      parentName: Intertwined_Boy_rig_Textured:Left_Toe_End_IK_CTRL
+      position: {x: 1.5718495e-12, y: -0.0022026119, z: -6.442491e-14}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Left_ToeBase_IK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:Left_ToeBase_IK_AnimData_GRP
+      position: {x: -2.7755575e-19, y: 0, z: 3.2526064e-21}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Left_Ankle_IK_AnimData_GRP
+      parentName: Intertwined_Boy_rig_Textured:Left_Toe_End_IK_CTRL
+      position: {x: 1.5718495e-12, y: -0.0022026119, z: -6.442491e-14}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Left_Ankle_IK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:Left_Ankle_IK_AnimData_GRP
+      position: {x: -2.7755575e-19, y: 0, z: 3.2526064e-21}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftFoot_IK_Handle
+      parentName: Intertwined_Boy_rig_Textured:Left_Ankle_IK_CTRL
+      position: {x: 0.000000016769219, y: -0.00427194, z: 0.003956968}
+      rotation: {x: 0.01982995, y: 0.70694166, z: 0.7069896, w: -0.002445591}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Left_ToeBase_IkHandle
+      parentName: Intertwined_Boy_rig_Textured:Left_Ankle_IK_CTRL
+      position: {x: 0.000000016183852, y: 0.00000002318035, z: 0.000000047594515}
+      rotation: {x: -0.36493862, y: -0.0019277285, z: 0.0007556181, w: 0.93102926}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightLeg_IK_CTRL_parent_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:global_CTRL
+      position: {x: 0.0012703633, y: 0.017916042, z: 0.00072732597}
+      rotation: {x: -0.0006853133, y: -0.019195015, z: 0.99917895, w: -0.035673548}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightLeg_IK_CTRL_parent_Global_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightLeg_IK_CTRL_parent_POS_GRP
+      position: {x: -0, y: 6.661338e-18, z: 2.0383001e-19}
+      rotation: {x: 2.0151138e-12, y: 2.8184698e-11, z: -8.6573543e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightLeg_IK_CTRL_parent_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightLeg_IK_CTRL_parent_Global_POS_GRP
+      position: {x: -0, y: -8.881784e-18, z: 4.857226e-19}
+      rotation: {x: 5.551115e-17, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightLeg_IK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightLeg_IK_CTRL_parent_AnimData_CONST_GRP
+      position: {x: 3.5195964e-11, y: 0.007156866, z: -4.2304515e-12}
+      rotation: {x: -0.030981714, y: 0.00053313805, z: -0.017197344, w: 0.9993719}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightLeg_IK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightLeg_IK_CTRL_POS_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightLeg_IK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightLeg_IK_CTRL_AnimData_CONST_GRP
+      position: {x: -2.7755575e-19, y: -2.220446e-18, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightLeg_IK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightLeg_IK_CTRL_In_Rig_CONST_GRP
+      position: {x: -0.000011347063, y: -0.00080111716, z: 0.007954568}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightLeg_IK_CTRL_GuideCurve_Cluster1Handle
+      parentName: Intertwined_Boy_rig_Textured:RightLeg_IK_CTRL
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.0002177429, y: -0.050170034, z: 0.9985697, w: 0.018478816}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightLeg_IK_CTRL_Follow_Foot_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightLeg_IK_CTRL_AnimData_CONST_GRP
+      position: {x: -0.00103533, y: 0.00003867888, z: -0.000002260875}
+      rotation: {x: -6.938894e-18, y: 3.035766e-18, z: -4.1592706e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightLeg_IK_CTRL_Follow_Knee_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightLeg_IK_CTRL_Follow_Foot_GRP
+      position: {x: -0, y: 0, z: 0.0038726542}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_grandparent_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:global_CTRL
+      position: {x: 0.0012703633, y: 0.017916042, z: 0.00072732597}
+      rotation: {x: -0.0006853133, y: -0.019195015, z: 0.99917895, w: -0.035673548}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_grandparent_Global_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_grandparent_POS_GRP
+      position: {x: -0, y: 6.661338e-18, z: 2.0383001e-19}
+      rotation: {x: 2.0151138e-12, y: 2.8184698e-11, z: -8.6578626e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_grandparent_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_grandparent_Global_POS_GRP
+      position: {x: -0, y: 2.220446e-18, z: -2.0816681e-19}
+      rotation: {x: 5.551115e-17, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_grandparent_inRig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_grandparent_AnimData_CONST_GRP
+      position: {x: -0, y: -4.440892e-18, z: 2.0816681e-19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_parent_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_grandparent_inRig_CONST_GRP
+      position: {x: 3.5195964e-11, y: 0.007156866, z: -4.23045e-12}
+      rotation: {x: -0.030981714, y: 0.00053313805, z: -0.017197344, w: 0.9993719}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_parent_Global_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_parent_POS_GRP
+      position: {x: -0, y: 0, z: -2.7755575e-19}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_parent_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_parent_Global_POS_GRP
+      position: {x: -2.7755575e-19, y: -2.220446e-18, z: -1.3877787e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_POS_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_parent_AnimData_CONST_GRP
+      position: {x: -1.4713859e-11, y: 0.0067918575, z: -4.047846e-11}
+      rotation: {x: 0.45086116, y: 0.011317805, z: -0.0057173506, w: 0.8925041}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_AnimData_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_POS_GRP
+      position: {x: -0, y: -5.551115e-19, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_In_Rig_CONST_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_AnimData_CONST_GRP
+      position: {x: -0, y: -5.551115e-19, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_Reorient_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_In_Rig_CONST_GRP
+      position: {x: 1.6066364e-18, y: -5.8736706e-18, z: -4.5258257e-18}
+      rotation: {x: -0.021205356, y: 0.4052536, z: 0.91391003, w: 0.0094030555}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL_Reorient_GRP
+      position: {x: 0.0010360548, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Right_Toe_IK_AnimData_GRP
+      parentName: Intertwined_Boy_rig_Textured:RightFoot_IK_CTRL
+      position: {x: -0.000064069376, y: -0.003958007, z: 0.0065719136}
+      rotation: {x: -0.021612464, y: 0.7069423, z: 0.7069402, w: -0.0010674703}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Right_Toe_End_IK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:Right_Toe_IK_AnimData_GRP
+      position: {x: -0, y: 0, z: 6.505213e-21}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Right_ToeBase_IK_AnimData_GRP
+      parentName: Intertwined_Boy_rig_Textured:Right_Toe_End_IK_CTRL
+      position: {x: 3.28218e-14, y: -0.0022047043, z: -4.5269125e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Right_ToeBase_IK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:Right_ToeBase_IK_AnimData_GRP
+      position: {x: -0, y: 0, z: 1.4094628e-20}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Right_Ankle_IK_AnimData_GRP
+      parentName: Intertwined_Boy_rig_Textured:Right_Toe_End_IK_CTRL
+      position: {x: 3.28218e-14, y: -0.0022047043, z: -4.5269125e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Right_Ankle_IK_CTRL
+      parentName: Intertwined_Boy_rig_Textured:Right_Ankle_IK_AnimData_GRP
+      position: {x: -0, y: 0, z: 1.4094628e-20}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightFoot_IK_Handle
+      parentName: Intertwined_Boy_rig_Textured:Right_Ankle_IK_CTRL
+      position: {x: -0.000000027529243, y: -0.004368127, z: 0.0039570224}
+      rotation: {x: -0.020023972, y: 0.70693815, z: 0.70698696, w: 0.002655909}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Right_ToeBase_IkHandle
+      parentName: Intertwined_Boy_rig_Textured:Right_Ankle_IK_CTRL
+      position: {x: -0.000000027030868, y: 0.00000004470445, z: 0.000000055577182}
+      rotation: {x: -0.35977218, y: 0.0014538933, z: -0.0005606094, w: 0.9330389}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_Dummy_Joint_GRP
+      parentName: Intertwined_Boy_rig_Textured:global_CTRL
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_Dummy_Root
+      parentName: Intertwined_Boy_rig_Textured:IK_Dummy_Joint_GRP
+      position: {x: -0, y: 0.018589735, z: 0.00065045897}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_Dummy_Hips
+      parentName: Intertwined_Boy_rig_Textured:IK_Dummy_Root
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_Dummy_Spine
+      parentName: Intertwined_Boy_rig_Textured:IK_Dummy_Root
+      position: {x: -0, y: 0.0012082362, z: -0.00025287733}
+      rotation: {x: -0.10297534, y: 0, z: -0, w: 0.9946839}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_Dummy_Spine1
+      parentName: Intertwined_Boy_rig_Textured:IK_Dummy_Spine
+      position: {x: -0, y: 0.0014401517, z: -1.7575624e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_Dummy_Spine2
+      parentName: Intertwined_Boy_rig_Textured:IK_Dummy_Spine1
+      position: {x: -0, y: 0.0016458881, z: 2.1670162e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_Dummy_LeftShoulder
+      parentName: Intertwined_Boy_rig_Textured:IK_Dummy_Spine2
+      position: {x: -0.00064798555, y: 0.0016468468, z: -0.000039983996}
+      rotation: {x: 0.55183554, y: -0.43161657, z: 0.5866211, w: 0.4062762}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_Dummy_RightShoulder
+      parentName: Intertwined_Boy_rig_Textured:IK_Dummy_Spine2
+      position: {x: 0.00064798555, y: 0.0016479995, z: -0.000045491888}
+      rotation: {x: -0.5489898, y: -0.43385357, z: 0.58856595, w: -0.404934}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Joint_GRP
+      parentName: Boy_idle_Anim(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_Joint_GRP
+      parentName: Intertwined_Boy_rig_Textured:Joint_GRP
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_Root
+      parentName: Intertwined_Boy_rig_Textured:Bind_Joint_GRP
+      position: {x: 0.00013761564, y: 0.024052385, z: 0.002033984}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_Hips
+      parentName: Intertwined_Boy_rig_Textured:Bind_Root
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:FK_LeftUpLeg
+      parentName: Intertwined_Boy_rig_Textured:Bind_Hips
+      position: {x: -0.0012703633, y: -0.0006736922, z: 0.000064378604}
+      rotation: {x: 0.00059604505, y: -0.016691623, z: 0.99922365, w: 0.035681397}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:FK_LeftLeg
+      parentName: Intertwined_Boy_rig_Textured:FK_LeftUpLeg
+      position: {x: -1.0151011e-11, y: 0.0071555837, z: -6.7557574e-12}
+      rotation: {x: -0.02929222, y: -0.00050392584, z: 0.017193474, w: 0.9994229}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:FK_LeftFoot
+      parentName: Intertwined_Boy_rig_Textured:FK_LeftLeg
+      position: {x: 1.0911321e-11, y: 0.0067863767, z: -1.731939e-11}
+      rotation: {x: 0.44215235, y: -0.011782004, z: 0.0058086375, w: 0.8968438}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:FK_LeftToeBase
+      parentName: Intertwined_Boy_rig_Textured:FK_LeftFoot
+      position: {x: -6.8233804e-12, y: 0.005822979, z: -1.6569345e-10}
+      rotation: {x: 0.36493862, y: 0.0019277285, z: -0.0007556181, w: 0.93102926}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:FK_LeftToe_End
+      parentName: Intertwined_Boy_rig_Textured:FK_LeftToeBase
+      position: {x: -1.5718484e-12, y: 0.0022026119, z: 6.4422195e-14}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:FK_RightUpLeg
+      parentName: Intertwined_Boy_rig_Textured:Bind_Hips
+      position: {x: 0.0012703633, y: -0.0006736922, z: 0.00007686697}
+      rotation: {x: -0.00068531575, y: -0.019195015, z: 0.99917895, w: -0.035673413}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:FK_RightLeg
+      parentName: Intertwined_Boy_rig_Textured:FK_RightUpLeg
+      position: {x: 3.5195964e-11, y: 0.007156866, z: -4.2304506e-12}
+      rotation: {x: -0.030981714, y: 0.00053313805, z: -0.017197344, w: 0.9993719}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:FK_RightFoot
+      parentName: Intertwined_Boy_rig_Textured:FK_RightLeg
+      position: {x: -1.4713855e-11, y: 0.0067918575, z: -4.0478468e-11}
+      rotation: {x: 0.45086116, y: 0.011317805, z: -0.0057173506, w: 0.8925041}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:FK_RightToeBase
+      parentName: Intertwined_Boy_rig_Textured:FK_RightFoot
+      position: {x: -3.5320826e-12, y: 0.005893953, z: 1.0665711e-10}
+      rotation: {x: 0.3597722, y: -0.0014538934, z: 0.00056060945, w: 0.9330389}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:FK_RightToe_End
+      parentName: Intertwined_Boy_rig_Textured:FK_RightToeBase
+      position: {x: -3.2820968e-14, y: 0.0022047043, z: 4.525604e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_LeftUpLeg
+      parentName: Intertwined_Boy_rig_Textured:Bind_Hips
+      position: {x: -0.0012703633, y: -0.0006736922, z: 0.000064378604}
+      rotation: {x: 0.008522311, y: -0.020961016, z: 0.99811935, w: 0.056972243}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_LeftLeg
+      parentName: Intertwined_Boy_rig_Textured:IK_LeftUpLeg
+      position: {x: -1.0151011e-11, y: 0.0071555837, z: -6.7557574e-12}
+      rotation: {x: -0.050354972, y: -0.021537771, z: -0.00000028101775, w: 0.99849916}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_LeftFoot
+      parentName: Intertwined_Boy_rig_Textured:IK_LeftLeg
+      position: {x: 1.0911321e-11, y: 0.0067863767, z: -1.731939e-11}
+      rotation: {x: 0.4654829, y: 0.028990103, z: 0.029534832, w: 0.88408875}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_LeftToeBase
+      parentName: Intertwined_Boy_rig_Textured:IK_LeftFoot
+      position: {x: -6.8233804e-12, y: 0.005822979, z: -1.6569345e-10}
+      rotation: {x: 0.36493713, y: 0.0019277169, z: -0.0007556482, w: 0.9310299}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_LeftToe_End
+      parentName: Intertwined_Boy_rig_Textured:IK_LeftToeBase
+      position: {x: -1.5718484e-12, y: 0.0022026119, z: 6.4422195e-14}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftLeg_IK_CTRL_GuideCurve_Cluster2Handle
+      parentName: Intertwined_Boy_rig_Textured:IK_LeftLeg
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.24214862, y: -0.04028371, z: 0.9689566, w: -0.029400088}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_RightUpLeg
+      parentName: Intertwined_Boy_rig_Textured:Bind_Hips
+      position: {x: 0.0012703633, y: -0.0006736922, z: 0.00007686697}
+      rotation: {x: -0.026371408, y: -0.031871974, z: 0.9974943, w: -0.057393488}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_RightLeg
+      parentName: Intertwined_Boy_rig_Textured:IK_RightUpLeg
+      position: {x: 3.5195964e-11, y: 0.007156866, z: -4.2304506e-12}
+      rotation: {x: -0.037341982, y: 0.026619997, z: 0.00020436234, w: 0.9989479}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_RightFoot
+      parentName: Intertwined_Boy_rig_Textured:IK_RightLeg
+      position: {x: -1.4713855e-11, y: 0.0067918575, z: -4.0478468e-11}
+      rotation: {x: 0.46813428, y: -0.051444653, z: -0.020531403, w: 0.8819196}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_RightToeBase
+      parentName: Intertwined_Boy_rig_Textured:IK_RightFoot
+      position: {x: -3.5320826e-12, y: 0.005893953, z: 1.0665711e-10}
+      rotation: {x: 0.35977185, y: -0.0014539252, z: 0.0005605269, w: 0.933039}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_RightToe_End
+      parentName: Intertwined_Boy_rig_Textured:IK_RightToeBase
+      position: {x: -3.2820968e-14, y: 0.0022047043, z: 4.525604e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightLeg_IK_CTRL_GuideCurve_Cluster2Handle
+      parentName: Intertwined_Boy_rig_Textured:IK_RightLeg
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0.22591576, y: -0.044885337, z: 0.9726541, w: 0.029856142}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftUpLeg
+      parentName: Intertwined_Boy_rig_Textured:Bind_Hips
+      position: {x: -0.0012703633, y: -0.0006736922, z: 0.000064378604}
+      rotation: {x: 0.00059604435, y: -0.016691646, z: 0.99922365, w: 0.035681468}
+      scale: {x: 1.0000001, y: 1.0000006, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftLeg
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftUpLeg
+      position: {x: -1.0151011e-11, y: 0.0071555837, z: -6.7557574e-12}
+      rotation: {x: -0.029292187, y: -0.00050391944, z: 0.017193494, w: 0.9994229}
+      scale: {x: 1.0000007, y: 1.0000008, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftLeg_IK_BakingLOC
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftLeg
+      position: {x: -0, y: 0, z: 0.0035777919}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftFoot
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftLeg
+      position: {x: 1.09113205e-11, y: 0.0067863767, z: -1.7319392e-11}
+      rotation: {x: 0.44215223, y: -0.011781995, z: 0.0058086487, w: 0.8968439}
+      scale: {x: 1, y: 0.9999998, z: 0.9999997}
+    - name: Intertwined_Boy_rig_Textured:LeftFoot_IK_BakingLOC
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftFoot
+      position: {x: 0.00000001738454, y: 0.000000018616511, z: 0.000000008983432}
+      rotation: {x: 0.02157176, y: 0.40017864, z: 0.9161348, w: -0.009422802}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftToeBase
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftFoot
+      position: {x: -6.8233804e-12, y: 0.005822979, z: -1.6569345e-10}
+      rotation: {x: 0.36493868, y: 0.0019277169, z: -0.0007556249, w: 0.9310293}
+      scale: {x: 1.0000011, y: 1.0000013, z: 0.9999997}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftToe_End
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftToeBase
+      position: {x: -1.5718493e-12, y: 0.0022026119, z: 6.442197e-14}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightUpLeg
+      parentName: Intertwined_Boy_rig_Textured:Bind_Hips
+      position: {x: 0.0012703633, y: -0.0006736922, z: 0.00007686697}
+      rotation: {x: -0.0006853175, y: -0.019195022, z: 0.99917895, w: -0.03567345}
+      scale: {x: 1.0000015, y: 1.0000015, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightLeg
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightUpLeg
+      position: {x: 3.5195964e-11, y: 0.007156866, z: -4.230451e-12}
+      rotation: {x: -0.030981934, y: 0.00053315674, z: -0.017197356, w: 0.9993718}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightLeg_IK_BakingLOC
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightLeg
+      position: {x: -0, y: 0, z: 0.003578433}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightFoot
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightLeg
+      position: {x: -1.4713855e-11, y: 0.0067918575, z: -4.0478468e-11}
+      rotation: {x: 0.4508615, y: 0.011317791, z: -0.0057173264, w: 0.89250386}
+      scale: {x: 1.0000001, y: 1.0000006, z: 0.9999998}
+    - name: Intertwined_Boy_rig_Textured:RightFoot_IK_BakingLOC
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightFoot
+      position: {x: -0.00000002814163, y: 0.000000025583105, z: 0.000000033285176}
+      rotation: {x: -0.021205356, y: 0.4052536, z: 0.91391003, w: 0.0094030555}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightToeBase
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightFoot
+      position: {x: -3.5320824e-12, y: 0.005893953, z: 1.0665711e-10}
+      rotation: {x: 0.35977203, y: -0.001453903, z: 0.00056061614, w: 0.93303895}
+      scale: {x: 1, y: 1.0000012, z: 0.99999887}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightToe_End
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightToeBase
+      position: {x: -3.2821524e-14, y: 0.0022047043, z: 4.526754e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_Spine
+      parentName: Intertwined_Boy_rig_Textured:Bind_Root
+      position: {x: -0, y: 0.0012082362, z: -0.00025287733}
+      rotation: {x: -0.10297541, y: -0, z: -0, w: 0.9946839}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: Intertwined_Boy_rig_Textured:Bind_Spine1
+      parentName: Intertwined_Boy_rig_Textured:Bind_Spine
+      position: {x: -0, y: 0.0014401517, z: -1.7575624e-12}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_Spine2
+      parentName: Intertwined_Boy_rig_Textured:Bind_Spine1
+      position: {x: -0, y: 0.0016458881, z: 2.1670166e-11}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftShoulder
+      parentName: Intertwined_Boy_rig_Textured:Bind_Spine2
+      position: {x: -0.00064798555, y: 0.0016468468, z: -0.000039983996}
+      rotation: {x: 0.5518357, y: -0.4316166, z: 0.58662117, w: 0.40627602}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000001}
+    - name: Intertwined_Boy_rig_Textured:FK_LeftArm
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftShoulder
+      position: {x: 3.0937963e-12, y: 0.0013602877, z: -1.4909327e-11}
+      rotation: {x: 0.3634968, y: 0.37566602, z: 0.23105043, w: 0.82058567}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:FK_LeftForeArm
+      parentName: Intertwined_Boy_rig_Textured:FK_LeftArm
+      position: {x: 1.4411099e-12, y: 0.0033331474, z: -1.4238521e-12}
+      rotation: {x: 0.106816806, y: -0.013594197, z: -0.0038645943, w: 0.9941783}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:FK_LeftHand
+      parentName: Intertwined_Boy_rig_Textured:FK_LeftForeArm
+      position: {x: -3.8171e-12, y: 0.0052033365, z: -6.9464877e-13}
+      rotation: {x: -0.020014187, y: -0.60328436, z: 0.13762495, w: 0.7853068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_LeftArm
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftShoulder
+      position: {x: 3.0937963e-12, y: 0.0013602877, z: -1.4909327e-11}
+      rotation: {x: -0.15077639, y: -0.00012825729, z: -0.009946387, w: 0.9885179}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_LeftForeArm
+      parentName: Intertwined_Boy_rig_Textured:IK_LeftArm
+      position: {x: 1.4411099e-12, y: 0.0033331474, z: -1.4238521e-12}
+      rotation: {x: -0.000000016249503, y: -0.027844895, z: 0.000000025265363, w: 0.9996123}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_LeftHand
+      parentName: Intertwined_Boy_rig_Textured:IK_LeftForeArm
+      position: {x: -3.8171e-12, y: 0.0052033365, z: -6.9464877e-13}
+      rotation: {x: -0.010121709, y: -0.14912573, z: 0.036180407, w: 0.9881043}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftForeArm_IK_CTRL_GuideCurve_Cluster2Handle
+      parentName: Intertwined_Boy_rig_Textured:IK_LeftForeArm
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.3212602, y: 0.30163062, z: -0.62717426, w: 0.6422331}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftArm
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftShoulder
+      position: {x: 3.0937963e-12, y: 0.0013602877, z: -1.4909327e-11}
+      rotation: {x: -0.12445824, y: 0.00033129752, z: -0.0026412308, w: 0.99222136}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftForeArm
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftArm
+      position: {x: 1.4411099e-12, y: 0.0033331474, z: -1.4238521e-12}
+      rotation: {x: -0.025210584, y: 0.0011550281, z: -0.045741905, w: 0.99863446}
+      scale: {x: 1.0000008, y: 1.0000008, z: 1}
+    - name: Intertwined_Boy_rig_Textured:LeftForeArm_IK_BakingLOC
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftForeArm
+      position: {x: -0.0016665737, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHand
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftForeArm
+      position: {x: -3.8170994e-12, y: 0.0052033365, z: -6.9464877e-13}
+      rotation: {x: 0.0057236725, y: 0.17860104, z: -0.07383385, w: -0.9811307}
+      scale: {x: 1, y: 0.99999994, z: 1.0000002}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHandMiddle1
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftHand
+      position: {x: 0.00026706673, y: 0.0018241693, z: -0.0000034847617}
+      rotation: {x: -0.0040203934, y: 0.00020392239, z: -0.050710134, w: 0.9987054}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHandMiddle2
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftHandMiddle1
+      position: {x: 0.00000004937501, y: 0.00065378495, z: 2.2335466e-13}
+      rotation: {x: -0.024685089, y: 0.0000001993903, z: -0.000000032895507, w: 0.99969524}
+      scale: {x: 1, y: 1.0000005, z: 1.0000002}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHandMiddle3
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftHandMiddle2
+      position: {x: 0.00000020155221, y: 0.0005938262, z: 3.0940138e-13}
+      rotation: {x: -0.03810371, y: 0.00000025281656, z: -0.00000015457678, w: -0.99927384}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000007}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHandMiddle4
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftHandMiddle3
+      position: {x: -0.00000025092652, y: 0.0004983344, z: 5.1692873e-13}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHandIndex1
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftHand
+      position: {x: 0.0006955831, y: 0.0018081947, z: 0.000001097386}
+      rotation: {x: -0.01234982, y: 0.00092585373, z: 0.07474307, w: -0.9971259}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHandIndex2
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftHandIndex1
+      position: {x: 0.0000006248411, y: 0.00053568924, z: 9.77165e-13}
+      rotation: {x: -0.0331523, y: 0.0000002760207, z: 5.602487e-10, w: 0.9994504}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000006}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHandIndex3
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftHandIndex2
+      position: {x: 0.0000002316056, y: 0.0005166673, z: 3.3097613e-12}
+      rotation: {x: 0.15759912, y: -0.00000043059885, z: 0.00000015856224, w: 0.9875032}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1.0000002}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHandIndex4
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftHandIndex3
+      position: {x: -0.0000008564434, y: 0.00037966255, z: -9.154353e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHandRing1
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftHand
+      position: {x: -0.00026289074, y: 0.001783394, z: 0.00001370384}
+      rotation: {x: -0.039917525, y: 0.0034667244, z: -0.08645004, w: 0.99545014}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHandRing2
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftHandRing1
+      position: {x: 0.00000023285249, y: 0.00060472504, z: 4.021294e-12}
+      rotation: {x: -0.028401658, y: 0.00000013504176, z: 0.000000015072144, w: -0.9995966}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHandRing3
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftHandRing2
+      position: {x: -0.000000082344954, y: 0.00056874857, z: 3.7526425e-13}
+      rotation: {x: 0.039112534, y: -0.000012262791, z: -0.00005058148, w: 0.99923486}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000004}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHandRing4
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftHandRing3
+      position: {x: -0.00000015051498, y: 0.00046737472, z: 7.467271e-13}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHandPinky1
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftHand
+      position: {x: -0.00069975905, y: 0.0016884044, z: 0.000022470058}
+      rotation: {x: -0.029926931, y: 0.0019603518, z: -0.06533344, w: 0.99741274}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHandPinky2
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftHandPinky1
+      position: {x: -0.00000017458792, y: 0.0005894488, z: 2.1442535e-12}
+      rotation: {x: -0.04081847, y: -0.0000015133985, z: -0.00010907613, w: -0.99916655}
+      scale: {x: 1, y: 1.0000004, z: 1.0000006}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHandPinky3
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftHandPinky2
+      position: {x: 0.00000023793022, y: 0.00047137387, z: -1.2835066e-12}
+      rotation: {x: 0.03925163, y: 0.000008146155, z: -0.00018741871, w: 0.9992294}
+      scale: {x: 0.9999998, y: 0.9999996, z: 0.9999997}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHandPinky4
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftHandPinky3
+      position: {x: -0.00000006334254, y: 0.0003634685, z: 4.427569e-15}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHandThumb1
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftHand
+      position: {x: 0.00058395125, y: 0.0002877614, z: 0.00010630373}
+      rotation: {x: -0.019079505, y: -0.004948181, z: 0.37965465, w: -0.92491835}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000001}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHandThumb2
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftHandThumb1
+      position: {x: 0.0001238686, y: 0.0005129563, z: 4.010019e-12}
+      rotation: {x: 0.013821951, y: 0.003279486, z: -0.0651815, w: 0.9977724}
+      scale: {x: 0.9999998, y: 1.0000006, z: 1.0000002}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHandThumb3
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftHandThumb2
+      position: {x: 0.000021177962, y: 0.00060927245, z: -6.481393e-12}
+      rotation: {x: 0.016817344, y: -0.008483308, z: -0.13041878, w: 0.99128014}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000002}
+    - name: Intertwined_Boy_rig_Textured:Bind_LeftHandThumb4
+      parentName: Intertwined_Boy_rig_Textured:Bind_LeftHandThumb3
+      position: {x: -0.0001450466, y: 0.0004888797, z: -7.957381e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_Neck
+      parentName: Intertwined_Boy_rig_Textured:Bind_Spine2
+      position: {x: -0, y: 0.0018516221, z: -1.8648563e-10}
+      rotation: {x: 0.10297541, y: -0, z: -0, w: 0.9946839}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_Head
+      parentName: Intertwined_Boy_rig_Textured:Bind_Neck
+      position: {x: -0, y: 0.00077049015, z: -0.000024302304}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_HeadTop_End
+      parentName: Intertwined_Boy_rig_Textured:Bind_Head
+      position: {x: -0, y: 0.012724158, z: -0.00040133722}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightShoulder
+      parentName: Intertwined_Boy_rig_Textured:Bind_Spine2
+      position: {x: 0.00064798555, y: 0.0016479995, z: -0.000045491888}
+      rotation: {x: -0.5489897, y: -0.4338535, z: 0.58856606, w: -0.4049339}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1}
+    - name: Intertwined_Boy_rig_Textured:FK_RightArm
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightShoulder
+      position: {x: -3.3304136e-12, y: 0.0013602877, z: -1.4857443e-11}
+      rotation: {x: 0.34981486, y: -0.40726754, z: -0.2802595, w: 0.79574955}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:FK_RightForeArm
+      parentName: Intertwined_Boy_rig_Textured:FK_RightArm
+      position: {x: 7.445092e-12, y: 0.0033316943, z: 1.3351413e-11}
+      rotation: {x: 0.10496044, y: 0.003808683, z: 0.03606241, w: 0.99381506}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:FK_RightHand
+      parentName: Intertwined_Boy_rig_Textured:FK_RightForeArm
+      position: {x: 4.254247e-13, y: 0.0052020024, z: 1.5575629e-12}
+      rotation: {x: -0.028818043, y: 0.6144238, z: -0.2058328, w: 0.7611083}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_RightArm
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightShoulder
+      position: {x: -3.3304136e-12, y: 0.0013602877, z: -1.4857443e-11}
+      rotation: {x: -0.1456198, y: -0.01932046, z: -0.098482214, w: 0.9842372}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_RightForeArm
+      parentName: Intertwined_Boy_rig_Textured:IK_RightArm
+      position: {x: 7.445092e-12, y: 0.0033316943, z: 1.3351413e-11}
+      rotation: {x: -0.010802341, y: 0.03057718, z: 0.1846399, w: 0.9822711}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:IK_RightHand
+      parentName: Intertwined_Boy_rig_Textured:IK_RightForeArm
+      position: {x: 4.254247e-13, y: 0.0052020024, z: 1.5575629e-12}
+      rotation: {x: 0.006335191, y: 0.15863736, z: -0.09254734, w: 0.9829695}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightForeArm_IK_CTRL_GuideCurve_Cluster2Handle
+      parentName: Intertwined_Boy_rig_Textured:IK_RightForeArm
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.27363893, y: -0.25838965, z: 0.64944047, w: 0.6607447}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightArm
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightShoulder
+      position: {x: -3.3304136e-12, y: 0.0013602877, z: -1.4857443e-11}
+      rotation: {x: 0.12233944, y: 0.0015661565, z: -0.0127039235, w: -0.9924058}
+      scale: {x: 1.000001, y: 1.0000004, z: 1.0000001}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightForeArm
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightArm
+      position: {x: 7.445092e-12, y: 0.0033316943, z: 1.3351413e-11}
+      rotation: {x: -0.027094461, y: -0.0009830275, z: 0.036249716, w: 0.9989749}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Intertwined_Boy_rig_Textured:RightForeArm_IK_BakingLOC
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightForeArm
+      position: {x: 0.0016658471, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHand
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightForeArm
+      position: {x: 4.2542413e-13, y: 0.0052020024, z: 1.5575629e-12}
+      rotation: {x: -0.0062651504, y: 0.19036818, z: -0.056907456, w: 0.9800419}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.000001}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHandIndex1
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightHand
+      position: {x: -0.0006953515, y: 0.0019780323, z: 0.000006311089}
+      rotation: {x: 0.0068903924, y: 0.00031059977, z: 0.045075465, w: 0.99895984}
+      scale: {x: 1.0000004, y: 1.0000007, z: 1.0000004}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHandIndex2
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightHandIndex1
+      position: {x: -0.0000022004765, y: 0.000503964, z: 8.40088e-13}
+      rotation: {x: -0.02249652, y: -0.000000038649876, z: -0.00000003233753, w: 0.9997469}
+      scale: {x: 0.9999998, y: 0.9999998, z: 0.9999997}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHandIndex3
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightHandIndex2
+      position: {x: -0.0000008202598, y: 0.00046719206, z: 2.9389824e-14}
+      rotation: {x: 0.19997473, y: 0.000000117317626, z: -0.000000059011054, w: 0.97980106}
+      scale: {x: 1, y: 0.9999998, z: 1.0000005}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHandIndex4
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightHandIndex3
+      position: {x: 0.000003020739, y: 0.00031479215, z: 4.542624e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHandRing1
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightHand
+      position: {x: 0.00022766633, y: 0.0020036388, z: -0.00002012275}
+      rotation: {x: 0.0064232387, y: 0.00020040573, z: 0.031206788, w: 0.99949235}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000004}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHandRing2
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightHandRing1
+      position: {x: -0.00000058980925, y: 0.0005353177, z: 2.6838975e-13}
+      rotation: {x: -0.019878147, y: 0.00000009690118, z: -0.000000039300392, w: 0.9998024}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHandRing3
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightHandRing2
+      position: {x: -0.0000013422845, y: 0.00048826315, z: 1.0331291e-12}
+      rotation: {x: 0.036584783, y: 0.000120858625, z: 0.0028932209, w: 0.99932635}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000006}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHandRing4
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightHandRing3
+      position: {x: 0.0000019320937, y: 0.00038059815, z: -5.0768276e-13}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHandMiddle1
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightHand
+      position: {x: -0.00024642248, y: 0.0019037066, z: 0.0000007571559}
+      rotation: {x: 0.0013751463, y: 0.000058501962, z: 0.042521425, w: 0.9990946}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000002}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHandMiddle2
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightHandMiddle1
+      position: {x: -0.0000004778867, y: 0.0005783456, z: 3.3879566e-14}
+      rotation: {x: -0.022772426, y: -0.00000009433279, z: -0.00000012696523, w: 0.9997407}
+      scale: {x: 0.9999997, y: 0.9999996, z: 0.9999996}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHandMiddle3
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightHandMiddle2
+      position: {x: -0.0000010211027, y: 0.00058906927, z: -2.4849367e-12}
+      rotation: {x: 0.037557278, y: 0.000066454966, z: 0.0017431702, w: 0.999293}
+      scale: {x: 0.9999999, y: 0.9999998, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHandMiddle4
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightHandMiddle3
+      position: {x: 0.0000014989903, y: 0.00045091545, z: -7.08364e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHandPinky1
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightHand
+      position: {x: 0.00071410765, y: 0.0017083556, z: 0.00001934801}
+      rotation: {x: -0.00871663, y: -0.0004903376, z: 0.056148764, w: 0.99838424}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHandPinky2
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightHandPinky1
+      position: {x: 0.0000002177513, y: 0.000578332, z: 1.343765e-12}
+      rotation: {x: 0.01819599, y: -0.0000002150191, z: -0.00000002280467, w: 0.99983454}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000004}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHandPinky3
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightHandPinky2
+      position: {x: 0.000000031690952, y: 0.00048368098, z: 1.2253753e-13}
+      rotation: {x: 0.025653362, y: 0.00000012553214, z: -0.000000014607626, w: 0.9996709}
+      scale: {x: 1, y: 1, z: 1.0000004}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHandPinky4
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightHandPinky3
+      position: {x: -0.0000002494421, y: 0.0003876898, z: 3.723204e-12}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHandThumb1
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightHand
+      position: {x: -0.0006466051, y: 0.0003400569, z: 0.00010262963}
+      rotation: {x: 0.015353551, y: -0.008973002, z: 0.35427168, w: 0.9349734}
+      scale: {x: 1, y: 1.0000012, z: 1.0000005}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHandThumb2
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightHandThumb1
+      position: {x: -0.00015959278, y: 0.0005682099, z: 6.785936e-12}
+      rotation: {x: 0.008902651, y: -0.003190382, z: 0.09584119, w: 0.9953518}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHandThumb3
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightHandThumb2
+      position: {x: -0.0000055838696, y: 0.00055302255, z: -9.5481045e-12}
+      rotation: {x: 0.009212376, y: 0.006909865, z: 0.15778148, w: 0.9874069}
+      scale: {x: 0.99999994, y: 1.0000002, z: 0.99999994}
+    - name: Intertwined_Boy_rig_Textured:Bind_RightHandThumb4
+      parentName: Intertwined_Boy_rig_Textured:Bind_RightHandThumb3
+      position: {x: 0.00016517665, y: 0.00042290348, z: -1.716868e-11}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Mesh_GRP
+      parentName: Boy_idle_Anim(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Mesh_BoyBody_geo
+      parentName: Intertwined_Boy_rig_Textured:Mesh_GRP
+      position: {x: -0.000000005364418, y: 0.005, z: 0.0009953966}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Mesh_Eye_geo
+      parentName: Intertwined_Boy_rig_Textured:Mesh_GRP
+      position: {x: -0.000000005364418, y: 0.005, z: 0.0009953966}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Mesh_L_Eyebrow_grp
+      parentName: Intertwined_Boy_rig_Textured:Mesh_GRP
+      position: {x: -0.000000005364418, y: 0.005, z: 0.0009953966}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Mesh_R_Eyebrow_grp
+      parentName: Intertwined_Boy_rig_Textured:Mesh_GRP
+      position: {x: -0.000000005364418, y: 0.005, z: 0.0009953966}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Mesh_Shoe_L_geo
+      parentName: Intertwined_Boy_rig_Textured:Mesh_GRP
+      position: {x: -0.000000005364418, y: 0.005, z: 0.0009953966}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Mesh_Shoe_R_geo
+      parentName: Intertwined_Boy_rig_Textured:Mesh_GRP
+      position: {x: -0.000000005364418, y: 0.005, z: 0.0009953966}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Mesh_hair_geo
+      parentName: Intertwined_Boy_rig_Textured:Mesh_GRP
+      position: {x: -0.000000005364418, y: 0.005, z: 0.0009953966}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Mesh_shorts_geo
+      parentName: Intertwined_Boy_rig_Textured:Mesh_GRP
+      position: {x: -0.000000005364418, y: 0.005, z: 0.0009953966}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Intertwined_Boy_rig_Textured:Mesh_sweater_geo
+      parentName: Intertwined_Boy_rig_Textured:Mesh_GRP
+      position: {x: -0.000000005364418, y: 0.005, z: 0.0009953966}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: f5aff3879cdf2eb4e861f4c86d6f019c, type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
