@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Controls;
+using UnityEngine.SceneManagement;
 
 namespace Menu
 {
@@ -36,9 +37,18 @@ namespace Menu
                 }
                 timeSincePause = 0;
             }
-        }
-        
 
+            if (_input.mainmenu)
+            {
+                ReturnToMenu();
+            }
+        }
+
+        public void ReturnToMenu()
+        {
+            Time.timeScale = 1f;
+            SceneManager.LoadScene("MainMenu");
+        }
         public void Resume()
         {
             _pauseMenuUI.SetActive(false);
