@@ -60,6 +60,10 @@ public class AnxietyCalc : MonoBehaviour
 
     public GameObject canvas;
 
+    private float nextAnxietyPromptTime = 0f;
+    private static float PROMPT_COOLDOWN = 12f;
+    private static float PROMPT_DURACTION = 4f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -97,8 +101,15 @@ public class AnxietyCalc : MonoBehaviour
         }
         if (distance >= MAX_DISTANCE)
         {
-            if (!promptManager.HasActivePrompt(CharType.Boy)) promptManager.RegisterNewPrompt(CharType.Boy, 2f, PromptType.Dog);
-            if (!promptManager.HasActivePrompt(CharType.Dog))promptManager.RegisterNewPrompt(CharType.Dog, 2f, PromptType.Boy);
+            Debug.Log("yo");
+            Debug.Log("Time" + Time.time + "Next" + nextAnxietyPromptTime);
+            if(Time.time> nextAnxietyPromptTime)
+            {
+                if (!promptManager.HasActivePrompt(CharType.Boy)) promptManager.RegisterNewPrompt(CharType.Boy, PROMPT_DURACTION, PromptType.Dog);
+                if (!promptManager.HasActivePrompt(CharType.Dog))promptManager.RegisterNewPrompt(CharType.Dog, PROMPT_DURACTION, PromptType.Boy);
+                // Ten second cooldown before prompts reappear
+                nextAnxietyPromptTime = Time.time + PROMPT_COOLDOWN;
+            }
             updateInterval = PANIC_UPDATE_TIME;
             more_anxious = true;
             AnxLight.farLighting(Mathf.Min(7f,  distance - (float)MAX_DISTANCE));
@@ -106,6 +117,7 @@ public class AnxietyCalc : MonoBehaviour
         }
         else
         {
+            nextAnxietyPromptTime = 0f;
             promptManager.DestoryAnxietyPrompts();
             updateInterval = UPDATE_TIME;
             more_anxious = false;
