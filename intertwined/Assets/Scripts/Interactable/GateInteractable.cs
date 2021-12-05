@@ -1,4 +1,6 @@
-﻿using Interactable.Util;
+﻿using Character;
+using Interactable.Util;
+using Prompts;
 using UnityEngine;
 
 namespace Interactable
@@ -19,6 +21,7 @@ namespace Interactable
         
         private bool _cameraSequencePlayed = false;
         
+        public PromptManager promptManager;
         protected new void Start()
         {
             base.Start();
@@ -36,7 +39,9 @@ namespace Interactable
                 unlockAndOpenAudio.Play();
                 return base.Interact(interacter);
             }
-            
+
+            promptManager.destroyCurrentPrompt(Character.CharType.Boy); 
+            promptManager.RegisterNewPrompt(Character.CharType.Boy, 5f, Prompts.PromptType.Key);
             // TODO: remove player control? 
             if (!lockedAudio.isPlaying) lockedAudio.Play();
             _cameraSequence.StartNewCameraSequence();

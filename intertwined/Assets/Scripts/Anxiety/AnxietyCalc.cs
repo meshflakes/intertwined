@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Character;
+using Prompts;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +11,7 @@ public class AnxietyCalc : MonoBehaviour
     // The distancce between p1 and p2
     private float distance;
     // The maximum disatance apart between p1 and p2 before they get more anxious
-    private static double MAX_DISTANCE = 6.0;
+    private static double MAX_DISTANCE = 7.0;
     //Want the anxiety calculations to occur every 250 update calls
     private int frames = 0;
     private static float UPDATE_TIME = 0.75f;
@@ -28,6 +30,7 @@ public class AnxietyCalc : MonoBehaviour
     //The lower bound to how much petting can reduce anxiety by
     public int lowerBound = 60;
     
+    //Boy
     public Transform p1;
     public Transform p2;
     
@@ -50,6 +53,14 @@ public class AnxietyCalc : MonoBehaviour
     private float _timeSincePet = 0;
 
     public AnxietyLighting AnxLight;
+
+    public PromptManager promptManager;
+
+    public Sprite promptOnBoySprite;
+    public Sprite promptonDogSprite;
+
+    public GameObject canvas;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,6 +74,10 @@ public class AnxietyCalc : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
+
+        
+        
         distance  = Vector3.Distance(p1.position,  p2.position);
         delta = Time.deltaTime;
         timeAnxiety += delta;
@@ -87,6 +102,8 @@ public class AnxietyCalc : MonoBehaviour
         }
         if (distance >= MAX_DISTANCE)
         {
+            if (!promptManager.hasActivePrompt(CharType.Boy)) promptManager.RegisterNewPrompt(CharType.Boy, 2f, PromptType.Dog);
+            if (!promptManager.hasActivePrompt(CharType.Dog))promptManager.RegisterNewPrompt(CharType.Dog, 2f, PromptType.Boy);
             updateInterval = PANIC_UPDATE_TIME;
             more_anxious = true;
             AnxLight.farLighting(Mathf.Min(7f,  distance - (float)MAX_DISTANCE));
@@ -94,6 +111,8 @@ public class AnxietyCalc : MonoBehaviour
         }
         else
         {
+            promptManager.destroyCurrentPrompt(Character.CharType.Boy); 
+            promptManager.destroyCurrentPrompt(Character.CharType.Dog); 
             updateInterval = UPDATE_TIME;
             more_anxious = false;
             AnxLight.normalLighting();
