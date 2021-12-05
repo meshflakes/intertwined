@@ -12,7 +12,6 @@ public class AnxietyCalc : MonoBehaviour
     private float distance;
     // The maximum disatance apart between p1 and p2 before they get more anxious
     private static double MAX_DISTANCE = 7.0;
-    //Want the anxiety calculations to occur every 250 update calls
     private int frames = 0;
     private static float UPDATE_TIME = 0.75f;
     private static float PANIC_UPDATE_TIME = 0.25f;
