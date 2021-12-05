@@ -74,10 +74,6 @@ public class AnxietyCalc : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-
-        
-        
         distance  = Vector3.Distance(p1.position,  p2.position);
         delta = Time.deltaTime;
         timeAnxiety += delta;
@@ -102,8 +98,8 @@ public class AnxietyCalc : MonoBehaviour
         }
         if (distance >= MAX_DISTANCE)
         {
-            if (!promptManager.hasActivePrompt(CharType.Boy)) promptManager.RegisterNewPrompt(CharType.Boy, 2f, PromptType.Dog);
-            if (!promptManager.hasActivePrompt(CharType.Dog))promptManager.RegisterNewPrompt(CharType.Dog, 2f, PromptType.Boy);
+            if (!promptManager.HasActivePrompt(CharType.Boy)) promptManager.RegisterNewPrompt(CharType.Boy, 2f, PromptType.Dog);
+            if (!promptManager.HasActivePrompt(CharType.Dog))promptManager.RegisterNewPrompt(CharType.Dog, 2f, PromptType.Boy);
             updateInterval = PANIC_UPDATE_TIME;
             more_anxious = true;
             AnxLight.farLighting(Mathf.Min(7f,  distance - (float)MAX_DISTANCE));
@@ -111,8 +107,7 @@ public class AnxietyCalc : MonoBehaviour
         }
         else
         {
-            promptManager.destroyCurrentPrompt(Character.CharType.Boy); 
-            promptManager.destroyCurrentPrompt(Character.CharType.Dog); 
+            promptManager.DestoryAnxietyPrompts();
             updateInterval = UPDATE_TIME;
             more_anxious = false;
             AnxLight.normalLighting();

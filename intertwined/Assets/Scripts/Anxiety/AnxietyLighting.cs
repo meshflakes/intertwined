@@ -14,11 +14,9 @@ public class AnxietyLighting : MonoBehaviour
     private Color colorStart = Color.gray;
     private Color colorEnd = Color.gray;
 
-    //Check if the directional light coroutine is running
     private bool dlCrRunning = false;
-    //Check if the ambient light coroutine is running
     private bool alCrRunning = false;
-    // Start is called before the first frame update
+    
     void Start()
     {
         directionalLight.intensity = 1f;
