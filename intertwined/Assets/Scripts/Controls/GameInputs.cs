@@ -24,6 +24,7 @@ namespace Controls
         public bool antiClockwiseRotation;
 
         public bool paused;
+        public bool mainmenu;
         
         public void OnBoyMove(InputValue value)
         {
@@ -80,6 +81,11 @@ namespace Controls
         public void OnPause(InputValue value)
         {
             paused = value.Get<Single>() > 0.5f;
+        }
+
+        public void OnMainMenu(InputValue value)
+        {
+            mainmenu = value.Get<Single>() > 0.5f;
         }
 
         private int GetNetRotationEffect()
