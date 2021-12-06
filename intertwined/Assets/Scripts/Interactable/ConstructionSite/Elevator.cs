@@ -6,6 +6,7 @@ namespace Interactable.ConstructionSite
 {
     public class Elevator : MonoBehaviour
     {
+        public GameObject elevatorBlocker;
         [NonSerialized] public bool Powered = false;
         
         private bool Moving => _targetFloor != _currentFloor;
@@ -38,6 +39,8 @@ namespace Interactable.ConstructionSite
             {
                 TransitionToTargetFloor();
             }
+            
+            elevatorBlocker.SetActive(Moving);
         }
 
         private void TransitionToTargetFloor()
