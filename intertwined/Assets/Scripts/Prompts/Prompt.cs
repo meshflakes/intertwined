@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 namespace Prompts
 {
-    public class Prompt
+    public class Prompt 
     {
         private GameObject promptObject;
 
