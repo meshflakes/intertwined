@@ -6,7 +6,7 @@ namespace Interactable.Ladder
     public class LadderGrabbable : GrabbableInteractable
     {
         private LadderManager _ladderManager;
-
+        private Animator _anim;
         protected new void Start()
         {
             base.Start();
@@ -27,7 +27,8 @@ namespace Interactable.Ladder
             }
             
             Debug.Log("Grabbing Ladder");
-            
+            _anim = interacter.GetComponentInChildren<Animator>();  
+            _anim.SetInteger("Interacting", 1);
             _ladderManager.StartedGrabbing();
             Grab(interacter.gameObject);
             
@@ -36,6 +37,7 @@ namespace Interactable.Ladder
 
         public override void Release()
         {
+            _anim.SetInteger("Interacting", 0);
             Debug.Log("Releasing Ladder");
             _ladderManager.StoppedGrabbing();
             base.Release();
