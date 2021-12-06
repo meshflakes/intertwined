@@ -62,7 +62,11 @@ namespace Menu
             Debug.Log("Quit Game");
             Application.Quit();
         }
-        
+
+        public void StartConstructionLevel()
+        {
+            SceneManager.LoadScene("Scenes/ConstructionLevel");
+        }
         
     }
 }
