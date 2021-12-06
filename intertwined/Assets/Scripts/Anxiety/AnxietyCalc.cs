@@ -96,15 +96,31 @@ public class AnxietyCalc : MonoBehaviour
             }
             else
             {
-                promptManager.DestoryAnxietyPrompts();
-                AnxLight.normalLighting();
+                RegularLightingAndNoPrompt();
             }
         }
 
         
         _timeSincePet += delta;
     }
-    
+
+    private void RegularLightingAndNoPrompt()
+    {
+        promptManager.DestoryAnxietyPrompts();
+        AnxLight.normalLighting();
+    }
+
+    private void AnxietyLightingAndPrompts()
+    {
+        if(Time.time> nextAnxietyPromptTime)
+        {
+            if (!promptManager.HasActivePrompt(CharType.Boy)) promptManager.RegisterNewPrompt(CharType.Boy, PROMPT_DURACTION, PromptType.Dog);
+            if (!promptManager.HasActivePrompt(CharType.Dog))promptManager.RegisterNewPrompt(CharType.Dog, PROMPT_DURACTION, PromptType.Boy);
+            // Ten second cooldown before prompts reappear
+            nextAnxietyPromptTime = Time.time + PROMPT_COOLDOWN;
+        }
+        AnxLight.farLighting(Mathf.Min(7f,  distance - (float)MAX_DISTANCE));
+    }
 
     //Every UPDATE_FRAMES amount of frames, this function will be called to update anxiety stat
     void UpdateAnxiety()
@@ -117,25 +133,17 @@ public class AnxietyCalc : MonoBehaviour
         }
         if (distance >= MAX_DISTANCE)
         {
-            if(Time.time> nextAnxietyPromptTime)
-            {
-                if (!promptManager.HasActivePrompt(CharType.Boy)) promptManager.RegisterNewPrompt(CharType.Boy, PROMPT_DURACTION, PromptType.Dog);
-                if (!promptManager.HasActivePrompt(CharType.Dog))promptManager.RegisterNewPrompt(CharType.Dog, PROMPT_DURACTION, PromptType.Boy);
-                // Ten second cooldown before prompts reappear
-                nextAnxietyPromptTime = Time.time + PROMPT_COOLDOWN;
-            }
             updateInterval = PANIC_UPDATE_TIME;
             more_anxious = true;
-            AnxLight.farLighting(Mathf.Min(7f,  distance - (float)MAX_DISTANCE));
+            AnxietyLightingAndPrompts();
             
         }
         else
         {
             nextAnxietyPromptTime = 0f;
-            promptManager.DestoryAnxietyPrompts();
+            RegularLightingAndNoPrompt();
             updateInterval = UPDATE_TIME;
             more_anxious = false;
-            AnxLight.normalLighting();
         }
         
         UpdateMusic();
