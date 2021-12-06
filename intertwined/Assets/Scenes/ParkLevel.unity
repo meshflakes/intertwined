@@ -60821,6 +60821,7 @@ MonoBehaviour:
   interactablePriority: 0
   kickHorizontalVelocity: 4
   kickVerticalVelocity: 2.5
+  anxietyCalc: {fileID: 663464212}
 --- !u!1001 &2008137349
 PrefabInstance:
   m_ObjectHideFlags: 0
