@@ -1244,7 +1244,7 @@ MonoBehaviour:
   dogCanInteract: 1
   boyCanInteract: 1
   interactableEnabled: 1
-  interactablePriority: 0
+  interactablePriority: -1
   lockId: 2
   elevator: {fileID: 1821837023}
   crane: {fileID: 1971240095}
