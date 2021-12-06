@@ -64,6 +64,10 @@ public class AnxietyCalc : MonoBehaviour
     private static float PROMPT_COOLDOWN = 12f;
     private static float PROMPT_DURACTION = 4f;
 
+    //This boolean is used for activities that pause the anxiety increment.
+    private bool _anxietyPaused = false;
+    private float _anxietyUnpauseTime;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -77,18 +81,30 @@ public class AnxietyCalc : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Time.time > _anxietyUnpauseTime)
+        {
+            _anxietyPaused = false;
+        }
         distance  = Vector3.Distance(p1.position,  p2.position);
         delta = Time.deltaTime;
         timeAnxiety += delta;
         if (timeAnxiety >= updateInterval)
         {
-            timeAnxiety = 0;
-            UpdateAnxiety();
+            if(!_anxietyPaused){
+                timeAnxiety = 0;
+                UpdateAnxiety();
+            }
+            else
+            {
+                promptManager.DestoryAnxietyPrompts();
+                AnxLight.normalLighting();
+            }
         }
 
         
         _timeSincePet += delta;
     }
+    
 
     //Every UPDATE_FRAMES amount of frames, this function will be called to update anxiety stat
     void UpdateAnxiety()
@@ -175,5 +191,11 @@ public class AnxietyCalc : MonoBehaviour
     //     AnxietyBar.SetAnxiety(anxiety);
     //     tempAnxietyText.text = "Anx:" + anxiety + "  More anxious:" + more_anxious;
     // }
+
+    public void PauseAnxiety(float duration)
+    {
+        _anxietyPaused = true;
+        _anxietyUnpauseTime = Time.time + duration;
+    }
 
 }
