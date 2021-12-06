@@ -38,7 +38,7 @@ namespace Menu
                 timeSincePause = 0;
             }
 
-            if (_input.mainmenu)
+            if (_input.mainmenu && IsPaused)
             {
                 ReturnToMenu();
             }

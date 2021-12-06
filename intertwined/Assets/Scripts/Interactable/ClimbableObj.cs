@@ -1,4 +1,5 @@
 ﻿using System;
+using Character;
 using UnityEngine;
 
 namespace Interactable

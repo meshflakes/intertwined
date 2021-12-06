@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fd1f6c9b9862ca440aa1a9a72251a486
+guid: 1ad5229f31dbd2a488dec79ac0514939
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
@@ -41,8 +41,8 @@ ModelImporter:
       name: Take 001
       takeName: Take 001
       internalID: 0
-      firstFrame: 1
-      lastFrame: 24
+      firstFrame: 48
+      lastFrame: 72
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -61,21 +61,7 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events:
-      - time: 0.48260868
-        functionName: Step
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.99782586
-        functionName: Step
-        data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
+      events: []
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}

@@ -9,11 +9,12 @@ TagManager:
   - Dog
   - DogSubObjects
   - BoySubObjects
+  - PromptsCanvas
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Trees
+  - Invis
   - Water
   - UI
   - Character

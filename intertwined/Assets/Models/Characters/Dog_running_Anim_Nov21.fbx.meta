@@ -19,28 +19,9 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: "Avatar Rig Configuration mis-match. Inbetween bone rotation
-      in configuration does not match rotation in animation file:\n\t'Intertwined_Dog_rig:neck_02_jnt'
-      : rotation error = 5.110975 deg\n"
+    rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
-      might lower retargeting quality:\nNote: Activate translation DOF on avatar
-      to improve retargeting quality.\n\t'Intertwined_Dog_rig:pelvis_jnt' has translation
-      animation that will be discarded.\n\t'Intertwined_Dog_rig:pelvis_jnt' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n\t'Intertwined_Dog_rig:spine_01_jnt'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Intertwined_Dog_rig:spine_01_jnt'
-      has scale animation that will be discarded.\n\t'Intertwined_Dog_rig:spine_02_jnt'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Intertwined_Dog_rig:spine_02_jnt'
-      has scale animation that will be discarded.\n\t'Intertwined_Dog_rig:spine_03_jnt'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Intertwined_Dog_rig:spine_03_jnt'
-      has scale animation that will be discarded.\n\t'Intertwined_Dog_rig:spine_04_jnt'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Intertwined_Dog_rig:spine_04_jnt'
-      has scale animation that will be discarded.\n\t'Intertwined_Dog_rig:neck_01_jnt'
-      has translation animation that will be discarded.\n\t'Intertwined_Dog_rig:neck_02_jnt'
-      has translation animation that will be discarded.\n\t'Intertwined_Dog_rig:neck_02_jnt'
-      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Intertwined_Dog_rig:clavicle_L_IK_jnt'
-      has translation animation that will be discarded.\n\t'Intertwined_Dog_rig:clavicle_R_IK_jnt'
-      has translation animation that will be discarded.\n"
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -77,7 +58,35 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.2554342
+        functionName: Step
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.35869598
+        functionName: Step
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.8869558
+        functionName: Step
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.052172866
+        functionName: Step
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
