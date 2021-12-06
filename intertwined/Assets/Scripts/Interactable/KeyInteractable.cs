@@ -10,7 +10,7 @@ namespace Interactable
         public List<int> unlockableLockIds = new List<int>();
 
         private HashSet<int> _unlockableLockIdsSet;
-
+        private Animator _anim;
         public new void Start()
         {
             base.Start();
@@ -29,13 +29,16 @@ namespace Interactable
 
         public override bool Interact(Character.Character interacter)
         {
+            _anim = interacter.GetComponentInChildren<Animator>();
             if (Held())
             {
+                _anim.SetInteger("Interacting", 0);
                 Debug.Log("Releasing Object");
                 Release();
             }
             else
             {
+                _anim.SetInteger("Interacting", 1);
                 Debug.Log("Grabbing object");
                 Grab(interacter.gameObject);
             }

@@ -8,6 +8,7 @@ namespace Interactable
         private Rigidbody _rigidbody;
         [SerializeField] private float kickHorizontalVelocity = 3;
         [SerializeField] private float kickVerticalVelocity = 3;
+        public AnxietyCalc anxietyCalc;
         
         protected void Start()
         {
@@ -21,6 +22,7 @@ namespace Interactable
             _rigidbody.velocity += kickHorizontalVelocity * (rotation * Vector3.forward);
             _rigidbody.velocity += kickVerticalVelocity * Vector3.up;
             // _rigidbody.AddForce(kickForce * (rotation * Vector3.forward));
+            anxietyCalc.PauseAnxiety(10f);
             return true;
         }
 

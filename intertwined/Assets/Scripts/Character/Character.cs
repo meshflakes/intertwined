@@ -162,16 +162,21 @@ namespace Character
         public void Move(Vector2 move, bool analogMovement, GameObject mainCamera)
         {
             move = LimitMoveBounds(move);
-
             var inputMagnitude = move.magnitude;
-            
             if (Climbing)
             {
+                anim.SetInteger("Climbing", 1);
                 Debug.Log("Climbing=True");
 
+                if (move == Vector2.zero)
+                {
+                    anim.enabled = false;
+                }else{anim.enabled = true;}
+                    
+                    
                 Climb(move, mainCamera);
                 return;
-            }
+            } else {anim.SetInteger("Climbing", 0);}
             
             var targetSpeed = moveSpeed;
             
@@ -181,7 +186,7 @@ namespace Character
                 anim.SetInteger("Walking", 0);
                 targetSpeed = 0.0f;
             }
-            else anim.SetInteger("Walking", 1);;
+            else anim.SetInteger("Walking", 1);
 
             CalculateAndUpdateSpeed(inputMagnitude, analogMovement, targetSpeed);
             
