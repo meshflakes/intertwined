@@ -24840,6 +24840,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 137225109576616597, guid: 13c046feca7113947ab38e1115707e80, type: 3}
+      propertyPath: boyHoldingOffset.z
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 137225110152116503, guid: 13c046feca7113947ab38e1115707e80, type: 3}
       propertyPath: m_Layer
       value: 8
