@@ -33,6 +33,7 @@ namespace Character
         [Tooltip("What layers the character uses as ground")]
         public LayerMask groundLayers;
 
+        public CharType charType;
         public Interactor CharInteractor;
 
         // player

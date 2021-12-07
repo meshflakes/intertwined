@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using Prompts;
 using UnityEngine;
 
 namespace Interactable.ConstructionSite
 {
     public class Elevator : MonoBehaviour
     {
+        public PromptManager promptManager;
         public GameObject elevatorBlocker;
         [NonSerialized] public bool Powered = false;
         
@@ -17,7 +19,7 @@ namespace Interactable.ConstructionSite
         private int _maxFloor;
         private int _minFloor;
 
-        private readonly float elevatorSpeed = 2.7f;
+        private const float ElevatorSpeed = 2.7f;
 
         protected void Start()
         {
@@ -47,7 +49,7 @@ namespace Interactable.ConstructionSite
         {            
             var distToTarget = transform.position.y - _floors[_targetFloor].position.y;
             var direction = distToTarget > 0 ? -1 : 1;
-            transform.position += Vector3.up * direction * Time.deltaTime * elevatorSpeed;
+            transform.position += Vector3.up * direction * Time.deltaTime * ElevatorSpeed;
             
             if (distToTarget * distToTarget < 0.01f)
             {
@@ -56,14 +58,19 @@ namespace Interactable.ConstructionSite
             }
         }
 
-        public bool TryChangeFloor(int deltaLevel)
+        public bool TryChangeFloor(Character.Character interacter, int deltaLevel)
         {
             // TODO: if not powered start an electricity prompt
-            if (Moving || !Powered) return false;
+            if (Moving) return false;
+            
+            if (!Powered)
+            {
+                promptManager.RegisterNewPrompt(interacter.charType, 5f, PromptType.Electricity);
+                return false;
+            }
             
             var newTargetFloor = _currentFloor + deltaLevel;
             
-            Debug.Log($"current: {_currentFloor}, delta: {deltaLevel}, new: {newTargetFloor}");
             if (_minFloor > newTargetFloor || newTargetFloor > _maxFloor) return false;
 
             _targetFloor = newTargetFloor;
