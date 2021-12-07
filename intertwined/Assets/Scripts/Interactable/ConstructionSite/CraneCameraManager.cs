@@ -24,7 +24,6 @@ namespace Interactable.ConstructionSite
 
         protected void Update()
         {
-            Debug.Log($"{NumInLocations[0]}, {NumInLocations[1]}, {NumInLocations[2]}");
             if (NumInLocations[(int) Location.FullCraneArea] != 2)
             {
                 // nobody in rn, make sure camera is not being modified
