@@ -9170,6 +9170,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gas Can
       objectReference: {fileID: 0}
+    - target: {fileID: 2938921106358587692, guid: 2e5d299623e3de4408286d649a30f4f3, type: 3}
+      propertyPath: boyHoldingAngle.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938921106358587692, guid: 2e5d299623e3de4408286d649a30f4f3, type: 3}
+      propertyPath: boyHoldingAngle.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938921106358587692, guid: 2e5d299623e3de4408286d649a30f4f3, type: 3}
+      propertyPath: boyHoldingAngle.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3405737617776566340, guid: 2e5d299623e3de4408286d649a30f4f3, type: 3}
       propertyPath: m_RootOrder
       value: 1
