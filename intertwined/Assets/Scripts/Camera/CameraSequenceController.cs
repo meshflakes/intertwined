@@ -75,7 +75,7 @@ namespace Camera
             if (phaseCompleted) _cameraMovementPhase++;
         }
 
-        private bool CheckIfMoveBackToStart()
+        protected virtual bool CheckIfMoveBackToStart()
         {
             if (Time.time <= _animationEndTime + _minimumTimeBeforeReturn) return false;
             
@@ -102,7 +102,7 @@ namespace Camera
         }
     }
     
-    internal enum CameraMovementPhase
+    public enum CameraMovementPhase
     {
         MoveToEnd,
         WaitAtEnd,
