@@ -106,7 +106,7 @@ public class AnxietyCalc : MonoBehaviour
 
     private void RegularLightingAndNoPrompt()
     {
-        promptManager.DestoryAnxietyPrompts();
+        promptManager.DestroyAnxietyPrompts();
         AnxLight.normalLighting();
     }
 

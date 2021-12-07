@@ -7419,6 +7419,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95b6bf8d22a4480eb973cb1c58c19520, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  promptManager: {fileID: 361654711}
   elevatorBlocker: {fileID: 1049637098}
 --- !u!54 &1821837024
 Rigidbody:

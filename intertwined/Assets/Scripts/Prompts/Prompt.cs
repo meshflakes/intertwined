@@ -1,73 +1,56 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
 
 namespace Prompts
 {
     public class Prompt 
     {
-        private GameObject promptObject;
+        private readonly GameObject _promptObject;
+        private readonly Image _promptImage;
+        private readonly Transform _target;
 
-        private Image promptImage;
+        private readonly Vector3 _offset = new Vector3(0.9f, 0.9f, 0);
+        private const float Size = 1.5f;
 
-        //private GameObject canvas;
-        private Transform target;
-
-        private static float offset = 0.9f;
-        private static float size = 1.5f;
-
-        private Transform _mainCameraTransform;
+        private readonly Transform _mainCameraTransform;
 
         public Prompt(Sprite sprite, Transform target, Transform canvas)
         {
-            this.target = target;
-            promptObject = new GameObject();
-            promptImage = promptObject.AddComponent<Image>();
-            promptImage.sprite = sprite;
-            promptImage.GetComponent<RectTransform>().SetParent(canvas);
-            promptImage.rectTransform.sizeDelta = new Vector2(size, size);
-            promptObject.transform.position = new Vector3(target.position.x + offset, target.position.y + offset, target.position.z);
-            promptObject.SetActive(true);
-
+            _target = target;
+            _promptObject = new GameObject();
+            
+            _promptImage = _promptObject.AddComponent<Image>();
+            _promptImage.sprite = sprite;
+            _promptImage.GetComponent<RectTransform>().SetParent(canvas);
+            _promptImage.rectTransform.sizeDelta = new Vector2(Size, Size);
+            
             _mainCameraTransform = GameObject.FindGameObjectWithTag("MainCamera").transform;
             
+            var dynamicOffset = _mainCameraTransform.TransformDirection(_offset);
+            _promptObject.transform.position = target.position + dynamicOffset;
+            _promptObject.SetActive(true);
+
         }
 
         public Sprite GetSprite()
         {
-            return promptImage.sprite;
+            return _promptImage.sprite;
         }
 
         public void DestroyPrompt()
         {
-            GameObject.Destroy(promptObject);
+            Object.Destroy(_promptObject);
         }
-        
         
         public void UpdatePromptPosition()
         {
+            var cameraEulerAngles = _mainCameraTransform.eulerAngles;
 
-            promptObject.transform.eulerAngles = new Vector3(
-                _mainCameraTransform.eulerAngles.x,
-                _mainCameraTransform.eulerAngles.y,
-                0);
-
-            promptObject.transform.position =
-                new Vector3(target.position.x+offset, target.position.y + offset, target.position.z);
+            _promptObject.transform.eulerAngles = new Vector3(cameraEulerAngles.x, cameraEulerAngles.y, 0);
+            
+            var dynamicOffset = _mainCameraTransform.TransformDirection(_offset);
+            _promptObject.transform.position = _target.position + dynamicOffset;
         }
-
-        public void Show()
-        {
-            promptObject.SetActive(true);
-        }
-
-        public void Hide()
-        {
-            promptObject.SetActive(false);
-        }
-
     }
 
 }

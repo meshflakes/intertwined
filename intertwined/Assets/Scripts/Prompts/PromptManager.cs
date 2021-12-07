@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using Character;
 using UnityEngine;
@@ -11,7 +10,6 @@ namespace Prompts
         private Transform _dogTransform;
         
         private Transform _canvasTransform;
-        private List<GameObject> _imagesList = new List<GameObject>();
 
         public List<Sprite> sprites;
 
@@ -29,12 +27,8 @@ namespace Prompts
         
         private void Update()
         {
-            
-            // TODO: if paused disable all images
-            
             DeleteExpiredPrompts();
             RepositionActivePrompts();
-
         }
 
         private void DeleteExpiredPrompts()
@@ -62,8 +56,6 @@ namespace Prompts
                 _dogCurrentPrompt.UpdatePromptPosition();
             }
         }
-        
-
 
         public void RegisterNewPrompt(CharType character, float duration, PromptType prompt )
         {
@@ -107,8 +99,8 @@ namespace Prompts
             } 
         }
 
-        //Destroy promtps that are related to anxiety if exists
-        public void DestoryAnxietyPrompts()
+        // Destroy prompts that are related to anxiety if they exist
+        public void DestroyAnxietyPrompts()
         {
             if (_boyCurrentPrompt != null && _boyCurrentPrompt.GetSprite() == sprites[(int) PromptType.Dog])
             {
