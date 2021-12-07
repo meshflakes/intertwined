@@ -101,8 +101,9 @@ MonoBehaviour:
   dogCanInteract: 0
   boyCanInteract: 1
   interactableEnabled: 1
-  boyHoldingOffset: {x: 0, y: 0.45, z: 1}
-  boyHoldingAngle: {x: 0, y: 90, z: -60}
+  interactablePriority: 0
+  boyHoldingOffset: {x: 0, y: 0.45, z: 0.5}
+  boyHoldingAngle: {x: 0, y: 90, z: -85}
   dogHoldingOffset: {x: 0, y: 0, z: 0}
   dogHoldingAngle: {x: 0, y: 0, z: 0}
   unlockableLockIds: 02000000
