@@ -616,6 +616,8 @@ MonoBehaviour:
   analogMovement: 0
   clockwiseRotation: 0
   antiClockwiseRotation: 0
+  paused: 0
+  mainmenu: 0
 --- !u!114 &345770486795635473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -803,6 +805,7 @@ MonoBehaviour:
   groundLayers:
     serializedVersion: 2
     m_Bits: 1
+  charType: 0
   climbSpeed: 2
 --- !u!114 &8163260945546224920
 MonoBehaviour:
@@ -1127,7 +1130,7 @@ MonoBehaviour:
   zoomStartDist: 6
   maxDist: 12
   smoothness: 0.5
-  cameraRotation: 30
+  cameraRotationSpeed: 30
 --- !u!114 &9045712147612786108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2329,6 +2332,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 9045712147612786111}
+    - target: {fileID: 5200212173859453913, guid: 610db64ce5741224dafc91ff2cd034e3, type: 3}
+      propertyPath: charType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5200212173859453913, guid: 610db64ce5741224dafc91ff2cd034e3, type: 3}
       propertyPath: moveSpeed
       value: 4

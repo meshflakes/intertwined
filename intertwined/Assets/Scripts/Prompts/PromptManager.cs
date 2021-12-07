@@ -19,6 +19,8 @@ namespace Prompts
         private float _boyPromptTimeout;
         private Prompt _dogCurrentPrompt;
         private float _dogPromptTimeout;
+
+        
         
         private void Start()
         {
@@ -62,8 +64,6 @@ namespace Prompts
                 _dogCurrentPrompt.UpdatePromptPosition();
             }
         }
-        
-
 
         public void RegisterNewPrompt(CharType character, float duration, PromptType prompt )
         {
