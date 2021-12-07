@@ -24,7 +24,7 @@ namespace Interactable.ConstructionSite
 
         public override bool Interact(Character.Character interacter)
         {
-            return _elevator.TryChangeFloor(DeltaLevel);
+            return _elevator.TryChangeFloor(interacter, DeltaLevel);
         }
 
         public override bool UsedWith(Interactable other)
