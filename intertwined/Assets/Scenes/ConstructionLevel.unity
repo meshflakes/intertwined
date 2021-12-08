@@ -4581,7 +4581,7 @@ GameObject:
   - component: {fileID: 493846670}
   - component: {fileID: 493846669}
   - component: {fileID: 493846668}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: Buliding Player Colliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4664,8 +4664,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3945351, y: 5.5212026, z: 16.815895}
-  m_Center: {x: 0.19726753, y: 2.2606013, z: -1.48354}
+  m_Size: {x: 0.94000053, y: 5.5212026, z: 16.815895}
+  m_Center: {x: -0.029999733, y: 2.2606013, z: -1.4835396}
 --- !u!4 &493846674
 Transform:
   m_ObjectHideFlags: 0
@@ -8418,7 +8418,7 @@ GameObject:
   m_Component:
   - component: {fileID: 896784443}
   - component: {fileID: 896784444}
-  m_Layer: 7
+  m_Layer: 10
   m_Name: dynamic pipe collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18910,6 +18910,14 @@ PrefabInstance:
     - target: {fileID: 2938921106358587692, guid: 2e5d299623e3de4408286d649a30f4f3, type: 3}
       propertyPath: boyHoldingAngle.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938921106358587692, guid: 2e5d299623e3de4408286d649a30f4f3, type: 3}
+      propertyPath: unlockableLockIds.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938921106358587692, guid: 2e5d299623e3de4408286d649a30f4f3, type: 3}
+      propertyPath: unlockableLockIds.Array.data[1]
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3405737617776566340, guid: 2e5d299623e3de4408286d649a30f4f3, type: 3}
       propertyPath: m_RootOrder
