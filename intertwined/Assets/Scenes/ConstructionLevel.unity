@@ -665,6 +665,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: Camera Character Controls
       objectReference: {fileID: 0}
+    - target: {fileID: 9045712148767518622, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045712148767518623, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045712148767518624, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045712148767518626, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: dfc460e32ecc29749b6cb550ba7201e6, type: 3}
+    - target: {fileID: 9045712148767518627, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5fcc370dbac3ca844809cf79e1095e76, type: 3}
+    - target: {fileID: 9045712148767518628, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9045712148767518629, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f3cee6cc6f94f774e83bbbae2f81baab, type: 3}
+    - target: {fileID: 9045712148767518630, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
 --- !u!1 &53879207 stripped
