@@ -30,7 +30,7 @@ namespace Interactable.ConstructionSite
                 _powered = true;
                 elevator.Powered = true;
                 crane.Powered = true;
-                generatorLight.intensity = 2f;
+                generatorLight.intensity = 4f;
                 return true;
             }
 

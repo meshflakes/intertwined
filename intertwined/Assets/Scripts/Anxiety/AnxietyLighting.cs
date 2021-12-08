@@ -36,9 +36,9 @@ public class AnxietyLighting : MonoBehaviour
         dogLight.intensity = 8f-level;
     }
 
-    public void normalLighting()
+    public void normalLighting(float dlIntensity)
     {
-        if(!dlCrRunning) StartCoroutine(DirectionalLightTransition(directionalLight, 1f, 1f));
+        if(!dlCrRunning) StartCoroutine(DirectionalLightTransition(directionalLight, 1f, dlIntensity));
         //UnityEngine.RenderSettings.ambientLight = Color.gray;
         if (!alCrRunning) StartCoroutine(ColorTransition(UnityEngine.RenderSettings.ambientLight, Color.gray, 1f));
         colorEnd = Color.gray;
