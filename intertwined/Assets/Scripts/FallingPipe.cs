@@ -16,12 +16,19 @@ public class FallingPipe : MonoBehaviour
     {
         if (other.name == "Dog Collider")
         {
-            transform.position = transform.position + new Vector3(0, 0.5f, 3);
+            selfRigid.velocity = new Vector3(0, 0.5f, 3);
             selfMesh.convex = true;
             selfRigid.isKinematic = false;
             selfRigid.constraints = RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY | 
                                     RigidbodyConstraints.FreezePositionX;
             dynamicPipeCollider.SetActive(true);
+
+            Invoke(nameof(DisablePipeMotion), 2);
         }
+    }
+
+    protected void DisablePipeMotion()
+    {
+        selfRigid.constraints = RigidbodyConstraints.FreezeAll;
     }
 }
