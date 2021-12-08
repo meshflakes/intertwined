@@ -22298,6 +22298,7 @@ MonoBehaviour:
   promptOnBoySprite: {fileID: 21300000, guid: 3faf9d77fff1ee34ebaea9f81e3eae1c, type: 3}
   promptonDogSprite: {fileID: 21300000, guid: 694a5c4e50863cb4c98c82e47789647f, type: 3}
   canvas: {fileID: 1601558175}
+  dlIntensity: 1
 --- !u!1001 &663521683
 PrefabInstance:
   m_ObjectHideFlags: 0
