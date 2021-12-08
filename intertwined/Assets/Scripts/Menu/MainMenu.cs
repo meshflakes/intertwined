@@ -35,7 +35,8 @@ namespace Menu
             intro1 = parent.Find("Intro1").gameObject;
             intro2 = parent.Find("Intro2").gameObject;
             intro3 = parent.Find("Intro3").gameObject;
-            intro1.SetActive(true); 
+            intro1.SetActive(true);
+            Time.timeScale = 1;
             Invoke("PanelTwo", 3);
         }
         private void PanelTwo()
