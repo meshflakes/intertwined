@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3134,7 +3134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &358016330
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4593,6 +4593,7 @@ GameObject:
   - component: {fileID: 493846678}
   - component: {fileID: 493846677}
   - component: {fileID: 493846676}
+  - component: {fileID: 493846683}
   m_Layer: 10
   m_Name: Buliding Player Colliders
   m_TagString: Untagged
@@ -4663,8 +4664,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.7647057, y: 5.5212026, z: 0.67104053}
-  m_Center: {x: 1.8823528, y: 2.2606013, z: 7.4223742}
+  m_Size: {x: 4.760376, y: 5.5212026, z: 0.67104053}
+  m_Center: {x: 1.8845177, y: 2.2606013, z: 7.4223742}
 --- !u!65 &493846673
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4704,8 +4705,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.4119205, y: 25.999712, z: 2.9328938}
-  m_Center: {x: 6.6570024, y: 12.499856, z: -11.077636}
+  m_Size: {x: 1.4119205, y: 30.331287, z: 2.9328938}
+  m_Center: {x: 6.6570024, y: 14.665644, z: -11.077636}
 --- !u!65 &493846676
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4717,8 +4718,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 12.097054, y: 4.5204544, z: 1.3260136}
-  m_Center: {x: 12.496971, y: 28.011696, z: -13.013045}
+  m_Size: {x: 9.6447315, y: 4.5204544, z: 1.3260136}
+  m_Center: {x: 11.270808, y: 28.011696, z: -13.013045}
 --- !u!65 &493846677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4730,8 +4731,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.5540409, y: 4.5204544, z: 26.051235}
-  m_Center: {x: 17.768478, y: 28.011696, z: 0.24537659}
+  m_Size: {x: 1.554039, y: 4.5204544, z: 23.33057}
+  m_Center: {x: 17.768478, y: 28.011696, z: 1.6057091}
 --- !u!65 &493846678
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4743,8 +4744,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.6963234, y: 5.1166573, z: 6.12671}
-  m_Center: {x: -15.902426, y: 27.713594, z: -2.389051}
+  m_Size: {x: 1.1538773, y: 5.1166573, z: 6.12671}
+  m_Center: {x: -15.673649, y: 27.713594, z: -2.389051}
 --- !u!65 &493846679
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4782,8 +4783,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 36.2663, y: 4.5204544, z: 0.6178398}
-  m_Center: {x: -0.009775162, y: 28.011696, z: 9.057493}
+  m_Size: {x: 36.2663, y: 4.472046, z: 0.6178398}
+  m_Center: {x: -0.009775162, y: 27.987492, z: 9.057493}
 --- !u!65 &493846682
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4795,8 +4796,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 11.022451, y: 4.5204544, z: 0.6736851}
-  m_Center: {x: 0.7009878, y: 28.011696, z: 7.9527807}
+  m_Size: {x: 12.535032, y: 4.5204544, z: 1.8152866}
+  m_Center: {x: 0.43319798, y: 28.011696, z: 8.056254}
+--- !u!65 &493846683
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493846667}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.7606525, y: 4.5204544, z: 2.4171524}
+  m_Center: {x: -3.055604, y: 28.011696, z: -11.571665}
 --- !u!1 &494627391 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -848751006980864052, guid: a830ad2a66aed00419e4131e1df39e35, type: 3}

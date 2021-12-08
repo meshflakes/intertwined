@@ -5,6 +5,8 @@ public class FallingPipe : MonoBehaviour
     private Rigidbody selfRigid;
     private MeshCollider selfMesh;
     public GameObject dynamicPipeCollider;
+
+    private bool _moved = false;
     
     void Start()
     {
@@ -14,9 +16,11 @@ public class FallingPipe : MonoBehaviour
 
     protected void OnTriggerEnter(Collider other)
     {
+        if (_moved) return;
+        
         if (other.name == "Dog Collider")
         {
-            selfRigid.velocity = new Vector3(0, 0.5f, 3);
+            selfRigid.velocity = new Vector3(0, 2f, 5);
             selfMesh.convex = true;
             selfRigid.isKinematic = false;
             selfRigid.constraints = RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationY | 
@@ -29,6 +33,7 @@ public class FallingPipe : MonoBehaviour
 
     protected void DisablePipeMotion()
     {
+        _moved = true;
         selfRigid.constraints = RigidbodyConstraints.FreezeAll;
     }
 }
