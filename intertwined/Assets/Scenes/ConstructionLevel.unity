@@ -2450,6 +2450,7 @@ MonoBehaviour:
   elevator: {fileID: 1821837023}
   crane: {fileID: 1971240095}
   generatorLight: {fileID: 1636562883}
+  promptManager: {fileID: 361654711}
 --- !u!65 &309055488
 BoxCollider:
   m_ObjectHideFlags: 0
