@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using Camera;
-using Interactable.Util;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Interactable.ConstructionSite
 {
@@ -15,6 +15,11 @@ namespace Interactable.ConstructionSite
         
         private AreaCameraManager _cameraSequence;
         [NonSerialized] public readonly List<int> NumInLocations = new List<int> {0, 0, 0};
+
+        private bool _startedEndTransition = false;
+        public GameObject outro1;
+        public GameObject outro2;
+        public GameObject outro3;
 
         protected void Start()
         {
@@ -37,15 +42,46 @@ namespace Interactable.ConstructionSite
                 // reached end, revert to regular camera
 
                 if (_cameraSequence.GetCameraActive()) _cameraSequence.EndCameraSequence();
-                else throw new Exception("Something went wrong here");
+                
+                if (!_startedEndTransition)
+                {
+                    Invoke(nameof(OutroComic1), 5);
+                    _startedEndTransition = true;
+                }
+                
+                
             }
             else
             {
                 // set to special camera
-                Debug.Log("Trying to start sequence");
                 if (!_cameraSequence.GetCameraActive()) _cameraSequence.StartNewCameraSequence();
                 
             }
+        }
+
+        private void OutroComic1()
+        {
+            outro1.SetActive(true);
+            Invoke(nameof(OutroComic2), 3);
+        }
+        
+        private void OutroComic2()
+        {
+            outro1.SetActive(false);
+            outro2.SetActive(true);
+            Invoke(nameof(OutroComic3), 3);
+        }
+        
+        private void OutroComic3()
+        {
+            outro2.SetActive(false);
+            outro3.SetActive(true);
+            Invoke(nameof(GoToMainMenu), 3);
+        }
+
+        private void GoToMainMenu()
+        {
+            SceneManager.LoadScene("Scenes/MainMenu");
         }
     }
 }
