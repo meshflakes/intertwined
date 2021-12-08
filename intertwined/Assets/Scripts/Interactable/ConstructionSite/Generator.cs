@@ -1,11 +1,14 @@
-﻿namespace Interactable.ConstructionSite
+﻿using UnityEngine;
+
+namespace Interactable.ConstructionSite
 {
     public class Generator : Interactable
     {
         public int lockId;
         public Elevator elevator;
         public Crane crane;
-
+        public Light generatorLight;
+        
         private bool _powered = false;
         
         public override bool Interact(Character.Character interacter)
@@ -22,6 +25,7 @@
                 _powered = true;
                 elevator.Powered = true;
                 crane.Powered = true;
+                generatorLight.intensity = 2f;
                 return Interact(interacter);
             }
 
