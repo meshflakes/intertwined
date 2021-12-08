@@ -11,6 +11,8 @@ namespace Interactable
         private bool _diggingStarted;
         private Animator _anim;
 
+        public bool noObject;
+
         protected void Update()
         {
             if (_diggingStarted && !diggingAudio.isPlaying)
@@ -39,7 +41,7 @@ namespace Interactable
         private void CompleteDigging()
         {
             var plankChildTransform = transform.Find("Plank");
-            Instantiate(plank, plankChildTransform.position, plankChildTransform.rotation);
+            if(!noObject) Instantiate(plank, plankChildTransform.position, plankChildTransform.rotation);
             RemoveInteractableFromCharacters(); 
             Destroy(gameObject);
         }
