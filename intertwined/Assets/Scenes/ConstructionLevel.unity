@@ -11876,6 +11876,7 @@ MonoBehaviour:
   promptOnBoySprite: {fileID: 0}
   promptonDogSprite: {fileID: 0}
   canvas: {fileID: 0}
+  dlIntensity: 0.3
 --- !u!4 &1407387660
 Transform:
   m_ObjectHideFlags: 0

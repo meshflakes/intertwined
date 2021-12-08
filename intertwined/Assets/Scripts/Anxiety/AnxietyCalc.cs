@@ -68,6 +68,9 @@ public class AnxietyCalc : MonoBehaviour
     private bool _anxietyPaused = false;
     private float _anxietyUnpauseTime;
 
+    //Intensity of the directional light normally
+    public float dlIntensity;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -107,7 +110,7 @@ public class AnxietyCalc : MonoBehaviour
     private void RegularLightingAndNoPrompt()
     {
         promptManager.DestroyAnxietyPrompts();
-        AnxLight.normalLighting();
+        AnxLight.normalLighting(dlIntensity);
     }
 
     private void AnxietyLightingAndPrompts()
