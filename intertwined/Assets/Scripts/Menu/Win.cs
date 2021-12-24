@@ -23,7 +23,7 @@ namespace Menu
         {
             if (_boyMadeIt && _dogMadeIt)
             {
-                GoToMainMenu();
+                GoToLevelTwo();
             }
         }
 
@@ -34,6 +34,11 @@ namespace Menu
         private void GoToCredits()
         {
             SceneManager.LoadScene("Credits");
+        }
+        
+        private void GoToLevelTwo()
+        {
+            SceneManager.LoadScene("ConstructionLevel");
         }
 
         void OnTriggerEnter(Collider other)
