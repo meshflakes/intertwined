@@ -67604,6 +67604,10 @@ PrefabInstance:
       propertyPath: anxietyCalc
       value: 
       objectReference: {fileID: 663464212}
+    - target: {fileID: 3864667021603979669, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
+      propertyPath: speedChangeRate
+      value: 400
+      objectReference: {fileID: 0}
     - target: {fileID: 5037443570027002985, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.233
