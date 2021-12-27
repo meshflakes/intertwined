@@ -2,7 +2,7 @@
 
 namespace Interactable.ConstructionSite
 {
-    public class CraneCameraLocations : MonoBehaviour
+    public class CraneCameraLocations : Interactable
     {
         public Location location;
         private CraneCameraManager _cameraManager;
@@ -12,20 +12,26 @@ namespace Interactable.ConstructionSite
             _cameraManager = GetComponentInParent<CraneCameraManager>();
         }
 
-        protected void OnTriggerEnter(Collider other)
-        {
-            if (CollidingObjectCanInteract(other)) _cameraManager.NumInLocations[(int) location]++;
-        }
-
-        protected void OnTriggerExit(Collider other)
-        {
-            if (CollidingObjectCanInteract(other)) _cameraManager.NumInLocations[(int) location]--;
-        }
+        // protected void OnTriggerEnter(Collider other)
+        // {
+        //     if (CollidingObjectCanInteract(other)) _cameraManager.NumInLocations[(int) location]++;
+        // }
+        //
+        // protected void OnTriggerExit(Collider other)
+        // {
+        //     if (CollidingObjectCanInteract(other)) _cameraManager.NumInLocations[(int) location]--;
+        // }
+        //
+        // private bool CollidingObjectCanInteract(Component other)
+        // {
+        //     return (other.CompareTag("Boy") || other.CompareTag("BoySubObjects"))
+        //            || (other.CompareTag("Dog") || other.CompareTag("DogSubObjects"));
+        // }
         
-        private bool CollidingObjectCanInteract(Component other)
+        protected override void ProximityInteraction(Character.Character interacter, bool enteredTrigger)
         {
-            return (other.CompareTag("Boy") || other.CompareTag("BoySubObjects"))
-                   || (other.CompareTag("Dog") || other.CompareTag("DogSubObjects"));
+            if (enteredTrigger) _cameraManager.NumInLocations[(int) location]++;
+            else _cameraManager.NumInLocations[(int) location]--;
         }
     }
 

@@ -3146,8 +3146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f07fcb7d7db41f7a7320d594f797a5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogCanInteract: 1
-  boyCanInteract: 1
+  interactions: 1
   interactableEnabled: 1
   interactablePriority: -1
   lockId: 2
@@ -3588,8 +3587,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2748839ffe334aadbfcd7ada0a954f4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogCanInteract: 1
-  boyCanInteract: 1
+  interactions: 2
   interactableEnabled: 1
   interactablePriority: 0
   animationDuration: 3
@@ -4024,6 +4022,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74d4eed0ebb84a36a4f41eca03ba8e0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactions: 10
+  interactableEnabled: 1
+  interactablePriority: 0
   location: 1
 --- !u!65 &389734855
 BoxCollider:
@@ -8916,6 +8917,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c371c8268d4f6192c1aeda7daa56a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactions: 10
+  interactableEnabled: 1
+  interactablePriority: 0
 --- !u!65 &858323054
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13155,6 +13159,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74d4eed0ebb84a36a4f41eca03ba8e0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactions: 10
+  interactableEnabled: 1
+  interactablePriority: 0
   location: 0
 --- !u!65 &1412463803
 BoxCollider:
@@ -14827,7 +14834,7 @@ Transform:
   - {fileID: 2005950581}
   - {fileID: 37402716}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1610282074
 GameObject:
@@ -16495,6 +16502,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 144fc2824d5b1744b927dbb4d3c56297, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactions: 8
+  interactableEnabled: 1
+  interactablePriority: 0
   dynamicPipeCollider: {fileID: 896784442}
 --- !u!65 &1826068283
 BoxCollider:
@@ -17487,6 +17497,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c371c8268d4f6192c1aeda7daa56a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactions: 10
+  interactableEnabled: 1
+  interactablePriority: 0
 --- !u!23 &1936094044
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19219,6 +19232,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74d4eed0ebb84a36a4f41eca03ba8e0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactions: 10
+  interactableEnabled: 1
+  interactablePriority: 0
   location: 2
 --- !u!65 &2049841256
 BoxCollider:
@@ -20682,6 +20698,10 @@ PrefabInstance:
       value: Gas Can
       objectReference: {fileID: 0}
     - target: {fileID: 2938921106358587692, guid: 2e5d299623e3de4408286d649a30f4f3, type: 3}
+      propertyPath: interactions
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938921106358587692, guid: 2e5d299623e3de4408286d649a30f4f3, type: 3}
       propertyPath: boyHoldingAngle.x
       value: 0
       objectReference: {fileID: 0}
@@ -21251,8 +21271,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e02d69c8f984b8c9d2e9c29d4240d8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogCanInteract: 1
-  boyCanInteract: 1
+  interactions: 5
   interactableEnabled: 1
   interactablePriority: -1
   upButton: 0
@@ -21655,8 +21674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e02d69c8f984b8c9d2e9c29d4240d8b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogCanInteract: 1
-  boyCanInteract: 1
+  interactions: 5
   interactableEnabled: 1
   interactablePriority: -1
   upButton: 1
