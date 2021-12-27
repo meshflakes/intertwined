@@ -70,7 +70,6 @@ namespace Interactable
             
             if ((validInteractions & (int) InteractionMasks.Click) > 0) {
                 interacter.CharInteractor.AddToInteractablesList(gameObject);
-                TryForceInteraction(interacter);
 				
                 //TODO clean up this. It is not a good way to handle exiting the plank hold animation
                 other.gameObject.GetComponentInParent<Character.Character>().GetComponentInChildren<Animator>().SetInteger("Interacting", 0);
@@ -130,13 +129,6 @@ namespace Interactable
                 .RemoveFromInteractablesList(gameObject);
             GameObject.FindWithTag("Dog").GetComponentInParent<Character.Character>().CharInteractor
                 .RemoveFromInteractablesList(gameObject);
-        }
-        
-        // TODO: replace with proximity interactions
-        private void TryForceInteraction(Character.Character interacter)
-        {
-            if (this is IForcedInteractable forcedInteractable && forcedInteractable.CanForceInteraction(interacter))
-                interacter.CharInteractor.StartForcedInteraction(this);
         }
     }
 

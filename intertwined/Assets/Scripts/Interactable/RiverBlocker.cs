@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Interactable
 {
-    public class RiverBlocker : Interactable, IForcedInteractable
+    public class RiverBlocker : Interactable
     {
         public Vector3 offsetAfterUnblocking = new Vector3(0, -0.2f, 0);
         private bool _currentlyBlocking = true;
@@ -43,11 +43,11 @@ namespace Interactable
             return true;
         }
 
-        public bool CanForceInteraction(Character.Character interacter)
+        protected override void ProximityInteraction(Character.Character interacter, bool enteredTrigger)
         {
-            if (!_currentlyBlocking) return false;
+            if (!_currentlyBlocking || !enteredTrigger || interacter.CharInteractor.HeldInteractable != null) return;
 
-            return interacter.CharInteractor.HeldInteractable == null;
+            Interact(interacter);
         }
     }
 }
