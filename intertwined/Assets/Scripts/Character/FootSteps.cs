@@ -1,25 +1,27 @@
 using UnityEngine;
 
-public class FootSteps : MonoBehaviour
+namespace Character
 {
-    [SerializeField]
-    private AudioClip[] grassClips;
-
-    private AudioSource audioSource;
-
-    private void Awake()
+    public class FootSteps : MonoBehaviour
     {
-        audioSource = GetComponent<AudioSource>();
-    }
+        [SerializeField] private AudioClip[] grassClips;
 
-    private void Step()
-    {
-        AudioClip clip = GetRandomClip();
-        audioSource.PlayOneShot(clip);
-    }
+        private AudioSource _audioSource;
 
-    private AudioClip GetRandomClip()
-    {
-        return grassClips[UnityEngine.Random.Range(0, grassClips.Length)];
+        private void Awake()
+        {
+            _audioSource = GetComponent<AudioSource>();
+        }
+
+        private void Step()
+        {
+            var clip = GetRandomClip();
+            _audioSource.PlayOneShot(clip);
+        }
+
+        private AudioClip GetRandomClip()
+        {
+            return grassClips[Random.Range(0, grassClips.Length)];
+        }
     }
 }
