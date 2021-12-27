@@ -351,7 +351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af5cf6ada54248f99ba80c4cee5d3ba0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactions: 0
+  interactions: 3
   interactableEnabled: 1
   interactablePriority: 0
   offsetAfterUnblocking: {x: 0, y: -1.3, z: 0}
@@ -1401,10 +1401,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2748839ffe334aadbfcd7ada0a954f4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactions: 0
+  interactions: 2
   interactableEnabled: 1
   interactablePriority: -1
-  animationDuration: 5
+  animationDuration: 3
   minimumTimeBeforeReturn: 1
 --- !u!65 &50121301
 BoxCollider:
@@ -2913,6 +2913,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3920620462115841752, guid: f59a5a423a8f4cf448f8b8c574eb8318, type: 3}
+      propertyPath: interactions
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3920620462115841752, guid: f59a5a423a8f4cf448f8b8c574eb8318, type: 3}
       propertyPath: boyCanInteract
       value: 1
@@ -5599,7 +5603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d51784d6d46487ab66724ccc3eb5309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactions: 0
+  interactions: 1
   interactableEnabled: 1
   interactablePriority: 0
   promptManager: {fileID: 977034561}
@@ -6867,7 +6871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d3122715565a7c499bb7a767580f6b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactions: 0
+  interactions: 4
   interactableEnabled: 1
   interactablePriority: 0
   rotation: 90
@@ -13269,7 +13273,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d3122715565a7c499bb7a767580f6b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactions: 0
+  interactions: 1
   interactableEnabled: 1
   interactablePriority: 0
   rotation: 90
@@ -21130,7 +21134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2748839ffe334aadbfcd7ada0a954f4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactions: 0
+  interactions: -1
   interactableEnabled: 1
   interactablePriority: -1
   animationDuration: 1.5
@@ -26427,6 +26431,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 137225109576616597, guid: 13c046feca7113947ab38e1115707e80, type: 3}
+      propertyPath: interactions
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 137225109576616597, guid: 13c046feca7113947ab38e1115707e80, type: 3}
       propertyPath: boyHoldingOffset.z
       value: 0.7
@@ -37757,7 +37765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a7f2e9e4eaa44e7b2eae09cf483d7ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactions: 0
+  interactions: 3
   interactableEnabled: 1
   interactablePriority: 0
   rotation: 90
@@ -48996,7 +49004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77451a7c3d1497b9e33b3821ddb8af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactions: 0
+  interactions: 1
   interactableEnabled: 1
   interactablePriority: 0
   promptManager: {fileID: 977034561}
@@ -59733,10 +59741,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 538890590342311546, guid: 3486b9083622b2d4bbc7aaae6ecba9c7, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 95cc81f7b706fa246b590d719fc825be, type: 2}
     - target: {fileID: 1886778944283266959, guid: 3486b9083622b2d4bbc7aaae6ecba9c7, type: 3}
       propertyPath: m_Name
       value: DirtWithPlank
@@ -59748,18 +59752,6 @@ PrefabInstance:
     - target: {fileID: 3919590967429905275, guid: 3486b9083622b2d4bbc7aaae6ecba9c7, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.543
-      objectReference: {fileID: 0}
-    - target: {fileID: 7983884306640953915, guid: 3486b9083622b2d4bbc7aaae6ecba9c7, type: 3}
-      propertyPath: interactions
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7983884306640953915, guid: 3486b9083622b2d4bbc7aaae6ecba9c7, type: 3}
-      propertyPath: interactions.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7983884306640953915, guid: 3486b9083622b2d4bbc7aaae6ecba9c7, type: 3}
-      propertyPath: interactions.Array.data[0]
-      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8446449896543090267, guid: 3486b9083622b2d4bbc7aaae6ecba9c7, type: 3}
       propertyPath: m_RootOrder
@@ -63680,7 +63672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb649513a84c00428acf38b062344a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactions: 0
+  interactions: 5
   interactableEnabled: 1
   interactablePriority: 0
   kickHorizontalVelocity: 4
