@@ -74,8 +74,7 @@ namespace Interactable
         {
             if (_inFinalPosition) return false;
 
-
-                if (Held())
+            if (Held())
             {
                 Debug.Log("Releasing Object");
                 Release();
