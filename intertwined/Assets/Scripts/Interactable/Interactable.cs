@@ -1,6 +1,4 @@
 using System;
-using System.Collections.Generic;
-using Prompts;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -20,8 +18,6 @@ namespace Interactable
         
         private bool BoyCanInteract => ((int) interactions & (int) InteractionMasks.Boy) > 0;
         private bool DogCanInteract => ((int) interactions & (int) InteractionMasks.Dog) > 0;
-        private bool ValidClickInteraction => ((int) interactions & (int) InteractionMasks.Click) > 0;
-        private bool ValidProximityInteraction => ((int) interactions & (int) InteractionMasks.Proximity) > 0;
 
         protected void OnValidate()
         {
@@ -63,7 +59,6 @@ namespace Interactable
         {
             var validInteractions = GetValidInteractions(other);
             
-            // if (!CollidingObjectCanInteract(other)) return;
             if (validInteractions == 0) return;
             
             var interacter = other.gameObject.GetComponentInParent<Character.Character>();
@@ -85,7 +80,6 @@ namespace Interactable
         {
             var validInteractions = GetValidInteractions(other);
             
-            // if (!CollidingObjectCanInteract(other)) return;
             if (validInteractions == 0) return;
             
             var interacter = other.gameObject.GetComponentInParent<Character.Character>();

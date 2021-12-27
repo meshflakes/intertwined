@@ -1,5 +1,4 @@
-﻿using Character;
-using Interactable.Util;
+﻿using Interactable.Util;
 using Prompts;
 using UnityEngine;
 
