@@ -21,12 +21,14 @@ namespace Interactable
         [Tooltip("Sets the priority level of an interactable for when multiple interactables are in range")]
         public float interactablePriority;
 
-        private List<Character.Character> _characters;
-        private Animator anim;
-        
         protected void OnValidate()
         {
             foreach (var interactableCollider in GetComponents<Collider>())
+            {
+                if (interactableCollider.isTrigger) return;
+            }
+            
+            foreach (var interactableCollider in GetComponentsInChildren<Collider>())
             {
                 if (interactableCollider.isTrigger) return;
             }
