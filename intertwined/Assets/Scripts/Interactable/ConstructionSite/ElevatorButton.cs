@@ -10,9 +10,6 @@ namespace Interactable.ConstructionSite
         
         protected void Reset()
         {
-            boyCanInteract = true;
-            dogCanInteract = true;
-
             interactablePriority = -1;
         }
 

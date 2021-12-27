@@ -351,8 +351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af5cf6ada54248f99ba80c4cee5d3ba0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogCanInteract: 0
-  boyCanInteract: 1
+  interactions: 0
   interactableEnabled: 1
   interactablePriority: 0
   offsetAfterUnblocking: {x: 0, y: -1.3, z: 0}
@@ -1402,8 +1401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2748839ffe334aadbfcd7ada0a954f4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogCanInteract: 1
-  boyCanInteract: 1
+  interactions: 0
   interactableEnabled: 1
   interactablePriority: -1
   animationDuration: 5
@@ -5601,8 +5599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d51784d6d46487ab66724ccc3eb5309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogCanInteract: 0
-  boyCanInteract: 1
+  interactions: 0
   interactableEnabled: 1
   interactablePriority: 0
   promptManager: {fileID: 977034561}
@@ -6870,8 +6867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d3122715565a7c499bb7a767580f6b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogCanInteract: 1
-  boyCanInteract: 0
+  interactions: 0
   interactableEnabled: 1
   interactablePriority: 0
   rotation: 90
@@ -13273,8 +13269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d3122715565a7c499bb7a767580f6b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogCanInteract: 0
-  boyCanInteract: 1
+  interactions: 0
   interactableEnabled: 1
   interactablePriority: 0
   rotation: 90
@@ -21135,8 +21130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2748839ffe334aadbfcd7ada0a954f4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogCanInteract: 1
-  boyCanInteract: 1
+  interactions: 0
   interactableEnabled: 1
   interactablePriority: -1
   animationDuration: 1.5
@@ -37763,8 +37757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a7f2e9e4eaa44e7b2eae09cf483d7ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogCanInteract: 0
-  boyCanInteract: 1
+  interactions: 0
   interactableEnabled: 1
   interactablePriority: 0
   rotation: 90
@@ -39753,8 +39746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d3122715565a7c499bb7a767580f6b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogCanInteract: 1
-  boyCanInteract: 0
+  interactions: 0
   interactableEnabled: 1
   interactablePriority: 0
   rotation: 90
@@ -42908,8 +42900,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2d477b75e8d4f279fd15d838ab2e772, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogCanInteract: 0
-  boyCanInteract: 1
+  interactions: 0
   interactableEnabled: 1
   interactablePriority: 0
   doorLockedAudio: {fileID: 1308196321}
@@ -49005,8 +48996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77451a7c3d1497b9e33b3821ddb8af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogCanInteract: 0
-  boyCanInteract: 1
+  interactions: 0
   interactableEnabled: 1
   interactablePriority: 0
   promptManager: {fileID: 977034561}
@@ -59759,6 +59749,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.543
       objectReference: {fileID: 0}
+    - target: {fileID: 7983884306640953915, guid: 3486b9083622b2d4bbc7aaae6ecba9c7, type: 3}
+      propertyPath: interactions
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7983884306640953915, guid: 3486b9083622b2d4bbc7aaae6ecba9c7, type: 3}
+      propertyPath: interactions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7983884306640953915, guid: 3486b9083622b2d4bbc7aaae6ecba9c7, type: 3}
+      propertyPath: interactions.Array.data[0]
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8446449896543090267, guid: 3486b9083622b2d4bbc7aaae6ecba9c7, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -63678,8 +63680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bb649513a84c00428acf38b062344a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogCanInteract: 1
-  boyCanInteract: 1
+  interactions: 0
   interactableEnabled: 1
   interactablePriority: 0
   kickHorizontalVelocity: 4
@@ -66850,8 +66851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d3122715565a7c499bb7a767580f6b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogCanInteract: 0
-  boyCanInteract: 1
+  interactions: 0
   interactableEnabled: 1
   interactablePriority: 0
   rotation: 90
