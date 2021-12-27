@@ -56876,6 +56876,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5709749565ce124ba4dd1302d0211e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactions: 10
+  interactableEnabled: 1
+  interactablePriority: 0
 --- !u!65 &1776352468
 BoxCollider:
   m_ObjectHideFlags: 0
