@@ -34,7 +34,10 @@ namespace Interactable
             throw new ArgumentException($"No trigger collider on interactable: {gameObject.name}");
         }
 
-        public abstract bool Interact(Character.Character interacter);
+        public virtual bool Interact(Character.Character interacter)
+        {
+            throw new NotImplementedException($"Interact called but no implementation exists for {gameObject.name}");
+        }
 
         public virtual bool Interact(Character.Character interacter, Interactable interactable)
         {
@@ -53,7 +56,10 @@ namespace Interactable
          * This allows prioritization of interacting with an object that
          * the player has an item for instead of e.g. doing it randomly
          */
-        public abstract bool UsedWith(Interactable other);
+        public virtual bool UsedWith(Interactable other)
+        {
+            return false;
+        }
         
         protected void OnTriggerEnter(Collider other)
         {

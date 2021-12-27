@@ -23,10 +23,5 @@ namespace Interactable.ConstructionSite
         {
             return _elevator.TryChangeFloor(interacter, DeltaLevel);
         }
-
-        public override bool UsedWith(Interactable other)
-        {
-            return false;
-        }
     }
 }

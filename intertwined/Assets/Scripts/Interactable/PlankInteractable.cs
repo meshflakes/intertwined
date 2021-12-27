@@ -91,11 +91,6 @@ namespace Interactable
             return true;
         }
 
-        public override bool UsedWith(Interactable other)
-        {
-            return false;
-        }
-
         public void AidedRelease()
         {
             base.Release();

@@ -12,12 +12,7 @@ namespace Interactable.Ladder
             base.Start();
             _ladderManager = GetComponent<LadderManager>();
         }
-        
-        public override bool UsedWith(Interactable other)
-        {
-            return false;
-        }
-        
+                
         public override bool Interact(Character.Character interacter)
         {
             if (!interactableEnabled)
