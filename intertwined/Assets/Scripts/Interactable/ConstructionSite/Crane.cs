@@ -15,12 +15,7 @@ namespace Interactable.ConstructionSite
         public GameObject backBlockingColliders;
         public Transform craneTransform;
 
-        private GameObject _buildingCollider;
-
-        protected void Start()
-        {
-            _buildingCollider = GameObject.Find("beam entrance blocker");
-        }
+        public GameObject buildingCollider;
 
         protected void Update()
         {
@@ -54,7 +49,7 @@ namespace Interactable.ConstructionSite
         {
             frontBlockingColliders.SetActive(!IsEqual(_currentRotation, 0));
             backBlockingColliders.SetActive(!IsEqual(_currentRotation, maxRotation));
-            _buildingCollider.SetActive(!IsEqual(_currentRotation, maxRotation));
+            buildingCollider.SetActive(!IsEqual(_currentRotation, maxRotation));
         }
 
         private static bool IsEqual(float x, float y)
