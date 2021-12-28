@@ -13,6 +13,9 @@ namespace Camera
         
         private readonly float _animationDuration;
         private AreaCameraController _cameraController;
+
+        private readonly float _epsilonTime = 0.1f;
+        private float _movementOkTime = 0f;
         
         public AreaCameraManager(Transform targetTransform, float animationDuration)
         {
@@ -27,13 +30,18 @@ namespace Camera
 
         public void StartNewCameraSequence()
         {
-            if (_cameraController != null) throw new Exception("camera is alr active");
+            if (_cameraController != null)
+            {
+                Debug.LogError("camera is currently active");
+                return;
+            }
             
             _cameraController = new AreaCameraController(_targetPosition, _targetRotation, _cameraTransform,
                 _animationDuration);
 
             _cameraManager.SetCameraController(_cameraController);
             _cameraController.AreaCamActive = true;
+            _movementOkTime = Time.time + _animationDuration + _epsilonTime;
         }
 
         public bool GetCameraActive()
@@ -41,12 +49,14 @@ namespace Camera
             if (_cameraController == null) return false;
 
             return _cameraController.AreaCamActive;
+            // return _cameraController.AreaCamActive && Time.time > _movementOkTime;
         }
 
         public void EndCameraSequence()
         {
             _cameraController.AreaCamActive = false;
             _cameraController = null;
+            _movementOkTime = Time.time + _animationDuration + _epsilonTime;
         }
     }
 }

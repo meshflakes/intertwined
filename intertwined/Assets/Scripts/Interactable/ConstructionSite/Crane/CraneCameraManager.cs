@@ -21,6 +21,8 @@ namespace Interactable.ConstructionSite.Crane
         public GameObject outro2;
         public GameObject outro3;
 
+        private CraneCameraState _currentCamera = CraneCameraState.Inactive;
+
         protected void Start()
         {
             var targetTransform = transform.Find("Camera");
@@ -29,33 +31,48 @@ namespace Interactable.ConstructionSite.Crane
 
         protected void Update()
         {
-            if (NumInLocations[(int) Location.FullCraneArea] != 2)
+            switch (_currentCamera)
             {
-                // nobody in rn, make sure camera is not being modified
-                if (_cameraSequence.GetCameraActive())
-                {
-                    _cameraSequence.EndCameraSequence();
-                }
-                
-            } else if (NumInLocations[(int) Location.FinalBuilding] == 2)
-            {
-                // reached end, revert to regular camera
+                case CraneCameraState.Inactive:
+                    if (NumInLocations[(int) Location.FullCraneArea] == 2)
+                    {
+                        _cameraSequence.StartNewCameraSequence();
+                        _currentCamera = CraneCameraState.Active;
+                    }
 
-                if (_cameraSequence.GetCameraActive()) _cameraSequence.EndCameraSequence();
+                    break;
                 
-                if (!_startedEndTransition)
-                {
-                    Invoke(nameof(OutroComic1), 5);
-                    _startedEndTransition = true;
-                }
+                case CraneCameraState.Active:
+                    if (NumInLocations[(int) Location.FinalBuilding] == 2)
+                    {
+                        // reached end, revert to regular camera
+                        if (_cameraSequence.GetCameraActive())
+                        {
+                            _cameraSequence.EndCameraSequence();
+                            _currentCamera = CraneCameraState.Inactive;
+                        }
                 
+                        if (!_startedEndTransition)
+                        {
+                            Invoke(nameof(OutroComic1), 5);
+                            _startedEndTransition = true;
+                        }
+                    }
+                    else if (NumInLocations[(int) Location.FullCraneArea] != 2 &&
+                             NumInLocations[(int) Location.ConstructionBuilding] != 2)
+                    {
+                        // nobody in rn, make sure camera is not being modified
+                        if (_cameraSequence.GetCameraActive())
+                        {
+                            _cameraSequence.EndCameraSequence();
+                            _currentCamera = CraneCameraState.Inactive;
+                        }
+                    }
+                    break;
                 
-            }
-            else
-            {
-                // set to special camera
-                if (!_cameraSequence.GetCameraActive()) _cameraSequence.StartNewCameraSequence();
-                
+                default:
+                    Debug.LogError("Default state in CraneCameraManager not implemented");
+                    break;
             }
         }
 
@@ -83,5 +100,11 @@ namespace Interactable.ConstructionSite.Crane
         {
             SceneManager.LoadScene("Scenes/MainMenu");
         }
+    }
+
+    internal enum CraneCameraState
+    {
+        Active,
+        Inactive
     }
 }

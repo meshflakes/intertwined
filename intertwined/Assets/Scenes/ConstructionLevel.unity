@@ -762,15 +762,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9045712147987270629, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -36.02
+      value: -20.65
       objectReference: {fileID: 0}
     - target: {fileID: 9045712147987270629, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.714
+      value: 31.7
       objectReference: {fileID: 0}
     - target: {fileID: 9045712147987270629, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.12
+      value: -23.83
       objectReference: {fileID: 0}
     - target: {fileID: 9045712147987270629, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4381,7 +4381,7 @@ GameObject:
   - component: {fileID: 389734855}
   - component: {fileID: 389734854}
   m_Layer: 0
-  m_Name: CraneLocation (2)
+  m_Name: End Building Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13894,7 +13894,7 @@ GameObject:
   - component: {fileID: 1412463803}
   - component: {fileID: 1412463802}
   m_Layer: 0
-  m_Name: CraneLocation (1)
+  m_Name: Constuction Building Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13941,8 +13941,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 20, y: 3, z: 30}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 21.56403, y: 1.8439865, z: 25.277874}
+  m_Center: {x: -0.78201485, y: 0.57800674, z: -2.361063}
 --- !u!1 &1414022688
 GameObject:
   m_ObjectHideFlags: 0
@@ -20585,7 +20585,7 @@ GameObject:
   - component: {fileID: 2049841256}
   - component: {fileID: 2049841255}
   m_Layer: 0
-  m_Name: CraneLocation
+  m_Name: Full Crane Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
