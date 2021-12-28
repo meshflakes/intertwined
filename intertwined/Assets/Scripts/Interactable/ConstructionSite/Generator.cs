@@ -6,8 +6,8 @@ namespace Interactable.ConstructionSite
     public class Generator : Interactable
     {
         public int lockId;
-        public Elevator elevator;
-        public Crane crane;
+        public Elevator.Elevator elevator;
+        public Crane.Crane crane;
         public Light generatorLight;
         public PromptManager promptManager;
         

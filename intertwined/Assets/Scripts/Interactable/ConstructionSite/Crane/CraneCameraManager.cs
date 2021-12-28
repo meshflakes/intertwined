@@ -4,7 +4,7 @@ using Camera;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Interactable.ConstructionSite
+namespace Interactable.ConstructionSite.Crane
 {
     
     public class CraneCameraManager : MonoBehaviour

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using Prompts;
 using UnityEngine;
 
-namespace Interactable.ConstructionSite
+namespace Interactable.ConstructionSite.Elevator
 {
-    public class Elevator : MonoBehaviour
+    public class Elevator : MonoBehaviour, IEntityMover
     {
         public PromptManager promptManager;
         public GameObject elevatorBlocker;
@@ -13,6 +13,8 @@ namespace Interactable.ConstructionSite
         
         private bool Moving => _targetFloor != _currentFloor;
         private readonly List<Transform> _floors = new List<Transform>();
+        private readonly HashSet<(Transform transform, float movementScale)> _movementEntities = new HashSet<(Transform, float)>();
+        
         private int _currentFloor = 0;
         private int _targetFloor = 0;
 
@@ -49,7 +51,13 @@ namespace Interactable.ConstructionSite
         {            
             var distToTarget = transform.position.y - _floors[_targetFloor].position.y;
             var direction = distToTarget > 0 ? -1 : 1;
-            transform.position += Vector3.up * direction * Time.deltaTime * ElevatorSpeed;
+            var deltaPosition = Vector3.up * direction * Time.deltaTime * ElevatorSpeed;
+            transform.position += deltaPosition;
+
+            foreach (var entity in _movementEntities)
+            {
+                entity.transform.position += deltaPosition * entity.movementScale/2;
+            }
             
             if (distToTarget * distToTarget < 0.01f)
             {
@@ -60,7 +68,6 @@ namespace Interactable.ConstructionSite
 
         public bool TryChangeFloor(Character.Character interacter, int deltaLevel)
         {
-            // TODO: if not powered start an electricity prompt
             if (Moving) return false;
             
             if (!Powered)
@@ -75,6 +82,16 @@ namespace Interactable.ConstructionSite
 
             _targetFloor = newTargetFloor;
             return true;
+        }
+        
+        public void AddEntity((Transform transform, float movementScale) entity)
+        {
+            _movementEntities.Add(entity);
+        }
+
+        public void RemoveEntity((Transform transform, float movementScale) entity)
+        {
+            _movementEntities.Remove(entity);
         }
     }
 }
