@@ -45,10 +45,5 @@ namespace Interactable
             RemoveInteractableFromCharacters(); 
             Destroy(gameObject);
         }
-
-        public override bool UsedWith(Interactable other)
-        {
-            return false;
-        }
     }
 }

@@ -52,7 +52,7 @@ namespace Character
         private int _animIDGrounded;
         private int _animIDFreeFall;
         private int _animIDMotionSpeed;
-        private Animator anim; 
+        private Animator _anim; 
 
         private Animator _animator;
         private bool _hasAnimator;
@@ -67,7 +67,7 @@ namespace Character
 
         private void Start()
         {
-            anim = GetComponentInChildren<Animator> ();
+            _anim = GetComponentInChildren<Animator> ();
             _hasAnimator = TryGetComponent(out _animator);
             _controller = GetComponent<CharacterController>();
 
@@ -166,28 +166,28 @@ namespace Character
             var inputMagnitude = move.magnitude;
             if (Climbing)
             {
-                anim.SetInteger("Climbing", 1);
+                _anim.SetInteger("Climbing", 1);
                 Debug.Log("Climbing=True");
 
                 if (move == Vector2.zero)
                 {
-                    anim.enabled = false;
-                }else{anim.enabled = true;}
+                    _anim.enabled = false;
+                }else{_anim.enabled = true;}
                     
                     
                 Climb(move, mainCamera);
                 return;
-            } else {anim.SetInteger("Climbing", 0);}
+            } else {_anim.SetInteger("Climbing", 0);}
             
             var targetSpeed = moveSpeed;
             
             // if there is no input, set the target speed to 0
             if (move == Vector2.zero)
             {
-                anim.SetInteger("Walking", 0);
+                _anim.SetInteger("Walking", 0);
                 targetSpeed = 0.0f;
             }
-            else anim.SetInteger("Walking", 1);
+            else _anim.SetInteger("Walking", 1);
 
             CalculateAndUpdateSpeed(inputMagnitude, analogMovement, targetSpeed);
             
@@ -235,7 +235,7 @@ namespace Character
         private Vector3 CalculateAndUpdateRotation(Vector2 move, GameObject mainCamera)
         {
             // normalise input direction
-            Vector3 inputDirection = new Vector3(move.x, 0.0f, move.y).normalized;
+            var inputDirection = new Vector3(move.x, 0.0f, move.y).normalized;
 
             if (move != Vector2.zero)
             {

@@ -22,10 +22,5 @@ namespace Interactable
 
             return false;
         }
-
-        public override bool UsedWith(Interactable other)
-        {
-            return false;
-        }
     }
 }

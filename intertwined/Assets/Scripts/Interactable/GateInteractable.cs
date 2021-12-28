@@ -1,11 +1,10 @@
-﻿using Character;
-using Interactable.Util;
+﻿using Interactable.Util;
 using Prompts;
 using UnityEngine;
 
 namespace Interactable
 {
-    public class GateInteractable : DoorInteraction, IForcedInteractable
+    public class GateInteractable : DoorInteraction
     {
         [Header("Camera Sequence")]
         [Tooltip("Time taken for camera to move from original position to end position and vice versa")]
@@ -41,10 +40,9 @@ namespace Interactable
             }
             
             promptManager.RegisterNewPrompt(Character.CharType.Boy, 5f, Prompts.PromptType.Key);
+            
             // TODO: remove player control? 
-            if (!lockedAudio.isPlaying) lockedAudio.Play();
-            _cameraSequence.StartNewCameraSequence();
-            _cameraSequencePlayed = true;
+            PlayCameraSequence();
             return true;
         }
 
@@ -60,13 +58,21 @@ namespace Interactable
             return Interact(interacter);
         }
 
-        public bool CanForceInteraction(Character.Character interacter)
+        protected override void ProximityInteraction(Character.Character interacter, bool enteredTrigger)
         {
-            if (_cameraSequencePlayed) return false;
+            if (!enteredTrigger || _cameraSequencePlayed) return;
 
-            if (interacter.CharInteractor.HeldInteractable == null) return true;
+            var heldInteractable = interacter.CharInteractor.HeldInteractable;
+            if (heldInteractable != null && heldInteractable.name == "Key") return;
+            
+            PlayCameraSequence();
+        }
 
-            return interacter.CharInteractor.HeldInteractable.name != "Key";
+        private void PlayCameraSequence()
+        {
+            if (!lockedAudio.isPlaying) lockedAudio.Play();
+            _cameraSequence.StartNewCameraSequence();
+            _cameraSequencePlayed = true;
         }
     }
 }

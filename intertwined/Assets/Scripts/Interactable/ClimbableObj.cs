@@ -4,6 +4,7 @@ using UnityEngine;
 
 namespace Interactable
 {
+    // TODO: refactor to use proximity interactions
     public class ClimbableObj : MonoBehaviour
     {
         [Tooltip("Allows the dog to interact with this Interactable")]

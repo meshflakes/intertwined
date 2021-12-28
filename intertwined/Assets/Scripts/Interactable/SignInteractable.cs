@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Interactable
 {
-    public class SignInteractable : Interactable, IForcedInteractable
+    public class SignInteractable : Interactable
     {
         [Header("Camera Sequence")]
         [Tooltip("Time taken for camera to move from original position to end position and vice versa")]
@@ -33,9 +33,11 @@ namespace Interactable
             return false;
         }
 
-        public bool CanForceInteraction(Character.Character interacter)
+        protected override void ProximityInteraction(Character.Character interacter, bool enteredTrigger)
         {
-            return !_cameraSequencePlayed;
+            if (!enteredTrigger || _cameraSequencePlayed) return;
+
+            Interact(interacter);
         }
     }
 }
