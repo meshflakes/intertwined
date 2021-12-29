@@ -18,13 +18,24 @@ namespace Menu
                 _boyMadeIt = true;
             else if (interacter.charType == CharType.Dog)
                 _dogMadeIt = true;
+
+            if (LevelComplete)
+            {
+                if (SceneManager.GetActiveScene().name == "ParkLevel") GoToLevelTwo();
+                else GoToMainMenu();
+            }
+
             
-            if (LevelComplete) GoToMainMenu();
         }
         
         private void GoToMainMenu()
         {
             SceneManager.LoadScene("MainMenu");
+        }
+
+        private void GoToLevelTwo()
+        {
+            SceneManager.LoadScene("ConstructionLevel");
         }
     }
 }
