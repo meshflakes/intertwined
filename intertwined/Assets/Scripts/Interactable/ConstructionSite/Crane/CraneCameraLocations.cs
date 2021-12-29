@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Interactable.ConstructionSite
+namespace Interactable.ConstructionSite.Crane
 {
     public class CraneCameraLocations : Interactable
     {
@@ -11,22 +11,6 @@ namespace Interactable.ConstructionSite
         {
             _cameraManager = GetComponentInParent<CraneCameraManager>();
         }
-
-        // protected void OnTriggerEnter(Collider other)
-        // {
-        //     if (CollidingObjectCanInteract(other)) _cameraManager.NumInLocations[(int) location]++;
-        // }
-        //
-        // protected void OnTriggerExit(Collider other)
-        // {
-        //     if (CollidingObjectCanInteract(other)) _cameraManager.NumInLocations[(int) location]--;
-        // }
-        //
-        // private bool CollidingObjectCanInteract(Component other)
-        // {
-        //     return (other.CompareTag("Boy") || other.CompareTag("BoySubObjects"))
-        //            || (other.CompareTag("Dog") || other.CompareTag("DogSubObjects"));
-        // }
         
         protected override void ProximityInteraction(Character.Character interacter, bool enteredTrigger)
         {

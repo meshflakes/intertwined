@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Interactable.ConstructionSite
+namespace Interactable.ConstructionSite.Elevator
 {
     public class ElevatorButton : Interactable
     {
