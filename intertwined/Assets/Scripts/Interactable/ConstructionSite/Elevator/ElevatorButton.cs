@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Interactable.ConstructionSite
+namespace Interactable.ConstructionSite.Elevator
 {
     public class ElevatorButton : Interactable
     {
@@ -10,9 +10,6 @@ namespace Interactable.ConstructionSite
         
         protected void Reset()
         {
-            boyCanInteract = true;
-            dogCanInteract = true;
-
             interactablePriority = -1;
         }
 
@@ -25,11 +22,6 @@ namespace Interactable.ConstructionSite
         public override bool Interact(Character.Character interacter)
         {
             return _elevator.TryChangeFloor(interacter, DeltaLevel);
-        }
-
-        public override bool UsedWith(Interactable other)
-        {
-            return false;
         }
     }
 }

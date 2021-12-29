@@ -142,11 +142,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ecd739c3e834577bdfc8eb177b933ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogCanInteract: 1
-  boyCanInteract: 0
+  interactions: 4
   interactableEnabled: 1
+  interactablePriority: 0
   plank: {fileID: 304690550622763103, guid: 023dca5733af83841a7f4eea85ae1214, type: 3}
   diggingAudio: {fileID: 978277505}
+  noObject: 0
 --- !u!65 &1462202076
 BoxCollider:
   m_ObjectHideFlags: 0

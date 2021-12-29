@@ -1,58 +1,30 @@
-using UnityEngine;
+using Character;
 using UnityEngine.SceneManagement;
 
 namespace Menu
 {
-    public class Win : MonoBehaviour
+    public class Win : Interactable.Interactable
     {
-        private GameObject _boy;
-        private GameObject _dog;
-
         private bool _dogMadeIt = false;
         private bool _boyMadeIt = false;
 
-        // Start is called before the first frame update
-        void Start()
+        private bool LevelComplete => _boyMadeIt && _dogMadeIt;
+        
+        protected override void ProximityInteraction(Character.Character interacter, bool enteredTrigger)
         {
-            _boy = GameObject.FindWithTag("Boy");
-            _dog = GameObject.FindWithTag("Dog");
-        }
+            if (!enteredTrigger) return;
 
-        // Update is called once per frame
-        void Update()
-        {
-            if (_boyMadeIt && _dogMadeIt)
-            {
-                GoToLevelTwo();
-            }
+            if (interacter.charType == CharType.Boy)
+                _boyMadeIt = true;
+            else if (interacter.charType == CharType.Dog)
+                _dogMadeIt = true;
+            
+            if (LevelComplete) GoToMainMenu();
         }
-
+        
         private void GoToMainMenu()
         {
             SceneManager.LoadScene("MainMenu");
-        }
-        private void GoToCredits()
-        {
-            SceneManager.LoadScene("Credits");
-        }
-        
-        private void GoToLevelTwo()
-        {
-            SceneManager.LoadScene("ConstructionLevel");
-        }
-
-        void OnTriggerEnter(Collider other)
-        {
-            if (other.CompareTag("Dog") || other.CompareTag("DogSubObjects"))
-            {
-                _dogMadeIt = true;
-            }
-
-            if (other.CompareTag("Boy") || other.CompareTag("BoySubObjects"))
-            {
-                _boyMadeIt = true;
-            }
-
         }
     }
 }
