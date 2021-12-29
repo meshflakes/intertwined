@@ -786,15 +786,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9045712147987270629, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.65
+      value: -34.35
       objectReference: {fileID: 0}
     - target: {fileID: 9045712147987270629, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 31.7
+      value: 1.83
       objectReference: {fileID: 0}
     - target: {fileID: 9045712147987270629, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -23.83
+      value: 13.42
       objectReference: {fileID: 0}
     - target: {fileID: 9045712147987270629, guid: dbb530ad1473ae84ca2f9acef116c7fa, type: 3}
       propertyPath: m_LocalRotation.w
@@ -9349,8 +9349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ecd739c3e834577bdfc8eb177b933ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dogCanInteract: 1
-  boyCanInteract: 0
+  interactions: 4
   interactableEnabled: 1
   interactablePriority: 0
   plank: {fileID: 0}
@@ -9434,7 +9433,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &856301334
 GameObject:
